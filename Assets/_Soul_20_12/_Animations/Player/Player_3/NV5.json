@@ -1,0 +1,110 @@
+{
+"skeleton": { "hash": "OKgu5BolEkuftKNtn4i/Ty6M7jE", "spine": "3.8.99", "images": "D:/PTS/Game Soul/Demo_PNG/Ani_nhan_vat/Nhan_vat1/", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Move", "parent": "root" },
+	{ "name": "Idel", "parent": "root" },
+	{ "name": "Die", "parent": "root" },
+	{ "name": "Skill", "parent": "root" }
+],
+"slots": [
+	{ "name": "Move", "bone": "Move" },
+	{ "name": "Idel", "bone": "Idel" },
+	{ "name": "Die", "bone": "Die" },
+	{ "name": "SKill", "bone": "Skill" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Die": {
+				"Die/1": { "y": 62.44, "width": 113, "height": 125 },
+				"Die/2": { "x": 0.5, "y": 62.94, "width": 158, "height": 145 },
+				"Die/3": { "y": 62.94, "width": 164, "height": 120 },
+				"Die/4": { "y": 82.71, "width": 164, "height": 132 },
+				"Die/5": { "x": 0.5, "y": 122.09, "width": 94, "height": 65 },
+				"Die/6": { "color": "ffffff74", "x": 0.5, "y": 148.57, "width": 93, "height": 62 },
+				"Die/7": { "color": "ffffff41", "y": 177.46, "width": 87, "height": 46 }
+			},
+			"Idel": {
+				"Idel/NV3_1": { "x": -6.31, "y": 63.6, "width": 102, "height": 127 },
+				"Idel/NV3_2": { "x": -6.31, "y": 70.92, "width": 102, "height": 142 },
+				"Idel/NV3_3": { "x": -6.31, "y": 75.92, "width": 102, "height": 152 },
+				"Idel/NV3_4": { "x": -6.31, "y": 71.25, "width": 102, "height": 142 }
+			},
+			"Move": {
+				"Move/NV4_1": { "x": -4.76, "y": 73.99, "width": 114, "height": 148 },
+				"Move/NV4_2": { "x": -7.22, "y": 60.21, "width": 98, "height": 114 },
+				"Move/NV4_3": { "x": -13.39, "y": 65.72, "width": 110, "height": 131 }
+			},
+			"SKill": {
+				"5. Flame/Flame1": { "y": 83.58, "width": 300, "height": 300 },
+				"5. Flame/Flame2": { "y": 83.58, "width": 300, "height": 300 },
+				"5. Flame/Flame3": { "y": 83.58, "width": 300, "height": 300 },
+				"5. Flame/Flame4": { "y": 83.58, "width": 300, "height": 300 },
+				"5. Flame/Flame5": { "y": 83.58, "width": 300, "height": 300 },
+				"5. Flame/Flame6": { "y": 83.58, "width": 300, "height": 300 },
+				"5. Flame/Flame7": { "y": 83.58, "width": 300, "height": 300 }
+			}
+		}
+	}
+],
+"animations": {
+	"Die": {
+		"slots": {
+			"Die": {
+				"attachment": [
+					{ "name": "Die/1" },
+					{ "time": 0.1, "name": "Die/2" },
+					{ "time": 0.2, "name": "Die/3" },
+					{ "time": 0.2667, "name": "Die/4" },
+					{ "time": 0.3667, "name": "Die/5" },
+					{ "time": 0.4667, "name": "Die/6" },
+					{ "time": 0.5667, "name": "Die/7" },
+					{ "time": 0.6667, "name": null },
+					{ "time": 1, "name": null }
+				]
+			}
+		}
+	},
+	"Idle": {
+		"slots": {
+			"Idel": {
+				"attachment": [
+					{ "name": "Idel/NV3_1" },
+					{ "time": 0.1333, "name": "Idel/NV3_2" },
+					{ "time": 0.2667, "name": "Idel/NV3_3" },
+					{ "time": 0.4, "name": "Idel/NV3_4" }
+				]
+			}
+		}
+	},
+	"Move": {
+		"slots": {
+			"Move": {
+				"attachment": [
+					{ "name": "Move/NV4_1" },
+					{ "time": 0.1333, "name": "Move/NV4_2" },
+					{ "time": 0.2667, "name": "Move/NV4_3" },
+					{ "time": 0.4, "name": "Move/NV4_1" }
+				]
+			}
+		}
+	},
+	"Skill": {
+		"slots": {
+			"SKill": {
+				"attachment": [
+					{ "name": "5. Flame/Flame1" },
+					{ "time": 0.1333, "name": "5. Flame/Flame2" },
+					{ "time": 0.3, "name": "5. Flame/Flame3" },
+					{ "time": 0.4, "name": "5. Flame/Flame4" },
+					{ "time": 0.5333, "name": "5. Flame/Flame5" },
+					{ "time": 0.7, "name": "5. Flame/Flame6" },
+					{ "time": 0.8, "name": "5. Flame/Flame7" }
+				]
+			}
+		}
+	}
+}
+}

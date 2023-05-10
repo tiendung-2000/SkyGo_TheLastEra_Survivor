@@ -1,0 +1,121 @@
+{
+"skeleton": { "hash": "A46RJEQedC9KyLXt7OBBK0Jo6U0", "spine": "3.8.99", "images": "D:/PTS/Game Soul/Demo_PNG/Ani_nhan_vat/Nhan_vat2/", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Idel", "parent": "root" },
+	{ "name": "Die", "parent": "root" },
+	{ "name": "Move", "parent": "root" },
+	{ "name": "SKill", "parent": "root", "x": 1.07, "y": -1.07 }
+],
+"slots": [
+	{ "name": "Idel", "bone": "Idel" },
+	{ "name": "1", "bone": "Die" },
+	{ "name": "Move", "bone": "Move" },
+	{ "name": "Skill", "bone": "SKill" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"1": {
+				"Die/NV2_1": { "x": 0.5, "y": 45.45, "width": 73, "height": 91 },
+				"Die/NV2_2": { "y": 46.75, "width": 84, "height": 94 },
+				"Die/NV2_3": { "y": 43.5, "width": 80, "height": 87 },
+				"Die/NV2_4": { "x": 0.5, "y": 43.71, "width": 76, "height": 87 },
+				"Die/NV2_5": { "y": 45.45, "width": 84, "height": 91 },
+				"Die/NV2_6": { "x": 12.65, "y": 30.69, "width": 105, "height": 62 },
+				"Die/NV2_7": { "x": 12.43, "y": 31.13, "width": 105, "height": 62 },
+				"Die/NV2_8": { "x": 11.78, "y": 30.69, "width": 105, "height": 62 },
+				"Die/NV2_9": { "x": 13.74, "y": 30.69, "width": 102, "height": 62 }
+			},
+			"Idel": {
+				"Idel/NV5_1": { "y": 45.74, "width": 74, "height": 91 },
+				"Idel/NV5_2": { "y": 42.46, "width": 80, "height": 85 }
+			},
+			"Move": {
+				"Move/1": { "y": 45.94, "width": 81, "height": 92 },
+				"Move/2": { "x": 0.5, "y": 45.94, "width": 78, "height": 92 },
+				"Move/3": { "y": 47.5, "width": 75, "height": 92 },
+				"Move/4": { "x": 0.5, "y": 48.44, "width": 71, "height": 92 },
+				"Move/5": { "x": 0.5, "y": 46.25, "width": 71, "height": 92 },
+				"Move/6": { "x": 0.5, "y": 44.67, "width": 71, "height": 89 },
+				"Move/7": { "x": 0.5, "y": 48.13, "width": 71, "height": 92 },
+				"Move/8": { "x": 0.5, "y": 48.13, "width": 71, "height": 92 }
+			},
+			"Skill": {
+				"4. Moveup/Moveup1": { "y": 44.94, "width": 240, "height": 240 },
+				"4. Moveup/Moveup2": { "y": 44.94, "width": 240, "height": 240 },
+				"4. Moveup/Moveup3": { "y": 44.94, "width": 240, "height": 240 },
+				"4. Moveup/Moveup4": { "y": 44.94, "width": 240, "height": 240 },
+				"4. Moveup/Moveup5": { "y": 44.94, "width": 240, "height": 240 },
+				"4. Moveup/Moveup6": { "y": 44.94, "width": 240, "height": 240 },
+				"4. Moveup/Moveup7": { "y": 44.94, "width": 240, "height": 240 },
+				"4. Moveup/Moveup8": { "y": 44.94, "width": 240, "height": 240 }
+			}
+		}
+	}
+],
+"animations": {
+	"Die": {
+		"slots": {
+			"1": {
+				"attachment": [
+					{ "name": "Die/NV2_1" },
+					{ "time": 0.1333, "name": "Die/NV2_2" },
+					{ "time": 0.2667, "name": "Die/NV2_3" },
+					{ "time": 0.4, "name": "Die/NV2_4" },
+					{ "time": 0.5333, "name": "Die/NV2_5" },
+					{ "time": 0.6667, "name": "Die/NV2_6" },
+					{ "time": 0.8, "name": "Die/NV2_7" },
+					{ "time": 0.9333, "name": "Die/NV2_8" },
+					{ "time": 1.0667, "name": "Die/NV2_9" },
+					{ "time": 1.5, "name": "Die/NV2_9" }
+				]
+			}
+		}
+	},
+	"Idle": {
+		"slots": {
+			"Idel": {
+				"attachment": [
+					{ "name": "Idel/NV5_1" },
+					{ "time": 0.2, "name": "Idel/NV5_2" },
+					{ "time": 0.4, "name": "Idel/NV5_1" }
+				]
+			}
+		}
+	},
+	"Move": {
+		"slots": {
+			"Move": {
+				"attachment": [
+					{ "name": "Move/1" },
+					{ "time": 0.1, "name": "Move/2" },
+					{ "time": 0.2, "name": "Move/3" },
+					{ "time": 0.3, "name": "Move/4" },
+					{ "time": 0.4, "name": "Move/5" },
+					{ "time": 0.5, "name": "Move/6" },
+					{ "time": 0.6, "name": "Move/7" },
+					{ "time": 0.7, "name": "Move/8" }
+				]
+			}
+		}
+	},
+	"Skill": {
+		"slots": {
+			"Skill": {
+				"attachment": [
+					{ "name": "4. Moveup/Moveup1" },
+					{ "time": 0.0667, "name": "4. Moveup/Moveup2" },
+					{ "time": 0.1333, "name": "4. Moveup/Moveup3" },
+					{ "time": 0.2, "name": "4. Moveup/Moveup4" },
+					{ "time": 0.2667, "name": "4. Moveup/Moveup5" },
+					{ "time": 0.3333, "name": "4. Moveup/Moveup6" },
+					{ "time": 0.4, "name": "4. Moveup/Moveup7" },
+					{ "time": 0.4667, "name": "4. Moveup/Moveup8" }
+				]
+			}
+		}
+	}
+}
+}

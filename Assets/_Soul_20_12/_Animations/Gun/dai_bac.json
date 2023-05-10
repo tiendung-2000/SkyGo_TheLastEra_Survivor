@@ -1,0 +1,49 @@
+{
+"skeleton": {
+	"hash": "sEHBbPLYHgscM+fqHLSpuAdv1LE",
+	"spine": "3.8.99",
+	"x": -14.37,
+	"y": -1.97,
+	"width": 44,
+	"height": 21,
+	"images": "D:/PTS/Game Soul/images/",
+	"audio": "D:/PTS/Game Soul"
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "dai_bac1", "bone": "root", "attachment": "dai_bac1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"dai_bac1": {
+				"dai_bac1": { "x": 7.63, "y": 8.53, "width": 44, "height": 21 },
+				"dai_bac2": { "x": 14.9, "y": 14.3, "width": 110, "height": 31 },
+				"dai_bac3": { "x": 19.63, "y": 8.53, "width": 112, "height": 21 },
+				"dai_bac4": { "x": 7.13, "y": 11.53, "width": 79, "height": 31 },
+				"dai_bac5": { "x": 1.27, "y": 10.27, "width": 44, "height": 22 },
+				"dai_bac6": { "x": 7.63, "y": 8.53, "width": 44, "height": 21 }
+			}
+		}
+	}
+],
+"animations": {
+	"fire": {
+		"slots": {
+			"dai_bac1": {
+				"attachment": [
+					{ "time": 0.0667, "name": "dai_bac2" },
+					{ "time": 0.1, "name": "dai_bac3" },
+					{ "time": 0.2333, "name": "dai_bac5" },
+					{ "time": 0.3, "name": "dai_bac4" },
+					{ "time": 0.4333, "name": "dai_bac6" }
+				]
+			}
+		}
+	},
+	"neutral": {}
+}
+}

@@ -1,0 +1,363 @@
+
+Mini_Boss4.png
+size: 1682,173
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Die/Boss1
+  rotate: false
+  xy: 75, 3
+  size: 93, 56
+  orig: 112, 112
+  offset: 11, 23
+  index: -1
+Die/Boss10
+  rotate: true
+  xy: 1509, 96
+  size: 75, 53
+  orig: 112, 112
+  offset: 23, 23
+  index: -1
+Die/Boss11
+  rotate: true
+  xy: 913, 87
+  size: 84, 62
+  orig: 112, 112
+  offset: 17, 23
+  index: -1
+Die/Boss12
+  rotate: true
+  xy: 86, 68
+  size: 103, 67
+  orig: 112, 112
+  offset: 7, 23
+  index: -1
+Die/Boss13
+  rotate: true
+  xy: 155, 69
+  size: 102, 83
+  orig: 112, 112
+  offset: 7, 23
+  index: -1
+Die/Boss14
+  rotate: true
+  xy: 2, 61
+  size: 110, 82
+  orig: 112, 112
+  offset: 1, 23
+  index: -1
+Die/Boss15
+  rotate: true
+  xy: 240, 74
+  size: 97, 86
+  orig: 112, 112
+  offset: 13, 23
+  index: -1
+Die/Boss16
+  rotate: false
+  xy: 1027, 2
+  size: 69, 13
+  orig: 112, 112
+  offset: 23, 23
+  index: -1
+Die/Boss17
+  rotate: false
+  xy: 1098, 2
+  size: 69, 13
+  orig: 112, 112
+  offset: 23, 23
+  index: -1
+Die/Boss18
+  rotate: false
+  xy: 1169, 4
+  size: 69, 13
+  orig: 112, 112
+  offset: 23, 23
+  index: -1
+Die/Boss2
+  rotate: true
+  xy: 701, 80
+  size: 91, 56
+  orig: 112, 112
+  offset: 12, 23
+  index: -1
+Die/Boss3
+  rotate: true
+  xy: 643, 79
+  size: 92, 56
+  orig: 112, 112
+  offset: 13, 23
+  index: -1
+Die/Boss4
+  rotate: true
+  xy: 582, 78
+  size: 93, 59
+  orig: 112, 112
+  offset: 15, 23
+  index: -1
+Die/Boss5
+  rotate: true
+  xy: 393, 76
+  size: 95, 61
+  orig: 112, 112
+  offset: 15, 23
+  index: -1
+Die/Boss6
+  rotate: true
+  xy: 519, 77
+  size: 94, 61
+  orig: 112, 112
+  offset: 15, 23
+  index: -1
+Die/Boss7
+  rotate: true
+  xy: 456, 76
+  size: 95, 61
+  orig: 112, 112
+  offset: 15, 23
+  index: -1
+Die/Boss8
+  rotate: false
+  xy: 170, 4
+  size: 96, 63
+  orig: 112, 112
+  offset: 15, 23
+  index: -1
+Die/Boss9
+  rotate: true
+  xy: 328, 75
+  size: 96, 63
+  orig: 112, 112
+  offset: 15, 23
+  index: -1
+Idle/Boss1
+  rotate: true
+  xy: 448, 2
+  size: 72, 59
+  orig: 112, 112
+  offset: 20, 23
+  index: -1
+Idle/Boss2
+  rotate: true
+  xy: 328, 2
+  size: 71, 58
+  orig: 112, 112
+  offset: 21, 23
+  index: -1
+Idle/Boss3
+  rotate: false
+  xy: 2, 2
+  size: 71, 57
+  orig: 112, 112
+  offset: 21, 23
+  index: -1
+Idle/Boss4
+  rotate: true
+  xy: 388, 2
+  size: 71, 58
+  orig: 112, 112
+  offset: 21, 23
+  index: -1
+Idle/Boss5
+  rotate: true
+  xy: 268, 2
+  size: 70, 58
+  orig: 112, 112
+  offset: 22, 23
+  index: -1
+Skill1_Atk/Boss1
+  rotate: true
+  xy: 1131, 96
+  size: 75, 61
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Atk/Boss2
+  rotate: true
+  xy: 1181, 19
+  size: 75, 61
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Atk/Boss3
+  rotate: true
+  xy: 1194, 96
+  size: 75, 61
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Atk/Boss4
+  rotate: true
+  xy: 733, 2
+  size: 76, 61
+  orig: 112, 112
+  offset: 18, 23
+  index: -1
+Skill1_Atk/Boss5
+  rotate: true
+  xy: 1244, 19
+  size: 75, 61
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Atk/Boss6
+  rotate: true
+  xy: 1257, 96
+  size: 75, 61
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Atk/Boss7
+  rotate: true
+  xy: 1307, 19
+  size: 75, 61
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Atk/Boss8
+  rotate: true
+  xy: 509, 2
+  size: 72, 59
+  orig: 112, 112
+  offset: 20, 23
+  index: -1
+Skill1_Ready/Boss1
+  rotate: true
+  xy: 1564, 99
+  size: 72, 59
+  orig: 112, 112
+  offset: 20, 23
+  index: -1
+Skill1_Ready/Boss10
+  rotate: true
+  xy: 647, 2
+  size: 75, 84
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Ready/Boss11
+  rotate: false
+  xy: 759, 87
+  size: 75, 84
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Ready/Boss12
+  rotate: false
+  xy: 836, 87
+  size: 75, 84
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Ready/Boss13
+  rotate: false
+  xy: 873, 4
+  size: 75, 81
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Ready/Boss14
+  rotate: false
+  xy: 796, 3
+  size: 75, 82
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Ready/Boss15
+  rotate: false
+  xy: 977, 94
+  size: 75, 77
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Ready/Boss16
+  rotate: false
+  xy: 1027, 17
+  size: 75, 75
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Ready/Boss17
+  rotate: false
+  xy: 950, 7
+  size: 75, 78
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Ready/Boss18
+  rotate: false
+  xy: 1054, 96
+  size: 75, 75
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Ready/Boss19
+  rotate: false
+  xy: 1104, 19
+  size: 75, 75
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Ready/Boss2
+  rotate: true
+  xy: 1621, 25
+  size: 72, 59
+  orig: 112, 112
+  offset: 21, 23
+  index: -1
+Skill1_Ready/Boss20
+  rotate: false
+  xy: 570, 2
+  size: 75, 73
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Ready/Boss3
+  rotate: true
+  xy: 1559, 21
+  size: 73, 60
+  orig: 112, 112
+  offset: 21, 23
+  index: -1
+Skill1_Ready/Boss4
+  rotate: true
+  xy: 1320, 96
+  size: 75, 61
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Ready/Boss5
+  rotate: true
+  xy: 1370, 19
+  size: 75, 61
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Ready/Boss6
+  rotate: true
+  xy: 1383, 96
+  size: 75, 61
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Ready/Boss7
+  rotate: true
+  xy: 1433, 19
+  size: 75, 61
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Ready/Boss8
+  rotate: true
+  xy: 1446, 96
+  size: 75, 61
+  orig: 112, 112
+  offset: 19, 23
+  index: -1
+Skill1_Ready/Boss9
+  rotate: true
+  xy: 1496, 19
+  size: 75, 61
+  orig: 112, 112
+  offset: 19, 23
+  index: -1

@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3a27078579339d40a3fa362b6f51452, type: 3}
+  m_Name: LevelRewardData
+  m_EditorClassIdentifier: 
+  TotalReward: 10
+  Level: 00000000
+  RewardsData:
+  - isUnlock: 0
+    isClamed: 0
+    RewardName: 'Finish Level: 1'
+    RewardValue: 100000
+  - isUnlock: 0
+    isClamed: 0
+    RewardName: 'Finish Level: 2'
+    RewardValue: 100000
+  - isUnlock: 0
+    isClamed: 0
+    RewardName: 'Finish Level: 3'
+    RewardValue: 3333
+  - isUnlock: 0
+    isClamed: 0
+    RewardName: 'Finish Level: 4'
+    RewardValue: 4444
+  - isUnlock: 0
+    isClamed: 0
+    RewardName: 'Finish Level: 5'
+    RewardValue: 5555
+  - isUnlock: 0
+    isClamed: 0
+    RewardName: 'Finish Level: 6'
+    RewardValue: 6666
+  - isUnlock: 0
+    isClamed: 0
+    RewardName: 'Finish Level: 7'
+    RewardValue: 7777
+  - isUnlock: 0
+    isClamed: 0
+    RewardName: 'Finish Level: 8'
+    RewardValue: 8888
+  - isUnlock: 0
+    isClamed: 0
+    RewardName: 'Finish Level: 9'
+    RewardValue: 9999
+  - isUnlock: 0
+    isClamed: 0
+    RewardName: 'Finish Level: 10'
+    RewardValue: 1234

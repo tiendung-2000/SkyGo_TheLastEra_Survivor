@@ -1,0 +1,41 @@
+
+machine.png
+size: 52,76
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sung_may_nho
+  rotate: true
+  xy: 31, 42
+  size: 32, 19
+  orig: 34, 21
+  offset: 1, 1
+  index: -1
+sung_may_nho1
+  rotate: true
+  xy: 31, 42
+  size: 32, 19
+  orig: 34, 21
+  offset: 1, 1
+  index: -1
+sung_may_nho2
+  rotate: true
+  xy: 2, 29
+  size: 45, 27
+  orig: 47, 29
+  offset: 1, 1
+  index: -1
+sung_may_nho3
+  rotate: false
+  xy: 31, 38
+  size: 4, 2
+  orig: 6, 4
+  offset: 1, 1
+  index: -1
+sung_may_nho4
+  rotate: false
+  xy: 2, 2
+  size: 43, 25
+  orig: 45, 27
+  offset: 1, 1
+  index: -1

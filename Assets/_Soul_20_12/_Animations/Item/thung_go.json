@@ -1,0 +1,66 @@
+{
+"skeleton": {
+	"hash": "57YpvcenIYLH9L+62eYWJ1JonbQ",
+	"spine": "3.8.99",
+	"x": -16,
+	"y": -18,
+	"width": 33,
+	"height": 37,
+	"images": "D:/PTS/Game Soul/Demo_PNG/PNG_Item/thung_go/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root" },
+	{ "name": "Newtral", "parent": "root" }
+],
+"slots": [
+	{ "name": "Attack", "bone": "bone", "attachment": "thung_go2" },
+	{ "name": "Newtral", "bone": "Newtral" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Attack": {
+				"thung_go1": { "x": 0.5, "y": 0.5, "width": 33, "height": 37 },
+				"thung_go2": { "x": 0.5, "y": 0.5, "width": 33, "height": 37 },
+				"thung_go3": { "x": 0.5, "y": 0.5, "width": 43, "height": 49 },
+				"thung_go4": { "y": 0.5, "width": 66, "height": 63 },
+				"thung_go5": { "width": 112, "height": 68 },
+				"thung_go6": { "x": 0.5, "y": 0.5, "width": 175, "height": 53 },
+				"thung_go7": { "color": "ffffff8f", "x": 0.5, "y": 0.5, "width": 175, "height": 53 }
+			},
+			"Newtral": {
+				"thung_go1": { "x": 0.5, "y": 0.5, "width": 33, "height": 37 }
+			}
+		}
+	}
+],
+"animations": {
+	"Attack": {
+		"slots": {
+			"Attack": {
+				"attachment": [
+					{ "name": "thung_go1" },
+					{ "time": 0.0667, "name": "thung_go2" },
+					{ "time": 0.2, "name": "thung_go4" },
+					{ "time": 0.2667, "name": "thung_go5" },
+					{ "time": 0.3333, "name": "thung_go6" },
+					{ "time": 0.4, "name": "thung_go7" },
+					{ "time": 0.6, "name": null }
+				]
+			}
+		}
+	},
+	"Newtral": {
+		"slots": {
+			"Newtral": {
+				"attachment": [
+					{ "name": "thung_go1" }
+				]
+			}
+		}
+	}
+}
+}

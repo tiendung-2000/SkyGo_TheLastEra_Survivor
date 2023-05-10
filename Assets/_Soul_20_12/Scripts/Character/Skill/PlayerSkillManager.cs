@@ -1,0 +1,232 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerSkillManager : MonoBehaviour
+{
+    public static PlayerSkillManager instance;
+
+    public PlayerController player;
+    public int playerID;
+
+    public List<Skill> skills;
+    public List<float> currentDuration;
+    public List<float> currentCoolDown;
+
+    public float activeMoveSpeed;
+
+    [Header("DashSkill")]
+    public float dashSpeed = 16f;
+    public float dashDuration = .5f;
+    public float dashCooldown = 5f;
+    //public float dashInvincibility = .5f;
+
+    [Header("DualSkill")]
+    public bool dualChecker = false;
+    public float dualDuration = .5f;
+    public float dualCooldown = 5f;
+
+    [Header("HolyShieldSkill")]
+    public float holyShieldDuration = .5f;
+    public float holyShieldCooldown = 5f;
+
+    [Header("BulletNadeSkill")]
+    public float bulletNadeDuration = .5f;
+    public float bulletNadeCooldown = 5f;
+
+    [Header("SpeedSkill")]
+    public float speedDuration = .5f;
+    public float speedCooldown = 5f;
+
+    [HideInInspector]
+    public float timeCounter;
+
+    public float coolCounter;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
+
+    private void Start()
+    {
+        activeMoveSpeed = CharacterSelectManager.Ins.activePlayer.moveSpeed;
+
+        SetDurationCoolDown();
+    }
+
+    private void SetDurationCoolDown()
+    {
+        dashDuration = currentDuration[0];
+        dashCooldown = currentCoolDown[0];
+
+        dualDuration = currentDuration[1];
+        dualCooldown = currentCoolDown[1];
+
+        holyShieldDuration = currentDuration[2];
+        holyShieldCooldown = currentCoolDown[2];
+
+        bulletNadeDuration = currentDuration[3];
+        bulletNadeCooldown = currentCoolDown[3];
+
+        speedDuration = currentDuration[4];
+        speedCooldown = currentCoolDown[4];
+    }
+
+
+
+    private void Update()
+    {
+        player = CharacterSelectManager.Ins.activePlayer;
+        playerID = DynamicDataManager.Ins.CurPlayer;
+
+        if (timeCounter > 0 && PlayerController.Ins.currentState.Equals("Skill"))
+        {
+            timeCounter -= Time.deltaTime;
+            if (timeCounter <= 0)
+            {
+                PlayerController.Ins.SetCharacterState("Idle");
+                switch (playerID)
+                {
+                    case 0:
+                        player.canMove = true;
+                        ButtonControllerUI.Ins.CoolDown();
+                        break;
+                    case 1:
+                        player.canMove = true;
+                        player.availableDupliGuns[player.currentGun].gameObject.SetActive(false);
+                        ButtonControllerUI.Ins.CoolDown();
+
+                        break;
+                    case 2:
+                        player.canMove = true;
+                        player.col.enabled = true;
+                        ButtonControllerUI.Ins.CoolDown();
+
+                        break;
+                    case 3:
+                        Gun.Ins.canExplode = false;
+                        player.canMove = true;
+                        ButtonControllerUI.Ins.CoolDown();
+
+                        break;
+                    case 4:
+                        player.moveSpeed = Mathf.Round(player.moveSpeed * 0.66666f);
+                        player.canMove = true;
+                        ButtonControllerUI.Ins.CoolDown();
+
+                        break;
+                }
+
+                activeMoveSpeed = player.moveSpeed;
+            }
+                coolCounter = currentCoolDown[playerID];
+        }
+
+        if (coolCounter > 0)
+        {
+            coolCounter -= Time.deltaTime;
+        }
+    }
+
+    public void Dash()
+    {
+        if (coolCounter <= 0 && timeCounter <= 0)
+        {
+            player.canMove = false;
+            PlayerController.Ins.SetCharacterState("Skill");
+
+            activeMoveSpeed = dashSpeed;
+            timeCounter = currentDuration[playerID];
+        }
+    }
+
+    public void DualGun()
+    {
+        if (coolCounter <= 0 && timeCounter <= 0)
+        {
+            player.canMove = false;
+            PlayerController.Ins.SetCharacterState("Skill");
+
+            timeCounter = currentDuration[playerID];
+
+            dualChecker = true;
+            PlayerController.Ins.availableDupliGuns[PlayerController.Ins.currentGun].gameObject.SetActive(true);
+        }
+
+    }
+
+    public void HolyShield()
+    {
+        if (coolCounter <= 0 && timeCounter <= 0)
+        {
+            player.canMove = false;
+            PlayerController.Ins.SetCharacterState("Skill");
+
+            PlayerController.Ins.col.enabled = false;
+
+            timeCounter = currentDuration[playerID];
+        }
+    }
+
+    public void BulletGrenade()
+    {
+        if (coolCounter <= 0 && timeCounter <= 0)
+        {
+            //foreach( Gun gun in PlayerController.Ins.availableGuns)
+            //{
+            //    gun.canExplode = true;
+            //}         
+
+            Gun.Ins.canExplode = true;
+
+            player.canMove = false;
+            PlayerController.Ins.SetCharacterState("Skill");
+
+            timeCounter = currentDuration[playerID];
+        }
+    }
+
+    public void Speed()
+    {
+        if (coolCounter <= 0 && timeCounter <= 0)
+        {
+            player.canMove = false;
+            PlayerController.Ins.SetCharacterState("Skill");
+
+            timeCounter = currentDuration[playerID];
+            PlayerController.Ins.moveSpeed *= 1.5f;
+        }
+    }
+
+    public void UpdateSkillCoolDown()
+    {
+        switch (DynamicDataManager.Ins.CurPlayer)
+        {
+            case 0:
+                dashCooldown = ResourceSystem.Ins.CharactersDatabase.Characters[0].Data.CoolDown[DynamicDataManager.Ins.CurPlayerCooldownUpgrade];
+                break;
+
+            case 1:
+                dualCooldown = ResourceSystem.Ins.CharactersDatabase.Characters[1].Data.CoolDown[DynamicDataManager.Ins.CurPlayerCooldownUpgrade];
+                break;
+
+            case 2:
+                holyShieldCooldown = ResourceSystem.Ins.CharactersDatabase.Characters[2].Data.CoolDown[DynamicDataManager.Ins.CurPlayerCooldownUpgrade];
+                break;
+
+            case 3:
+                bulletNadeCooldown = ResourceSystem.Ins.CharactersDatabase.Characters[3].Data.CoolDown[DynamicDataManager.Ins.CurPlayerCooldownUpgrade];
+                break;
+
+            case 4:
+                speedCooldown = ResourceSystem.Ins.CharactersDatabase.Characters[4].Data.CoolDown[DynamicDataManager.Ins.CurPlayerCooldownUpgrade];
+                break;
+            default:
+                print("Incorrect intelligence level.");
+                break;
+        }
+    }
+}

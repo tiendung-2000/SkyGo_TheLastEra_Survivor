@@ -1,0 +1,47 @@
+{
+"skeleton": {
+	"hash": "60CyNvTj46qepwLRzX3dtSnZVto",
+	"spine": "3.8.99",
+	"x": -3.68,
+	"y": -5.09,
+	"width": 34,
+	"height": 21,
+	"images": "D:/PTS/Game Soul/images/",
+	"audio": "D:/PTS/Game Soul"
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "sung_may_nho", "bone": "root", "attachment": "sung_may_nho" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"sung_may_nho": {
+				"sung_may_nho": { "x": 13.32, "y": 5.41, "width": 34, "height": 21 },
+				"sung_may_nho1": { "x": 13.32, "y": 5.41, "width": 34, "height": 21 },
+				"sung_may_nho2": { "x": 18.18, "y": 9.41, "width": 47, "height": 29 },
+				"sung_may_nho3": { "x": 10.32, "y": -3.09, "width": 6, "height": 4 },
+				"sung_may_nho4": { "x": 18.82, "y": 8.41, "width": 45, "height": 27 }
+			}
+		}
+	}
+],
+"animations": {
+	"fire": {
+		"slots": {
+			"sung_may_nho": {
+				"attachment": [
+					{ "name": "sung_may_nho1" },
+					{ "time": 0.0333, "name": "sung_may_nho2" },
+					{ "time": 0.0667, "name": "sung_may_nho4" },
+					{ "time": 0.1, "name": "sung_may_nho1" }
+				]
+			}
+		}
+	},
+	"neutral": {}
+}
+}

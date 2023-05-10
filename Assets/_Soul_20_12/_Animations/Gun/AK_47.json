@@ -1,0 +1,47 @@
+{
+"skeleton": {
+	"hash": "xqc6B83OOEjc5SghcEDpdzZ/jwE",
+	"spine": "3.8.99",
+	"x": -9.33,
+	"y": -5.21,
+	"width": 46,
+	"height": 17,
+	"images": "D:/PTS/Game Soul/images/",
+	"audio": "D:/PTS/Game Soul"
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "AK1", "bone": "root", "attachment": "AK1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"AK1": {
+				"AK1": { "x": 13.67, "y": 3.29, "width": 46, "height": 17 },
+				"AK2": { "x": 26.79, "y": 3.77, "width": 85, "height": 18 },
+				"AK3": { "x": 31.43, "y": 3.29, "width": 78, "height": 19 }
+			}
+		}
+	}
+],
+"animations": {
+	"fire": {
+		"slots": {
+			"AK1": {
+				"attachment": [
+					{ "time": 0.0333, "name": "AK3" },
+					{ "time": 0.0667, "name": "AK1" },
+					{ "time": 0.1, "name": "AK2" },
+					{ "time": 0.1333, "name": "AK1" },
+					{ "time": 0.1667, "name": "AK3" },
+					{ "time": 0.2, "name": "AK1" }
+				]
+			}
+		}
+	},
+	"neutral": {}
+}
+}

@@ -1,0 +1,388 @@
+{
+"skeleton": {
+	"hash": "8jc4SuwcoXy2cuV9mMEHrR2RvTM",
+	"spine": "3.8.99",
+	"x": -40,
+	"y": -7.51,
+	"width": 80,
+	"height": 80.64,
+	"images": "D:/PTS/Game Soul/File_Anh_Long/Sprite_Mini_Boss/Mini_Boss_3_80x80/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "Die", "parent": "root" },
+	{ "name": "Idel", "parent": "root" },
+	{ "name": "Skill1_Attack", "parent": "root" },
+	{ "name": "Skill1_Ready", "parent": "root" },
+	{ "name": "Skill2_Attack", "parent": "root" },
+	{ "name": "Skill2_Ready", "parent": "root" },
+	{ "name": "Skill3_Attack", "parent": "root", "y": 0.36 },
+	{ "name": "SKill3_Ready", "parent": "Skill3_Attack", "y": -0.91 }
+],
+"slots": [
+	{ "name": "Die", "bone": "Die" },
+	{ "name": "Idel", "bone": "Idel" },
+	{ "name": "Skill1_Attack", "bone": "Skill1_Attack" },
+	{ "name": "Skill1_Ready", "bone": "Skill1_Ready" },
+	{ "name": "Skill2_Attack", "bone": "Skill2_Attack" },
+	{ "name": "Skill2_Ready", "bone": "Skill2_Ready", "attachment": "Skill2_Ready/Mons5" },
+	{ "name": "Skill3_Attack", "bone": "Skill3_Attack", "attachment": "Skill3_Atk/Mons8" },
+	{ "name": "Skill3_Ready", "bone": "SKill3_Ready", "attachment": "Skill3_Rady/Mons5" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Die": {
+				"Die/Mons1": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons2": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons3": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons4": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons5": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons6": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons7": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons8": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons9": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons10": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons11": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons12": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons13": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons14": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons15": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons16": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons17": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons18": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons19": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons20": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons21": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons22": { "y": 31.92, "width": 80, "height": 80 },
+				"Die/Mons23": { "y": 31.92, "width": 80, "height": 80 }
+			},
+			"Idel": {
+				"Idle/Mons1": { "y": 33.54, "width": 80, "height": 80 },
+				"Idle/Mons2": { "y": 33.54, "width": 80, "height": 80 },
+				"Idle/Mons3": { "y": 33.54, "width": 80, "height": 80 },
+				"Idle/Mons4": { "y": 33.54, "width": 80, "height": 80 }
+			},
+			"Skill1_Attack": {
+				"Skill1_Atk/Mons1": { "y": 33.08, "width": 80, "height": 80 },
+				"Skill1_Atk/Mons2": { "y": 33.08, "width": 80, "height": 80 },
+				"Skill1_Atk/Mons3": { "y": 33.08, "width": 80, "height": 80 },
+				"Skill1_Atk/Mons4": { "y": 33.08, "width": 80, "height": 80 },
+				"Skill1_Atk/Mons5": { "y": 33.08, "width": 80, "height": 80 },
+				"Skill1_Atk/Mons6": { "y": 33.08, "width": 80, "height": 80 },
+				"Skill1_Atk/Mons7": { "y": 33.08, "width": 80, "height": 80 },
+				"Skill1_Atk/Mons8": { "y": 33.08, "width": 80, "height": 80 }
+			},
+			"Skill1_Ready": {
+				"Skill1_Ready/Mons1": { "y": 33.01, "width": 80, "height": 80 },
+				"Skill1_Ready/Mons2": { "y": 33.01, "width": 80, "height": 80 },
+				"Skill1_Ready/Mons3": { "y": 33.01, "width": 80, "height": 80 },
+				"Skill1_Ready/Mons4": { "y": 33.01, "width": 80, "height": 80 },
+				"Skill1_Ready/Mons5": { "y": 33.01, "width": 80, "height": 80 }
+			},
+			"Skill2_Attack": {
+				"Skill2_Atk/Mons1": { "y": 33.28, "width": 80, "height": 80 },
+				"Skill2_Atk/Mons2": { "y": 33.28, "width": 80, "height": 80 },
+				"Skill2_Atk/Mons3": { "y": 33.28, "width": 80, "height": 80 },
+				"Skill2_Atk/Mons4": { "y": 33.28, "width": 80, "height": 80 },
+				"Skill2_Atk/Mons5": { "y": 33.28, "width": 80, "height": 80 },
+				"Skill2_Atk/Mons6": { "y": 33.28, "width": 80, "height": 80 },
+				"Skill2_Atk/Mons7": { "y": 33.28, "width": 80, "height": 80 },
+				"Skill2_Atk/Mons8": { "y": 33.28, "width": 80, "height": 80 },
+				"Skill2_Atk/Mons9": { "y": 33.28, "width": 80, "height": 80 },
+				"Skill2_Atk/Mons10": { "y": 33.28, "width": 80, "height": 80 },
+				"Skill2_Atk/Mons11": { "y": 33.28, "width": 80, "height": 80 },
+				"Skill2_Atk/Mons12": { "y": 33.28, "width": 80, "height": 80 },
+				"Skill2_Atk/Mons13": { "y": 33.28, "width": 80, "height": 80 },
+				"Skill2_Atk/Mons14": { "y": 33.28, "width": 80, "height": 80 },
+				"Skill2_Atk/Mons15": { "y": 33.28, "width": 80, "height": 80 },
+				"Skill2_Atk/Mons16": { "y": 33.28, "width": 80, "height": 80 }
+			},
+			"Skill2_Ready": {
+				"Skill2_Ready/Mons1": { "y": 32.89, "width": 80, "height": 80 },
+				"Skill2_Ready/Mons2": { "y": 32.89, "width": 80, "height": 80 },
+				"Skill2_Ready/Mons3": { "y": 32.89, "width": 80, "height": 80 },
+				"Skill2_Ready/Mons4": { "y": 32.89, "width": 80, "height": 80 },
+				"Skill2_Ready/Mons5": { "y": 32.89, "width": 80, "height": 80 }
+			},
+			"Skill3_Attack": {
+				"Skill3_Atk/Mons1": { "y": 32.76, "width": 80, "height": 80 },
+				"Skill3_Atk/Mons2": { "y": 32.76, "width": 80, "height": 80 },
+				"Skill3_Atk/Mons3": { "y": 32.76, "width": 80, "height": 80 },
+				"Skill3_Atk/Mons4": { "y": 32.76, "width": 80, "height": 80 },
+				"Skill3_Atk/Mons5": { "y": 32.76, "width": 80, "height": 80 },
+				"Skill3_Atk/Mons6": { "y": 32.76, "width": 80, "height": 80 },
+				"Skill3_Atk/Mons7": { "y": 32.76, "width": 80, "height": 80 },
+				"Skill3_Atk/Mons8": { "y": 32.76, "width": 80, "height": 80 }
+			},
+			"Skill3_Ready": {
+				"Skill3_Rady/Mons1": { "y": 33.03, "width": 80, "height": 80 },
+				"Skill3_Rady/Mons2": { "y": 33.03, "width": 80, "height": 80 },
+				"Skill3_Rady/Mons3": { "y": 33.03, "width": 80, "height": 80 },
+				"Skill3_Rady/Mons4": { "y": 33.03, "width": 80, "height": 80 },
+				"Skill3_Rady/Mons5": { "y": 33.03, "width": 80, "height": 80 }
+			}
+		}
+	}
+],
+"animations": {
+	"Die": {
+		"slots": {
+			"Die": {
+				"attachment": [
+					{ "name": "Die/Mons1" },
+					{ "time": 0.1, "name": "Die/Mons2" },
+					{ "time": 0.2, "name": "Die/Mons3" },
+					{ "time": 0.3, "name": "Die/Mons4" },
+					{ "time": 0.4, "name": "Die/Mons5" },
+					{ "time": 0.6, "name": "Die/Mons6" },
+					{ "time": 0.6667, "name": "Die/Mons7" },
+					{ "time": 0.7333, "name": "Die/Mons8" },
+					{ "time": 0.8, "name": "Die/Mons9" },
+					{ "time": 0.8667, "name": "Die/Mons10" },
+					{ "time": 0.9333, "name": "Die/Mons11" },
+					{ "time": 1, "name": "Die/Mons12" },
+					{ "time": 1.0667, "name": "Die/Mons13" },
+					{ "time": 1.1333, "name": "Die/Mons14" },
+					{ "time": 1.2, "name": "Die/Mons15" },
+					{ "time": 1.2667, "name": "Die/Mons16" },
+					{ "time": 1.4, "name": "Die/Mons17" },
+					{ "time": 1.4667, "name": "Die/Mons18" },
+					{ "time": 1.5333, "name": "Die/Mons19" },
+					{ "time": 1.6, "name": "Die/Mons20" },
+					{ "time": 1.6667, "name": "Die/Mons21" },
+					{ "time": 1.7333, "name": "Die/Mons22" },
+					{ "time": 1.8, "name": "Die/Mons23" },
+					{ "time": 1.8667, "name": null }
+				]
+			},
+			"Skill2_Ready": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Skill3_Attack": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Skill3_Ready": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		}
+	},
+	"Idle": {
+		"slots": {
+			"Idel": {
+				"attachment": [
+					{ "name": "Idle/Mons1" },
+					{ "time": 0.1, "name": "Idle/Mons2" },
+					{ "time": 0.1667, "name": "Idle/Mons3" },
+					{ "time": 0.3, "name": "Idle/Mons4" },
+					{ "time": 0.3667, "name": "Idle/Mons1" },
+					{ "time": 0.4667, "name": "Idle/Mons2" },
+					{ "time": 0.5333, "name": "Idle/Mons3" },
+					{ "time": 0.6667, "name": "Idle/Mons4" },
+					{ "time": 0.7333, "name": "Idle/Mons1" },
+					{ "time": 0.8333, "name": "Idle/Mons2" },
+					{ "time": 0.9, "name": "Idle/Mons3" },
+					{ "time": 1.0333, "name": "Idle/Mons4" },
+					{ "time": 1.1, "name": "Idle/Mons1" },
+					{ "time": 1.2, "name": "Idle/Mons2" },
+					{ "time": 1.2667, "name": "Idle/Mons3" },
+					{ "time": 1.4, "name": "Idle/Mons4" }
+				]
+			},
+			"Skill2_Ready": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Skill3_Attack": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Skill3_Ready": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		}
+	},
+	"Skill1_Attack": {
+		"slots": {
+			"Skill1_Attack": {
+				"attachment": [
+					{ "name": "Skill1_Atk/Mons1" },
+					{ "time": 0.0667, "name": "Skill1_Atk/Mons2" },
+					{ "time": 0.1667, "name": "Skill1_Atk/Mons3" },
+					{ "time": 0.2333, "name": "Skill1_Atk/Mons4" },
+					{ "time": 0.3, "name": "Skill1_Atk/Mons5" },
+					{ "time": 0.4333, "name": "Skill1_Atk/Mons6" },
+					{ "time": 0.5333, "name": "Skill1_Atk/Mons7" },
+					{ "time": 0.6, "name": "Skill1_Atk/Mons8" }
+				]
+			},
+			"Skill2_Ready": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Skill3_Attack": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Skill3_Ready": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		}
+	},
+	"Skill1_Ready": {
+		"slots": {
+			"Skill1_Ready": {
+				"attachment": [
+					{ "name": "Skill1_Ready/Mons1" },
+					{ "time": 0.0667, "name": "Skill1_Ready/Mons2" },
+					{ "time": 0.1333, "name": "Skill1_Ready/Mons3" },
+					{ "time": 0.2, "name": "Skill1_Ready/Mons4" },
+					{ "time": 0.2667, "name": "Skill1_Ready/Mons5" }
+				]
+			},
+			"Skill2_Ready": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Skill3_Attack": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Skill3_Ready": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		}
+	},
+	"Skill2_Attack": {
+		"slots": {
+			"Skill2_Attack": {
+				"attachment": [
+					{ "name": "Skill2_Atk/Mons1" },
+					{ "time": 0.0667, "name": "Skill2_Atk/Mons2" },
+					{ "time": 0.2, "name": "Skill2_Atk/Mons3" },
+					{ "time": 0.2667, "name": "Skill2_Atk/Mons4" },
+					{ "time": 0.3667, "name": "Skill2_Atk/Mons5" },
+					{ "time": 0.4667, "name": "Skill2_Atk/Mons6" },
+					{ "time": 0.5667, "name": "Skill2_Atk/Mons7" },
+					{ "time": 0.6333, "name": "Skill2_Atk/Mons8" },
+					{ "time": 0.7667, "name": "Skill2_Atk/Mons9" },
+					{ "time": 0.8333, "name": "Skill2_Atk/Mons10" },
+					{ "time": 0.9333, "name": "Skill2_Atk/Mons11" },
+					{ "time": 1.0333, "name": "Skill2_Atk/Mons12" },
+					{ "time": 1.1333, "name": "Skill2_Atk/Mons13" },
+					{ "time": 1.2, "name": "Skill2_Atk/Mons14" },
+					{ "time": 1.3333, "name": "Skill2_Atk/Mons15" },
+					{ "time": 1.4667, "name": "Skill2_Atk/Mons16" }
+				]
+			},
+			"Skill2_Ready": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Skill3_Attack": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Skill3_Ready": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		}
+	},
+	"Skill2_Ready": {
+		"slots": {
+			"Skill2_Ready": {
+				"attachment": [
+					{ "name": "Skill2_Ready/Mons1" },
+					{ "time": 0.1, "name": "Skill2_Ready/Mons2" },
+					{ "time": 0.1667, "name": "Skill2_Ready/Mons3" },
+					{ "time": 0.2667, "name": "Skill2_Ready/Mons4" },
+					{ "time": 0.3667, "name": "Skill2_Ready/Mons5" }
+				]
+			},
+			"Skill3_Attack": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Skill3_Ready": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		}
+	},
+	"Skill3_Attack": {
+		"slots": {
+			"Skill2_Ready": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Skill3_Attack": {
+				"attachment": [
+					{ "name": "Skill3_Atk/Mons1" },
+					{ "time": 0.1, "name": "Skill3_Atk/Mons2" },
+					{ "time": 0.1667, "name": "Skill3_Atk/Mons3" },
+					{ "time": 0.2333, "name": "Skill3_Atk/Mons4" },
+					{ "time": 0.3, "name": "Skill3_Atk/Mons5" },
+					{ "time": 0.4333, "name": "Skill3_Atk/Mons6" },
+					{ "time": 0.5333, "name": "Skill3_Atk/Mons7" },
+					{ "time": 0.6, "name": "Skill3_Atk/Mons8" }
+				]
+			},
+			"Skill3_Ready": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		}
+	},
+	"Skill3_Ready": {
+		"slots": {
+			"Skill2_Ready": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Skill3_Attack": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Skill3_Ready": {
+				"attachment": [
+					{ "name": "Skill3_Rady/Mons1" },
+					{ "time": 0.0667, "name": "Skill3_Rady/Mons2" },
+					{ "time": 0.1333, "name": "Skill3_Rady/Mons3" },
+					{ "time": 0.2, "name": "Skill3_Rady/Mons4" },
+					{ "time": 0.2667, "name": "Skill3_Rady/Mons5" }
+				]
+			}
+		}
+	}
+}
+}

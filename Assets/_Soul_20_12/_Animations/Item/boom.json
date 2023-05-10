@@ -1,0 +1,78 @@
+{
+"skeleton": { "hash": "FExYq73VcJiWyeXpgzwxVXG2/9E", "spine": "3.8.99", "images": "D:/PTS/Game Soul/Demo_PNG/PNG_Item/thuoc_sung_boom/", "audio": "" },
+"bones": [
+	{ "name": "boom" },
+	{ "name": "bone", "parent": "boom" },
+	{ "name": "Newtral", "parent": "boom" }
+],
+"slots": [
+	{ "name": "bom", "bone": "bone" },
+	{ "name": "newtral", "bone": "Newtral" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bom": {
+				"thuoc_sung_bom4": { "width": 62, "height": 88 },
+				"thuoc_sung_bom5": { "x": 0.5, "y": 0.5, "width": 79, "height": 91 },
+				"thuoc_sung_bom6": { "x": 0.5, "y": 0.5, "width": 107, "height": 119 },
+				"thuoc_sung_bom7": { "x": 0.5, "y": 0.5, "width": 115, "height": 115 },
+				"thuoc_sung_bom8": { "width": 200, "height": 200 },
+				"thuoc_sung_bom9": { "width": 200, "height": 200 },
+				"thuoc_sung_bom10": { "width": 172, "height": 172 },
+				"thuoc_sung_bom11": { "width": 172, "height": 172 },
+				"thuoc_sung_bom12": { "width": 172, "height": 168 },
+				"thuoc_sung_bom13": { "width": 160, "height": 160 },
+				"thuoc_sung_bom14": { "width": 154, "height": 152 },
+				"thuoc_sung_bom15": { "width": 136, "height": 136 },
+				"thuoc_sung_boom1": { "width": 66, "height": 76 },
+				"thuoc_sung_boom2": { "width": 66, "height": 70 },
+				"thuoc_sung_boom3": { "width": 66, "height": 76 }
+			},
+			"newtral": {
+				"thuoc_sung_boom1": { "width": 66, "height": 76 },
+				"thuoc_sung_boom2": { "width": 66, "height": 70 },
+				"thuoc_sung_boom3": { "width": 66, "height": 76 }
+			}
+		}
+	}
+],
+"animations": {
+	"Boom": {
+		"slots": {
+			"bom": {
+				"attachment": [
+					{ "name": "thuoc_sung_boom1" },
+					{ "time": 0.0667, "name": "thuoc_sung_boom2" },
+					{ "time": 0.1333, "name": "thuoc_sung_boom3" },
+					{ "time": 0.4333, "name": "thuoc_sung_bom4" },
+					{ "time": 0.4667, "name": "thuoc_sung_bom5" },
+					{ "time": 0.5, "name": "thuoc_sung_bom6" },
+					{ "time": 0.6, "name": "thuoc_sung_bom7" },
+					{ "time": 0.6333, "name": "thuoc_sung_bom8" },
+					{ "time": 0.6667, "name": "thuoc_sung_bom9" },
+					{ "time": 0.7333, "name": "thuoc_sung_bom10" },
+					{ "time": 0.7667, "name": "thuoc_sung_bom11" },
+					{ "time": 0.8, "name": "thuoc_sung_bom12" },
+					{ "time": 0.8333, "name": "thuoc_sung_bom13" },
+					{ "time": 0.8667, "name": "thuoc_sung_bom14" },
+					{ "time": 0.9333, "name": "thuoc_sung_bom15" },
+					{ "time": 0.9667, "name": null }
+				]
+			}
+		}
+	},
+	"Newtral": {
+		"slots": {
+			"newtral": {
+				"attachment": [
+					{ "name": "thuoc_sung_boom1" },
+					{ "time": 0.1667, "name": "thuoc_sung_boom2" },
+					{ "time": 0.3333, "name": null }
+				]
+			}
+		}
+	}
+}
+}

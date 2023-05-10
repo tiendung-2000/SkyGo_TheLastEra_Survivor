@@ -1,0 +1,160 @@
+
+M8.png
+size: 193,78
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Attack/Mons_no_body1
+  rotate: true
+  xy: 22, 4
+  size: 25, 10
+  orig: 64, 64
+  offset: 17, 17
+  index: -1
+Attack/Mons_no_body2
+  rotate: true
+  xy: 96, 37
+  size: 39, 11
+  orig: 64, 64
+  offset: 4, 17
+  index: -1
+Attack/Mons_no_body3
+  rotate: true
+  xy: 64, 36
+  size: 40, 13
+  orig: 64, 64
+  offset: 3, 17
+  index: -1
+Attack/Mons_no_body4
+  rotate: true
+  xy: 79, 37
+  size: 39, 15
+  orig: 64, 64
+  offset: 4, 17
+  index: -1
+Attack/Mons_no_body5
+  rotate: true
+  xy: 109, 38
+  size: 38, 15
+  orig: 64, 64
+  offset: 4, 17
+  index: -1
+Attack/Mons_no_body6
+  rotate: false
+  xy: 153, 18
+  size: 36, 19
+  orig: 64, 64
+  offset: 6, 17
+  index: -1
+Attack/Mons_no_body7
+  rotate: true
+  xy: 126, 39
+  size: 37, 22
+  orig: 64, 64
+  offset: 5, 16
+  index: -1
+Attack/Mons_no_body8
+  rotate: true
+  xy: 150, 39
+  size: 37, 21
+  orig: 64, 64
+  offset: 5, 17
+  index: -1
+Attack/Mons_no_body9
+  rotate: false
+  xy: 114, 12
+  size: 37, 24
+  orig: 64, 64
+  offset: 5, 15
+  index: -1
+Die/Mons1
+  rotate: false
+  xy: 2, 2
+  size: 18, 27
+  orig: 64, 64
+  offset: 24, 21
+  index: -1
+Die/Mons10
+  rotate: false
+  xy: 173, 42
+  size: 18, 14
+  orig: 64, 64
+  offset: 45, 16
+  index: -1
+Die/Mons2
+  rotate: false
+  xy: 34, 2
+  size: 22, 30
+  orig: 64, 64
+  offset: 23, 20
+  index: -1
+Die/Mons3
+  rotate: false
+  xy: 58, 2
+  size: 36, 32
+  orig: 64, 64
+  offset: 18, 16
+  index: -1
+Die/Mons4
+  rotate: true
+  xy: 2, 31
+  size: 45, 21
+  orig: 64, 64
+  offset: 17, 16
+  index: -1
+Die/Mons5
+  rotate: true
+  xy: 41, 36
+  size: 40, 21
+  orig: 64, 64
+  offset: 24, 16
+  index: -1
+Die/Mons6
+  rotate: true
+  xy: 25, 34
+  size: 42, 14
+  orig: 64, 64
+  offset: 21, 16
+  index: -1
+Die/Mons7
+  rotate: false
+  xy: 153, 2
+  size: 18, 14
+  orig: 64, 64
+  offset: 45, 16
+  index: -1
+Die/Mons8
+  rotate: false
+  xy: 173, 2
+  size: 18, 14
+  orig: 64, 64
+  offset: 45, 16
+  index: -1
+Die/Mons9
+  rotate: true
+  xy: 173, 58
+  size: 18, 14
+  orig: 64, 64
+  offset: 45, 16
+  index: -1
+Idle/Mons_No_Gun1
+  rotate: false
+  xy: 96, 6
+  size: 16, 29
+  orig: 64, 64
+  offset: 24, 19
+  index: -1
+Idle/Mons_No_Gun2
+  rotate: false
+  xy: 96, 6
+  size: 16, 29
+  orig: 64, 64
+  offset: 24, 20
+  index: -1
+Idle/Mons_No_Gun3
+  rotate: false
+  xy: 96, 6
+  size: 16, 29
+  orig: 64, 64
+  offset: 24, 19
+  index: -1

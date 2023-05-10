@@ -1,0 +1,314 @@
+
+5item.png
+size: 1727,287
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gold/vang1
+  rotate: false
+  xy: 2, 3
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+gold/vang2
+  rotate: true
+  xy: 1645, 143
+  size: 60, 80
+  orig: 60, 80
+  offset: 0, 0
+  index: -1
+gold/vang3
+  rotate: true
+  xy: 1425, 151
+  size: 40, 80
+  orig: 40, 80
+  offset: 0, 0
+  index: -1
+gold/vang4
+  rotate: true
+  xy: 1645, 13
+  size: 60, 80
+  orig: 60, 80
+  offset: 0, 0
+  index: -1
+gold/vang5
+  rotate: false
+  xy: 84, 3
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+hoi_mau/heal1
+  rotate: false
+  xy: 1425, 193
+  size: 71, 92
+  orig: 71, 92
+  offset: 0, 0
+  index: -1
+hoi_mau/heal10
+  rotate: false
+  xy: 562, 2
+  size: 72, 109
+  orig: 72, 109
+  offset: 0, 0
+  index: -1
+hoi_mau/heal11
+  rotate: false
+  xy: 1314, 35
+  size: 73, 112
+  orig: 73, 112
+  offset: 0, 0
+  index: -1
+hoi_mau/heal12
+  rotate: false
+  xy: 1051, 7
+  size: 72, 118
+  orig: 72, 118
+  offset: 0, 0
+  index: -1
+hoi_mau/heal2
+  rotate: false
+  xy: 978, 15
+  size: 71, 98
+  orig: 71, 98
+  offset: 0, 0
+  index: -1
+hoi_mau/heal3
+  rotate: false
+  xy: 830, 10
+  size: 71, 103
+  orig: 71, 103
+  offset: 0, 0
+  index: -1
+hoi_mau/heal4
+  rotate: false
+  xy: 636, 2
+  size: 71, 109
+  orig: 71, 109
+  offset: 0, 0
+  index: -1
+hoi_mau/heal5
+  rotate: false
+  xy: 1242, 19
+  size: 70, 114
+  orig: 70, 114
+  offset: 0, 0
+  index: -1
+hoi_mau/heal6
+  rotate: true
+  xy: 1504, 11
+  size: 48, 61
+  orig: 48, 61
+  offset: 0, 0
+  index: -1
+hoi_mau/heal7
+  rotate: false
+  xy: 903, 15
+  size: 73, 98
+  orig: 73, 98
+  offset: 0, 0
+  index: -1
+hoi_mau/heal8
+  rotate: false
+  xy: 412, 5
+  size: 73, 103
+  orig: 73, 103
+  offset: 0, 0
+  index: -1
+hoi_mau/heal9
+  rotate: false
+  xy: 487, 2
+  size: 73, 109
+  orig: 73, 109
+  offset: 0, 0
+  index: -1
+khien/Ellipse1
+  rotate: false
+  xy: 166, 3
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+khien/Ellipse2
+  rotate: false
+  xy: 248, 3
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+khien/Ellipse3
+  rotate: false
+  xy: 330, 3
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+khien/Ellipse4
+  rotate: false
+  xy: 1523, 73
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+khien/Ellipse5
+  rotate: false
+  xy: 1645, 205
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+thung_go/thung_go1
+  rotate: false
+  xy: 1507, 155
+  size: 33, 37
+  orig: 33, 37
+  offset: 0, 0
+  index: -1
+thung_go/thung_go2
+  rotate: false
+  xy: 1542, 155
+  size: 33, 37
+  orig: 33, 37
+  offset: 0, 0
+  index: -1
+thung_go/thung_go3
+  rotate: false
+  xy: 1459, 10
+  size: 43, 49
+  orig: 43, 49
+  offset: 0, 0
+  index: -1
+thung_go/thung_go4
+  rotate: true
+  xy: 1579, 219
+  size: 66, 63
+  orig: 66, 63
+  offset: 0, 0
+  index: -1
+thung_go/thung_go5
+  rotate: true
+  xy: 1389, 35
+  size: 112, 68
+  orig: 112, 68
+  offset: 0, 0
+  index: -1
+thung_go/thung_go7
+  rotate: true
+  xy: 406, 110
+  size: 175, 53
+  orig: 175, 53
+  offset: 0, 0
+  index: -1
+thung_go/thung_go6
+  rotate: true
+  xy: 406, 110
+  size: 175, 53
+  orig: 175, 53
+  offset: 0, 0
+  index: -1
+thuoc_sung_boom/thuoc_sung_bom10
+  rotate: false
+  xy: 461, 113
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+thuoc_sung_boom/thuoc_sung_bom11
+  rotate: false
+  xy: 635, 113
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+thuoc_sung_boom/thuoc_sung_bom12
+  rotate: true
+  xy: 809, 115
+  size: 170, 168
+  orig: 172, 168
+  offset: 1, 0
+  index: -1
+thuoc_sung_boom/thuoc_sung_bom13
+  rotate: false
+  xy: 979, 127
+  size: 158, 158
+  orig: 160, 160
+  offset: 1, 1
+  index: -1
+thuoc_sung_boom/thuoc_sung_bom14
+  rotate: true
+  xy: 1139, 135
+  size: 150, 146
+  orig: 154, 152
+  offset: 2, 3
+  index: -1
+thuoc_sung_boom/thuoc_sung_bom15
+  rotate: false
+  xy: 1287, 149
+  size: 136, 136
+  orig: 136, 136
+  offset: 0, 0
+  index: -1
+thuoc_sung_boom/thuoc_sung_bom4
+  rotate: false
+  xy: 1459, 61
+  size: 62, 88
+  orig: 62, 88
+  offset: 0, 0
+  index: -1
+thuoc_sung_boom/thuoc_sung_bom5
+  rotate: false
+  xy: 1498, 194
+  size: 79, 91
+  orig: 79, 91
+  offset: 0, 0
+  index: -1
+thuoc_sung_boom/thuoc_sung_bom6
+  rotate: true
+  xy: 709, 4
+  size: 107, 119
+  orig: 107, 119
+  offset: 0, 0
+  index: -1
+thuoc_sung_boom/thuoc_sung_bom7
+  rotate: false
+  xy: 1125, 10
+  size: 115, 115
+  orig: 115, 115
+  offset: 0, 0
+  index: -1
+thuoc_sung_boom/thuoc_sung_bom8
+  rotate: false
+  xy: 2, 85
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+thuoc_sung_boom/thuoc_sung_bom9
+  rotate: false
+  xy: 204, 85
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+thuoc_sung_boom/thuoc_sung_boom1
+  rotate: true
+  xy: 1567, 5
+  size: 66, 76
+  orig: 66, 76
+  offset: 0, 0
+  index: -1
+thuoc_sung_boom/thuoc_sung_boom3
+  rotate: true
+  xy: 1567, 5
+  size: 66, 76
+  orig: 66, 76
+  offset: 0, 0
+  index: -1
+thuoc_sung_boom/thuoc_sung_boom2
+  rotate: true
+  xy: 1605, 75
+  size: 66, 70
+  orig: 66, 70
+  offset: 0, 0
+  index: -1

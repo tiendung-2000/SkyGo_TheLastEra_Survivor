@@ -1,0 +1,131 @@
+{
+"skeleton": { "hash": "OdDrBKZ3QkSq6RVTG5sCk+5R35M", "spine": "3.8.99", "images": "D:/PTS/Game Soul/Demo_PNG/Ani_nhan_vat/Nhan_vat5/", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Move", "parent": "root", "y": 40.36 },
+	{ "name": "Idel", "parent": "root" },
+	{ "name": "Die", "parent": "root" },
+	{ "name": "Skill", "parent": "root", "y": 75.07 }
+],
+"slots": [
+	{ "name": "Move", "bone": "Move" },
+	{ "name": "Idel", "bone": "Idel" },
+	{ "name": "Die", "bone": "Die" },
+	{ "name": "SKill", "bone": "Skill" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Die": {
+				"Die/NV1": { "x": 0.5, "y": 49.77, "width": 79, "height": 100 },
+				"Die/NV2": { "y": 50.27, "width": 88, "height": 113 },
+				"Die/NV3": { "y": 50.27, "width": 74, "height": 113 },
+				"Die/NV4": { "y": 50.27, "width": 74, "height": 109 },
+				"Die/NV5": { "y": 49.77, "width": 66, "height": 96 },
+				"Die/NV6": { "y": 50.27, "width": 70, "height": 35 },
+				"Die/NV7": { "y": 50.27, "width": 70, "height": 39 },
+				"Die/NV8": { "y": 50.27, "width": 92, "height": 31 },
+				"Die/NV9": { "y": 49.77, "width": 70, "height": 40 }
+			},
+			"Idel": {
+				"Idel/NV1_1": { "y": 50.32, "width": 84, "height": 101 },
+				"Idel/NV1_2": { "x": 0.5, "y": 49.82, "width": 79, "height": 96 }
+			},
+			"Move": {
+				"Move/NV5_1": { "y": 12.77, "width": 82, "height": 106 },
+				"Move/NV5_3": { "y": 12.27, "width": 82, "height": 110 },
+				"Move/NV5_4": { "y": 12.77, "width": 82, "height": 106 },
+				"Move/Nv5_2": { "y": 12.77, "width": 82, "height": 115 }
+			},
+			"SKill": {
+				"1. Blink/Blink9": { "width": 300, "height": 300 }
+			}
+		}
+	}
+],
+"animations": {
+	"Die": {
+		"slots": {
+			"Die": {
+				"attachment": [
+					{ "name": "Die/NV1" },
+					{ "time": 0.0667, "name": "Die/NV2" },
+					{ "time": 0.1333, "name": "Die/NV3" },
+					{ "time": 0.2333, "name": "Die/NV4" },
+					{ "time": 0.3, "name": "Die/NV5" },
+					{ "time": 0.4, "name": "Die/NV6" },
+					{ "time": 0.5, "name": "Die/NV7" },
+					{ "time": 0.6, "name": "Die/NV8" },
+					{ "time": 0.7667, "name": "Die/NV9" }
+				]
+			}
+		},
+		"bones": {
+			"Die": {
+				"translate": [
+					{ "time": 0.6, "y": -34.46, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.7667, "y": -29.64 }
+				]
+			}
+		}
+	},
+	"Idle": {
+		"slots": {
+			"Idel": {
+				"attachment": [
+					{ "name": "Idel/NV1_1" },
+					{ "time": 0.1667, "name": "Idel/NV1_2" },
+					{ "time": 0.3333, "name": "Idel/NV1_1" }
+				]
+			}
+		},
+		"bones": {
+			"Idel": {
+				"translate": [
+					{ "time": 0.1667, "x": -3.64, "y": -2.02 }
+				]
+			}
+		}
+	},
+	"Move": {
+		"slots": {
+			"Move": {
+				"attachment": [
+					{ "name": "Move/NV5_1" },
+					{ "time": 0.1333, "name": "Move/NV5_3" },
+					{ "time": 0.2667, "name": "Move/NV5_4" },
+					{ "time": 0.4, "name": "Move/Nv5_2" }
+				]
+			}
+		},
+		"bones": {
+			"Move": {
+				"translate": [
+					{ "time": 0.1333, "y": 2.6, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.4, "y": 4.17 }
+				]
+			}
+		}
+	},
+	"Skill": {
+		"slots": {
+			"SKill": {
+				"attachment": [
+					{ "name": "1. Blink/Blink9" }
+				]
+			}
+		},
+		"bones": {
+			"Skill": {
+				"translate": [
+					{},
+					{ "time": 0.0667, "y": 4.66 },
+					{ "time": 0.1333 }
+				]
+			}
+		}
+	}
+}
+}

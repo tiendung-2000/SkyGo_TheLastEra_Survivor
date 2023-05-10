@@ -1,0 +1,636 @@
+
+Boss1.png
+size: 1620,396
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Die/Bosses_1
+  rotate: false
+  xy: 1227, 106
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Die/Bosses_10
+  rotate: true
+  xy: 295, 87
+  size: 148, 144
+  orig: 160, 160
+  offset: 3, 15
+  index: -1
+Die/Bosses_11
+  rotate: true
+  xy: 436, 248
+  size: 146, 135
+  orig: 160, 160
+  offset: 5, 15
+  index: -1
+Die/Bosses_12
+  rotate: true
+  xy: 150, 75
+  size: 158, 143
+  orig: 160, 160
+  offset: 2, 13
+  index: -1
+Die/Bosses_13
+  rotate: true
+  xy: 2, 73
+  size: 159, 146
+  orig: 160, 160
+  offset: 1, 13
+  index: -1
+Die/Bosses_14
+  rotate: true
+  xy: 147, 235
+  size: 159, 142
+  orig: 160, 160
+  offset: 1, 17
+  index: -1
+Die/Bosses_2
+  rotate: false
+  xy: 1282, 11
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Die/Bosses_3
+  rotate: false
+  xy: 1285, 106
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Die/Bosses_4
+  rotate: false
+  xy: 1285, 106
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Die/Bosses_5
+  rotate: false
+  xy: 973, 286
+  size: 75, 108
+  orig: 160, 160
+  offset: 40, 10
+  index: -1
+Die/Bosses_6
+  rotate: false
+  xy: 689, 262
+  size: 122, 132
+  orig: 160, 160
+  offset: 16, 16
+  index: -1
+Die/Bosses_7
+  rotate: true
+  xy: 673, 109
+  size: 140, 137
+  orig: 160, 160
+  offset: 9, 15
+  index: -1
+Die/Bosses_8
+  rotate: true
+  xy: 2, 234
+  size: 160, 143
+  orig: 160, 160
+  offset: 0, 15
+  index: -1
+Die/Bosses_9
+  rotate: true
+  xy: 291, 237
+  size: 157, 143
+  orig: 160, 160
+  offset: 3, 15
+  index: -1
+Move/Bosses_1
+  rotate: true
+  xy: 2, 7
+  size: 64, 96
+  orig: 160, 160
+  offset: 40, 16
+  index: -1
+Move/Bosses_10
+  rotate: false
+  xy: 1213, 297
+  size: 45, 97
+  orig: 160, 160
+  offset: 51, 16
+  index: -1
+Move/Bosses_11
+  rotate: false
+  xy: 1213, 297
+  size: 45, 97
+  orig: 160, 160
+  offset: 51, 16
+  index: -1
+Move/Bosses_12
+  rotate: false
+  xy: 1213, 297
+  size: 45, 97
+  orig: 160, 160
+  offset: 51, 16
+  index: -1
+Move/Bosses_13
+  rotate: false
+  xy: 1222, 201
+  size: 73, 94
+  orig: 160, 160
+  offset: 51, 16
+  index: -1
+Move/Bosses_14
+  rotate: true
+  xy: 407, 3
+  size: 82, 95
+  orig: 160, 160
+  offset: 46, 16
+  index: -1
+Move/Bosses_15
+  rotate: true
+  xy: 539, 6
+  size: 84, 96
+  orig: 160, 160
+  offset: 46, 16
+  index: -1
+Move/Bosses_2
+  rotate: true
+  xy: 196, 10
+  size: 63, 97
+  orig: 160, 160
+  offset: 41, 16
+  index: -1
+Move/Bosses_3
+  rotate: false
+  xy: 1165, 198
+  size: 55, 97
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Move/Bosses_4
+  rotate: false
+  xy: 1165, 198
+  size: 55, 97
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Move/Bosses_5
+  rotate: false
+  xy: 1165, 198
+  size: 55, 97
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Move/Bosses_6
+  rotate: false
+  xy: 1204, 4
+  size: 76, 94
+  orig: 160, 160
+  offset: 28, 16
+  index: -1
+Move/Bosses_7
+  rotate: true
+  xy: 1107, 7
+  size: 79, 95
+  orig: 160, 160
+  offset: 25, 16
+  index: -1
+Move/Bosses_8
+  rotate: false
+  xy: 973, 187
+  size: 74, 97
+  orig: 160, 160
+  offset: 24, 16
+  index: -1
+Move/Bosses_9
+  rotate: false
+  xy: 1166, 297
+  size: 45, 97
+  orig: 160, 160
+  offset: 51, 16
+  index: -1
+Skill1+4_Attack/Bosses_1
+  rotate: false
+  xy: 908, 32
+  size: 61, 116
+  orig: 160, 160
+  offset: 43, 16
+  index: -1
+Skill1+4_Attack/Bosses_2
+  rotate: false
+  xy: 615, 97
+  size: 56, 141
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill1+4_Attack/Bosses_3
+  rotate: false
+  xy: 631, 251
+  size: 56, 143
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill1+4_Attack/Bosses_4
+  rotate: false
+  xy: 441, 92
+  size: 56, 144
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill1+4_Attack/Bosses_5
+  rotate: false
+  xy: 499, 92
+  size: 56, 144
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill1+4_Attack/Bosses_6
+  rotate: false
+  xy: 557, 92
+  size: 56, 144
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill1+4_Attack/Bosses_7
+  rotate: false
+  xy: 573, 250
+  size: 56, 144
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill1+4_Ready/Bosses_1
+  rotate: false
+  xy: 1297, 206
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill3_Atk/Bosses_15
+  rotate: false
+  xy: 1297, 206
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill3_Ready/Bosses_2
+  rotate: false
+  xy: 1297, 206
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill_2/Bosses_1
+  rotate: false
+  xy: 1297, 206
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill_2/Bosses_16
+  rotate: false
+  xy: 1297, 206
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill1+4_Ready/Bosses_10
+  rotate: false
+  xy: 1049, 187
+  size: 56, 97
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill1+4_Ready/Bosses_11
+  rotate: false
+  xy: 1050, 297
+  size: 56, 97
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill1+4_Ready/Bosses_12
+  rotate: false
+  xy: 1051, 88
+  size: 56, 97
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill1+4_Ready/Bosses_13
+  rotate: false
+  xy: 1107, 198
+  size: 56, 97
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill1+4_Ready/Bosses_14
+  rotate: false
+  xy: 1108, 297
+  size: 56, 97
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill1+4_Ready/Bosses_2
+  rotate: false
+  xy: 1320, 301
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill1+4_Ready/Bosses_3
+  rotate: false
+  xy: 1340, 11
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill1+4_Ready/Bosses_4
+  rotate: false
+  xy: 1343, 111
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill1+4_Ready/Bosses_5
+  rotate: false
+  xy: 1355, 206
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill1+4_Ready/Bosses_6
+  rotate: false
+  xy: 1378, 301
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill1+4_Ready/Bosses_7
+  rotate: false
+  xy: 1398, 16
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill1+4_Ready/Bosses_8
+  rotate: false
+  xy: 1401, 111
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill1+4_Ready/Bosses_9
+  rotate: false
+  xy: 1109, 99
+  size: 56, 97
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill3_Atk/Bosses_1
+  rotate: false
+  xy: 613, 240
+  size: 20, 8
+  orig: 160, 160
+  offset: 70, 12
+  index: -1
+Skill3_Atk/Bosses_10
+  rotate: true
+  xy: 893, 275
+  size: 119, 78
+  orig: 160, 160
+  offset: 20, 16
+  index: -1
+Skill3_Atk/Bosses_11
+  rotate: true
+  xy: 828, 10
+  size: 122, 78
+  orig: 160, 160
+  offset: 19, 16
+  index: -1
+Skill3_Atk/Bosses_12
+  rotate: true
+  xy: 813, 272
+  size: 122, 78
+  orig: 160, 160
+  offset: 19, 16
+  index: -1
+Skill3_Atk/Bosses_13
+  rotate: true
+  xy: 812, 134
+  size: 126, 78
+  orig: 160, 160
+  offset: 17, 16
+  index: -1
+Skill3_Atk/Bosses_14
+  rotate: false
+  xy: 1051, 2
+  size: 54, 84
+  orig: 160, 160
+  offset: 50, 16
+  index: -1
+Skill3_Ready/Bosses_4
+  rotate: false
+  xy: 1051, 2
+  size: 54, 84
+  orig: 160, 160
+  offset: 50, 16
+  index: -1
+Skill3_Atk/Bosses_2
+  rotate: false
+  xy: 573, 240
+  size: 38, 8
+  orig: 160, 160
+  offset: 61, 12
+  index: -1
+Skill3_Atk/Bosses_3
+  rotate: false
+  xy: 514, 238
+  size: 57, 8
+  orig: 160, 160
+  offset: 51, 12
+  index: -1
+Skill3_Atk/Bosses_4
+  rotate: false
+  xy: 436, 238
+  size: 76, 8
+  orig: 160, 160
+  offset: 42, 12
+  index: -1
+Skill3_Atk/Bosses_5
+  rotate: false
+  xy: 436, 238
+  size: 76, 8
+  orig: 160, 160
+  offset: 42, 12
+  index: -1
+Skill3_Atk/Bosses_6
+  rotate: false
+  xy: 779, 9
+  size: 47, 98
+  orig: 160, 160
+  offset: 50, 16
+  index: -1
+Skill3_Ready/Bosses_9
+  rotate: false
+  xy: 779, 9
+  size: 47, 98
+  orig: 160, 160
+  offset: 50, 16
+  index: -1
+Skill3_Atk/Bosses_7
+  rotate: true
+  xy: 504, 4
+  size: 86, 33
+  orig: 160, 160
+  offset: 33, 16
+  index: -1
+Skill3_Atk/Bosses_8
+  rotate: true
+  xy: 892, 150
+  size: 120, 79
+  orig: 160, 160
+  offset: 17, 15
+  index: -1
+Skill3_Atk/Bosses_9
+  rotate: true
+  xy: 971, 36
+  size: 112, 78
+  orig: 160, 160
+  offset: 24, 16
+  index: -1
+Skill3_Ready/Bosses_1
+  rotate: false
+  xy: 1167, 100
+  size: 58, 96
+  orig: 160, 160
+  offset: 46, 16
+  index: -1
+Skill3_Ready/Bosses_3
+  rotate: true
+  xy: 1529, 244
+  size: 55, 89
+  orig: 160, 160
+  offset: 49, 16
+  index: -1
+Skill3_Ready/Bosses_5
+  rotate: false
+  xy: 1514, 10
+  size: 59, 78
+  orig: 160, 160
+  offset: 47, 16
+  index: -1
+Skill3_Ready/Bosses_6
+  rotate: false
+  xy: 1514, 10
+  size: 59, 78
+  orig: 160, 160
+  offset: 47, 16
+  index: -1
+Skill3_Ready/Bosses_7
+  rotate: false
+  xy: 1514, 10
+  size: 59, 78
+  orig: 160, 160
+  offset: 47, 16
+  index: -1
+Skill3_Ready/Bosses_8
+  rotate: false
+  xy: 1514, 10
+  size: 59, 78
+  orig: 160, 160
+  offset: 47, 16
+  index: -1
+Skill_2/Bosses_10
+  rotate: false
+  xy: 1471, 206
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill_2/Bosses_11
+  rotate: false
+  xy: 1494, 301
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill_2/Bosses_12
+  rotate: false
+  xy: 1552, 301
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill_2/Bosses_13
+  rotate: true
+  xy: 1517, 148
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill_2/Bosses_14
+  rotate: true
+  xy: 1517, 90
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill_2/Bosses_15
+  rotate: false
+  xy: 1260, 301
+  size: 58, 93
+  orig: 160, 160
+  offset: 46, 16
+  index: -1
+Skill_2/Bosses_2
+  rotate: true
+  xy: 295, 2
+  size: 83, 110
+  orig: 160, 160
+  offset: 32, 16
+  index: -1
+Skill_2/Bosses_3
+  rotate: false
+  xy: 637, 2
+  size: 63, 93
+  orig: 160, 160
+  offset: 41, 16
+  index: -1
+Skill_2/Bosses_4
+  rotate: false
+  xy: 1413, 206
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill_2/Bosses_5
+  rotate: false
+  xy: 1436, 301
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill_2/Bosses_6
+  rotate: false
+  xy: 1456, 16
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1
+Skill_2/Bosses_7
+  rotate: false
+  xy: 702, 7
+  size: 75, 100
+  orig: 160, 160
+  offset: 33, 16
+  index: -1
+Skill_2/Bosses_8
+  rotate: true
+  xy: 100, 7
+  size: 64, 94
+  orig: 160, 160
+  offset: 40, 16
+  index: -1
+Skill_2/Bosses_9
+  rotate: false
+  xy: 1459, 111
+  size: 56, 93
+  orig: 160, 160
+  offset: 48, 16
+  index: -1

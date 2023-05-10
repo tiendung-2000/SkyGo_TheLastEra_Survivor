@@ -1,0 +1,52 @@
+{
+"skeleton": {
+	"hash": "5zk2NKvFIshO8YZjJJ5X++Zw3QE",
+	"spine": "3.8.99",
+	"x": -21,
+	"y": -5,
+	"width": 42,
+	"height": 11,
+	"images": "D:/PTS/Game Soul/Demo_PNG/Ani_Sung/Sung_ten_lua_new/",
+	"audio": "D:/PTS/Game Soul"
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "phong_ten_lua", "bone": "root", "attachment": "sung_ten_lua1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"phong_ten_lua": {
+				"sung_ten_lua1": { "y": 0.5, "width": 42, "height": 11 },
+				"sung_ten_lua2": { "y": 0.5, "width": 63, "height": 50 },
+				"sung_ten_lua3": { "y": 0.5, "width": 42, "height": 23 },
+				"sung_ten_lua4": { "y": 0.5, "width": 41, "height": 19 },
+				"sung_ten_lua5": { "x": 0.5, "y": 0.5, "width": 35, "height": 11 },
+				"sung_ten_lua5-1": { "y": 0.5, "width": 34, "height": 11 },
+				"sung_ten_lua6": { "y": 0.5, "width": 34, "height": 11 },
+				"sung_ten_lua7": { "y": 0.5, "width": 42, "height": 11 }
+			}
+		}
+	}
+],
+"animations": {
+	"fire": {
+		"slots": {
+			"phong_ten_lua": {
+				"attachment": [
+					{ "time": 0.0667, "name": "sung_ten_lua2" },
+					{ "time": 0.1333, "name": "sung_ten_lua3" },
+					{ "time": 0.2, "name": "sung_ten_lua4" },
+					{ "time": 0.2667, "name": "sung_ten_lua5" },
+					{ "time": 0.3333, "name": "sung_ten_lua6" },
+					{ "time": 0.4, "name": "sung_ten_lua7" }
+				]
+			}
+		}
+	},
+	"neutral": {}
+}
+}

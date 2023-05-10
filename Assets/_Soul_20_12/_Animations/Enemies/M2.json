@@ -1,0 +1,121 @@
+{
+"skeleton": { "hash": "nTbfl5y5U/Et3eUT1ec34adRVjY", "spine": "3.8.99", "images": "D:/PTS/Game Soul/File_Anh_Long/Spine_Monster/Monster_2/", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Attack", "parent": "root", "y": 15.84 },
+	{ "name": "Move", "parent": "root" },
+	{ "name": "Die", "parent": "root" }
+],
+"slots": [
+	{ "name": "Attack", "bone": "Attack" },
+	{ "name": "Move", "bone": "Move" },
+	{ "name": "Die", "bone": "Die" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Attack": {
+				"Attack/Mons2": { "width": 64, "height": 64 },
+				"Attack/Mons3": { "width": 64, "height": 64 },
+				"Attack/Mons4": { "width": 64, "height": 64 },
+				"Attack/Mons5": { "width": 64, "height": 64 },
+				"Attack/Mons6": { "width": 64, "height": 64 },
+				"Attack/Mons7": { "width": 64, "height": 64 },
+				"Attack/Mons8": { "width": 64, "height": 64 }
+			},
+			"Die": {
+				"Die/Mons2": { "y": 16.47, "width": 64, "height": 64 },
+				"Die/Mons3": { "y": 16.47, "width": 64, "height": 64 },
+				"Die/Mons4": { "y": 16.47, "width": 64, "height": 64 },
+				"Die/Mons5": { "y": 16.47, "width": 64, "height": 64 },
+				"Die/Mons6": { "y": 16.47, "width": 64, "height": 64 },
+				"Die/Mons7": { "y": 16.47, "width": 64, "height": 64 },
+				"Die/Mons8": { "y": 16.47, "width": 64, "height": 64 },
+				"Die/Mons9": { "y": 16.47, "width": 64, "height": 64 },
+				"Die/Mons10": { "y": 16.47, "width": 64, "height": 64 },
+				"Die/Mons11": { "y": 16.47, "width": 64, "height": 64 },
+				"Die/Mons12": { "y": 16.47, "width": 64, "height": 64 },
+				"Die/Mons13": { "y": 16.47, "width": 64, "height": 64 },
+				"Die/Mons14": { "y": 16.47, "width": 64, "height": 64 },
+				"Die/Mons15": { "y": 16.47, "width": 64, "height": 64 }
+			},
+			"Move": {
+				"Move/Mons2": { "y": 16.44, "width": 64, "height": 64 },
+				"Move/Mons3": { "y": 16.44, "width": 64, "height": 64 },
+				"Move/Mons4": { "y": 16.44, "width": 64, "height": 64 },
+				"Move/Mons5": { "y": 16.44, "width": 64, "height": 64 },
+				"Move/Mons6": { "y": 16.44, "width": 64, "height": 64 },
+				"Move/Mons7": { "y": 16.44, "width": 64, "height": 64 },
+				"Move/Mons8": { "y": 16.44, "width": 64, "height": 64 },
+				"Move/Mons9": { "y": 16.44, "width": 64, "height": 64 },
+				"Move/Mons10": { "y": 16.44, "width": 64, "height": 64 }
+			}
+		}
+	}
+],
+"animations": {
+	"Attack": {
+		"slots": {
+			"Attack": {
+				"attachment": [
+					{ "name": "Attack/Mons3" },
+					{ "time": 0.1333, "name": "Attack/Mons4" },
+					{ "time": 0.2, "name": "Attack/Mons5" },
+					{ "time": 0.2667, "name": "Attack/Mons6" },
+					{ "time": 0.3333, "name": "Attack/Mons7" },
+					{ "time": 0.4, "name": "Attack/Mons8" }
+				]
+			}
+		}
+	},
+	"Die": {
+		"slots": {
+			"Die": {
+				"attachment": [
+					{ "name": "Die/Mons2" },
+					{ "time": 0.0667, "name": "Die/Mons3" },
+					{ "time": 0.1333, "name": "Die/Mons4" },
+					{ "time": 0.2, "name": "Die/Mons5" },
+					{ "time": 0.2667, "name": "Die/Mons6" },
+					{ "time": 0.3333, "name": "Die/Mons7" },
+					{ "time": 0.4, "name": "Die/Mons8" },
+					{ "time": 0.4667, "name": "Die/Mons9" },
+					{ "time": 0.5333, "name": "Die/Mons10" },
+					{ "time": 0.6, "name": "Die/Mons11" },
+					{ "time": 0.6667, "name": "Die/Mons12" },
+					{ "time": 0.7333, "name": "Die/Mons13" },
+					{ "time": 0.8, "name": "Die/Mons14" },
+					{ "time": 0.8667, "name": "Die/Mons15" },
+					{ "time": 0.9333, "name": null }
+				]
+			}
+		}
+	},
+	"Move": {
+		"slots": {
+			"Move": {
+				"attachment": [
+					{ "name": "Move/Mons2" },
+					{ "time": 0.1, "name": "Move/Mons3" },
+					{ "time": 0.2, "name": "Move/Mons4" },
+					{ "time": 0.2667, "name": "Move/Mons5" },
+					{ "time": 0.3667, "name": "Move/Mons6" },
+					{ "time": 0.4667, "name": "Move/Mons7" },
+					{ "time": 0.5667, "name": "Move/Mons8" },
+					{ "time": 0.6667, "name": "Move/Mons9" },
+					{ "time": 0.7667, "name": "Move/Mons10" },
+					{ "time": 0.8667, "name": "Move/Mons2" }
+				]
+			}
+		},
+		"bones": {
+			"Move": {
+				"translate": [
+					{ "time": 0.4667, "x": 0.16, "y": -0.16 }
+				]
+			}
+		}
+	}
+}
+}

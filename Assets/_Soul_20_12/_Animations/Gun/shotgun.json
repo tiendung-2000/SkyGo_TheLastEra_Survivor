@@ -1,0 +1,51 @@
+{
+"skeleton": {
+	"hash": "f/LwSpfbdiK7P48kXyRgtwSDQEE",
+	"spine": "3.8.99",
+	"x": -0.46,
+	"y": -0.62,
+	"width": 38,
+	"height": 15,
+	"images": "D:/PTS/Game Soul/images/",
+	"audio": "D:/PTS/Game Soul"
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "sotgun", "bone": "root", "attachment": "sotgun1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"sotgun": {
+				"sotgun": { "x": 17.54, "y": 16.38, "width": 38, "height": 14 },
+				"sotgun1": { "x": 18.54, "y": 6.88, "width": 38, "height": 15 },
+				"sotgun2": { "x": 55.04, "y": 11.38, "width": 111, "height": 44 },
+				"sotgun3": { "x": 31.54, "y": 11.88, "width": 80, "height": 43 },
+				"sotgun3 copy": { "x": 10.54, "y": -1.12, "width": 38, "height": 19 },
+				"sotgun4": { "x": 27.04, "y": 9.38, "width": 55, "height": 20 },
+				"sotgun5": { "x": 25.54, "y": 7.38, "width": 52, "height": 16 }
+			}
+		}
+	}
+],
+"animations": {
+	"fire": {
+		"slots": {
+			"sotgun": {
+				"attachment": [
+					{ "name": "sotgun2" },
+					{ "time": 0.1, "name": "sotgun3" },
+					{ "time": 0.1667, "name": "sotgun3 copy" },
+					{ "time": 0.2333, "name": "sotgun4" },
+					{ "time": 0.3333, "name": "sotgun5" },
+					{ "time": 0.4, "name": "sotgun1" }
+				]
+			}
+		}
+	},
+	"neutral": {}
+}
+}

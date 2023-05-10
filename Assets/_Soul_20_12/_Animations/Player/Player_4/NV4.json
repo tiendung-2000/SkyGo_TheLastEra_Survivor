@@ -1,0 +1,110 @@
+{
+"skeleton": { "hash": "IhjHUb2+f6QJNKkUc43G2PZ6QtQ", "spine": "3.8.99", "images": "D:/PTS/Game Soul/Demo_PNG/Ani_nhan_vat/Nhan_vat4/", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Idel", "parent": "root" },
+	{ "name": "Move", "parent": "root" },
+	{ "name": "Die", "parent": "root" },
+	{ "name": "SKill", "parent": "root" }
+],
+"slots": [
+	{ "name": "Idel", "bone": "Idel" },
+	{ "name": "Move", "bone": "Move" },
+	{ "name": "Die", "bone": "Die" },
+	{ "name": "Skill", "bone": "SKill" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Die": {
+				"Die/NV3_1": { "x": 0.5, "y": 45.98, "width": 71, "height": 92 },
+				"Die/NV3_2": { "x": 4.24, "y": 52.16, "width": 86, "height": 108 },
+				"Die/NV3_4": { "x": -0.75, "y": 45.59, "width": 98, "height": 91 },
+				"Die/NV3_5": { "x": -2.59, "y": 45.5, "width": 63, "height": 91 },
+				"Die/NV3_6": { "x": -2.38, "y": 45.98, "width": 65, "height": 95 },
+				"Die/NV3_7": { "x": -1.8, "y": 45.98, "width": 105, "height": 95 },
+				"Die/NV3_8": { "x": 0.5, "y": 45.48, "width": 120, "height": 96 },
+				"Die/NV3_9": { "y": 45.48, "width": 113, "height": 96 },
+				"Die/Nv3_3": { "x": 1.48, "y": 47.92, "width": 73, "height": 96 }
+			},
+			"Idel": {
+				"Idel/NV4_1": { "x": -8.4, "y": 45.57, "width": 63, "height": 91 },
+				"Idel/NV4_2": { "x": -7.08, "y": 44, "width": 74, "height": 88 }
+			},
+			"Move": {
+				"Move/NV1": { "y": 49.29, "width": 59, "height": 89 },
+				"Move/NV2": { "x": -2.54, "y": 42.47, "width": 64, "height": 85 },
+				"Move/NV3": { "x": -6.99, "y": 42.7, "width": 74, "height": 85 },
+				"Move/NV4": { "x": 0.5, "y": 44.37, "width": 67, "height": 89 },
+				"Move/NV5": { "y": 49.52, "width": 59, "height": 89 }
+			},
+			"Skill": {
+				"3. Pow2/Pow2_1": { "y": 57.07, "width": 230, "height": 230 },
+				"3. Pow2/Pow2_2": { "y": 57.07, "width": 230, "height": 230 },
+				"3. Pow2/Pow2_3": { "y": 57.07, "width": 230, "height": 230 },
+				"3. Pow2/Pow2_4": { "y": 57.07, "width": 230, "height": 230 },
+				"3. Pow2/Pow2_5": { "y": 57.07, "width": 230, "height": 230 }
+			}
+		}
+	}
+],
+"animations": {
+	"Die": {
+		"slots": {
+			"Die": {
+				"attachment": [
+					{ "name": "Die/NV3_1" },
+					{ "time": 0.1, "name": "Die/NV3_2" },
+					{ "time": 0.2, "name": "Die/Nv3_3" },
+					{ "time": 0.3, "name": "Die/NV3_4" },
+					{ "time": 0.3667, "name": "Die/NV3_5" },
+					{ "time": 0.5, "name": "Die/NV3_6" },
+					{ "time": 0.6, "name": "Die/NV3_7" },
+					{ "time": 0.6667, "name": "Die/NV3_8" },
+					{ "time": 0.7667, "name": "Die/NV3_9" },
+					{ "time": 0.8667, "name": null },
+					{ "time": 1.1667, "name": null }
+				]
+			}
+		}
+	},
+	"Idle": {
+		"slots": {
+			"Idel": {
+				"attachment": [
+					{ "name": "Idel/NV4_1" },
+					{ "time": 0.1667, "name": "Idel/NV4_2" },
+					{ "time": 0.3333, "name": "Idel/NV4_1" }
+				]
+			}
+		}
+	},
+	"Move": {
+		"slots": {
+			"Move": {
+				"attachment": [
+					{ "name": "Move/NV1" },
+					{ "time": 0.1, "name": "Move/NV2" },
+					{ "time": 0.2, "name": "Move/NV3" },
+					{ "time": 0.3, "name": "Move/NV4" },
+					{ "time": 0.4, "name": "Move/NV5" }
+				]
+			}
+		}
+	},
+	"Skill": {
+		"slots": {
+			"Skill": {
+				"attachment": [
+					{ "name": "3. Pow2/Pow2_1" },
+					{ "time": 0.1, "name": "3. Pow2/Pow2_2" },
+					{ "time": 0.2, "name": "3. Pow2/Pow2_3" },
+					{ "time": 0.3, "name": "3. Pow2/Pow2_4" },
+					{ "time": 0.4, "name": "3. Pow2/Pow2_5" }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,41 @@
+
+6_nong.png
+size: 160,74
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+6_nong1
+  rotate: false
+  xy: 98, 56
+  size: 41, 16
+  orig: 43, 18
+  offset: 1, 1
+  index: -1
+6_nong2_4
+  rotate: false
+  xy: 2, 2
+  size: 77, 31
+  orig: 79, 33
+  offset: 1, 1
+  index: -1
+6_nong3_5
+  rotate: false
+  xy: 2, 35
+  size: 94, 37
+  orig: 96, 39
+  offset: 1, 1
+  index: -1
+6_nong4
+  rotate: false
+  xy: 81, 2
+  size: 77, 31
+  orig: 79, 33
+  offset: 1, 1
+  index: -1
+6_nong6
+  rotate: false
+  xy: 98, 38
+  size: 41, 16
+  orig: 43, 18
+  offset: 1, 1
+  index: -1

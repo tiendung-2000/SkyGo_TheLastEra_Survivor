@@ -1,0 +1,123 @@
+{
+"skeleton": { "hash": "doaCSSjqHO/RaSc+VfStm5doQh8", "spine": "3.8.99", "images": "D:/PTS/Game Soul/File_Anh_Long/Spine_Monster/Monster_3/", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Attack", "parent": "root", "y": 16.37 },
+	{ "name": "Die", "parent": "root" },
+	{ "name": "Idel", "parent": "root", "y": 0.43 }
+],
+"slots": [
+	{ "name": "Attack", "bone": "Attack" },
+	{ "name": "Die", "bone": "Die" },
+	{ "name": "Idel", "bone": "Idel" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Attack": {
+				"Attack/Mons3": { "width": 64, "height": 64 },
+				"Attack/Mons4": { "width": 64, "height": 64 },
+				"Attack/Mons5": { "width": 64, "height": 64 },
+				"Attack/Mons6": { "width": 64, "height": 64 },
+				"Attack/Mons7": { "width": 64, "height": 64 },
+				"Attack/Mons8": { "width": 64, "height": 64 },
+				"Attack/Mons9": { "width": 64, "height": 64 },
+				"Attack/Mons10": { "width": 64, "height": 64 },
+				"Attack/Mons11": { "width": 64, "height": 64 },
+				"Attack/Mons12": { "width": 64, "height": 64 },
+				"Attack/Mons13": { "width": 64, "height": 64 },
+				"Attack/Mons14": { "width": 64, "height": 64 },
+				"Attack/Mons15": { "width": 64, "height": 64 },
+				"Attack/Mons16": { "width": 64, "height": 64 },
+				"Attack/Mons17": { "width": 64, "height": 64 },
+				"Attack/Mons18": { "width": 64, "height": 64 },
+				"Attack/Mons19": { "width": 64, "height": 64 }
+			},
+			"Die": {
+				"Die/Mons3": { "y": 16, "width": 64, "height": 64 },
+				"Die/Mons4": { "y": 16, "width": 64, "height": 64 },
+				"Die/Mons5": { "y": 16, "width": 64, "height": 64 },
+				"Die/Mons6": { "y": 16, "width": 64, "height": 64 },
+				"Die/Mons7": { "y": 16, "width": 64, "height": 64 },
+				"Die/Mons8": { "y": 16, "width": 64, "height": 64 },
+				"Die/Mons9": { "y": 16, "width": 64, "height": 64 },
+				"Die/Mons10": { "y": 16, "width": 64, "height": 64 },
+				"Die/Mons11": { "y": 16, "width": 64, "height": 64 }
+			},
+			"Idel": {
+				"Idle/Mons3": { "y": 16.47, "width": 64, "height": 64 },
+				"Idle/Mons4": { "y": 16.47, "width": 64, "height": 64 },
+				"Idle/Mons5": { "y": 16.47, "width": 64, "height": 64 },
+				"Idle/Mons6": { "y": 16.47, "width": 64, "height": 64 },
+				"Idle/Mons7": { "y": 16.47, "width": 64, "height": 64 },
+				"Idle/Mons8": { "y": 16.47, "width": 64, "height": 64 },
+				"Idle/Mons9": { "y": 16.47, "width": 64, "height": 64 },
+				"Idle/Mons10": { "y": 16.47, "width": 64, "height": 64 }
+			}
+		}
+	}
+],
+"animations": {
+	"Attack": {
+		"slots": {
+			"Attack": {
+				"attachment": [
+					{ "name": "Attack/Mons3" },
+					{ "time": 0.0667, "name": "Attack/Mons4" },
+					{ "time": 0.1333, "name": "Attack/Mons5" },
+					{ "time": 0.2, "name": "Attack/Mons6" },
+					{ "time": 0.2667, "name": "Attack/Mons7" },
+					{ "time": 0.3333, "name": "Attack/Mons8" },
+					{ "time": 0.4, "name": "Attack/Mons9" },
+					{ "time": 0.4667, "name": "Attack/Mons10" },
+					{ "time": 0.7333, "name": "Attack/Mons11" },
+					{ "time": 0.8, "name": "Attack/Mons12" },
+					{ "time": 0.8667, "name": "Attack/Mons13" },
+					{ "time": 0.9333, "name": "Attack/Mons14" },
+					{ "time": 1, "name": "Attack/Mons15" },
+					{ "time": 1.0667, "name": "Attack/Mons16" },
+					{ "time": 1.6333, "name": "Attack/Mons17" },
+					{ "time": 1.7, "name": "Attack/Mons18" },
+					{ "time": 1.7667, "name": "Attack/Mons19" },
+					{ "time": 1.8333, "name": "Attack/Mons3" }
+				]
+			}
+		}
+	},
+	"Die": {
+		"slots": {
+			"Die": {
+				"attachment": [
+					{ "name": "Die/Mons3" },
+					{ "time": 0.0667, "name": "Die/Mons4" },
+					{ "time": 0.1333, "name": "Die/Mons5" },
+					{ "time": 0.2, "name": "Die/Mons6" },
+					{ "time": 0.2667, "name": "Die/Mons7" },
+					{ "time": 0.3333, "name": "Die/Mons8" },
+					{ "time": 0.4, "name": "Die/Mons9" },
+					{ "time": 0.4667, "name": "Die/Mons10" },
+					{ "time": 0.5333, "name": "Die/Mons11" },
+					{ "time": 0.6, "name": null }
+				]
+			}
+		}
+	},
+	"Idel": {
+		"slots": {
+			"Idel": {
+				"attachment": [
+					{ "name": "Idle/Mons3" },
+					{ "time": 0.1, "name": "Idle/Mons4" },
+					{ "time": 0.2, "name": "Idle/Mons5" },
+					{ "time": 0.3, "name": "Idle/Mons6" },
+					{ "time": 0.4, "name": "Idle/Mons7" },
+					{ "time": 0.5, "name": "Idle/Mons8" },
+					{ "time": 0.6333, "name": "Idle/Mons9" },
+					{ "time": 0.7333, "name": "Idle/Mons10" }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,27 @@
+
+AK_47.png
+size: 211,21
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+AK1
+  rotate: false
+  xy: 165, 4
+  size: 44, 15
+  orig: 46, 17
+  offset: 1, 1
+  index: -1
+AK2
+  rotate: false
+  xy: 2, 3
+  size: 83, 16
+  orig: 85, 18
+  offset: 1, 1
+  index: -1
+AK3
+  rotate: false
+  xy: 87, 2
+  size: 76, 17
+  orig: 78, 19
+  offset: 1, 1
+  index: -1

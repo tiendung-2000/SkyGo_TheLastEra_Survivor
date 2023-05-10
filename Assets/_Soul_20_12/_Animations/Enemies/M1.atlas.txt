@@ -1,0 +1,160 @@
+
+M1.png
+size: 82,187
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Die/Monsd1
+  rotate: true
+  xy: 51, 42
+  size: 31, 23
+  orig: 64, 64
+  offset: 20, 24
+  index: -1
+Die/Monsd2
+  rotate: false
+  xy: 2, 40
+  size: 47, 36
+  orig: 64, 64
+  offset: 12, 24
+  index: -1
+Die/Monsd3
+  rotate: false
+  xy: 2, 2
+  size: 45, 36
+  orig: 64, 64
+  offset: 14, 24
+  index: -1
+Die/Monsd4
+  rotate: false
+  xy: 2, 114
+  size: 54, 35
+  orig: 64, 64
+  offset: 8, 24
+  index: -1
+Die/Monsd5
+  rotate: false
+  xy: 2, 151
+  size: 58, 34
+  orig: 64, 64
+  offset: 4, 23
+  index: -1
+Die/Monsd6
+  rotate: false
+  xy: 2, 78
+  size: 54, 34
+  orig: 64, 64
+  offset: 8, 24
+  index: -1
+Move/Mons1
+  rotate: false
+  xy: 51, 24
+  size: 23, 16
+  orig: 64, 64
+  offset: 22, 24
+  index: -1
+Move/Mons10
+  rotate: false
+  xy: 51, 24
+  size: 23, 16
+  orig: 64, 64
+  offset: 22, 24
+  index: -1
+Move/Mons11
+  rotate: false
+  xy: 51, 24
+  size: 23, 16
+  orig: 64, 64
+  offset: 22, 24
+  index: -1
+Move/Mons2
+  rotate: false
+  xy: 51, 24
+  size: 23, 16
+  orig: 64, 64
+  offset: 22, 24
+  index: -1
+Move/Mons4
+  rotate: false
+  xy: 51, 24
+  size: 23, 16
+  orig: 64, 64
+  offset: 22, 24
+  index: -1
+Move/Mons5
+  rotate: false
+  xy: 51, 24
+  size: 23, 16
+  orig: 64, 64
+  offset: 22, 24
+  index: -1
+Move/Mons7
+  rotate: false
+  xy: 51, 24
+  size: 23, 16
+  orig: 64, 64
+  offset: 22, 24
+  index: -1
+Move/Mons8
+  rotate: false
+  xy: 51, 24
+  size: 23, 16
+  orig: 64, 64
+  offset: 22, 24
+  index: -1
+Move/Mons12
+  rotate: false
+  xy: 49, 15
+  size: 28, 7
+  orig: 64, 64
+  offset: 19, 24
+  index: -1
+Move/Mons13
+  rotate: false
+  xy: 49, 15
+  size: 28, 7
+  orig: 64, 64
+  offset: 19, 24
+  index: -1
+Move/Mons15
+  rotate: false
+  xy: 58, 113
+  size: 20, 24
+  orig: 64, 64
+  offset: 22, 24
+  index: -1
+Move/Mons16
+  rotate: false
+  xy: 58, 75
+  size: 22, 17
+  orig: 64, 64
+  offset: 22, 24
+  index: -1
+Move/Mons3
+  rotate: true
+  xy: 62, 162
+  size: 23, 17
+  orig: 64, 64
+  offset: 21, 24
+  index: -1
+Move/Mons6
+  rotate: false
+  xy: 58, 94
+  size: 22, 17
+  orig: 64, 64
+  offset: 23, 24
+  index: -1
+Move/Mons9
+  rotate: true
+  xy: 62, 139
+  size: 21, 18
+  orig: 64, 64
+  offset: 22, 24
+  index: -1
+Move/Mons14
+  rotate: true
+  xy: 62, 139
+  size: 21, 18
+  orig: 64, 64
+  offset: 22, 24
+  index: -1

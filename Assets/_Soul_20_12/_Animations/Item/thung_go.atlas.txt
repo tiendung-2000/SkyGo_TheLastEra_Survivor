@@ -1,0 +1,55 @@
+
+thung_go.png
+size: 224,131
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+thung_go1
+  rotate: false
+  xy: 181, 41
+  size: 33, 37
+  orig: 33, 37
+  offset: 0, 0
+  index: -1
+thung_go2
+  rotate: false
+  xy: 181, 2
+  size: 33, 37
+  orig: 33, 37
+  offset: 0, 0
+  index: -1
+thung_go3
+  rotate: false
+  xy: 179, 80
+  size: 43, 49
+  orig: 43, 49
+  offset: 0, 0
+  index: -1
+thung_go4
+  rotate: true
+  xy: 116, 8
+  size: 66, 63
+  orig: 66, 63
+  offset: 0, 0
+  index: -1
+thung_go5
+  rotate: false
+  xy: 2, 6
+  size: 112, 68
+  orig: 112, 68
+  offset: 0, 0
+  index: -1
+thung_go6
+  rotate: false
+  xy: 2, 76
+  size: 175, 53
+  orig: 175, 53
+  offset: 0, 0
+  index: -1
+thung_go7
+  rotate: false
+  xy: 2, 76
+  size: 175, 53
+  orig: 175, 53
+  offset: 0, 0
+  index: -1

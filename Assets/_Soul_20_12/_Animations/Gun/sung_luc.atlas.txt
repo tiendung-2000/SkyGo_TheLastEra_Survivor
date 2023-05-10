@@ -1,0 +1,41 @@
+
+sung_luc.png
+size: 72,24
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sung_luc
+  rotate: true
+  xy: 55, 2
+  size: 20, 15
+  orig: 22, 17
+  offset: 1, 1
+  index: -1
+sung_luc1
+  rotate: true
+  xy: 55, 2
+  size: 20, 15
+  orig: 22, 17
+  offset: 1, 1
+  index: -1
+sung_luc4
+  rotate: true
+  xy: 55, 2
+  size: 20, 15
+  orig: 22, 17
+  offset: 1, 1
+  index: -1
+sung_luc2
+  rotate: false
+  xy: 2, 2
+  size: 27, 20
+  orig: 29, 22
+  offset: 1, 1
+  index: -1
+sung_luc3
+  rotate: false
+  xy: 31, 5
+  size: 22, 17
+  orig: 24, 19
+  offset: 1, 1
+  index: -1

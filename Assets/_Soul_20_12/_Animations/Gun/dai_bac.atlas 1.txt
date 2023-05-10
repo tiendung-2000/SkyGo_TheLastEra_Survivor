@@ -1,0 +1,48 @@
+
+dai_bac.png
+size: 55,202
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dai_bac1
+  rotate: true
+  xy: 33, 2
+  size: 42, 19
+  orig: 44, 21
+  offset: 1, 1
+  index: -1
+dai_bac6
+  rotate: true
+  xy: 33, 2
+  size: 42, 19
+  orig: 44, 21
+  offset: 1, 1
+  index: -1
+dai_bac2
+  rotate: true
+  xy: 2, 92
+  size: 108, 29
+  orig: 110, 31
+  offset: 1, 1
+  index: -1
+dai_bac3
+  rotate: true
+  xy: 33, 90
+  size: 110, 19
+  orig: 112, 21
+  offset: 1, 1
+  index: -1
+dai_bac4
+  rotate: true
+  xy: 2, 13
+  size: 77, 29
+  orig: 79, 31
+  offset: 1, 1
+  index: -1
+dai_bac5
+  rotate: true
+  xy: 33, 46
+  size: 42, 20
+  orig: 44, 22
+  offset: 1, 1
+  index: -1

@@ -1,0 +1,153 @@
+
+NV5.png
+size: 449,1041
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+5. Flame/Flame1
+  rotate: true
+  xy: 183, 512
+  size: 165, 179
+  orig: 300, 300
+  offset: 75, 42
+  index: -1
+5. Flame/Flame2
+  rotate: false
+  xy: 2, 361
+  size: 169, 169
+  orig: 300, 300
+  offset: 75, 42
+  index: -1
+5. Flame/Flame3
+  rotate: false
+  xy: 2, 532
+  size: 179, 169
+  orig: 300, 300
+  offset: 70, 42
+  index: -1
+5. Flame/Flame4
+  rotate: false
+  xy: 216, 679
+  size: 189, 179
+  orig: 300, 300
+  offset: 65, 42
+  index: -1
+5. Flame/Flame5
+  rotate: true
+  xy: 220, 860
+  size: 179, 202
+  orig: 300, 300
+  offset: 70, 42
+  index: -1
+5. Flame/Flame6
+  rotate: true
+  xy: 2, 870
+  size: 169, 216
+  orig: 300, 300
+  offset: 75, 42
+  index: -1
+5. Flame/Flame7
+  rotate: true
+  xy: 2, 703
+  size: 165, 212
+  orig: 300, 300
+  offset: 75, 42
+  index: -1
+Die/1
+  rotate: false
+  xy: 2, 234
+  size: 103, 125
+  orig: 113, 125
+  offset: 0, 0
+  index: -1
+Die/2
+  rotate: false
+  xy: 173, 365
+  size: 146, 145
+  orig: 158, 145
+  offset: 6, 0
+  index: -1
+Die/3
+  rotate: true
+  xy: 173, 211
+  size: 152, 120
+  orig: 164, 120
+  offset: 6, 0
+  index: -1
+Die/4
+  rotate: true
+  xy: 321, 334
+  size: 152, 124
+  orig: 164, 132
+  offset: 6, 0
+  index: -1
+Die/5
+  rotate: true
+  xy: 364, 583
+  size: 94, 65
+  orig: 94, 65
+  offset: 0, 0
+  index: -1
+Die/6
+  rotate: true
+  xy: 364, 488
+  size: 93, 62
+  orig: 93, 62
+  offset: 0, 0
+  index: -1
+Die/7
+  rotate: true
+  xy: 107, 272
+  size: 87, 46
+  orig: 87, 46
+  offset: 0, 0
+  index: -1
+Idel/NV3_1
+  rotate: true
+  xy: 146, 3
+  size: 102, 127
+  orig: 102, 127
+  offset: 0, 0
+  index: -1
+Idel/NV3_2
+  rotate: true
+  xy: 2, 10
+  size: 102, 142
+  orig: 102, 142
+  offset: 0, 0
+  index: -1
+Idel/NV3_3
+  rotate: true
+  xy: 295, 114
+  size: 102, 152
+  orig: 102, 152
+  offset: 0, 0
+  index: -1
+Idel/NV3_4
+  rotate: true
+  xy: 146, 107
+  size: 102, 142
+  orig: 102, 142
+  offset: 0, 0
+  index: -1
+Move/NV4_1
+  rotate: true
+  xy: 295, 218
+  size: 114, 148
+  orig: 114, 148
+  offset: 0, 0
+  index: -1
+Move/NV4_2
+  rotate: false
+  xy: 2, 118
+  size: 98, 114
+  orig: 98, 114
+  offset: 0, 0
+  index: -1
+Move/NV4_3
+  rotate: true
+  xy: 290, 2
+  size: 110, 131
+  orig: 110, 131
+  offset: 0, 0
+  index: -1

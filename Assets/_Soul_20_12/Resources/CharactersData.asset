@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3a45a272c6b930438d21db67e7a1b39, type: 3}
+  m_Name: CharactersData
+  m_EditorClassIdentifier: 
+  Characters:
+  - Data:
+      priceToUnlock: 1000
+      HP: 06000000090000000c0000000f00000012000000
+      CoolDown: 0500000004000000030000000200000001000000
+      Speed: 0300000004000000050000000600000007000000
+      skillImg: {fileID: 21300000, guid: 0e8542f33961e8f40ad1369c910d3618, type: 3}
+      skillDetail: Dash forward and destroy obstacles along the way.
+    UpgradeData:
+      HPUpgradePrice: d0070000b80b0000a00f000088130000
+      CoolDownUpgradePrice: 881300004c1d000010270000d4300000
+  - Data:
+      priceToUnlock: 2000
+      HP: 06000000090000000c0000000f00000012000000
+      CoolDown: 0500000004000000030000000200000001000000
+      Speed: 0300000004000000050000000600000007000000
+      skillImg: {fileID: 21300000, guid: ad7a9a143c1fcb54099d03ac9b3c0f8a, type: 3}
+      skillDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        at.  '
+    UpgradeData:
+      HPUpgradePrice: d0070000b80b0000a00f000088130000
+      CoolDownUpgradePrice: 881300004c1d000010270000d4300000
+  - Data:
+      priceToUnlock: 3000
+      HP: 06000000090000000c0000000f00000012000000
+      CoolDown: 0500000004000000030000000200000001000000
+      Speed: 0300000004000000050000000600000007000000
+      skillImg: {fileID: 21300000, guid: 64846bc0b017a02439483aca5bb395aa, type: 3}
+      skillDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        at.  '
+    UpgradeData:
+      HPUpgradePrice: d0070000b80b0000a00f000088130000
+      CoolDownUpgradePrice: 881300004c1d000010270000d4300000
+  - Data:
+      priceToUnlock: 4000
+      HP: 06000000090000000c0000000f00000012000000
+      CoolDown: 0500000004000000030000000200000001000000
+      Speed: 0300000004000000050000000600000007000000
+      skillImg: {fileID: 21300000, guid: ed6e839d70192c146a14cc6535207d0b, type: 3}
+      skillDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        at.  '
+    UpgradeData:
+      HPUpgradePrice: d0070000b80b0000a00f000088130000
+      CoolDownUpgradePrice: 881300004c1d000010270000d4300000
+  - Data:
+      priceToUnlock: 5000
+      HP: 06000000090000000c0000000f00000012000000
+      CoolDown: 0500000004000000030000000200000001000000
+      Speed: 0300000004000000050000000600000007000000
+      skillImg: {fileID: 21300000, guid: 4b418d19de60a9b4f8e07f4a6483c587, type: 3}
+      skillDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        at.  '
+    UpgradeData:
+      HPUpgradePrice: d0070000b80b0000a00f000088130000
+      CoolDownUpgradePrice: 881300004c1d000010270000d4300000

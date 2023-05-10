@@ -1,0 +1,62 @@
+
+phong_ten_lua.png
+size: 59,139
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sung_ten_lua2
+  rotate: true
+  xy: 2, 74
+  size: 63, 50
+  orig: 63, 50
+  offset: 0, 0
+  index: -1
+sung_ten_lua3
+  rotate: false
+  xy: 2, 49
+  size: 42, 23
+  orig: 42, 23
+  offset: 0, 0
+  index: -1
+sung_ten_lua4
+  rotate: false
+  xy: 2, 28
+  size: 41, 19
+  orig: 41, 19
+  offset: 0, 0
+  index: -1
+sung_ten_lua5
+  rotate: false
+  xy: 2, 2
+  size: 35, 11
+  orig: 35, 11
+  offset: 0, 0
+  index: -1
+sung_ten_lua5-1
+  rotate: true
+  xy: 46, 38
+  size: 34, 11
+  orig: 34, 11
+  offset: 0, 0
+  index: -1
+sung_ten_lua6
+  rotate: true
+  xy: 46, 2
+  size: 34, 11
+  orig: 34, 11
+  offset: 0, 0
+  index: -1
+sung_ten_lua7
+  rotate: false
+  xy: 2, 15
+  size: 42, 11
+  orig: 42, 11
+  offset: 0, 0
+  index: -1
+sung_ten_lua1
+  rotate: false
+  xy: 2, 15
+  size: 42, 11
+  orig: 42, 11
+  offset: 0, 0
+  index: -1

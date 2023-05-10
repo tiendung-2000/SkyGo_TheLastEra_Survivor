@@ -1,0 +1,118 @@
+
+NV1.png
+size: 251,532
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1. Blink/Blink9
+  rotate: false
+  xy: 2, 427
+  size: 141, 103
+  orig: 300, 300
+  offset: 61, 75
+  index: -1
+Die/NV1
+  rotate: true
+  xy: 2, 2
+  size: 79, 100
+  orig: 79, 100
+  offset: 0, 0
+  index: -1
+Die/NV2
+  rotate: false
+  xy: 2, 312
+  size: 88, 113
+  orig: 88, 113
+  offset: 0, 0
+  index: -1
+Die/NV3
+  rotate: false
+  xy: 92, 312
+  size: 74, 113
+  orig: 74, 113
+  offset: 0, 0
+  index: -1
+Die/NV4
+  rotate: false
+  xy: 86, 93
+  size: 74, 109
+  orig: 74, 109
+  offset: 0, 0
+  index: -1
+Die/NV5
+  rotate: false
+  xy: 168, 331
+  size: 66, 96
+  orig: 66, 96
+  offset: 0, 0
+  index: -1
+Die/NV6
+  rotate: true
+  xy: 207, 89
+  size: 70, 35
+  orig: 70, 35
+  offset: 0, 0
+  index: -1
+Die/NV7
+  rotate: true
+  xy: 207, 17
+  size: 70, 39
+  orig: 70, 39
+  offset: 0, 0
+  index: -1
+Die/NV8
+  rotate: true
+  xy: 162, 110
+  size: 92, 31
+  orig: 92, 31
+  offset: 0, 0
+  index: -1
+Die/NV9
+  rotate: true
+  xy: 195, 161
+  size: 70, 40
+  orig: 70, 40
+  offset: 0, 0
+  index: -1
+Idel/NV1_1
+  rotate: false
+  xy: 145, 429
+  size: 84, 101
+  orig: 84, 101
+  offset: 0, 0
+  index: -1
+Idel/NV1_2
+  rotate: false
+  xy: 170, 233
+  size: 79, 96
+  orig: 79, 96
+  offset: 0, 0
+  index: -1
+Move/NV5_1
+  rotate: true
+  xy: 104, 9
+  size: 82, 101
+  orig: 82, 106
+  offset: 0, 0
+  index: -1
+Move/NV5_3
+  rotate: false
+  xy: 2, 83
+  size: 82, 110
+  orig: 82, 110
+  offset: 0, 0
+  index: -1
+Move/NV5_4
+  rotate: false
+  xy: 86, 204
+  size: 82, 106
+  orig: 82, 106
+  offset: 0, 0
+  index: -1
+Move/Nv5_2
+  rotate: false
+  xy: 2, 195
+  size: 82, 115
+  orig: 82, 115
+  offset: 0, 0
+  index: -1

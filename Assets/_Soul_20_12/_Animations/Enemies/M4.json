@@ -1,0 +1,89 @@
+{
+"skeleton": { "hash": "WxmPxt/2CKqZPuRWq8QBa2KpqLU", "spine": "3.8.99", "images": "D:/PTS/Game Soul/File_Anh_Long/Spine_Monster/Monster_4/", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Attack", "parent": "root", "y": 14.14 },
+	{ "name": "Die", "parent": "root" },
+	{ "name": "Move", "parent": "root" }
+],
+"slots": [
+	{ "name": "Attack", "bone": "Attack" },
+	{ "name": "Die", "bone": "Die" },
+	{ "name": "Move", "bone": "Move" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Attack": {
+				"Attack/Mons1": { "width": 64, "height": 64 },
+				"Attack/Mons2": { "width": 64, "height": 64 },
+				"Attack/Mons3": { "width": 64, "height": 64 },
+				"Attack/Mons4": { "width": 64, "height": 64 },
+				"Attack/Mons5": { "width": 64, "height": 64 },
+				"Attack/Mons6": { "width": 64, "height": 64 },
+				"Attack/Mons7": { "width": 64, "height": 64 },
+				"Attack/Mons8": { "width": 64, "height": 64 },
+				"Attack/Mons9": { "width": 64, "height": 64 }
+			},
+			"Die": {
+				"Die/Mons1a": { "y": 14.36, "width": 64, "height": 64 },
+				"Die/Mons2a": { "y": 14.36, "width": 64, "height": 64 },
+				"Die/Mons3a": { "y": 14.36, "width": 64, "height": 64 },
+				"Die/Mons4a": { "y": 14.36, "width": 64, "height": 64 },
+				"Die/Mons5a": { "y": 14.36, "width": 64, "height": 64 }
+			},
+			"Move": {
+				"Move/Mons4": { "y": 15.43, "width": 64, "height": 64 },
+				"Move/Mons5": { "y": 15.43, "width": 64, "height": 64 },
+				"Move/Mons6": { "y": 15.43, "width": 64, "height": 64 }
+			}
+		}
+	}
+],
+"animations": {
+	"Attack": {
+		"slots": {
+			"Attack": {
+				"attachment": [
+					{ "name": "Attack/Mons1" },
+					{ "time": 0.1, "name": "Attack/Mons2" },
+					{ "time": 0.2, "name": "Attack/Mons3" },
+					{ "time": 0.3, "name": "Attack/Mons4" },
+					{ "time": 0.6667, "name": "Attack/Mons5" },
+					{ "time": 0.7667, "name": "Attack/Mons6" },
+					{ "time": 0.8667, "name": "Attack/Mons7" },
+					{ "time": 0.9333, "name": "Attack/Mons8" },
+					{ "time": 1.0333, "name": "Attack/Mons9" }
+				]
+			}
+		}
+	},
+	"Die": {
+		"slots": {
+			"Die": {
+				"attachment": [
+					{ "name": "Die/Mons1a" },
+					{ "time": 0.1, "name": "Die/Mons2a" },
+					{ "time": 0.2333, "name": "Die/Mons3a" },
+					{ "time": 0.3333, "name": "Die/Mons4a" },
+					{ "time": 0.4333, "name": "Die/Mons5a" }
+				]
+			}
+		}
+	},
+	"Move": {
+		"slots": {
+			"Move": {
+				"attachment": [
+					{ "name": "Move/Mons4" },
+					{ "time": 0.1, "name": "Move/Mons5" },
+					{ "time": 0.2, "name": "Move/Mons6" },
+					{ "time": 0.3, "name": "Move/Mons5" },
+					{ "time": 0.4, "name": "Move/Mons4" }
+				]
+			}
+		}
+	}
+}
+}

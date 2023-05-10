@@ -1,0 +1,524 @@
+
+Mini_boss3.png
+size: 1971,142
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Die/Mons1
+  rotate: false
+  xy: 1759, 73
+  size: 73, 67
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Die/Mons10
+  rotate: false
+  xy: 1753, 32
+  size: 74, 39
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Die/Mons11
+  rotate: false
+  xy: 1829, 35
+  size: 74, 36
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Die/Mons12
+  rotate: false
+  xy: 1829, 2
+  size: 74, 31
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Die/Mons13
+  rotate: false
+  xy: 1753, 3
+  size: 74, 27
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Die/Mons14
+  rotate: false
+  xy: 1601, 2
+  size: 74, 22
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Die/Mons15
+  rotate: false
+  xy: 1677, 11
+  size: 74, 16
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Die/Mons16
+  rotate: false
+  xy: 160, 57
+  size: 74, 10
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Die/Mons17
+  rotate: false
+  xy: 78, 2
+  size: 74, 9
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Die/Mons18
+  rotate: false
+  xy: 154, 44
+  size: 74, 11
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Die/Mons19
+  rotate: false
+  xy: 1677, 2
+  size: 74, 7
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Die/Mons2
+  rotate: false
+  xy: 1377, 74
+  size: 75, 66
+  orig: 80, 80
+  offset: 1, 7
+  index: -1
+Die/Mons20
+  rotate: false
+  xy: 154, 37
+  size: 74, 5
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Die/Mons21
+  rotate: false
+  xy: 154, 30
+  size: 74, 5
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Die/Mons22
+  rotate: false
+  xy: 154, 23
+  size: 74, 5
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Die/Mons23
+  rotate: false
+  xy: 154, 16
+  size: 74, 5
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Die/Mons3
+  rotate: false
+  xy: 2, 2
+  size: 74, 64
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Die/Mons4
+  rotate: false
+  xy: 547, 71
+  size: 75, 69
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Die/Mons5
+  rotate: false
+  xy: 160, 69
+  size: 75, 71
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Die/Mons6
+  rotate: false
+  xy: 78, 13
+  size: 74, 53
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Die/Mons7
+  rotate: true
+  xy: 1909, 66
+  size: 74, 60
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Die/Mons8
+  rotate: false
+  xy: 1601, 26
+  size: 74, 45
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Die/Mons9
+  rotate: false
+  xy: 1677, 29
+  size: 74, 42
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Idle/Mons1
+  rotate: false
+  xy: 776, 2
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill1_Atk/Mons8
+  rotate: false
+  xy: 776, 2
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill1_Ready/Mons1
+  rotate: false
+  xy: 776, 2
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Idle/Mons2
+  rotate: false
+  xy: 1531, 73
+  size: 74, 67
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Idle/Mons3
+  rotate: false
+  xy: 1531, 73
+  size: 74, 67
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Idle/Mons4
+  rotate: false
+  xy: 1454, 74
+  size: 75, 66
+  orig: 80, 80
+  offset: 1, 7
+  index: -1
+Skill1_Atk/Mons1
+  rotate: false
+  xy: 1607, 73
+  size: 74, 67
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Skill1_Atk/Mons2
+  rotate: false
+  xy: 1683, 73
+  size: 74, 67
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Skill1_Atk/Mons3
+  rotate: false
+  xy: 237, 2
+  size: 76, 68
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Skill1_Atk/Mons4
+  rotate: false
+  xy: 547, 2
+  size: 75, 67
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Skill1_Atk/Mons5
+  rotate: false
+  xy: 315, 2
+  size: 76, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill1_Atk/Mons6
+  rotate: false
+  xy: 851, 2
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill1_Atk/Mons7
+  rotate: false
+  xy: 852, 72
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill1_Ready/Mons2
+  rotate: false
+  xy: 2, 68
+  size: 77, 72
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill1_Ready/Mons3
+  rotate: false
+  xy: 81, 68
+  size: 77, 72
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill1_Ready/Mons4
+  rotate: false
+  xy: 81, 68
+  size: 77, 72
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill1_Ready/Mons5
+  rotate: false
+  xy: 81, 68
+  size: 77, 72
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill2_Atk/Mons1
+  rotate: false
+  xy: 471, 72
+  size: 74, 68
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Skill2_Atk/Mons10
+  rotate: false
+  xy: 1076, 2
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill2_Atk/Mons11
+  rotate: false
+  xy: 776, 72
+  size: 74, 68
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Skill2_Atk/Mons12
+  rotate: false
+  xy: 1077, 72
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill2_Atk/Mons13
+  rotate: false
+  xy: 1151, 2
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill2_Atk/Mons14
+  rotate: false
+  xy: 316, 72
+  size: 76, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill2_Atk/Mons15
+  rotate: false
+  xy: 393, 2
+  size: 75, 68
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Skill2_Atk/Mons16
+  rotate: false
+  xy: 1152, 72
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill2_Atk/Mons2
+  rotate: false
+  xy: 926, 2
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill2_Atk/Mons3
+  rotate: false
+  xy: 624, 72
+  size: 74, 68
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Skill2_Atk/Mons4
+  rotate: false
+  xy: 927, 72
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill2_Atk/Mons5
+  rotate: false
+  xy: 624, 2
+  size: 74, 68
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Skill2_Atk/Mons6
+  rotate: false
+  xy: 1001, 2
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill2_Atk/Mons7
+  rotate: false
+  xy: 700, 72
+  size: 74, 68
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Skill2_Atk/Mons8
+  rotate: false
+  xy: 1002, 72
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill2_Atk/Mons9
+  rotate: false
+  xy: 700, 2
+  size: 74, 68
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Skill2_Ready/Mons1
+  rotate: false
+  xy: 1834, 73
+  size: 73, 67
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill3_Rady/Mons1
+  rotate: false
+  xy: 1834, 73
+  size: 73, 67
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill2_Ready/Mons2
+  rotate: false
+  xy: 1451, 5
+  size: 73, 67
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill3_Rady/Mons2
+  rotate: false
+  xy: 1451, 5
+  size: 73, 67
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill2_Ready/Mons3
+  rotate: false
+  xy: 1526, 4
+  size: 73, 67
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill3_Rady/Mons3
+  rotate: false
+  xy: 1526, 4
+  size: 73, 67
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill2_Ready/Mons4
+  rotate: false
+  xy: 1226, 2
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill2_Ready/Mons5
+  rotate: false
+  xy: 1226, 2
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill3_Atk/Mons8
+  rotate: false
+  xy: 1226, 2
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill3_Rady/Mons4
+  rotate: false
+  xy: 1226, 2
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill3_Rady/Mons5
+  rotate: false
+  xy: 1226, 2
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill3_Atk/Mons1
+  rotate: false
+  xy: 394, 72
+  size: 75, 68
+  orig: 80, 80
+  offset: 1, 7
+  index: -1
+Skill3_Atk/Mons2
+  rotate: false
+  xy: 1227, 72
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill3_Atk/Mons3
+  rotate: false
+  xy: 470, 2
+  size: 75, 68
+  orig: 80, 80
+  offset: 2, 7
+  index: -1
+Skill3_Atk/Mons4
+  rotate: false
+  xy: 237, 72
+  size: 77, 68
+  orig: 80, 80
+  offset: 1, 7
+  index: -1
+Skill3_Atk/Mons5
+  rotate: false
+  xy: 1301, 2
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill3_Atk/Mons6
+  rotate: false
+  xy: 1302, 72
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1
+Skill3_Atk/Mons7
+  rotate: false
+  xy: 1376, 2
+  size: 73, 68
+  orig: 80, 80
+  offset: 3, 7
+  index: -1

@@ -1,0 +1,332 @@
+{
+"skeleton": { "hash": "cMi31YdEneS3c0qK021cWPK8ZCk", "spine": "3.8.99", "images": "D:/PTS/Game Soul/File_Anh_Long/Sprite_Boss/Boss_2/", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Attack_1", "parent": "root" },
+	{ "name": "Attack_3_Move", "parent": "root" },
+	{ "name": "Attack3_ready", "parent": "root" },
+	{ "name": "Attack_4", "parent": "root" },
+	{ "name": "Die", "parent": "root", "x": -0.4, "y": -0.4 },
+	{ "name": "Move", "parent": "root" },
+	{ "name": "Attack_5", "parent": "root" },
+	{ "name": "Attack_2", "parent": "root" },
+	{ "name": "Attack_3_Move2", "parent": "root" },
+	{ "name": "Attack3_ready2", "parent": "root" }
+],
+"slots": [
+	{ "name": "Attack1_2", "bone": "Attack_1" },
+	{ "name": "Attack1_3", "bone": "Attack_2" },
+	{ "name": "Attack3_move", "bone": "Attack_3_Move" },
+	{ "name": "Attack3_move2", "bone": "Attack_3_Move2" },
+	{ "name": "Attack3_Ready", "bone": "Attack3_ready" },
+	{ "name": "Attack3_Ready2", "bone": "Attack3_ready2" },
+	{ "name": "Attack_4", "bone": "Attack_4" },
+	{ "name": "Attack_5", "bone": "Attack_5" },
+	{ "name": "Die", "bone": "Die" },
+	{ "name": "Move", "bone": "Move" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Attack1_2": {
+				"Attack_1_2/atk1": { "y": 64.27, "width": 240, "height": 240 },
+				"Attack_1_2/atk2": { "y": 64.27, "width": 240, "height": 240 },
+				"Attack_1_2/atk3": { "y": 64.27, "width": 240, "height": 240 },
+				"Attack_1_2/atk4": { "y": 64.27, "width": 240, "height": 240 },
+				"Attack_1_2/atk5": { "y": 64.27, "width": 240, "height": 240 }
+			},
+			"Attack1_3": {
+				"Attack_1_2/atk1": { "y": 64.27, "width": 240, "height": 240 },
+				"Attack_1_2/atk2": { "y": 64.27, "width": 240, "height": 240 },
+				"Attack_1_2/atk3": { "y": 64.27, "width": 240, "height": 240 },
+				"Attack_1_2/atk4": { "y": 64.27, "width": 240, "height": 240 },
+				"Attack_1_2/atk5": { "y": 64.27, "width": 240, "height": 240 }
+			},
+			"Attack3_Ready": {
+				"Attack3_Ready/ready1": { "y": 64.48, "width": 240, "height": 240 },
+				"Attack3_Ready/ready2": { "y": 64.48, "width": 240, "height": 240 },
+				"Attack3_Ready/ready3": { "y": 64.48, "width": 240, "height": 240 },
+				"Attack3_Ready/ready4": { "y": 64.48, "width": 240, "height": 240 },
+				"Attack3_Ready/ready5": { "y": 64.48, "width": 240, "height": 240 }
+			},
+			"Attack3_Ready2": {
+				"Attack3_Ready/ready1": { "y": 64.48, "width": 240, "height": 240 },
+				"Attack3_Ready/ready2": { "y": 64.48, "width": 240, "height": 240 },
+				"Attack3_Ready/ready3": { "y": 64.48, "width": 240, "height": 240 },
+				"Attack3_Ready/ready4": { "y": 64.48, "width": 240, "height": 240 },
+				"Attack3_Ready/ready5": { "y": 64.48, "width": 240, "height": 240 }
+			},
+			"Attack3_move": {
+				"Attack3_Move/Moving1": { "y": 62.69, "width": 240, "height": 240 },
+				"Attack3_Move/Moving2": { "y": 62.69, "width": 240, "height": 240 },
+				"Attack3_Move/Moving3": { "y": 62.69, "width": 240, "height": 240 },
+				"Attack3_Move/Moving4": { "y": 62.69, "width": 240, "height": 240 }
+			},
+			"Attack3_move2": {
+				"Attack3_Move/Moving1": { "y": 62.69, "width": 240, "height": 240 },
+				"Attack3_Move/Moving2": { "y": 62.69, "width": 240, "height": 240 },
+				"Attack3_Move/Moving3": { "y": 62.69, "width": 240, "height": 240 },
+				"Attack3_Move/Moving4": { "y": 62.69, "width": 240, "height": 240 }
+			},
+			"Attack_4": {
+				"Attack_4_5/atk1": { "y": 64.31, "width": 240, "height": 240 },
+				"Attack_4_5/atk2": { "y": 64.31, "width": 240, "height": 240 },
+				"Attack_4_5/atk3": { "y": 64.31, "width": 240, "height": 240 },
+				"Attack_4_5/atk4": { "y": 64.31, "width": 240, "height": 240 },
+				"Attack_4_5/atk5": { "y": 64.31, "width": 240, "height": 240 },
+				"Attack_4_5/atk6": { "y": 64.31, "width": 240, "height": 240 },
+				"Attack_4_5/atk7": { "y": 64.31, "width": 240, "height": 240 }
+			},
+			"Attack_5": {
+				"Attack_4_5/atk1": { "y": 64.31, "width": 240, "height": 240 },
+				"Attack_4_5/atk2": { "y": 64.31, "width": 240, "height": 240 },
+				"Attack_4_5/atk3": { "y": 64.31, "width": 240, "height": 240 },
+				"Attack_4_5/atk4": { "y": 64.31, "width": 240, "height": 240 },
+				"Attack_4_5/atk5": { "y": 64.31, "width": 240, "height": 240 },
+				"Attack_4_5/atk6": { "y": 64.31, "width": 240, "height": 240 },
+				"Attack_4_5/atk7": { "y": 64.31, "width": 240, "height": 240 }
+			},
+			"Die": {
+				"Die/Die1": { "y": 64.52, "width": 240, "height": 240 },
+				"Die/Die2": { "y": 64.52, "width": 240, "height": 240 },
+				"Die/Die3": { "y": 64.52, "width": 240, "height": 240 },
+				"Die/Die4": { "y": 64.52, "width": 240, "height": 240 },
+				"Die/Die5": { "y": 64.52, "width": 240, "height": 240 },
+				"Die/Die6": { "y": 64.52, "width": 240, "height": 240 },
+				"Die/Die7": { "y": 64.52, "width": 240, "height": 240 },
+				"Die/Die8": { "y": 64.52, "width": 240, "height": 240 },
+				"Die/Die9": { "y": 64.52, "width": 240, "height": 240 },
+				"Die/Die10": { "y": 64.52, "width": 240, "height": 240 }
+			},
+			"Move": {
+				"Move/Move1": { "y": 64.19, "width": 240, "height": 240 },
+				"Move/Move2": { "y": 64.19, "width": 240, "height": 240 },
+				"Move/Move3": { "y": 64.19, "width": 240, "height": 240 },
+				"Move/Move4": { "y": 64.19, "width": 240, "height": 240 }
+			}
+		}
+	}
+],
+"animations": {
+	"Attack3_Move": {
+		"slots": {
+			"Attack3_move": {
+				"attachment": [
+					{ "name": "Attack3_Move/Moving1" },
+					{ "time": 0.1667, "name": "Attack3_Move/Moving2" },
+					{ "time": 0.3333, "name": "Attack3_Move/Moving3" },
+					{ "time": 0.5, "name": "Attack3_Move/Moving4" }
+				]
+			},
+			"Attack3_move2": {
+				"attachment": [
+					{ "name": "Attack3_Move/Moving1" },
+					{ "time": 0.1667, "name": "Attack3_Move/Moving2" },
+					{ "time": 0.3333, "name": "Attack3_Move/Moving3" },
+					{ "time": 0.5, "name": "Attack3_Move/Moving4" }
+				]
+			}
+		},
+		"bones": {
+			"Attack_3_Move": {
+				"translate": [
+					{ "y": -2.23, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1667, "y": 0.96, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3333, "y": -2.23, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "y": 0.32 }
+				]
+			},
+			"Attack_3_Move2": {
+				"translate": [
+					{ "y": -2.23, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1667, "y": 0.96, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3333, "y": -2.23, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "y": 0.32 }
+				]
+			}
+		}
+	},
+	"Attack3_ready": {
+		"slots": {
+			"Attack3_Ready": {
+				"attachment": [
+					{ "name": "Attack3_Ready/ready1" },
+					{ "time": 0.1333, "name": "Attack3_Ready/ready2" },
+					{ "time": 0.3667, "name": "Attack3_Ready/ready3" },
+					{ "time": 0.5333, "name": "Attack3_Ready/ready4" },
+					{ "time": 0.7, "name": "Attack3_Ready/ready5" }
+				]
+			},
+			"Attack3_Ready2": {
+				"attachment": [
+					{ "name": "Attack3_Ready/ready1" },
+					{ "time": 0.1333, "name": "Attack3_Ready/ready2" },
+					{ "time": 0.3667, "name": "Attack3_Ready/ready3" },
+					{ "time": 0.5333, "name": "Attack3_Ready/ready4" },
+					{ "time": 0.7, "name": "Attack3_Ready/ready5" }
+				]
+			}
+		}
+	},
+	"Attack_1": {
+		"slots": {
+			"Attack1_2": {
+				"attachment": [
+					{ "name": "Attack_1_2/atk1" },
+					{ "time": 0.1, "name": "Attack_1_2/atk2" },
+					{ "time": 0.2333, "name": "Attack_1_2/atk3" },
+					{ "time": 0.4333, "name": "Attack_1_2/atk4" },
+					{ "time": 0.6667, "name": "Attack_1_2/atk5" }
+				]
+			},
+			"Attack1_3": {
+				"attachment": [
+					{ "name": "Attack_1_2/atk1" },
+					{ "time": 0.1, "name": "Attack_1_2/atk2" },
+					{ "time": 0.2333, "name": "Attack_1_2/atk3" },
+					{ "time": 0.4333, "name": "Attack_1_2/atk4" },
+					{ "time": 0.6667, "name": "Attack_1_2/atk5" }
+				]
+			}
+		}
+	},
+	"Attack_2": {
+		"slots": {
+			"Attack1_2": {
+				"attachment": [
+					{ "name": "Attack_1_2/atk1" },
+					{ "time": 0.1, "name": "Attack_1_2/atk2" },
+					{ "time": 0.2333, "name": "Attack_1_2/atk3" },
+					{ "time": 0.4333, "name": "Attack_1_2/atk4" },
+					{ "time": 0.6667, "name": "Attack_1_2/atk5" }
+				]
+			},
+			"Attack1_3": {
+				"attachment": [
+					{ "name": "Attack_1_2/atk1" },
+					{ "time": 0.1, "name": "Attack_1_2/atk2" },
+					{ "time": 0.2333, "name": "Attack_1_2/atk3" },
+					{ "time": 0.4333, "name": "Attack_1_2/atk4" },
+					{ "time": 0.6667, "name": "Attack_1_2/atk5" }
+				]
+			}
+		}
+	},
+	"Attack_4": {
+		"slots": {
+			"Attack_4": {
+				"attachment": [
+					{ "name": "Attack_4_5/atk1" },
+					{ "time": 0.1, "name": "Attack_4_5/atk2" },
+					{ "time": 0.1667, "name": "Attack_4_5/atk3" },
+					{ "time": 0.2667, "name": "Attack_4_5/atk4" },
+					{ "time": 0.3667, "name": "Attack_4_5/atk5" },
+					{ "time": 0.4667, "name": "Attack_4_5/atk6" },
+					{ "time": 0.5667, "name": "Attack_4_5/atk7" }
+				]
+			},
+			"Attack_5": {
+				"attachment": [
+					{ "name": "Attack_4_5/atk1" },
+					{ "time": 0.1, "name": "Attack_4_5/atk2" },
+					{ "time": 0.1667, "name": "Attack_4_5/atk3" },
+					{ "time": 0.2667, "name": "Attack_4_5/atk4" },
+					{ "time": 0.3667, "name": "Attack_4_5/atk5" },
+					{ "time": 0.4667, "name": "Attack_4_5/atk6" },
+					{ "time": 0.5667, "name": "Attack_4_5/atk7" }
+				]
+			}
+		}
+	},
+	"Attack_5": {
+		"slots": {
+			"Attack_4": {
+				"attachment": [
+					{ "name": "Attack_4_5/atk1" },
+					{ "time": 0.1, "name": "Attack_4_5/atk2" },
+					{ "time": 0.1667, "name": "Attack_4_5/atk3" },
+					{ "time": 0.2667, "name": "Attack_4_5/atk4" },
+					{ "time": 0.3667, "name": "Attack_4_5/atk5" },
+					{ "time": 0.4667, "name": "Attack_4_5/atk6" },
+					{ "time": 0.5667, "name": "Attack_4_5/atk7" }
+				]
+			},
+			"Attack_5": {
+				"attachment": [
+					{ "name": "Attack_4_5/atk1" },
+					{ "time": 0.1, "name": "Attack_4_5/atk2" },
+					{ "time": 0.1667, "name": "Attack_4_5/atk3" },
+					{ "time": 0.2667, "name": "Attack_4_5/atk4" },
+					{ "time": 0.3667, "name": "Attack_4_5/atk5" },
+					{ "time": 0.4667, "name": "Attack_4_5/atk6" },
+					{ "time": 0.5667, "name": "Attack_4_5/atk7" }
+				]
+			}
+		}
+	},
+	"Die": {
+		"slots": {
+			"Die": {
+				"attachment": [
+					{ "name": "Die/Die1" },
+					{ "time": 0.1, "name": "Die/Die2" },
+					{ "time": 0.2333, "name": "Die/Die3" },
+					{ "time": 0.3333, "name": "Die/Die4" },
+					{ "time": 0.4333, "name": "Die/Die5" },
+					{ "time": 0.7, "name": "Die/Die6" },
+					{ "time": 0.7667, "name": "Die/Die7" },
+					{ "time": 0.8333, "name": "Die/Die8" },
+					{ "time": 0.9, "name": "Die/Die9" },
+					{ "time": 0.9667, "name": "Die/Die10" },
+					{ "time": 1.0333, "name": null }
+				]
+			}
+		}
+	},
+	"Move": {
+		"slots": {
+			"Move": {
+				"attachment": [
+					{ "name": "Move/Move1" },
+					{ "time": 0.0667, "name": "Move/Move2" },
+					{ "time": 0.1333, "name": "Move/Move3" },
+					{ "time": 0.2, "name": "Move/Move4" },
+					{ "time": 0.2667, "name": "Move/Move1" },
+					{ "time": 0.3333, "name": "Move/Move2" },
+					{ "time": 0.4, "name": "Move/Move3" },
+					{ "time": 0.4667, "name": "Move/Move4" },
+					{ "time": 0.5333, "name": "Move/Move1" },
+					{ "time": 0.6, "name": "Move/Move2" },
+					{ "time": 0.6667, "name": "Move/Move3" },
+					{ "time": 0.7333, "name": "Move/Move4" },
+					{ "time": 0.8, "name": "Move/Move1" },
+					{ "time": 0.8667, "name": "Move/Move2" },
+					{ "time": 0.9333, "name": "Move/Move3" },
+					{ "time": 1, "name": "Move/Move4" },
+					{ "time": 1.0667, "name": "Move/Move1" },
+					{ "time": 1.1333, "name": "Move/Move2" },
+					{ "time": 1.2, "name": "Move/Move3" },
+					{ "time": 1.2667, "name": "Move/Move4" },
+					{ "time": 1.3333, "name": "Move/Move1" },
+					{ "time": 1.4, "name": "Move/Move2" },
+					{ "time": 1.4667, "name": "Move/Move3" },
+					{ "time": 1.5333, "name": "Move/Move4" },
+					{ "time": 1.6, "name": "Move/Move1" },
+					{ "time": 1.6667, "name": "Move/Move2" },
+					{ "time": 1.7333, "name": "Move/Move3" },
+					{ "time": 1.8, "name": "Move/Move4" },
+					{ "time": 1.8667, "name": "Move/Move1" },
+					{ "time": 1.9333, "name": "Move/Move2" },
+					{ "time": 2, "name": "Move/Move3" },
+					{ "time": 2.0667, "name": "Move/Move4" },
+					{ "time": 2.1333, "name": "Move/Move1" },
+					{ "time": 2.2, "name": "Move/Move2" },
+					{ "time": 2.2667, "name": "Move/Move3" },
+					{ "time": 2.3333, "name": "Move/Move4" }
+				]
+			}
+		}
+	}
+}
+}

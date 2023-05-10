@@ -1,0 +1,55 @@
+
+shotgun.png
+size: 207,65
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sotgun
+  rotate: true
+  xy: 193, 27
+  size: 36, 12
+  orig: 38, 14
+  offset: 1, 1
+  index: -1
+sotgun1
+  rotate: false
+  xy: 54, 6
+  size: 36, 13
+  orig: 38, 15
+  offset: 1, 1
+  index: -1
+sotgun2
+  rotate: false
+  xy: 2, 21
+  size: 109, 42
+  orig: 111, 44
+  offset: 1, 1
+  index: -1
+sotgun3
+  rotate: false
+  xy: 113, 22
+  size: 78, 41
+  orig: 80, 43
+  offset: 1, 1
+  index: -1
+sotgun3 copy
+  rotate: false
+  xy: 168, 3
+  size: 36, 17
+  orig: 38, 19
+  offset: 1, 1
+  index: -1
+sotgun4
+  rotate: false
+  xy: 113, 2
+  size: 53, 18
+  orig: 55, 20
+  offset: 1, 1
+  index: -1
+sotgun5
+  rotate: false
+  xy: 2, 5
+  size: 50, 14
+  orig: 52, 16
+  offset: 1, 1
+  index: -1

@@ -1,0 +1,111 @@
+
+boom.png
+size: 367,858
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+thuoc_sung_bom10
+  rotate: false
+  xy: 2, 280
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+thuoc_sung_bom11
+  rotate: false
+  xy: 176, 238
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+thuoc_sung_bom12
+  rotate: false
+  xy: 2, 110
+  size: 170, 168
+  orig: 172, 168
+  offset: 1, 0
+  index: -1
+thuoc_sung_bom13
+  rotate: false
+  xy: 204, 698
+  size: 158, 158
+  orig: 160, 160
+  offset: 1, 1
+  index: -1
+thuoc_sung_bom14
+  rotate: false
+  xy: 204, 550
+  size: 150, 146
+  orig: 154, 152
+  offset: 2, 3
+  index: -1
+thuoc_sung_bom15
+  rotate: false
+  xy: 204, 412
+  size: 136, 136
+  orig: 136, 136
+  offset: 0, 0
+  index: -1
+thuoc_sung_bom4
+  rotate: false
+  xy: 291, 2
+  size: 62, 88
+  orig: 62, 88
+  offset: 0, 0
+  index: -1
+thuoc_sung_bom5
+  rotate: true
+  xy: 2, 29
+  size: 79, 91
+  orig: 79, 91
+  offset: 0, 0
+  index: -1
+thuoc_sung_bom6
+  rotate: true
+  xy: 174, 129
+  size: 107, 119
+  orig: 107, 119
+  offset: 0, 0
+  index: -1
+thuoc_sung_bom7
+  rotate: false
+  xy: 174, 12
+  size: 115, 115
+  orig: 115, 115
+  offset: 0, 0
+  index: -1
+thuoc_sung_bom8
+  rotate: false
+  xy: 2, 656
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+thuoc_sung_bom9
+  rotate: false
+  xy: 2, 454
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+thuoc_sung_boom2
+  rotate: true
+  xy: 295, 170
+  size: 66, 70
+  orig: 66, 70
+  offset: 0, 0
+  index: -1
+thuoc_sung_boom3
+  rotate: false
+  xy: 295, 92
+  size: 66, 76
+  orig: 66, 76
+  offset: 0, 0
+  index: -1
+thuoc_sung_boom1
+  rotate: false
+  xy: 295, 92
+  size: 66, 76
+  orig: 66, 76
+  offset: 0, 0
+  index: -1

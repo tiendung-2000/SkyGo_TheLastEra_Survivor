@@ -1,0 +1,289 @@
+{
+"skeleton": {
+	"hash": "c4+a1ZTVXPL7PVGF8Vsjtdtm44M",
+	"spine": "3.8.99",
+	"x": -40,
+	"y": -13.09,
+	"width": 80,
+	"height": 80.27,
+	"images": "D:/PTS/Game Soul/File_Anh_Long/Sprite_Mini_Boss/Mini_Boss_2_80x80/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "Move", "parent": "root" },
+	{ "name": "Die", "parent": "root" },
+	{ "name": "Attack1", "parent": "root" },
+	{ "name": "Attack_2", "parent": "root" },
+	{ "name": "Attack3", "parent": "root" },
+	{ "name": "Attack3_Ready", "parent": "root", "y": 5.29 }
+],
+"slots": [
+	{ "name": "Move", "bone": "Move" },
+	{ "name": "Die", "bone": "Die" },
+	{ "name": "Attack1", "bone": "Attack1" },
+	{ "name": "Attack2", "bone": "Attack_2", "attachment": "Attack_2/Boss7" },
+	{ "name": "Attack3", "bone": "Attack3" },
+	{ "name": "Attack3_Ready", "bone": "Attack3_Ready", "attachment": "Attack_3_Ready/Boss1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Attack1": {
+				"Attack_1/Boss1": { "y": 26.52, "width": 80, "height": 80 },
+				"Attack_1/Boss2": { "y": 26.52, "width": 80, "height": 80 },
+				"Attack_1/Boss3": { "y": 26.52, "width": 80, "height": 80 },
+				"Attack_1/Boss4": { "y": 26.52, "width": 80, "height": 80 },
+				"Attack_1/Boss5": { "y": 26.52, "width": 80, "height": 80 },
+				"Attack_1/Boss6": { "y": 26.52, "width": 80, "height": 80 },
+				"Attack_1/Boss7": { "y": 26.52, "width": 80, "height": 80 },
+				"Attack_1/Boss8": { "y": 26.52, "width": 80, "height": 80 },
+				"Attack_1/Boss9": { "y": 26.52, "width": 80, "height": 80 },
+				"Attack_1/Boss10": { "y": 26.52, "width": 80, "height": 80 },
+				"Attack_1/Boss11": { "y": 26.52, "width": 80, "height": 80 },
+				"Attack_1/Boss12": { "y": 26.52, "width": 80, "height": 80 },
+				"Attack_1/Boss13": { "y": 26.52, "width": 80, "height": 80 },
+				"Attack_1/Boss14": { "y": 26.52, "width": 80, "height": 80 }
+			},
+			"Attack2": {
+				"Attack_2/Boss1": { "y": 27.18, "width": 80, "height": 80 },
+				"Attack_2/Boss2": { "y": 27.18, "width": 80, "height": 80 },
+				"Attack_2/Boss3": { "y": 27.18, "width": 80, "height": 80 },
+				"Attack_2/Boss4": { "y": 27.18, "width": 80, "height": 80 },
+				"Attack_2/Boss5": { "y": 27.18, "width": 80, "height": 80 },
+				"Attack_2/Boss6": { "y": 27.18, "width": 80, "height": 80 },
+				"Attack_2/Boss7": { "y": 27.18, "width": 80, "height": 80 }
+			},
+			"Attack3": {
+				"Attack_3_Attack/Boss1": { "y": 35.17, "width": 80, "height": 80 },
+				"Attack_3_Attack/Boss2": { "y": 35.17, "width": 80, "height": 80 },
+				"Attack_3_Attack/Boss3": { "y": 35.17, "width": 80, "height": 80 },
+				"Attack_3_Attack/Boss4": { "y": 35.17, "width": 80, "height": 80 },
+				"Attack_3_Attack/Boss5": { "y": 35.17, "width": 80, "height": 80 },
+				"Attack_3_Attack/Boss6": { "y": 35.17, "width": 80, "height": 80 },
+				"Attack_3_Attack/Boss7": { "y": 35.17, "width": 80, "height": 80 },
+				"Attack_3_Attack/Boss8": { "y": 35.17, "width": 80, "height": 80 }
+			},
+			"Attack3_Ready": {
+				"Attack_3_Ready/Boss1": { "y": 21.62, "width": 80, "height": 80 },
+				"Attack_3_Ready/Boss2": { "y": 21.62, "width": 80, "height": 80 },
+				"Attack_3_Ready/Boss3": { "y": 21.62, "width": 80, "height": 80 },
+				"Attack_3_Ready/Boss4": { "y": 21.62, "width": 80, "height": 80 },
+				"Attack_3_Ready/Boss5": { "y": 21.62, "width": 80, "height": 80 },
+				"Attack_3_Ready/Boss6": { "y": 21.62, "width": 80, "height": 80 },
+				"Attack_3_Ready/Boss7": { "y": 21.62, "width": 80, "height": 80 },
+				"Attack_3_Ready/Boss8": { "y": 21.62, "width": 80, "height": 80 },
+				"Attack_3_Ready/Boss9": { "y": 21.62, "width": 80, "height": 80 },
+				"Attack_3_Ready/Boss10": { "y": 21.62, "width": 80, "height": 80 }
+			},
+			"Die": {
+				"Die/Boss1": { "y": 30.16, "width": 80, "height": 80 },
+				"Die/Boss2": { "y": 30.16, "width": 80, "height": 80 },
+				"Die/Boss3": { "y": 30.16, "width": 80, "height": 80 },
+				"Die/Boss4": { "y": 30.16, "width": 80, "height": 80 },
+				"Die/Boss5": { "y": 30.16, "width": 80, "height": 80 },
+				"Die/Boss6": { "y": 30.16, "width": 80, "height": 80 },
+				"Die/Boss7": { "y": 30.16, "width": 80, "height": 80 },
+				"Die/Boss8": { "y": 30.16, "width": 80, "height": 80 },
+				"Die/Boss9": { "y": 30.16, "width": 80, "height": 80 },
+				"Die/Boss10": { "y": 30.16, "width": 80, "height": 80 }
+			},
+			"Move": {
+				"Move/Boss1": { "x": -0.28, "y": 26.83, "width": 80, "height": 80 },
+				"Move/Boss2": { "y": 26.83, "width": 80, "height": 80 },
+				"Move/Boss3": { "y": 26.83, "width": 80, "height": 80 },
+				"Move/Boss4": { "y": 26.83, "width": 80, "height": 80 },
+				"Move/Boss5": { "y": 26.83, "width": 80, "height": 80 },
+				"Move/Boss6": { "y": 26.83, "width": 80, "height": 80 },
+				"Move/Boss7": { "y": 26.83, "width": 80, "height": 80 }
+			}
+		}
+	}
+],
+"animations": {
+	"Die": {
+		"slots": {
+			"Attack2": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Attack3_Ready": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Die": {
+				"attachment": [
+					{ "name": "Die/Boss1" },
+					{ "time": 0.0667, "name": "Die/Boss2" },
+					{ "time": 0.1, "name": "Die/Boss3" },
+					{ "time": 0.1667, "name": "Die/Boss4" },
+					{ "time": 0.2, "name": "Die/Boss5" },
+					{ "time": 0.2667, "name": "Die/Boss6" },
+					{ "time": 0.3, "name": "Die/Boss7" },
+					{ "time": 0.3667, "name": "Die/Boss8" },
+					{ "time": 0.4333, "name": "Die/Boss9" },
+					{ "time": 0.5333, "name": "Die/Boss10" },
+					{ "time": 0.6667, "name": null }
+				]
+			}
+		}
+	},
+	"Move": {
+		"slots": {
+			"Attack2": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Attack3_Ready": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Move": {
+				"attachment": [
+					{ "name": "Move/Boss1" },
+					{ "time": 0.0667, "name": "Move/Boss2" },
+					{ "time": 0.1667, "name": "Move/Boss3" },
+					{ "time": 0.2333, "name": "Move/Boss4" },
+					{ "time": 0.3333, "name": "Move/Boss5" },
+					{ "time": 0.4, "name": "Move/Boss6" },
+					{ "time": 0.4667, "name": "Move/Boss7" },
+					{ "time": 0.5333, "name": "Move/Boss1" },
+					{ "time": 0.6, "name": "Move/Boss2" },
+					{ "time": 0.7, "name": "Move/Boss3" },
+					{ "time": 0.7667, "name": "Move/Boss4" },
+					{ "time": 0.8667, "name": "Move/Boss5" },
+					{ "time": 0.9333, "name": "Move/Boss6" },
+					{ "time": 1, "name": "Move/Boss7" },
+					{ "time": 1.0667, "name": "Move/Boss1" },
+					{ "time": 1.1333, "name": "Move/Boss2" },
+					{ "time": 1.2333, "name": "Move/Boss3" },
+					{ "time": 1.3, "name": "Move/Boss4" },
+					{ "time": 1.4, "name": "Move/Boss5" },
+					{ "time": 1.4667, "name": "Move/Boss6" },
+					{ "time": 1.5333, "name": "Move/Boss7" }
+				]
+			}
+		}
+	},
+	"Skill3_ready": {
+		"slots": {
+			"Attack1": {
+				"attachment": [
+					{ "time": 0.8667, "name": null }
+				]
+			},
+			"Attack2": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Attack3_Ready": {
+				"attachment": [
+					{ "time": 0.0667, "name": "Attack_3_Ready/Boss2" },
+					{ "time": 0.1333, "name": "Attack_3_Ready/Boss3" },
+					{ "time": 0.2, "name": "Attack_3_Ready/Boss4" },
+					{ "time": 0.2667, "name": "Attack_3_Ready/Boss5" },
+					{ "time": 0.3333, "name": "Attack_3_Ready/Boss6" },
+					{ "time": 0.4, "name": "Attack_3_Ready/Boss7" },
+					{ "time": 0.4667, "name": "Attack_3_Ready/Boss8" },
+					{ "time": 0.5333, "name": "Attack_3_Ready/Boss9" },
+					{ "time": 0.6, "name": "Attack_3_Ready/Boss10" }
+				]
+			}
+		}
+	},
+	"Skill_1": {
+		"slots": {
+			"Attack1": {
+				"attachment": [
+					{ "name": "Attack_1/Boss1" },
+					{ "time": 0.0667, "name": "Attack_1/Boss2" },
+					{ "time": 0.1333, "name": "Attack_1/Boss3" },
+					{ "time": 0.2, "name": "Attack_1/Boss4" },
+					{ "time": 0.2667, "name": "Attack_1/Boss5" },
+					{ "time": 0.3333, "name": "Attack_1/Boss6" },
+					{ "time": 0.4, "name": "Attack_1/Boss7" },
+					{ "time": 0.4667, "name": "Attack_1/Boss8" },
+					{ "time": 0.5333, "name": "Attack_1/Boss9" },
+					{ "time": 0.6, "name": "Attack_1/Boss10" },
+					{ "time": 0.6667, "name": "Attack_1/Boss11" },
+					{ "time": 0.7333, "name": "Attack_1/Boss12" },
+					{ "time": 0.8, "name": "Attack_1/Boss13" },
+					{ "time": 0.8667, "name": "Attack_1/Boss14" }
+				]
+			},
+			"Attack2": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Attack3_Ready": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		}
+	},
+	"Skill_2": {
+		"slots": {
+			"Attack1": {
+				"attachment": [
+					{ "time": 0.8667, "name": null }
+				]
+			},
+			"Attack2": {
+				"attachment": [
+					{ "name": "Attack_2/Boss1" },
+					{ "time": 0.0667, "name": "Attack_2/Boss2" },
+					{ "time": 0.1333, "name": "Attack_2/Boss3" },
+					{ "time": 0.2, "name": "Attack_2/Boss4" },
+					{ "time": 0.2667, "name": "Attack_2/Boss5" },
+					{ "time": 0.3333, "name": "Attack_2/Boss6" },
+					{ "time": 0.4, "name": "Attack_2/Boss7" }
+				]
+			},
+			"Attack3_Ready": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		}
+	},
+	"Skill_3": {
+		"slots": {
+			"Attack1": {
+				"attachment": [
+					{ "time": 0.8667, "name": null }
+				]
+			},
+			"Attack2": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Attack3": {
+				"attachment": [
+					{ "name": "Attack_3_Attack/Boss1" },
+					{ "time": 0.0667, "name": "Attack_3_Attack/Boss2" },
+					{ "time": 0.1333, "name": "Attack_3_Attack/Boss3" },
+					{ "time": 0.2, "name": "Attack_3_Attack/Boss4" },
+					{ "time": 0.2667, "name": "Attack_3_Attack/Boss5" },
+					{ "time": 0.3333, "name": "Attack_3_Attack/Boss6" },
+					{ "time": 0.4, "name": "Attack_3_Attack/Boss7" },
+					{ "time": 0.4667, "name": "Attack_3_Attack/Boss8" }
+				]
+			},
+			"Attack3_Ready": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		}
+	}
+}
+}

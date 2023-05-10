@@ -1,0 +1,254 @@
+{
+"skeleton": { "hash": "Lz1ZFQHQp+pDAGQurMMjwUbAPA0", "spine": "3.8.99", "images": "D:/PTS/Game Soul/File_Anh_Long/Sprite_Mini_Boss/", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Die", "parent": "root" },
+	{ "name": "Move", "parent": "root" },
+	{ "name": "Skill_1", "parent": "root" },
+	{ "name": "Skill_2", "parent": "root" },
+	{ "name": "Skill_3_Attack", "parent": "root" },
+	{ "name": "Skill_3_Ready", "parent": "root" }
+],
+"slots": [
+	{ "name": "Die1", "bone": "Die" },
+	{ "name": "Move", "bone": "Move" },
+	{ "name": "Skill_1", "bone": "Skill_1", "attachment": "Mini_Boss_1_80x80/Skill_1/Boss9" },
+	{ "name": "Skill_2", "bone": "Skill_2", "attachment": "Mini_Boss_1_80x80/Skill_2/Boss1" },
+	{ "name": "Still_3_Attack", "bone": "Skill_3_Attack" },
+	{ "name": "Skill_3_Ready", "bone": "Skill_3_Ready" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Die1": {
+				"Mini_Boss_1_80x80/Die/Boss1": { "y": 24.67, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Die/Boss2": { "y": 24.67, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Die/Boss3": { "y": 24.67, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Die/Boss4": { "y": 24.67, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Die/Boss5": { "y": 24.67, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Die/Boss6": { "y": 24.67, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Die/Boss7": { "y": 24.67, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Die/Boss8": { "y": 24.67, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Die/Boss9": { "y": 24.67, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Die/Boss10": { "y": 24.67, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Die/Boss11": { "y": 24.67, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Die/Boss12": { "y": 24.67, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Die/Boss13": { "y": 24.67, "width": 80, "height": 80 }
+			},
+			"Move": {
+				"Mini_Boss_1_80x80/Move/Boss1": { "y": 24.35, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Move/Boss2": { "y": 24.35, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Move/Boss3": { "y": 24.35, "width": 80, "height": 80 }
+			},
+			"Skill_1": {
+				"Mini_Boss_1_80x80/Skill_1/Boss1": { "y": 24.41, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_1/Boss2": { "y": 24.41, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_1/Boss3": { "y": 24.41, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_1/Boss4": { "y": 24.41, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_1/Boss5": { "y": 24.41, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_1/Boss6": { "y": 24.41, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_1/Boss7": { "y": 24.41, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_1/Boss8": { "y": 24.41, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_1/Boss9": { "y": 24.41, "width": 80, "height": 80 }
+			},
+			"Skill_2": {
+				"Mini_Boss_1_80x80/Skill_2/Boss1": { "y": 24.24, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_2/Boss2": { "y": 24.24, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_2/Boss3": { "y": 24.24, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_2/Boss4": { "y": 24.24, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_2/Boss5": { "y": 24.24, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_2/Boss6": { "y": 24.24, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_2/Boss7": { "y": 24.24, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_2/Boss8": { "y": 24.24, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_2/Boss9": { "y": 24.24, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_2/Boss10": { "y": 24.24, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_2/Boss11": { "y": 24.24, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_2/Boss12": { "y": 24.24, "width": 80, "height": 80 }
+			},
+			"Skill_3_Ready": {
+				"Mini_Boss_1_80x80/Skill_3_Ready/Boss1": { "y": 24.08, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_3_Ready/Boss2": { "y": 24.08, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_3_Ready/Boss3": { "y": 24.08, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_3_Ready/Boss4": { "y": 24.08, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_3_Ready/Boss5": { "y": 24.08, "width": 80, "height": 80 }
+			},
+			"Still_3_Attack": {
+				"Mini_Boss_1_80x80/Skill_3_Attack/Boss1": { "y": 23.86, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_3_Attack/Boss2": { "y": 23.86, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_3_Attack/Boss3": { "y": 23.86, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_3_Attack/Boss4": { "y": 23.86, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_3_Attack/Boss5": { "y": 23.86, "width": 80, "height": 80 },
+				"Mini_Boss_1_80x80/Skill_3_Attack/Boss6": { "y": 23.86, "width": 80, "height": 80 }
+			}
+		}
+	}
+],
+"animations": {
+	"Die": {
+		"slots": {
+			"Die1": {
+				"attachment": [
+					{ "name": "Mini_Boss_1_80x80/Die/Boss1" },
+					{ "time": 0.0667, "name": "Mini_Boss_1_80x80/Die/Boss2" },
+					{ "time": 0.1333, "name": "Mini_Boss_1_80x80/Die/Boss3" },
+					{ "time": 0.2, "name": "Mini_Boss_1_80x80/Die/Boss4" },
+					{ "time": 0.2667, "name": "Mini_Boss_1_80x80/Die/Boss5" },
+					{ "time": 0.3333, "name": "Mini_Boss_1_80x80/Die/Boss6" },
+					{ "time": 0.4, "name": "Mini_Boss_1_80x80/Die/Boss7" },
+					{ "time": 0.4667, "name": "Mini_Boss_1_80x80/Die/Boss8" },
+					{ "time": 0.5333, "name": "Mini_Boss_1_80x80/Die/Boss9" },
+					{ "time": 0.6333, "name": "Mini_Boss_1_80x80/Die/Boss10" },
+					{ "time": 0.7667, "name": "Mini_Boss_1_80x80/Die/Boss11" },
+					{ "time": 0.9333, "name": "Mini_Boss_1_80x80/Die/Boss12" },
+					{ "time": 1.1, "name": "Mini_Boss_1_80x80/Die/Boss13" },
+					{ "time": 1.3333, "name": null }
+				]
+			},
+			"Skill_1": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Skill_2": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Skill_2": {
+				"translate": [
+					{ "y": 10 }
+				]
+			}
+		}
+	},
+	"Move": {
+		"slots": {
+			"Move": {
+				"attachment": [
+					{ "name": "Mini_Boss_1_80x80/Move/Boss1" },
+					{ "time": 0.1333, "name": "Mini_Boss_1_80x80/Move/Boss2" },
+					{ "time": 0.2333, "name": "Mini_Boss_1_80x80/Move/Boss3" },
+					{ "time": 0.3667, "name": "Mini_Boss_1_80x80/Move/Boss1" },
+					{ "time": 0.5333, "name": "Mini_Boss_1_80x80/Move/Boss2" },
+					{ "time": 0.6333, "name": "Mini_Boss_1_80x80/Move/Boss3" },
+					{ "time": 0.7667, "name": "Mini_Boss_1_80x80/Move/Boss1" },
+					{ "time": 0.9333, "name": "Mini_Boss_1_80x80/Move/Boss2" },
+					{ "time": 1.0333, "name": "Mini_Boss_1_80x80/Move/Boss3" },
+					{ "time": 1.1667, "name": "Mini_Boss_1_80x80/Move/Boss1" },
+					{ "time": 1.3333, "name": "Mini_Boss_1_80x80/Move/Boss2" },
+					{ "time": 1.4333, "name": "Mini_Boss_1_80x80/Move/Boss3" },
+					{ "time": 1.5667, "name": "Mini_Boss_1_80x80/Move/Boss1" }
+				]
+			},
+			"Skill_1": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Skill_2": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		}
+	},
+	"Skill_1": {
+		"slots": {
+			"Skill_1": {
+				"attachment": [
+					{ "name": "Mini_Boss_1_80x80/Skill_1/Boss1" },
+					{ "time": 0.1, "name": "Mini_Boss_1_80x80/Skill_1/Boss2" },
+					{ "time": 0.1667, "name": "Mini_Boss_1_80x80/Skill_1/Boss3" },
+					{ "time": 0.2333, "name": "Mini_Boss_1_80x80/Skill_1/Boss4" },
+					{ "time": 0.3333, "name": "Mini_Boss_1_80x80/Skill_1/Boss5" },
+					{ "time": 0.6, "name": "Mini_Boss_1_80x80/Skill_1/Boss6" },
+					{ "time": 0.7, "name": "Mini_Boss_1_80x80/Skill_1/Boss7" },
+					{ "time": 0.7667, "name": "Mini_Boss_1_80x80/Skill_1/Boss8" },
+					{ "time": 0.8333, "name": "Mini_Boss_1_80x80/Skill_1/Boss9" }
+				]
+			},
+			"Skill_2": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		}
+	},
+	"Skill_2": {
+		"slots": {
+			"Skill_1": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Skill_2": {
+				"attachment": [
+					{ "time": 0.0667, "name": "Mini_Boss_1_80x80/Skill_2/Boss2" },
+					{ "time": 0.1333, "name": "Mini_Boss_1_80x80/Skill_2/Boss3" },
+					{ "time": 0.2, "name": "Mini_Boss_1_80x80/Skill_2/Boss4" },
+					{ "time": 0.2667, "name": "Mini_Boss_1_80x80/Skill_2/Boss5" },
+					{ "time": 0.3333, "name": "Mini_Boss_1_80x80/Skill_2/Boss6" },
+					{ "time": 0.4, "name": "Mini_Boss_1_80x80/Skill_2/Boss7" },
+					{ "time": 0.4667, "name": "Mini_Boss_1_80x80/Skill_2/Boss8" },
+					{ "time": 0.5333, "name": "Mini_Boss_1_80x80/Skill_2/Boss9" },
+					{ "time": 0.6, "name": "Mini_Boss_1_80x80/Skill_2/Boss10" },
+					{ "time": 0.7667, "name": "Mini_Boss_1_80x80/Skill_2/Boss11" },
+					{ "time": 0.8333, "name": "Mini_Boss_1_80x80/Skill_2/Boss12" }
+				]
+			}
+		}
+	},
+	"Skill_3_Attack": {
+		"slots": {
+			"Skill_1": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Skill_2": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.8333, "name": null }
+				]
+			},
+			"Still_3_Attack": {
+				"attachment": [
+					{ "name": "Mini_Boss_1_80x80/Skill_3_Attack/Boss1" },
+					{ "time": 0.1333, "name": "Mini_Boss_1_80x80/Skill_3_Attack/Boss2" },
+					{ "time": 0.2667, "name": "Mini_Boss_1_80x80/Skill_3_Attack/Boss3" },
+					{ "time": 0.4, "name": "Mini_Boss_1_80x80/Skill_3_Attack/Boss4" },
+					{ "time": 0.5333, "name": "Mini_Boss_1_80x80/Skill_3_Attack/Boss5" },
+					{ "time": 0.6667, "name": "Mini_Boss_1_80x80/Skill_3_Attack/Boss6" }
+				]
+			}
+		}
+	},
+	"Skill_3_Ready": {
+		"slots": {
+			"Skill_1": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Skill_2": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.8333, "name": null }
+				]
+			},
+			"Skill_3_Ready": {
+				"attachment": [
+					{ "name": "Mini_Boss_1_80x80/Skill_3_Ready/Boss1" },
+					{ "time": 0.0667, "name": "Mini_Boss_1_80x80/Skill_3_Ready/Boss2" },
+					{ "time": 0.1333, "name": "Mini_Boss_1_80x80/Skill_3_Ready/Boss3" },
+					{ "time": 0.2, "name": "Mini_Boss_1_80x80/Skill_3_Ready/Boss4" },
+					{ "time": 0.2667, "name": "Mini_Boss_1_80x80/Skill_3_Ready/Boss5" }
+				]
+			}
+		}
+	}
+}
+}

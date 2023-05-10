@@ -1,0 +1,251 @@
+
+Mini_Boss5.png
+size: 111,946
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Attack_1/Boss_5_1
+  rotate: true
+  xy: 64, 764
+  size: 47, 43
+  orig: 80, 80
+  offset: 24, 19
+  index: -1
+Attack_2/Boss_5_1
+  rotate: true
+  xy: 64, 764
+  size: 47, 43
+  orig: 80, 80
+  offset: 24, 19
+  index: -1
+Attack_1/Boss_5_10
+  rotate: false
+  xy: 2, 570
+  size: 50, 58
+  orig: 80, 80
+  offset: 24, 11
+  index: -1
+Attack_1/Boss_5_11
+  rotate: false
+  xy: 2, 452
+  size: 50, 57
+  orig: 80, 80
+  offset: 24, 11
+  index: -1
+Attack_1/Boss_5_12
+  rotate: true
+  xy: 53, 258
+  size: 50, 53
+  orig: 80, 80
+  offset: 24, 14
+  index: -1
+Attack_2/Boss_5_12
+  rotate: true
+  xy: 53, 258
+  size: 50, 53
+  orig: 80, 80
+  offset: 24, 14
+  index: -1
+Attack_1/Boss_5_2
+  rotate: true
+  xy: 51, 52
+  size: 49, 50
+  orig: 80, 80
+  offset: 24, 15
+  index: -1
+Attack_2/Boss_5_2
+  rotate: true
+  xy: 51, 52
+  size: 49, 50
+  orig: 80, 80
+  offset: 24, 15
+  index: -1
+Attack_1/Boss_5_3
+  rotate: false
+  xy: 54, 475
+  size: 51, 56
+  orig: 80, 80
+  offset: 24, 10
+  index: -1
+Attack_1/Boss_5_4
+  rotate: false
+  xy: 2, 337
+  size: 50, 55
+  orig: 80, 80
+  offset: 24, 14
+  index: -1
+Attack_1/Boss_5_5
+  rotate: false
+  xy: 2, 511
+  size: 50, 57
+  orig: 80, 80
+  offset: 24, 11
+  index: -1
+Attack_1/Boss_5_6
+  rotate: false
+  xy: 2, 394
+  size: 50, 56
+  orig: 80, 80
+  offset: 24, 11
+  index: -1
+Attack_1/Boss_5_7
+  rotate: false
+  xy: 2, 63
+  size: 47, 50
+  orig: 80, 80
+  offset: 24, 12
+  index: -1
+Attack_1/Boss_5_8
+  rotate: false
+  xy: 2, 224
+  size: 49, 54
+  orig: 80, 80
+  offset: 24, 11
+  index: -1
+Attack_1/Boss_5_9
+  rotate: true
+  xy: 54, 363
+  size: 51, 55
+  orig: 80, 80
+  offset: 24, 11
+  index: -1
+Attack_2/Boss_5_10
+  rotate: false
+  xy: 2, 630
+  size: 50, 60
+  orig: 80, 80
+  offset: 24, 9
+  index: -1
+Attack_2/Boss_5_11
+  rotate: false
+  xy: 2, 692
+  size: 50, 62
+  orig: 80, 80
+  offset: 24, 6
+  index: -1
+Attack_2/Boss_5_3
+  rotate: true
+  xy: 54, 310
+  size: 51, 54
+  orig: 80, 80
+  offset: 24, 12
+  index: -1
+Attack_2/Boss_5_4
+  rotate: false
+  xy: 54, 652
+  size: 50, 61
+  orig: 80, 80
+  offset: 24, 8
+  index: -1
+Attack_2/Boss_5_5
+  rotate: false
+  xy: 54, 533
+  size: 50, 58
+  orig: 80, 80
+  offset: 24, 10
+  index: -1
+Attack_2/Boss_5_6
+  rotate: false
+  xy: 54, 416
+  size: 50, 57
+  orig: 80, 80
+  offset: 24, 10
+  index: -1
+Attack_2/Boss_5_7
+  rotate: false
+  xy: 2, 115
+  size: 47, 52
+  orig: 80, 80
+  offset: 24, 10
+  index: -1
+Attack_2/Boss_5_8
+  rotate: false
+  xy: 2, 280
+  size: 49, 55
+  orig: 80, 80
+  offset: 24, 10
+  index: -1
+Attack_2/Boss_5_9
+  rotate: false
+  xy: 54, 593
+  size: 51, 57
+  orig: 80, 80
+  offset: 24, 9
+  index: -1
+Die/Boss_5_1
+  rotate: false
+  xy: 72, 836
+  size: 34, 39
+  orig: 80, 80
+  offset: 23, 20
+  index: -1
+Die/Boss_5_2
+  rotate: false
+  xy: 2, 169
+  size: 48, 53
+  orig: 80, 80
+  offset: 16, 16
+  index: -1
+Die/Boss_5_3
+  rotate: true
+  xy: 2, 756
+  size: 55, 60
+  orig: 80, 80
+  offset: 10, 13
+  index: -1
+Die/Boss_5_4
+  rotate: true
+  xy: 2, 813
+  size: 62, 68
+  orig: 80, 80
+  offset: 6, 9
+  index: -1
+Die/Boss_5_5
+  rotate: true
+  xy: 2, 877
+  size: 67, 75
+  orig: 80, 80
+  offset: 6, 2
+  index: -1
+Idle/Boss_5_1
+  rotate: true
+  xy: 64, 715
+  size: 47, 43
+  orig: 80, 80
+  offset: 24, 19
+  index: -1
+Idle/Boss_5_2
+  rotate: true
+  xy: 2, 12
+  size: 49, 47
+  orig: 80, 80
+  offset: 24, 18
+  index: -1
+Idle/Boss_5_3
+  rotate: false
+  xy: 51, 103
+  size: 51, 49
+  orig: 80, 80
+  offset: 24, 17
+  index: -1
+Idle/Boss_5_4
+  rotate: true
+  xy: 53, 206
+  size: 50, 52
+  orig: 80, 80
+  offset: 24, 17
+  index: -1
+Idle/Boss_5_5
+  rotate: false
+  xy: 52, 154
+  size: 50, 50
+  orig: 80, 80
+  offset: 24, 18
+  index: -1
+Idle/Boss_5_6
+  rotate: false
+  xy: 51, 2
+  size: 50, 48
+  orig: 80, 80
+  offset: 24, 19
+  index: -1

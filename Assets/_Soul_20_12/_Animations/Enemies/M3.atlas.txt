@@ -1,0 +1,244 @@
+
+M3.png
+size: 385,78
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Attack/Mons11
+  rotate: false
+  xy: 171, 14
+  size: 30, 30
+  orig: 64, 64
+  offset: 18, 16
+  index: -1
+Attack/Mons12
+  rotate: false
+  xy: 176, 46
+  size: 30, 30
+  orig: 64, 64
+  offset: 18, 16
+  index: -1
+Attack/Mons14
+  rotate: false
+  xy: 176, 46
+  size: 30, 30
+  orig: 64, 64
+  offset: 18, 16
+  index: -1
+Attack/Mons16
+  rotate: false
+  xy: 176, 46
+  size: 30, 30
+  orig: 64, 64
+  offset: 18, 16
+  index: -1
+Attack/Mons18
+  rotate: true
+  xy: 265, 14
+  size: 30, 28
+  orig: 64, 64
+  offset: 18, 18
+  index: -1
+Attack/Mons19
+  rotate: true
+  xy: 269, 46
+  size: 30, 28
+  orig: 64, 64
+  offset: 18, 18
+  index: -1
+Attack/Mons3
+  rotate: true
+  xy: 235, 14
+  size: 30, 28
+  orig: 64, 64
+  offset: 18, 18
+  index: -1
+Attack/Mons4
+  rotate: true
+  xy: 239, 46
+  size: 30, 28
+  orig: 64, 64
+  offset: 18, 18
+  index: -1
+Attack/Mons5
+  rotate: false
+  xy: 2, 2
+  size: 30, 29
+  orig: 64, 64
+  offset: 18, 17
+  index: -1
+Attack/Mons6
+  rotate: false
+  xy: 34, 2
+  size: 30, 29
+  orig: 64, 64
+  offset: 18, 17
+  index: -1
+Attack/Mons7
+  rotate: true
+  xy: 208, 46
+  size: 30, 29
+  orig: 64, 64
+  offset: 18, 17
+  index: -1
+Attack/Mons17
+  rotate: true
+  xy: 208, 46
+  size: 30, 29
+  orig: 64, 64
+  offset: 18, 17
+  index: -1
+Attack/Mons8
+  rotate: false
+  xy: 139, 9
+  size: 30, 30
+  orig: 64, 64
+  offset: 18, 16
+  index: -1
+Attack/Mons9
+  rotate: false
+  xy: 144, 46
+  size: 30, 30
+  orig: 64, 64
+  offset: 18, 16
+  index: -1
+Attack/Mons10
+  rotate: false
+  xy: 144, 46
+  size: 30, 30
+  orig: 64, 64
+  offset: 18, 16
+  index: -1
+Attack/Mons13
+  rotate: false
+  xy: 144, 46
+  size: 30, 30
+  orig: 64, 64
+  offset: 18, 16
+  index: -1
+Attack/Mons15
+  rotate: false
+  xy: 144, 46
+  size: 30, 30
+  orig: 64, 64
+  offset: 18, 16
+  index: -1
+Die/Mons10
+  rotate: true
+  xy: 37, 34
+  size: 42, 37
+  orig: 64, 64
+  offset: 8, 21
+  index: -1
+Die/Mons11
+  rotate: false
+  xy: 114, 41
+  size: 28, 35
+  orig: 64, 64
+  offset: 18, 22
+  index: -1
+Die/Mons3
+  rotate: true
+  xy: 295, 14
+  size: 30, 28
+  orig: 64, 64
+  offset: 18, 18
+  index: -1
+Idle/Mons3
+  rotate: true
+  xy: 295, 14
+  size: 30, 28
+  orig: 64, 64
+  offset: 18, 18
+  index: -1
+Die/Mons4
+  rotate: true
+  xy: 299, 46
+  size: 30, 28
+  orig: 64, 64
+  offset: 18, 18
+  index: -1
+Die/Mons5
+  rotate: true
+  xy: 171, 4
+  size: 8, 7
+  orig: 64, 64
+  offset: 28, 28
+  index: -1
+Die/Mons6
+  rotate: true
+  xy: 359, 49
+  size: 27, 24
+  orig: 64, 64
+  offset: 16, 19
+  index: -1
+Die/Mons7
+  rotate: false
+  xy: 66, 2
+  size: 37, 30
+  orig: 64, 64
+  offset: 9, 18
+  index: -1
+Die/Mons8
+  rotate: true
+  xy: 2, 33
+  size: 43, 33
+  orig: 64, 64
+  offset: 6, 17
+  index: -1
+Die/Mons9
+  rotate: true
+  xy: 76, 35
+  size: 41, 36
+  orig: 64, 64
+  offset: 7, 20
+  index: -1
+Idle/Mons4
+  rotate: false
+  xy: 203, 14
+  size: 30, 30
+  orig: 64, 64
+  offset: 18, 17
+  index: -1
+Idle/Mons6
+  rotate: false
+  xy: 203, 14
+  size: 30, 30
+  orig: 64, 64
+  offset: 18, 17
+  index: -1
+Idle/Mons5
+  rotate: true
+  xy: 105, 3
+  size: 30, 32
+  orig: 64, 64
+  offset: 18, 16
+  index: -1
+Idle/Mons7
+  rotate: true
+  xy: 325, 14
+  size: 30, 28
+  orig: 64, 64
+  offset: 18, 18
+  index: -1
+Idle/Mons8
+  rotate: true
+  xy: 329, 46
+  size: 30, 28
+  orig: 64, 64
+  offset: 18, 17
+  index: -1
+Idle/Mons10
+  rotate: true
+  xy: 329, 46
+  size: 30, 28
+  orig: 64, 64
+  offset: 18, 17
+  index: -1
+Idle/Mons9
+  rotate: true
+  xy: 355, 14
+  size: 30, 28
+  orig: 64, 64
+  offset: 18, 16
+  index: -1

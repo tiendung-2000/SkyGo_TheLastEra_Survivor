@@ -1,0 +1,166 @@
+{
+"skeleton": { "hash": "VCJKiIt95vS6YJk7K67WvIY30xw", "spine": "3.8.99", "images": "D:/PTS/Game Soul/Demo_PNG/PNG_Item/", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Gold", "parent": "root" },
+	{ "name": "khien", "parent": "root" },
+	{ "name": "hoi_mau", "parent": "root", "y": 1.99 },
+	{ "name": "thuoc_sung", "parent": "root" },
+	{ "name": "thung_go", "parent": "root" }
+],
+"slots": [
+	{ "name": "Gold", "bone": "Gold" },
+	{ "name": "khien", "bone": "khien" },
+	{ "name": "hoi_mau", "bone": "hoi_mau" },
+	{ "name": "thuoc_sung", "bone": "thuoc_sung" },
+	{ "name": "thung_go", "bone": "thung_go" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Gold": {
+				"gold/vang1": { "width": 80, "height": 80 },
+				"gold/vang2": { "width": 60, "height": 80 },
+				"gold/vang3": { "width": 40, "height": 80 },
+				"gold/vang4": { "width": 60, "height": 80 },
+				"gold/vang5": { "width": 80, "height": 80 }
+			},
+			"hoi_mau": {
+				"hoi_mau/heal1": { "x": -4.72, "y": 49.37, "width": 71, "height": 92 },
+				"hoi_mau/heal2": { "x": -4.92, "y": 52.39, "width": 71, "height": 98 },
+				"hoi_mau/heal3": { "x": -4.96, "y": 54.88, "width": 71, "height": 103 },
+				"hoi_mau/heal4": { "x": -4.98, "y": 57.93, "width": 71, "height": 109 },
+				"hoi_mau/heal5": { "x": -4.3, "y": 60.36, "width": 70, "height": 114 },
+				"hoi_mau/heal6": { "x": 0.77, "y": 33.88, "width": 48, "height": 61 },
+				"hoi_mau/heal7": { "x": -4.22, "y": 47.06, "width": 73, "height": 98 },
+				"hoi_mau/heal8": { "x": -4.13, "y": 49.63, "width": 73, "height": 103 },
+				"hoi_mau/heal9": { "x": -4.04, "y": 52.66, "width": 73, "height": 109 },
+				"hoi_mau/heal10": { "x": -3.49, "y": 52.53, "width": 72, "height": 109 },
+				"hoi_mau/heal11": { "x": -3.66, "y": 54.07, "width": 73, "height": 112 },
+				"hoi_mau/heal12": { "x": -3.18, "y": 57.15, "width": 72, "height": 118 }
+			},
+			"khien": {
+				"khien/Ellipse1": { "width": 80, "height": 80 },
+				"khien/Ellipse2": { "width": 80, "height": 80 },
+				"khien/Ellipse3": { "width": 80, "height": 80 },
+				"khien/Ellipse4": { "width": 80, "height": 80 },
+				"khien/Ellipse5": { "width": 80, "height": 80 }
+			},
+			"thung_go": {
+				"thung_go/thung_go1": { "x": 0.5, "width": 33, "height": 37 },
+				"thung_go/thung_go2": { "x": 0.5, "width": 33, "height": 37 },
+				"thung_go/thung_go3": { "width": 43, "height": 49 },
+				"thung_go/thung_go4": { "x": 0.5, "y": 0.5, "width": 66, "height": 63 },
+				"thung_go/thung_go5": { "y": 0.5, "width": 112, "height": 68 },
+				"thung_go/thung_go6": { "y": 0.5, "width": 175, "height": 53 },
+				"thung_go/thung_go7": { "color": "ffffff5c", "x": 0.5, "y": 0.5, "width": 175, "height": 53 }
+			},
+			"thuoc_sung": {
+				"thuoc_sung_boom/thuoc_sung_bom4": { "x": 0.5, "width": 62, "height": 88 },
+				"thuoc_sung_boom/thuoc_sung_bom5": { "x": 0.5, "y": 0.5, "width": 79, "height": 91 },
+				"thuoc_sung_boom/thuoc_sung_bom6": { "x": 0.5, "y": 0.5, "width": 107, "height": 119 },
+				"thuoc_sung_boom/thuoc_sung_bom7": { "x": 0.5, "y": 0.5, "width": 115, "height": 115 },
+				"thuoc_sung_boom/thuoc_sung_bom8": { "width": 200, "height": 200 },
+				"thuoc_sung_boom/thuoc_sung_bom9": { "width": 200, "height": 200 },
+				"thuoc_sung_boom/thuoc_sung_bom10": { "width": 172, "height": 172 },
+				"thuoc_sung_boom/thuoc_sung_bom11": { "width": 172, "height": 172 },
+				"thuoc_sung_boom/thuoc_sung_bom12": { "x": 0.5, "y": 0.5, "width": 172, "height": 168 },
+				"thuoc_sung_boom/thuoc_sung_bom13": { "x": 0.5, "y": 0.5, "width": 160, "height": 160 },
+				"thuoc_sung_boom/thuoc_sung_bom14": { "width": 154, "height": 152 },
+				"thuoc_sung_boom/thuoc_sung_bom15": { "width": 136, "height": 136 },
+				"thuoc_sung_boom/thuoc_sung_boom1": { "x": 0.9, "width": 66, "height": 76 },
+				"thuoc_sung_boom/thuoc_sung_boom2": { "x": 0.5, "y": 0.5, "width": 66, "height": 70 },
+				"thuoc_sung_boom/thuoc_sung_boom3": { "x": 0.5, "width": 66, "height": 76 }
+			}
+		}
+	}
+],
+"animations": {
+	"Gold": {
+		"slots": {
+			"Gold": {
+				"attachment": [
+					{ "name": "gold/vang1" },
+					{ "time": 0.1333, "name": "gold/vang2" },
+					{ "time": 0.2333, "name": "gold/vang3" },
+					{ "time": 0.3667, "name": "gold/vang4" },
+					{ "time": 0.5, "name": "gold/vang5" }
+				]
+			}
+		}
+	},
+	"Hoi_mau": {
+		"slots": {
+			"hoi_mau": {
+				"attachment": [
+					{ "name": "hoi_mau/heal1" },
+					{ "time": 0.0667, "name": "hoi_mau/heal2" },
+					{ "time": 0.1667, "name": "hoi_mau/heal3" },
+					{ "time": 0.2333, "name": "hoi_mau/heal4" },
+					{ "time": 0.3, "name": "hoi_mau/heal5" },
+					{ "time": 0.3667, "name": "hoi_mau/heal6" },
+					{ "time": 0.4667, "name": "hoi_mau/heal7" },
+					{ "time": 0.5333, "name": "hoi_mau/heal8" },
+					{ "time": 0.6, "name": "hoi_mau/heal9" },
+					{ "time": 0.6667, "name": "hoi_mau/heal10" },
+					{ "time": 0.7667, "name": "hoi_mau/heal11" },
+					{ "time": 0.8333, "name": "hoi_mau/heal12" }
+				]
+			}
+		}
+	},
+	"Khien": {
+		"slots": {
+			"khien": {
+				"attachment": [
+					{ "name": "khien/Ellipse1" },
+					{ "time": 0.1333, "name": "khien/Ellipse2" },
+					{ "time": 0.3, "name": "khien/Ellipse3" },
+					{ "time": 0.4333, "name": "khien/Ellipse4" },
+					{ "time": 0.5667, "name": "khien/Ellipse5" }
+				]
+			}
+		}
+	},
+	"thung_go": {
+		"slots": {
+			"thung_go": {
+				"attachment": [
+					{ "name": "thung_go/thung_go1" },
+					{ "time": 0.0333, "name": "thung_go/thung_go2" },
+					{ "time": 0.1, "name": "thung_go/thung_go3" },
+					{ "time": 0.1667, "name": "thung_go/thung_go4" },
+					{ "time": 0.2333, "name": "thung_go/thung_go5" },
+					{ "time": 0.2667, "name": "thung_go/thung_go6" },
+					{ "time": 0.4333, "name": "thung_go/thung_go7" },
+					{ "time": 0.8, "name": "thung_go/thung_go7" }
+				]
+			}
+		}
+	},
+	"thuoc_sung": {
+		"slots": {
+			"thuoc_sung": {
+				"attachment": [
+					{ "name": "thuoc_sung_boom/thuoc_sung_boom1" },
+					{ "time": 0.1, "name": "thuoc_sung_boom/thuoc_sung_boom2" },
+					{ "time": 0.2, "name": "thuoc_sung_boom/thuoc_sung_boom3" },
+					{ "time": 0.3, "name": "thuoc_sung_boom/thuoc_sung_bom4" },
+					{ "time": 0.6667, "name": "thuoc_sung_boom/thuoc_sung_bom5" },
+					{ "time": 0.7, "name": "thuoc_sung_boom/thuoc_sung_bom6" },
+					{ "time": 0.7333, "name": "thuoc_sung_boom/thuoc_sung_bom7" },
+					{ "time": 0.7667, "name": "thuoc_sung_boom/thuoc_sung_bom8" },
+					{ "time": 0.8, "name": "thuoc_sung_boom/thuoc_sung_bom10" },
+					{ "time": 0.8333, "name": "thuoc_sung_boom/thuoc_sung_bom11" },
+					{ "time": 0.8667, "name": "thuoc_sung_boom/thuoc_sung_bom12" },
+					{ "time": 0.9, "name": "thuoc_sung_boom/thuoc_sung_bom13" },
+					{ "time": 0.9333, "name": "thuoc_sung_boom/thuoc_sung_bom14" },
+					{ "time": 0.9667, "name": "thuoc_sung_boom/thuoc_sung_bom15" },
+					{ "time": 1, "name": null }
+				]
+			}
+		}
+	}
+}
+}

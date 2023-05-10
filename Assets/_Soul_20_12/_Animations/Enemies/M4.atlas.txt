@@ -1,0 +1,125 @@
+
+M4.png
+size: 201,93
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Attack/Mons1
+  rotate: true
+  xy: 148, 3
+  size: 22, 31
+  orig: 64, 64
+  offset: 22, 18
+  index: -1
+Die/Mons1a
+  rotate: true
+  xy: 148, 3
+  size: 22, 31
+  orig: 64, 64
+  offset: 22, 18
+  index: -1
+Move/Mons5
+  rotate: true
+  xy: 148, 3
+  size: 22, 31
+  orig: 64, 64
+  offset: 22, 18
+  index: -1
+Attack/Mons2
+  rotate: false
+  xy: 113, 25
+  size: 25, 31
+  orig: 64, 64
+  offset: 19, 18
+  index: -1
+Attack/Mons3
+  rotate: false
+  xy: 113, 25
+  size: 25, 31
+  orig: 64, 64
+  offset: 19, 18
+  index: -1
+Attack/Mons4
+  rotate: false
+  xy: 120, 60
+  size: 25, 31
+  orig: 64, 64
+  offset: 19, 18
+  index: -1
+Attack/Mons5
+  rotate: false
+  xy: 140, 27
+  size: 25, 31
+  orig: 64, 64
+  offset: 19, 18
+  index: -1
+Attack/Mons6
+  rotate: false
+  xy: 147, 60
+  size: 25, 31
+  orig: 64, 64
+  offset: 19, 18
+  index: -1
+Attack/Mons7
+  rotate: false
+  xy: 36, 6
+  size: 26, 31
+  orig: 64, 64
+  offset: 18, 18
+  index: -1
+Attack/Mons8
+  rotate: false
+  xy: 167, 27
+  size: 25, 31
+  orig: 64, 64
+  offset: 20, 18
+  index: -1
+Attack/Mons9
+  rotate: false
+  xy: 174, 60
+  size: 25, 31
+  orig: 64, 64
+  offset: 19, 18
+  index: -1
+Die/Mons2a
+  rotate: true
+  xy: 2, 2
+  size: 35, 32
+  orig: 64, 64
+  offset: 13, 18
+  index: -1
+Die/Mons3a
+  rotate: false
+  xy: 64, 3
+  size: 47, 38
+  orig: 64, 64
+  offset: 9, 17
+  index: -1
+Die/Mons4a
+  rotate: true
+  xy: 48, 43
+  size: 48, 44
+  orig: 64, 64
+  offset: 7, 16
+  index: -1
+Die/Mons5a
+  rotate: true
+  xy: 2, 39
+  size: 52, 44
+  orig: 64, 64
+  offset: 5, 15
+  index: -1
+Move/Mons4
+  rotate: false
+  xy: 94, 58
+  size: 24, 33
+  orig: 64, 64
+  offset: 21, 17
+  index: -1
+Move/Mons6
+  rotate: true
+  xy: 113, 4
+  size: 19, 33
+  orig: 64, 64
+  offset: 23, 17
+  index: -1

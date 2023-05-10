@@ -1,0 +1,251 @@
+
+Boss2.png
+size: 1808,306
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Attack3_Move/Moving1
+  rotate: true
+  xy: 829, 153
+  size: 151, 127
+  orig: 240, 240
+  offset: 60, 58
+  index: -1
+Attack3_Move/Moving2
+  rotate: true
+  xy: 2, 6
+  size: 121, 127
+  orig: 240, 240
+  offset: 60, 58
+  index: -1
+Attack3_Move/Moving3
+  rotate: false
+  xy: 1691, 47
+  size: 115, 127
+  orig: 240, 240
+  offset: 60, 58
+  index: -1
+Attack3_Move/Moving4
+  rotate: false
+  xy: 1680, 176
+  size: 115, 128
+  orig: 240, 240
+  offset: 60, 58
+  index: -1
+Attack3_Ready/ready1
+  rotate: false
+  xy: 1095, 172
+  size: 115, 132
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Die/Die1
+  rotate: false
+  xy: 1095, 172
+  size: 115, 132
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Move/Move1
+  rotate: false
+  xy: 1095, 172
+  size: 115, 132
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Attack3_Ready/ready2
+  rotate: false
+  xy: 1446, 173
+  size: 115, 131
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Attack3_Ready/ready3
+  rotate: false
+  xy: 1457, 40
+  size: 115, 131
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Attack3_Ready/ready4
+  rotate: false
+  xy: 1563, 174
+  size: 115, 130
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Attack3_Ready/ready5
+  rotate: false
+  xy: 1574, 43
+  size: 115, 129
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Attack_1_2/atk1
+  rotate: false
+  xy: 1106, 38
+  size: 115, 132
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Attack_4_5/atk1
+  rotate: false
+  xy: 1106, 38
+  size: 115, 132
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Move/Move4
+  rotate: false
+  xy: 1106, 38
+  size: 115, 132
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Attack_1_2/atk2
+  rotate: false
+  xy: 1212, 172
+  size: 115, 132
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Attack_4_5/atk2
+  rotate: false
+  xy: 1212, 172
+  size: 115, 132
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Attack_1_2/atk3
+  rotate: true
+  xy: 131, 12
+  size: 115, 140
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Attack_4_5/atk3
+  rotate: true
+  xy: 131, 12
+  size: 115, 140
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Attack_1_2/atk4
+  rotate: false
+  xy: 2, 129
+  size: 115, 175
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Attack_1_2/atk5
+  rotate: false
+  xy: 119, 129
+  size: 115, 175
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Attack_4_5/atk4
+  rotate: false
+  xy: 119, 129
+  size: 115, 175
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Attack_4_5/atk5
+  rotate: false
+  xy: 236, 137
+  size: 163, 167
+  orig: 240, 240
+  offset: 12, 56
+  index: -1
+Attack_4_5/atk6
+  rotate: false
+  xy: 390, 3
+  size: 163, 132
+  orig: 240, 240
+  offset: 12, 56
+  index: -1
+Attack_4_5/atk7
+  rotate: true
+  xy: 401, 141
+  size: 163, 132
+  orig: 240, 240
+  offset: 12, 56
+  index: -1
+Die/Die10
+  rotate: true
+  xy: 682, 143
+  size: 161, 145
+  orig: 240, 240
+  offset: 38, 70
+  index: -1
+Die/Die2
+  rotate: false
+  xy: 1223, 38
+  size: 115, 132
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Die/Die3
+  rotate: false
+  xy: 1329, 172
+  size: 115, 132
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Die/Die4
+  rotate: false
+  xy: 1340, 38
+  size: 115, 132
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Die/Die5
+  rotate: true
+  xy: 555, 2
+  size: 139, 147
+  orig: 240, 240
+  offset: 43, 56
+  index: -1
+Die/Die6
+  rotate: false
+  xy: 704, 6
+  size: 141, 135
+  orig: 240, 240
+  offset: 42, 69
+  index: -1
+Die/Die7
+  rotate: true
+  xy: 958, 163
+  size: 141, 135
+  orig: 240, 240
+  offset: 42, 69
+  index: -1
+Die/Die8
+  rotate: false
+  xy: 847, 5
+  size: 140, 146
+  orig: 240, 240
+  offset: 42, 69
+  index: -1
+Die/Die9
+  rotate: true
+  xy: 535, 143
+  size: 161, 145
+  orig: 240, 240
+  offset: 38, 70
+  index: -1
+Move/Move2
+  rotate: false
+  xy: 273, 2
+  size: 115, 133
+  orig: 240, 240
+  offset: 60, 56
+  index: -1
+Move/Move3
+  rotate: false
+  xy: 989, 26
+  size: 115, 135
+  orig: 240, 240
+  offset: 60, 55
+  index: -1

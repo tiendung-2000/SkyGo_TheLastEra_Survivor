@@ -1,0 +1,398 @@
+
+Mini_boss2.png
+size: 452,279
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Attack_1/Boss1
+  rotate: false
+  xy: 256, 110
+  size: 35, 54
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_1/Boss14
+  rotate: false
+  xy: 256, 110
+  size: 35, 54
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Move/Boss2
+  rotate: false
+  xy: 256, 110
+  size: 35, 54
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_1/Boss10
+  rotate: false
+  xy: 164, 220
+  size: 38, 57
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_1/Boss11
+  rotate: false
+  xy: 128, 17
+  size: 37, 58
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_1/Boss12
+  rotate: true
+  xy: 359, 244
+  size: 33, 54
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_1/Boss13
+  rotate: false
+  xy: 206, 45
+  size: 36, 55
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_1/Boss2
+  rotate: false
+  xy: 252, 166
+  size: 38, 54
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_2/Boss1
+  rotate: false
+  xy: 252, 166
+  size: 38, 54
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_1/Boss3
+  rotate: false
+  xy: 132, 160
+  size: 38, 57
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_1/Boss4
+  rotate: false
+  xy: 125, 219
+  size: 37, 58
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_1/Boss5
+  rotate: false
+  xy: 318, 55
+  size: 33, 54
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_1/Boss6
+  rotate: false
+  xy: 244, 222
+  size: 36, 55
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_1/Boss7
+  rotate: false
+  xy: 322, 223
+  size: 34, 54
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_1/Boss8
+  rotate: false
+  xy: 292, 167
+  size: 35, 54
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_1/Boss9
+  rotate: false
+  xy: 282, 223
+  size: 38, 54
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_2/Boss2
+  rotate: false
+  xy: 172, 161
+  size: 38, 57
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_2/Boss3
+  rotate: false
+  xy: 167, 17
+  size: 37, 58
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_2/Boss4
+  rotate: true
+  xy: 359, 209
+  size: 33, 54
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_2/Boss5
+  rotate: false
+  xy: 218, 106
+  size: 36, 55
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_2/Boss6
+  rotate: false
+  xy: 282, 54
+  size: 34, 54
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_2/Boss7
+  rotate: false
+  xy: 293, 111
+  size: 34, 54
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_3_Attack/Boss1
+  rotate: false
+  xy: 414, 122
+  size: 36, 32
+  orig: 80, 80
+  offset: 21, 16
+  index: -1
+Attack_3_Attack/Boss2
+  rotate: true
+  xy: 359, 16
+  size: 36, 30
+  orig: 80, 80
+  offset: 22, 16
+  index: -1
+Attack_3_Attack/Boss3
+  rotate: false
+  xy: 405, 88
+  size: 38, 32
+  orig: 80, 80
+  offset: 21, 16
+  index: -1
+Attack_3_Attack/Boss4
+  rotate: false
+  xy: 415, 245
+  size: 35, 32
+  orig: 80, 80
+  offset: 22, 16
+  index: -1
+Attack_3_Attack/Boss5
+  rotate: true
+  xy: 391, 16
+  size: 36, 30
+  orig: 80, 80
+  offset: 22, 16
+  index: -1
+Attack_3_Attack/Boss6
+  rotate: false
+  xy: 353, 54
+  size: 38, 32
+  orig: 80, 80
+  offset: 21, 16
+  index: -1
+Attack_3_Attack/Boss7
+  rotate: false
+  xy: 415, 211
+  size: 35, 32
+  orig: 80, 80
+  offset: 22, 16
+  index: -1
+Attack_3_Attack/Boss8
+  rotate: false
+  xy: 329, 156
+  size: 40, 31
+  orig: 80, 80
+  offset: 22, 16
+  index: -1
+Attack_3_Ready/Boss1
+  rotate: false
+  xy: 244, 50
+  size: 36, 54
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Move/Boss1
+  rotate: false
+  xy: 244, 50
+  size: 36, 54
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Move/Boss7
+  rotate: false
+  xy: 244, 50
+  size: 36, 54
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_3_Ready/Boss10
+  rotate: false
+  xy: 393, 58
+  size: 28, 28
+  orig: 80, 80
+  offset: 22, 16
+  index: -1
+Attack_3_Ready/Boss2
+  rotate: false
+  xy: 276, 4
+  size: 32, 44
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Attack_3_Ready/Boss3
+  rotate: false
+  xy: 242, 2
+  size: 32, 41
+  orig: 80, 80
+  offset: 28, 18
+  index: -1
+Attack_3_Ready/Boss4
+  rotate: true
+  xy: 371, 136
+  size: 30, 41
+  orig: 80, 80
+  offset: 28, 22
+  index: -1
+Attack_3_Ready/Boss5
+  rotate: false
+  xy: 206, 2
+  size: 34, 41
+  orig: 80, 80
+  offset: 22, 22
+  index: -1
+Attack_3_Ready/Boss6
+  rotate: false
+  xy: 329, 111
+  size: 33, 43
+  orig: 80, 80
+  offset: 19, 16
+  index: -1
+Attack_3_Ready/Boss7
+  rotate: true
+  xy: 364, 102
+  size: 32, 39
+  orig: 80, 80
+  offset: 22, 16
+  index: -1
+Attack_3_Ready/Boss8
+  rotate: false
+  xy: 371, 168
+  size: 42, 39
+  orig: 80, 80
+  offset: 17, 16
+  index: -1
+Attack_3_Ready/Boss9
+  rotate: true
+  xy: 329, 189
+  size: 32, 28
+  orig: 80, 80
+  offset: 21, 16
+  index: -1
+Die/Boss1
+  rotate: true
+  xy: 310, 3
+  size: 49, 47
+  orig: 80, 80
+  offset: 14, 18
+  index: -1
+Die/Boss10
+  rotate: false
+  xy: 124, 77
+  size: 53, 62
+  orig: 80, 80
+  offset: 13, 10
+  index: -1
+Die/Boss2
+  rotate: true
+  xy: 68, 217
+  size: 60, 55
+  orig: 80, 80
+  offset: 9, 14
+  index: -1
+Die/Boss3
+  rotate: false
+  xy: 2, 72
+  size: 65, 65
+  orig: 80, 80
+  offset: 6, 7
+  index: -1
+Die/Boss4
+  rotate: false
+  xy: 2, 139
+  size: 63, 67
+  orig: 80, 80
+  offset: 11, 7
+  index: -1
+Die/Boss5
+  rotate: false
+  xy: 67, 141
+  size: 63, 65
+  orig: 80, 80
+  offset: 11, 9
+  index: -1
+Die/Boss6
+  rotate: false
+  xy: 2, 208
+  size: 64, 69
+  orig: 80, 80
+  offset: 9, 6
+  index: -1
+Die/Boss7
+  rotate: false
+  xy: 67, 5
+  size: 59, 65
+  orig: 80, 80
+  offset: 11, 10
+  index: -1
+Die/Boss8
+  rotate: true
+  xy: 2, 5
+  size: 65, 63
+  orig: 80, 80
+  offset: 9, 10
+  index: -1
+Die/Boss9
+  rotate: false
+  xy: 69, 76
+  size: 53, 63
+  orig: 80, 80
+  offset: 17, 10
+  index: -1
+Move/Boss3
+  rotate: false
+  xy: 212, 163
+  size: 38, 55
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Move/Boss4
+  rotate: false
+  xy: 204, 220
+  size: 38, 57
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Move/Boss5
+  rotate: false
+  xy: 179, 102
+  size: 37, 57
+  orig: 80, 80
+  offset: 27, 13
+  index: -1
+Move/Boss6
+  rotate: false
+  xy: 415, 156
+  size: 33, 53
+  orig: 80, 80
+  offset: 27, 12
+  index: -1
