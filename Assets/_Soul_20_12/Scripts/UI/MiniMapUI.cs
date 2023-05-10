@@ -12,7 +12,7 @@ public class MiniMapUI : BaseUIMenu
     {
         bigMap.SetActive(true);
 
-        CameraMovement.Ins.canDrag = true;
+        //CameraMovement.Ins.canDrag = true;
         Close();
     }
 }

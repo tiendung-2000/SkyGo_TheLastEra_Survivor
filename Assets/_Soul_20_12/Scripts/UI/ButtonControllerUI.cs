@@ -111,7 +111,7 @@ public class ButtonControllerUI : BaseUIMenu
         }
         else
         {
-            PlayerController.Ins.Sword();
+            PlayerController.Ins.swordWeapon.SwordAttack();
         }
     }
 

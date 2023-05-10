@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 4848228607452282531}
   - component: {fileID: 4848228607452282532}
   - component: {fileID: 4848228607452282530}
+  - component: {fileID: 1776934929432438280}
   m_Layer: 0
   m_Name: SwordChild
   m_TagString: Untagged
@@ -185,3 +186,17 @@ PolygonCollider2D:
       - {x: 0.9907886, y: 0.2489872}
       - {x: 0.973438, y: -0.14051247}
       - {x: 0.85062647, y: -0.4852028}
+--- !u!114 &1776934929432438280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4848228607452282534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98bc78ada20ada843a5e5c6ec7233fac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 20
+  knockBack: 0.5

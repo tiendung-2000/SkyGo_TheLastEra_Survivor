@@ -1122,11 +1122,12 @@ MonoBehaviour:
   numberOfEnemiesToSpawn: 10
   isBossCenter: 0
   theBoss: {fileID: 0}
+  spawnChest: 0
   checkPoint: {fileID: 7203371510675370871}
   maxX: 8
   minX: -8
   maxY: 12
-  minY: 3
+  minY: -3
 --- !u!114 &612941928608804596
 MonoBehaviour:
   m_ObjectHideFlags: 0

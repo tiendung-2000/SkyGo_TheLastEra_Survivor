@@ -480,6 +480,7 @@ MonoBehaviour:
   numberOfEnemiesToSpawn: 10
   isBossCenter: 0
   theBoss: {fileID: 0}
+  spawnChest: 0
   checkPoint: {fileID: 2630370660118649309}
   maxX: 8
   minX: -8

@@ -50,6 +50,7 @@ MonoBehaviour:
   ske: {fileID: 266230464603983061}
   bulletToFire: {fileID: 2694096419384989725, guid: 14cf9fb471dad3d488328f2598503193,
     type: 3}
+  canFire: 0
   canExplode: 0
   explodeBullet: {fileID: 2694096419384989725, guid: 14cf9fb471dad3d488328f2598503193,
     type: 3}

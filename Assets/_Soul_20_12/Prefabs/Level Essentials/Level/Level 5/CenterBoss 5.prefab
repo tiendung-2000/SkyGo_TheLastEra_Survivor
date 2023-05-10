@@ -200,7 +200,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 20, y: 20}
+  m_Size: {x: 22, y: 22}
   m_EdgeRadius: 0
 --- !u!114 &7368890475466607905
 MonoBehaviour:
@@ -225,8 +225,10 @@ MonoBehaviour:
   theRoom: {fileID: 0}
   roomIcon: {fileID: 4512160918840121255}
   isEnemyCenter: 0
+  numberOfEnemiesToSpawn: 10
   isBossCenter: 1
   theBoss: {fileID: 901454761082358543}
+  spawnChest: 0
   checkPoint: {fileID: 0}
   maxX: 0
   minX: 0

@@ -12,7 +12,7 @@ public class BigMapUI : BaseUIMenu
     public void OnClickCloseButton()
     {
         miniMap.SetActive(true);
-        CameraMovement.Ins.canDrag = false;
+        //CameraMovement.Ins.canDrag = false;
         Close();
     }
 

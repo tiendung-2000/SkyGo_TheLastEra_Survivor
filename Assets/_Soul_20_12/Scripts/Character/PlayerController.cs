@@ -69,6 +69,8 @@ public class PlayerController : MonoBehaviour
         {
             theRB.velocity = Vector2.zero;
         }
+
+        DetectEnemy();
     }
 
     public void PlayerMove()
@@ -164,17 +166,19 @@ public class PlayerController : MonoBehaviour
         availableGuns[currentGun].gameObject.SetActive(true);
     }
 
-    public void Sword()
+    public void DetectEnemy()
     {
-        Collider2D hitEnemie = Physics2D.OverlapCircle(transform.position, detectRange, whatIsEnemy);
+        Collider2D enemy = Physics2D.OverlapCircle(transform.position, detectRange, whatIsEnemy);
 
-        if(hitEnemie != null)
+        if(enemy != null)
         {
+            Debug.Log("1");
             availableGuns[currentGun].canFire = false;
-            swordWeapon.SwordAttack();
         }
         else
         {
+            Debug.Log("2");
+
             availableGuns[currentGun].canFire = true;
         }
     }

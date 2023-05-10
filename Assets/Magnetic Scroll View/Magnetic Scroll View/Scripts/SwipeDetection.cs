@@ -147,7 +147,7 @@ namespace MagneticScrollView
 
         public virtual void OnBeginDrag(PointerEventData ped)
         {
-            if (ped.button != PointerEventData.InputButton.Left || ped.pointerId > 0)
+            if (ped.button != PointerEventData.InputButton.Left /*|| ped.pointerId > 0*/)
                 return;
 
             if (scrollRect != null && !RectTransformUtility.RectangleContainsScreenPoint(scrollRect, ped.position, ped.pressEventCamera))
@@ -160,7 +160,7 @@ namespace MagneticScrollView
 
         public virtual void OnEndDrag(PointerEventData ped)
         {
-            if (ped.button != PointerEventData.InputButton.Left || !pointerDown || ped.pointerId > 0)
+            if (ped.button != PointerEventData.InputButton.Left || !pointerDown /*|| ped.pointerId > 0*/)
                 return;
 
             //Debug.Log ("End Drag");
