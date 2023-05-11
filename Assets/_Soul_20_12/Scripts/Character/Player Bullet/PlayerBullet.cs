@@ -13,31 +13,9 @@ public class PlayerBullet : MonoBehaviour
 
     public TrailRenderer trail;
 
-    [SerializeField]
-    private LR_Controller line;
-
-    private Transform tf;
-    public Transform m_Transform
-    {
-        get
-        {
-            if (m_Transform == null)
-            {
-                tf = transform;
-            }
-            return tf;
-        }
-    }
-
     private void OnDisable()
     {
         trail.Clear();
-    }
-
-    private void OnEnable()
-    {
-        nearestEnemies.Clear();
-        Array.Clear(enemies, 0, enemies.Length);
     }
 
     void Update()
@@ -50,13 +28,6 @@ public class PlayerBullet : MonoBehaviour
         // Spawn impact effect
         Instantiate(impactEffect, transform.position, transform.rotation);
 
-        // Despawn the object
-        SmartPool.Ins.Despawn(gameObject);
-
-        //Find all enemy
-        enemies = FindObjectsOfType<EnemyController>();
-        FindThreeNearestEnemies();
-
         // Check the tag of the collided object
         switch (other.tag)
         {
@@ -66,7 +37,6 @@ public class PlayerBullet : MonoBehaviour
                 if (enemy != null)
                 {
                     enemy.DamageEnemy(damageToGive);
-                    ShockEnemiesAround();
                 }
                 break;
             case "Boss":
@@ -79,52 +49,6 @@ public class PlayerBullet : MonoBehaviour
                 }
                 break;
         }
+        SmartPool.Ins.Despawn(gameObject);
     }
-
-    public List<EnemyController> nearestEnemies;
-    [SerializeField]
-    private EnemyController[] enemies;
-    private void ShockEnemiesAround()
-    {
-        LR_Controller lineSpawn = Instantiate(line);
-        lineSpawn.SetUpLine(nearestEnemies.ToArray());
-    }
-
-    void FindThreeNearestEnemies()
-    {
-        int numNearestEnemiesToFind = Mathf.Min(3, enemies.Length);
-
-        for (int i = 0; i < numNearestEnemiesToFind; i++)
-        {
-            EnemyController nearestEnemy = FindNearestEnemyNotInList();
-            if (nearestEnemy != null)
-            {
-                nearestEnemies.Add(nearestEnemy);
-            }
-        }
-    }
-
-    EnemyController FindNearestEnemyNotInList()
-    {
-        float minDistance = Mathf.Infinity;
-        EnemyController nearestEnemy = null;
-
-        foreach (EnemyController enemy in enemies)
-        {
-            if (enemy == null || nearestEnemies.Contains(enemy)) continue;
-
-            float distance = Vector2.Distance(m_Transform.position, enemy.transform.position);
-
-            Debug.LogWarning(m_Transform.position);
-
-            if (distance < minDistance)
-            {
-                minDistance = distance;
-                nearestEnemy = enemy;
-            }
-        }
-
-        return nearestEnemy;
-    }
-
 }
