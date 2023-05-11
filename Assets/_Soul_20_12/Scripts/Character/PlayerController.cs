@@ -172,12 +172,12 @@ public class PlayerController : MonoBehaviour
 
         if(enemy != null)
         {
-            Debug.Log("1");
+            //Debug.Log("1");
             availableGuns[currentGun].canFire = false;
         }
         else
         {
-            Debug.Log("2");
+            //Debug.Log("2");
 
             availableGuns[currentGun].canFire = true;
         }
