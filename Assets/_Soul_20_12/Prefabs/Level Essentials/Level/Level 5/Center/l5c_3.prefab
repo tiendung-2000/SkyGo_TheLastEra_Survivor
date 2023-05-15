@@ -5846,22 +5846,14 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 7887580456169147385}
     m_ColliderPaths:
-    - - X: 10000100
-        Y: 129999959
-      - X: 10000100
-        Y: 140000041
-      - X: 10000041
-        Y: 140000100
-      - X: -50000041
-        Y: 140000100
-      - X: -50000100
-        Y: 140000041
-      - X: -50000100
-        Y: 129999959
-      - X: -50000041
-        Y: 129999900
-      - X: 10000041
-        Y: 129999900
+    - - X: 10000000
+        Y: 140000000
+      - X: -50000000
+        Y: 140000000
+      - X: -50000000
+        Y: 130000000
+      - X: 10000000
+        Y: 130000000
     - - X: 70000000
         Y: 30000000
       - X: 80000000
@@ -5900,10 +5892,10 @@ CompositeCollider2D:
         Y: 10000000
   m_CompositePaths:
     m_Paths:
-    - - {x: 0.9999748, y: 12.99999}
-      - {x: 0.9999748, y: 14.00001}
-      - {x: -5.00001, y: 13.999974}
-      - {x: -4.9999747, y: 12.99999}
+    - - {x: 0.99997073, y: 13}
+      - {x: 0.99997073, y: 14}
+      - {x: -5, y: 13.999971}
+      - {x: -4.999971, y: 13}
     - - {x: 6.9999704, y: 1}
       - {x: 7.0000296, y: 3}
       - {x: 8, y: 3.0000293}
@@ -5987,7 +5979,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 22, y: 22}
+  m_Size: {x: 21, y: 21}
   m_EdgeRadius: 0
 --- !u!114 &8785971659710143166
 MonoBehaviour:
@@ -6014,6 +6006,7 @@ MonoBehaviour:
   numberOfEnemiesToSpawn: 10
   isBossCenter: 0
   theBoss: {fileID: 0}
+  spawnChest: 0
   checkPoint: {fileID: 4345814907878481847}
   maxX: 0
   minX: 0

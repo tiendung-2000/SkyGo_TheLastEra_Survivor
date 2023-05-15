@@ -6317,7 +6317,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 22, y: 22}
+  m_Size: {x: 21, y: 21}
   m_EdgeRadius: 0
 --- !u!114 &8785971659710143166
 MonoBehaviour:
@@ -6344,6 +6344,7 @@ MonoBehaviour:
   numberOfEnemiesToSpawn: 10
   isBossCenter: 0
   theBoss: {fileID: 0}
+  spawnChest: 0
   checkPoint: {fileID: 6564672553399242640}
   maxX: 0
   minX: 0

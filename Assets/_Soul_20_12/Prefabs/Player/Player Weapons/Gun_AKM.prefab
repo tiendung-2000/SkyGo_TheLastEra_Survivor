@@ -56,8 +56,8 @@ MonoBehaviour:
     type: 3}
   firePoint:
   - {fileID: 7590131402553731953}
-  xAngle: -5
-  yAngle: 5
+  xAngle: 0
+  yAngle: 0
   reloadTime: 1.5
   reloadTimeCounter: 0
   reload: 0

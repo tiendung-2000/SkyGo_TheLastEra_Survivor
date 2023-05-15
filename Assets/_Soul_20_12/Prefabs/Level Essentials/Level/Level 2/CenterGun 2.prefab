@@ -72,15 +72,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openWhenEnemiesCleared: 0
+  enemyCount: 0
   enemies: []
+  enemiesSpawn: []
   bosses: []
   enemyGroup: {fileID: 0}
   colCheckPlayer: {fileID: 0}
   theRoom: {fileID: 0}
   roomIcon: {fileID: 6901528111436482405}
   isEnemyCenter: 0
+  numberOfEnemiesToSpawn: 10
   isBossCenter: 0
   theBoss: {fileID: 0}
+  spawnChest: 0
   checkPoint: {fileID: 0}
   maxX: 0
   minX: 0
