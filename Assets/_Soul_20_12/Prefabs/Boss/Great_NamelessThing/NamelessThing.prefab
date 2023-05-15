@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ske: {fileID: 7222439053788494989}
-  currentHealth: 500
+  currentHealth: 1650
   hitEffect: {fileID: 6314180217267293822, guid: 1cc409ca0e258db44978f7088646891b,
     type: 3}
   col: {fileID: 176746610511454791}

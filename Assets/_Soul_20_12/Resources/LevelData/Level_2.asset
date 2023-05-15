@@ -16,5 +16,5 @@ MonoBehaviour:
   levelPrefab: {fileID: 4554966111833551722, guid: 211697b49b52e1045a2dbca1f8417093,
     type: 3}
   levelName: Storm Desert
-  priceToUnlock: 2000
+  priceToUnlock: 3500
   isUnlock: 0

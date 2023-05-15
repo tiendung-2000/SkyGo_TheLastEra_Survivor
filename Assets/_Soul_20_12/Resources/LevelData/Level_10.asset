@@ -16,5 +16,5 @@ MonoBehaviour:
   levelPrefab: {fileID: 4554966111833551722, guid: 7e18d926ea3dbba48a10c8ff78af2101,
     type: 3}
   levelName: Land of Doom
-  priceToUnlock: 10000
+  priceToUnlock: 15000
   isUnlock: 0

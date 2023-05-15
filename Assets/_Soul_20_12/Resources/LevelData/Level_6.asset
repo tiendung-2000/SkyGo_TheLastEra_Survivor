@@ -16,5 +16,5 @@ MonoBehaviour:
   levelPrefab: {fileID: 4554966111833551722, guid: 5810328fb708a3d4294f1a630fa3e302,
     type: 3}
   levelName: Cave of Bones
-  priceToUnlock: 6000
+  priceToUnlock: 7500
   isUnlock: 0

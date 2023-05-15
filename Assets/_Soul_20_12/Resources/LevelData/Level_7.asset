@@ -16,5 +16,5 @@ MonoBehaviour:
   levelPrefab: {fileID: 4554966111833551722, guid: d5bfd465eeb063d458c1c054a93de73a,
     type: 3}
   levelName: Barrens of Shadow
-  priceToUnlock: 7000
+  priceToUnlock: 8500
   isUnlock: 0

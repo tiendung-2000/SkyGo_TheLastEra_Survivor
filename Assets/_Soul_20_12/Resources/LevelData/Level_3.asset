@@ -16,5 +16,5 @@ MonoBehaviour:
   levelPrefab: {fileID: 4554966111833551722, guid: 518715b50ef20e143a3d0f39fbec472a,
     type: 3}
   levelName: Abandoned Dungeon
-  priceToUnlock: 3000
+  priceToUnlock: 4500
   isUnlock: 0

@@ -16,5 +16,5 @@ MonoBehaviour:
   levelPrefab: {fileID: 4554966111833551722, guid: fbee7d3d54e54bb408ceb41a7e0c0138,
     type: 3}
   levelName: Crystal Mines
-  priceToUnlock: 4000
+  priceToUnlock: 5500
   isUnlock: 0

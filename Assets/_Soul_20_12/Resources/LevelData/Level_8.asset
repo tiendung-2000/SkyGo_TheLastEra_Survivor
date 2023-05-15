@@ -16,5 +16,5 @@ MonoBehaviour:
   levelPrefab: {fileID: 4554966111833551722, guid: bb1ef7aefb4c35d49b910bf4cfd15457,
     type: 3}
   levelName: Silent Expanse
-  priceToUnlock: 8000
+  priceToUnlock: 9500
   isUnlock: 0
