@@ -110,31 +110,31 @@ public class LevelManager : Singleton<LevelManager>
                 health += 0;
                 break;
             case 1:
-                health += 100;
+                health += 10;
                 break;
             case 2:
-                health += 150;
+                health += 20;
                 break;
             case 3:
-                health += 200;
+                health += 30;
                 break;
             case 4:
-                health += 250;
+                health += 40;
                 break;
             case 5:
-                health += 300;
+                health += 50;
                 break;
             case 6:
-                health += 350;
+                health += 60;
                 break;
             case 7:
-                health += 400;
+                health += 70;
                 break;
             case 8:
-                health += 450;
+                health += 80;
                 break;
             case 9:
-                health += 500;
+                health += 90;
                 break;
             default:
                 //return health;
@@ -154,31 +154,31 @@ public class LevelManager : Singleton<LevelManager>
                 enemyNumber += 0;
                 break;
             case 1:
-                enemyNumber += 3;
+                enemyNumber += 2;
                 break;
             case 2:
-                enemyNumber += 5;
+                enemyNumber += 4;
                 break;
             case 3:
-                enemyNumber += 7;
+                enemyNumber += 6;
                 break;
             case 4:
-                enemyNumber += 9;
+                enemyNumber += 8;
                 break;
             case 5:
-                enemyNumber += 11;
+                enemyNumber += 10;
                 break;
             case 6:
-                enemyNumber += 13;
+                enemyNumber += 12;
                 break;
             case 7:
-                enemyNumber += 15;
+                enemyNumber += 14;
                 break;
             case 8:
-                enemyNumber += 17;
+                enemyNumber += 16;
                 break;
             case 9:
-                enemyNumber += 19;
+                enemyNumber += 18;
                 break;
             default:
                 return enemyNumber;

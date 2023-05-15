@@ -18,40 +18,40 @@ MonoBehaviour:
   - isUnlock: 0
     isClamed: 0
     RewardName: 'Finish Level: 1'
-    RewardValue: 100000
+    RewardValue: 2000
   - isUnlock: 0
     isClamed: 0
     RewardName: 'Finish Level: 2'
-    RewardValue: 100000
+    RewardValue: 2500
   - isUnlock: 0
     isClamed: 0
     RewardName: 'Finish Level: 3'
-    RewardValue: 3333
+    RewardValue: 3000
   - isUnlock: 0
     isClamed: 0
     RewardName: 'Finish Level: 4'
-    RewardValue: 4444
+    RewardValue: 3500
   - isUnlock: 0
     isClamed: 0
     RewardName: 'Finish Level: 5'
-    RewardValue: 5555
+    RewardValue: 4000
   - isUnlock: 0
     isClamed: 0
     RewardName: 'Finish Level: 6'
-    RewardValue: 6666
+    RewardValue: 4500
   - isUnlock: 0
     isClamed: 0
     RewardName: 'Finish Level: 7'
-    RewardValue: 7777
+    RewardValue: 5000
   - isUnlock: 0
     isClamed: 0
     RewardName: 'Finish Level: 8'
-    RewardValue: 8888
+    RewardValue: 5500
   - isUnlock: 0
     isClamed: 0
     RewardName: 'Finish Level: 9'
-    RewardValue: 9999
+    RewardValue: 6000
   - isUnlock: 0
     isClamed: 0
     RewardName: 'Finish Level: 10'
-    RewardValue: 1234
+    RewardValue: 6500

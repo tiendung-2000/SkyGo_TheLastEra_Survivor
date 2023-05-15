@@ -2241,7 +2241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   needDontDestroy: 0
   immortalCount: 0
-  damageInvincLength: 2
+  damageInvincLength: 5
 --- !u!1001 &1796932173
 PrefabInstance:
   m_ObjectHideFlags: 0
