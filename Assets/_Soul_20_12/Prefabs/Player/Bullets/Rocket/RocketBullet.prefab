@@ -200,7 +200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explodeEffect: {fileID: 4721464587731737145, guid: ab2ceab7bd176754f818b8412ea5d070,
     type: 3}
-  damageToGive: 0
+  damageToGive: 60
   trail: {fileID: 5200552931255818492}
 --- !u!1 &5200552930735370948
 GameObject:

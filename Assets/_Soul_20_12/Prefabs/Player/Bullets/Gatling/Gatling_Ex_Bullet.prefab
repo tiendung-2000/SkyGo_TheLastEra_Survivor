@@ -283,11 +283,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c58b5bcc4c0f3843a833105d9e5c886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 30
   theRB: {fileID: 9070735391092049559}
   impactEffect: {fileID: 527154294331547227, guid: db71af9a5c78faa47a17a62a046a55a6,
     type: 3}
   explodeEffect: {fileID: 4721464587731737145, guid: ab2ceab7bd176754f818b8412ea5d070,
     type: 3}
-  damageToGive: 50
+  damageToGive: 40
   trail: {fileID: 1843860871449885315}

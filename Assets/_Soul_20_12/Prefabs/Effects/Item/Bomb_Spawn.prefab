@@ -4876,7 +4876,7 @@ GameObject:
   - component: {fileID: 2224904058970259355}
   - component: {fileID: 12143553057674947}
   m_Layer: 0
-  m_Name: Bomb_FX
+  m_Name: Bomb_Spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9752,7 +9752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf6a5c14b58bc50488a0aa533df009d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToGive: 50
+  damageToGive: 1000
 --- !u!58 &12143553057674947
 CircleCollider2D:
   m_ObjectHideFlags: 0

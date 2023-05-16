@@ -69,9 +69,9 @@ MonoBehaviour:
   gunSprite: {fileID: 21300000, guid: 988a718a66a04b44a9cc6153928f0a35, type: 3}
   gunSwitchSprite: {fileID: 21300000, guid: 2c7eeffc816aafe419fc77b6f445bac4, type: 3}
   currentClip: 0
-  maxClipSize: 9999
-  currentAmmo: 9999
-  maxAmmoSize: 9999
+  maxClipSize: 10
+  currentAmmo: 99999999
+  maxAmmoSize: 99999999
   isDupliGun: 0
   isRocketGun: 1
   m_launchIntensity: 10

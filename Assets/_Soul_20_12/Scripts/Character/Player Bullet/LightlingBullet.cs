@@ -89,6 +89,7 @@ public class LightlingBullet : MonoBehaviour
     {
         LR_Controller lineSpawn = Instantiate(line);
         lineSpawn.SetUpLine(nearestEnemies.ToArray());
+        lineSpawn.GiveDamageToE(damageToGive);
     }
 
     void FindThreeNearestEnemies()
@@ -116,7 +117,7 @@ public class LightlingBullet : MonoBehaviour
 
             float distance = Vector2.Distance(m_Transform.position, enemy.transform.position);
 
-            Debug.LogWarning(m_Transform.position);
+            //Debug.LogWarning(m_Transform.position);
 
             if (distance < minDistance)
             {

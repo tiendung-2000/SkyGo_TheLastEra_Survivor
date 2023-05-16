@@ -56,8 +56,8 @@ MonoBehaviour:
     type: 3}
   firePoint:
   - {fileID: 7590131402553731953}
-  xAngle: 0
-  yAngle: 0
+  xAngle: 5
+  yAngle: 5
   reloadTime: 1.5
   reloadTimeCounter: 0
   reload: 0
@@ -69,9 +69,9 @@ MonoBehaviour:
   gunSprite: {fileID: 21300000, guid: 07be24edb067e7046afd468357d94061, type: 3}
   gunSwitchSprite: {fileID: 21300000, guid: 7d7b4dcd7f2040d4db5a077dba4bc182, type: 3}
   currentClip: 0
-  maxClipSize: 9999
-  currentAmmo: 9999
-  maxAmmoSize: 9999
+  maxClipSize: 30
+  currentAmmo: 99999999
+  maxAmmoSize: 99999999
   isDupliGun: 0
   isRocketGun: 0
   m_launchIntensity: 0

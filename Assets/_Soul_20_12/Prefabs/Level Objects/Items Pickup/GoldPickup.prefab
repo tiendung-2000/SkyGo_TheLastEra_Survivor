@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3749952766380604461}
   - component: {fileID: 3749952766380604460}
   m_Layer: 14
-  m_Name: CoinPickup
+  m_Name: GoldPickup
   m_TagString: ItemPickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ MonoBehaviour:
   itemType: 0
   waitToBeCollected: 0.5
   waitToBeDisappear: 120
-  coinValue: 1
+  coinValue: 10
   healAmount: 1
   time: 5
 --- !u!114 &3749952766380604451

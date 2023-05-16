@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 5994202462036460039}
   - component: {fileID: 5994202462036460038}
   - component: {fileID: 5994202462036460025}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LineRender
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,7 +83,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.5350323
+        value: 0.5086174
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -143,8 +143,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lr: {fileID: 5994202462036460038}
+  ePos:
+  - {fileID: 0}
+  - {fileID: 0}
   textures:
   - {fileID: 2800000, guid: 599dca7ba57ea1743a69b5e478b464f9, type: 3}
   - {fileID: 2800000, guid: caf3798e322a0e447bd95a6ab24ed52e, type: 3}
   - {fileID: 2800000, guid: 76347558e2eb9d04b9f6d3da117a850b, type: 3}
   - {fileID: 2800000, guid: d0e89309b9897944a908bee8f1fe93a2, type: 3}
+  startPoint: {x: 0, y: 0, z: 0}

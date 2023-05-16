@@ -146,12 +146,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad0802796c39cc479e569c510ab519e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 25
   knockBack: 0.1
   theRB: {fileID: 2694096419384989722}
   impactEffect: {fileID: 421032726762822201, guid: 107b61f7980c21947b1658fe30bec7fc,
     type: 3}
-  damageToGive: 30
+  damageToGive: 45
   trail: {fileID: 5200552929869156395}
 --- !u!114 &7340366197003239125
 MonoBehaviour:

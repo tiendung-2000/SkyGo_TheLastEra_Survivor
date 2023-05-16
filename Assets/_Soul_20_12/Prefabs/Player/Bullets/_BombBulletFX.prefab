@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -719511747228739670}
   - component: {fileID: -6901499697546696532}
   m_Layer: 9
-  m_Name: _NationBulletFX
+  m_Name: _BombBulletFX
   m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

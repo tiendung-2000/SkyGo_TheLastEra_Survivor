@@ -16,10 +16,19 @@ public class LR_Controller : MonoBehaviour
     private float fps = 30f;
     private float fpsCounter;
 
+    public Vector3 startPoint;
 
     private void Awake()
     {
         Destroy(this.gameObject, 0.5f);
+    }
+
+    public void GiveDamageToE(int damage)
+    {
+        for (int i = 0; i < ePos.Length; i++)
+        {
+            ePos[i].DamageEnemy(damage);
+        }
     }
 
     public void SetUpLine(EnemyController[] position)
@@ -30,12 +39,30 @@ public class LR_Controller : MonoBehaviour
 
     private void Update()
     {
-        LightRender();
-        //print(ePos.Length);
-        for (int i = 0; i < ePos.Length; i++)
+        if (startPoint != null)
         {
-            lr.SetPosition(i, ePos[i].transform.position);
+            lr.SetPosition(0, startPoint);
+
+            for (int i = 1; i < ePos.Length; i++)
+            {
+                if (ePos[i] != null)
+                {
+                    lr.SetPosition(i, ePos[i].transform.position);
+                }
+            }
+
         }
+        else
+        {
+            for (int i = 0; i < ePos.Length; i++)
+            {
+                if (ePos[i] != null)
+                {
+                    lr.SetPosition(i, ePos[i].transform.position);
+                }
+            }
+        }
+        LightRender();
     }
 
     private void LightRender()

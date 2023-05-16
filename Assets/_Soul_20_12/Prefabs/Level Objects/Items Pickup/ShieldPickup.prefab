@@ -76,7 +76,7 @@ MonoBehaviour:
   itemType: 2
   waitToBeCollected: 0.5
   waitToBeDisappear: 120
-  coinValue: 1
+  coinValue: 10
   healAmount: 1
   time: 5
 --- !u!114 &3749952766380604451

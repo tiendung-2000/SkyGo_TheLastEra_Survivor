@@ -912,12 +912,12 @@ PrefabInstance:
     - target: {fileID: 1894207712641096882, guid: 9deb7e21003938a4691dd48fd82df2fa,
         type: 3}
       propertyPath: xAngle
-      value: -10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1894207712641096882, guid: 9deb7e21003938a4691dd48fd82df2fa,
         type: 3}
       propertyPath: yAngle
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1894207712641096882, guid: 9deb7e21003938a4691dd48fd82df2fa,
         type: 3}
@@ -1024,12 +1024,12 @@ PrefabInstance:
     - target: {fileID: 3363707091391705669, guid: be3d3b54ad87b62429eb535e35535055,
         type: 3}
       propertyPath: xAngle
-      value: -10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3363707091391705669, guid: be3d3b54ad87b62429eb535e35535055,
         type: 3}
       propertyPath: yAngle
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3363707091391705669, guid: be3d3b54ad87b62429eb535e35535055,
         type: 3}
@@ -1268,12 +1268,12 @@ PrefabInstance:
     - target: {fileID: 761215339736630461, guid: 3e01e65167319af4fb2ba2af482f5655,
         type: 3}
       propertyPath: xAngle
-      value: -10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 761215339736630461, guid: 3e01e65167319af4fb2ba2af482f5655,
         type: 3}
       propertyPath: yAngle
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 761215339736630461, guid: 3e01e65167319af4fb2ba2af482f5655,
         type: 3}
@@ -1330,12 +1330,12 @@ PrefabInstance:
     - target: {fileID: 2668889979466523412, guid: a6003aa12ee3bf344aadd1cb493f6e9d,
         type: 3}
       propertyPath: xAngle
-      value: -10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2668889979466523412, guid: a6003aa12ee3bf344aadd1cb493f6e9d,
         type: 3}
       propertyPath: yAngle
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2668889979466523412, guid: a6003aa12ee3bf344aadd1cb493f6e9d,
         type: 3}
@@ -1437,12 +1437,12 @@ PrefabInstance:
     - target: {fileID: 423024207151644964, guid: 6d6ea59fb95190f44bd65e136f2048e0,
         type: 3}
       propertyPath: xAngle
-      value: -10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 423024207151644964, guid: 6d6ea59fb95190f44bd65e136f2048e0,
         type: 3}
       propertyPath: yAngle
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 423024207151644964, guid: 6d6ea59fb95190f44bd65e136f2048e0,
         type: 3}
@@ -1609,12 +1609,12 @@ PrefabInstance:
     - target: {fileID: 4751557546043975145, guid: 5e58021c472fa88429d18323e49d0c83,
         type: 3}
       propertyPath: xAngle
-      value: -10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4751557546043975145, guid: 5e58021c472fa88429d18323e49d0c83,
         type: 3}
       propertyPath: yAngle
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4751557546043975145, guid: 5e58021c472fa88429d18323e49d0c83,
         type: 3}
