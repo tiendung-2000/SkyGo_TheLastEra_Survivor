@@ -2217,13 +2217,13 @@ PrefabInstance:
     - target: {fileID: 1776934929426457069, guid: eec30a34986bd804ba2a60e1d9142521,
         type: 3}
       propertyPath: damageToGive
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1897410265547391842, guid: eec30a34986bd804ba2a60e1d9142521,
         type: 3}
       propertyPath: bulletToFire
       value: 
-      objectReference: {fileID: 8949156293457057551, guid: 76095995fe9e28c43be2172dd128812b,
+      objectReference: {fileID: 4189913780510908286, guid: aea44e738a6d53d428ed536f7372350f,
         type: 3}
     - target: {fileID: 4657866952632965641, guid: eec30a34986bd804ba2a60e1d9142521,
         type: 3}

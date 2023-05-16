@@ -3011,7 +3011,7 @@ GameObject:
   - component: {fileID: 6339195489543176336}
   m_Layer: 0
   m_Name: ol3_LR
-  m_TagString: Block
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -16,7 +16,7 @@ public class LR_Controller : MonoBehaviour
     private float fps = 30f;
     private float fpsCounter;
 
-    public Vector3 startPoint;
+    public Transform startPoint;
 
     private void Awake()
     {
@@ -37,11 +37,19 @@ public class LR_Controller : MonoBehaviour
         lr.positionCount = position.Length;
     }
 
+    public void AssignTarget(Vector3 startPosition, Transform newTarget)
+    {
+        lr.positionCount = 2;
+        lr.SetPosition(0, startPosition);
+        startPoint = newTarget;
+    }
+
+
     private void Update()
     {
         if (startPoint != null)
         {
-            lr.SetPosition(0, startPoint);
+            lr.SetPosition(0, startPoint.position);
 
             for (int i = 1; i < ePos.Length; i++)
             {

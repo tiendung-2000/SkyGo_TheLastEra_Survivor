@@ -83,7 +83,7 @@ public class GameCompleteUI : BaseUIMenu
     public void OnClickHomeButton()
     {
         OnHome();
-        LevelGate.Ins.isComplete = false;
+        //LevelGate.Ins.isComplete = false;
 
         DynamicDataManager.Ins.CurNumCoin += coinTotal;
     }
