@@ -15,6 +15,6 @@ MonoBehaviour:
   id: 8
   levelPrefab: {fileID: 4554966111833551722, guid: 94f034e1e1223dd4da6d6671c4bd6a3c,
     type: 3}
-  levelName: Frozen Pinnacle
+  levelName: 9. Frozen Pinnacle
   priceToUnlock: 11000
   isUnlock: 0

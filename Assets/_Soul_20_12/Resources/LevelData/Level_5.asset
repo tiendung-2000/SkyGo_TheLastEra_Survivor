@@ -15,6 +15,6 @@ MonoBehaviour:
   id: 4
   levelPrefab: {fileID: 4554966111833551722, guid: 3ff499d75bf8f8145bd854512058cccf,
     type: 3}
-  levelName: Lost Castle
+  levelName: 5. Lost Castle
   priceToUnlock: 6500
   isUnlock: 0

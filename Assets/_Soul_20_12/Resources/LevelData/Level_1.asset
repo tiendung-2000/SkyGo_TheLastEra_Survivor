@@ -15,6 +15,6 @@ MonoBehaviour:
   id: 0
   levelPrefab: {fileID: 4554966111833551722, guid: 5e2c12424c63f4c4895160d7ccd1bcc7,
     type: 3}
-  levelName: Verdant Prairie
+  levelName: 1. Verdant Prairie
   priceToUnlock: 1000
   isUnlock: 0
