@@ -41,8 +41,8 @@ public class SmartMissile2D : SmartMissile<Rigidbody2D, Vector2>
 		{
 			Vector3 direction = m_target.position - transform.position;
 			transform.right = direction;
-            //transform.LookAt(new Vector3(m_rigidbody.velocity.x, m_rigidbody.velocity.y, transform.position.z));
-        }
+			//transform.LookAt(new Vector3(m_rigidbody.velocity.x, m_rigidbody.velocity.y, transform.position.z));
+		}
 	}
 
 #if UNITY_EDITOR

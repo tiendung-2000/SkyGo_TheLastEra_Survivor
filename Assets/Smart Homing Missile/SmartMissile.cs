@@ -8,6 +8,8 @@ public abstract class SmartMissile<RgbdType, VecType> : SmartMissile
 	[Header("Missile")]
 	[SerializeField, Tooltip("In seconds, 0 for infinite lifetime.")]
 	float m_lifeTime = 5;
+	public float speed;
+	public Rigidbody2D theRB;
 	[SerializeField]
 	UnityEvent m_onNewTargetFound;
 	[SerializeField]
@@ -76,7 +78,14 @@ public abstract class SmartMissile<RgbdType, VecType> : SmartMissile
 			}
 		}
 		else if (m_target = findNewTarget())
+		{
+
 			m_onNewTargetFound.Invoke();
+		}
+		else
+		{
+            theRB.velocity = transform.right * speed;
+        }
 	}
 
 	/// <summary>

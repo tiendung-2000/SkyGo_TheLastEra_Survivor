@@ -15,10 +15,11 @@ public class RocketBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Instantiate(explodeEffect, transform.position, transform.rotation);
         switch (other.tag)
         {
             case "Block":
-                Instantiate(explodeEffect, transform.position, transform.rotation);
+                Debug.Log("Rocket");
                 SmartPool.Ins.Despawn(gameObject);
                 break;
             case "Enemy":
@@ -26,7 +27,6 @@ public class RocketBullet : MonoBehaviour
                 if (enemy != null)
                 {
                     enemy.DamageEnemy(damageToGive + PlayerController.Ins.playerBaseDamage);
-                    Instantiate(explodeEffect, transform.position, transform.rotation);
                     SmartPool.Ins.Despawn(gameObject);
                 }
                 break;

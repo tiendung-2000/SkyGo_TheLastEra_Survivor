@@ -49,6 +49,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
+        playerBaseDamage = 0;
         canMove = true;
         isMove = true;
 

@@ -147,6 +147,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_lifeTime: 5
+  speed: 15
+  theRB: {fileID: 2694096419384989722}
   m_onNewTargetFound:
     m_PersistentCalls:
       m_Calls: []
