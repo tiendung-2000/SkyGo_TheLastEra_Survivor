@@ -751,7 +751,6 @@ GameObject:
   m_Component:
   - component: {fileID: 421691380}
   - component: {fileID: 421691381}
-  - component: {fileID: 421691382}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -802,27 +801,6 @@ MonoBehaviour:
   - {fileID: 5125553527162049355, guid: bf2abedecc5a45641b15471ba217c980, type: 3}
   - {fileID: 8538659373588874817, guid: b24b9d15448a3a04c8e8980649afbac0, type: 3}
   enemySpawnPos: 08000000f8ffffff0c000000fdffffff
---- !u!114 &421691382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421691379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edfb13f62330e894890b1d822e30f9fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemDropRates:
-  - item: {fileID: 3749952766380604448, guid: 7e4189924c3f7d144809fbe8d1f8b82f, type: 3}
-    rate: 0
-  - item: {fileID: 3749952766380604448, guid: f9ba2ecaeb160464a85e58342e91c269, type: 3}
-    rate: 0
-  - item: {fileID: 3749952766380604448, guid: 1f2e8af1b47d3054db47a410b83ca882, type: 3}
-    rate: 0
-  - item: {fileID: 3749952766380604448, guid: 057bbb05289b9474d900cdd18a397a64, type: 3}
-    rate: 0
 --- !u!1 &443750003
 GameObject:
   m_ObjectHideFlags: 0
