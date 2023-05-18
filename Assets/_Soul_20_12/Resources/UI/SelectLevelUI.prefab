@@ -2988,9 +2988,9 @@ GameObject:
   - component: {fileID: 1930407667590614634}
   - component: {fileID: 1930407667590614635}
   - component: {fileID: 1930407667590614638}
-  - component: {fileID: 1930407667590614633}
   - component: {fileID: 1930407667590614632}
   - component: {fileID: 7067270296934957978}
+  - component: {fileID: 3201356086865678416}
   m_Layer: 5
   m_Name: Magnetic Scroll View
   m_TagString: Untagged
@@ -3142,7 +3142,7 @@ MonoBehaviour:
   - {fileID: 4587426483305382760}
   - {fileID: 2855303345563502605}
   indexTableManager: {fileID: 1930407666493154209}
-  m_swipeDetect: {fileID: 1930407667590614633}
+  m_swipeDetect: {fileID: 3201356086865678416}
   m_autoArranging: 0
   m_invertOrder: 0
   m_infiniteScrolling: 1
@@ -3161,12 +3161,43 @@ MonoBehaviour:
   m_distanceOffset: 0
   m_decelerationRate: 0.15
   m_transitionSpeed: 5
-  m_dragDelay: 0.5
+  m_dragDelay: 0
   backButton: {fileID: 1930407667074589819}
   forwardButton: {fileID: 1930407667450626813}
   indexTable: {fileID: 1930407666493154212}
   m_currentSelected: 0
---- !u!114 &1930407667590614633
+--- !u!114 &1930407667590614632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930407667590614636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 509d9bf3d7756d94598860f40c24cc3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedAnimation: Selected
+  isCharacterUI: 0
+  isLevelUI: 1
+  spriteSelected: {fileID: 0}
+  spriteUnSelected: {fileID: 0}
+--- !u!114 &7067270296934957978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930407667590614636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed607455efe17f246afd689ad0fa90c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scroll: {fileID: 1930407667590614638}
+  isLevel: 1
+--- !u!114 &3201356086865678416
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3230,37 +3261,6 @@ MonoBehaviour:
     eventID: 0
   minTime: 0.01
   maxTime: 0.5
---- !u!114 &1930407667590614632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1930407667590614636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 509d9bf3d7756d94598860f40c24cc3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedAnimation: Selected
-  isCharacterUI: 0
-  isLevelUI: 1
-  spriteSelected: {fileID: 0}
-  spriteUnSelected: {fileID: 0}
---- !u!114 &7067270296934957978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1930407667590614636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed607455efe17f246afd689ad0fa90c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scroll: {fileID: 1930407667590614638}
-  isLevel: 1
 --- !u!1 &1930407667652311422
 GameObject:
   m_ObjectHideFlags: 0
