@@ -55,8 +55,13 @@ public class LevelGate : MonoBehaviour
             PlayerController.Ins.isMove = false;
             EndLevel();
 
-            ResourceSystem.Ins.RewardsLevel.RewardsData[DynamicDataManager.Ins.CurLevel].isUnlock = true;
+            UnlockReward();
         }
+    }
+
+    public void UnlockReward()
+    {
+        ResourceSystem.Ins.RewardsLevel.RewardsData[DynamicDataManager.Ins.CurLevel].isUnlock = true;
     }
 
     void EndLevel()

@@ -166,14 +166,14 @@ public class BounceBullet : MonoBehaviour
             //    break;
 
             case "Enemy":
-                other.gameObject.GetComponent<EnemyController>().DamageEnemy(damageToGive);
+                other.gameObject.GetComponent<EnemyController>().DamageEnemy(damageToGive + PlayerController.Ins.playerBaseDamage);
                 Instantiate(impactEffect, transform.position, transform.rotation);
                 SmartPool.Ins.Despawn(gameObject);
                 Debug.Log("Dame");
                 break;
 
             case "Boss":
-                other.gameObject.GetComponent<BossController>().TakeDamage(damageToGive);
+                other.gameObject.GetComponent<BossController>().TakeDamage(damageToGive + PlayerController.Ins.playerBaseDamage);
                 Instantiate(impactEffect, transform.position, transform.rotation);
                 SmartPool.Ins.Despawn(gameObject);
                 break;

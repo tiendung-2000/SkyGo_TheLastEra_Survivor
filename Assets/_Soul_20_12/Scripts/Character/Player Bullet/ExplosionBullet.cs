@@ -47,14 +47,14 @@ public class ExplosionBullet : MonoBehaviour
 
         if (other.tag == "Enemy")
         {
-            other.GetComponent<EnemyController>().DamageEnemy(damageToGive);
+            other.GetComponent<EnemyController>().DamageEnemy(damageToGive + PlayerController.Ins.playerBaseDamage);
             Instantiate(explodeEffect, transform.position, transform.rotation);
             SmartPool.Ins.Despawn(gameObject);
         }
 
         if (other.tag == "Boss")
         {
-            BossController.Ins.TakeDamage(damageToGive);
+            BossController.Ins.TakeDamage(damageToGive + PlayerController.Ins.playerBaseDamage);
 
             Instantiate(BossController.Ins.hitEffect, transform.position, transform.rotation);
             SmartPool.Ins.Despawn(gameObject);

@@ -17,14 +17,14 @@ public class NationBomb : MonoBehaviour
                 EnemyController enemy = other.GetComponent<EnemyController>();
                 if (enemy != null)
                 {
-                    enemy.DamageEnemy(damageToGive);
+                    enemy.DamageEnemy(damageToGive + PlayerController.Ins.playerBaseDamage);
                 }
                 break;
             case "Boss":
                 BossController boss = other.GetComponent<BossController>();
                 if (boss != null)
                 {
-                    boss.TakeDamage(damageToGive);
+                    boss.TakeDamage(damageToGive + PlayerController.Ins.playerBaseDamage);
                     Instantiate(boss.hitEffect, transform.position, transform.rotation);
                 }
                 break;

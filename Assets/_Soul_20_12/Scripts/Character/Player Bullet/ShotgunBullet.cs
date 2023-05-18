@@ -50,7 +50,7 @@ public class ShotgunBullet : MonoBehaviour
 
         if (other.CompareTag("Enemy"))
         {
-            other.GetComponent<EnemyController>().DamageEnemy(damageToGive);
+            other.GetComponent<EnemyController>().DamageEnemy(damageToGive + PlayerController.Ins.playerBaseDamage);
 
             Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
             if (enemy != null)
@@ -64,7 +64,7 @@ public class ShotgunBullet : MonoBehaviour
 
         if (other.CompareTag("Boss"))
         {
-            BossController.Ins.TakeDamage(damageToGive);
+            BossController.Ins.TakeDamage(damageToGive + PlayerController.Ins.playerBaseDamage);
 
             SmartPool.Ins.Spawn(BossController.Ins.hitEffect, transform.position, transform.rotation);
         }

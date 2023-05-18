@@ -27,7 +27,7 @@ public class LR_Controller : MonoBehaviour
     {
         for (int i = 0; i < ePos.Length; i++)
         {
-            ePos[i].DamageEnemy(damage);
+            ePos[i].DamageEnemy(damage + PlayerController.Ins.playerBaseDamage);
         }
     }
 

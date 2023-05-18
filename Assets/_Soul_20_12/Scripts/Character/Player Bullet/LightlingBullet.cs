@@ -64,7 +64,7 @@ public class LightlingBullet : MonoBehaviour
                 EnemyController enemy = other.GetComponent<EnemyController>();
                 if (enemy != null)
                 {
-                    enemy.DamageEnemy(damageToGive);
+                    enemy.DamageEnemy(damageToGive + PlayerController.Ins.playerBaseDamage);
                     ShockEnemiesAround();
                 }
                 break;
@@ -73,7 +73,7 @@ public class LightlingBullet : MonoBehaviour
                 BossController boss = other.GetComponent<BossController>();
                 if (boss != null)
                 {
-                    boss.TakeDamage(damageToGive);
+                    boss.TakeDamage(damageToGive + PlayerController.Ins.playerBaseDamage);
                     Instantiate(boss.hitEffect, transform.position, transform.rotation);
                 }
                 break;

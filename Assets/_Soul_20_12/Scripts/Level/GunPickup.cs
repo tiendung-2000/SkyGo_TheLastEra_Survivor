@@ -5,6 +5,7 @@ public class GunPickup : MonoBehaviour
     public Weapon theGun;
 
     public int ammo;
+    public int damageToAdd;
 
     public float waitToBeCollected = .5f;
 
@@ -30,6 +31,7 @@ public class GunPickup : MonoBehaviour
                 {
                     hasGun = true;
                     theGun.PickupAmmo(ammo);
+                    PlayerController.Ins.playerBaseDamage += damageToAdd;
                 }
             }
 
