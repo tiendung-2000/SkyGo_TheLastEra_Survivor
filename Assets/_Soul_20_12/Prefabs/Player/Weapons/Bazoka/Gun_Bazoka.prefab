@@ -44,9 +44,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1794240590228000553}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd917225d0d173146b6b0f08ecef5a13, type: 3}
+  m_Script: {fileID: 11500000, guid: 98b7c5e65bb327e43848e848995e6b0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
   ske: {fileID: 6141716713161587663}
   bulletToFire: {fileID: 9070735391092049552, guid: ae2ea5a1c77ff524cabc81c7848498f5,
     type: 3}
@@ -58,14 +59,14 @@ MonoBehaviour:
   - {fileID: 5676348895021758842}
   xAngle: 0
   yAngle: 0
-  reloadTime: 3
+  reloadTime: 2
   reloadTimeCounter: 0
   reload: 0
   isFullAmmo: 0
-  timeBetweenShots: 1
+  timeBetweenShots: 1.5
   shotCounter: 0
   weaponName: Bazoka
-  itemCost: 25
+  itemCost: 0
   gunSprite: {fileID: 21300000, guid: 5996944e83347614da99cc335ebb666b, type: 3}
   gunSwitchSprite: {fileID: 21300000, guid: f28e6740ea432794ea9cef9feff4a6ca, type: 3}
   currentClip: 0

@@ -74,9 +74,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4446183760795161484}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd917225d0d173146b6b0f08ecef5a13, type: 3}
+  m_Script: {fileID: 11500000, guid: 98b7c5e65bb327e43848e848995e6b0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
   ske: {fileID: 1916790717778626091}
   bulletToFire: {fileID: 4189913780510908286, guid: f0146ed731213144196799f267af4f30,
     type: 3}
@@ -94,8 +95,8 @@ MonoBehaviour:
   isFullAmmo: 0
   timeBetweenShots: 0.17
   shotCounter: 0
-  weaponName: Machine Gun
-  itemCost: 35
+  weaponName: Machine
+  itemCost: 0
   gunSprite: {fileID: 21300000, guid: 1736ec29cfd75fc4e8806fcfd1245bf3, type: 3}
   gunSwitchSprite: {fileID: 21300000, guid: 129001c83f226484cbe6d7a3cac51a0c, type: 3}
   currentClip: 0

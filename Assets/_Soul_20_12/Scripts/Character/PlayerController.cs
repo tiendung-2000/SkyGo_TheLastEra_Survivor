@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 
     public int currentHealth;
     public int curPlayerMaxHP;
+    public int playerBaseDamage = 0;
     public float moveSpeed;
     public bool canMove = true;
     public bool isMove = true;
@@ -25,10 +26,9 @@ public class PlayerController : MonoBehaviour
     public float detectRange;
     public LayerMask whatIsEnemy;
 
-
-    private Gun gun;
-    public List<Gun> availableGuns = new List<Gun>();
-    public List<Gun> availableDupliGuns = new List<Gun>();
+    private Weapon gun;
+    public List<Weapon> availableGuns = new List<Weapon>();
+    public List<Weapon> availableDupliGuns = new List<Weapon>();
     [HideInInspector]
     public int currentGun;
 
@@ -154,11 +154,11 @@ public class PlayerController : MonoBehaviour
 
     public void SwitchGun()
     {
-        foreach (Gun theGun in availableGuns)
+        foreach (Weapon theGun in availableGuns)
         {
             theGun.gameObject.SetActive(false);
         }
-        foreach (Gun theGun in availableDupliGuns)
+        foreach (Weapon theGun in availableDupliGuns)
         {
             theGun.gameObject.SetActive(false);
         }
@@ -170,7 +170,7 @@ public class PlayerController : MonoBehaviour
     {
         Collider2D enemy = Physics2D.OverlapCircle(transform.position, detectRange, whatIsEnemy);
 
-        if(enemy != null)
+        if (enemy != null)
         {
             //Debug.Log("1");
             availableGuns[currentGun].canFire = false;

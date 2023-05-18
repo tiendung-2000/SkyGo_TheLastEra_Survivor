@@ -9,8 +9,8 @@ public class WeaponPopup : BaseUIMenu
     [SerializeField] Button watchAdsButton;
     [SerializeField] Button noButton;
 
-    private Gun theGun;
-    public Gun[] potentialGuns;
+    private Weapon theGun;
+    public Weapon[] potentialGuns;
     public Image gunSpriteUI;
 
     private void Start()
@@ -34,7 +34,7 @@ public class WeaponPopup : BaseUIMenu
     void OnAds()
     {
         bool hasGun = false;
-        foreach (Gun gunToCheck in PlayerController.Ins.availableGuns)
+        foreach (Weapon gunToCheck in PlayerController.Ins.availableGuns)
         {
             //if hasgun
             print(PlayerController.Ins.availableGuns.Count);
@@ -48,7 +48,7 @@ public class WeaponPopup : BaseUIMenu
 
         if (!hasGun)
         {
-            Gun gunClone = Instantiate(theGun);
+            Weapon gunClone = Instantiate(theGun);
             gunClone.transform.parent = PlayerController.Ins.theHand;
             gunClone.transform.position = PlayerController.Ins.theHand.position;
             gunClone.transform.localRotation = Quaternion.Euler(Vector3.zero);

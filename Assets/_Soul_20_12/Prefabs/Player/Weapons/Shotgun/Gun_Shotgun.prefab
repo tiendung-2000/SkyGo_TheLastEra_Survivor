@@ -44,9 +44,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2459938688883428890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd917225d0d173146b6b0f08ecef5a13, type: 3}
+  m_Script: {fileID: 11500000, guid: 98b7c5e65bb327e43848e848995e6b0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
   ske: {fileID: 183363467204549183}
   bulletToFire: {fileID: 2694096419384989725, guid: 831a915c10c0e70448391fd3737074f4,
     type: 3}
@@ -64,8 +65,8 @@ MonoBehaviour:
   isFullAmmo: 0
   timeBetweenShots: 0.5
   shotCounter: 0
-  weaponName: Shot Gun
-  itemCost: 25
+  weaponName: Shotgun
+  itemCost: 0
   gunSprite: {fileID: 21300000, guid: d77e0a8eac66bfb4db082856b131ef93, type: 3}
   gunSwitchSprite: {fileID: 21300000, guid: 02c491e94b5eff34f822c13d1b1b4f25, type: 3}
   currentClip: 0

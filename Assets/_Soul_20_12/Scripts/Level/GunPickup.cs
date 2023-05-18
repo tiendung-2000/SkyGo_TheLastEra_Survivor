@@ -2,7 +2,7 @@
 
 public class GunPickup : MonoBehaviour
 {
-    public Gun theGun;
+    public Weapon theGun;
 
     public int ammo;
 
@@ -21,7 +21,7 @@ public class GunPickup : MonoBehaviour
         if (other.tag == "Player" && waitToBeCollected <= 0)
         {
             bool hasGun = false;
-            foreach (Gun gunToCheck in PlayerController.Ins.availableGuns)
+            foreach (Weapon gunToCheck in PlayerController.Ins.availableGuns)
             {
                 //if hasgun
                 //print(PlayerController.Ins.availableGuns.Count);
@@ -35,7 +35,7 @@ public class GunPickup : MonoBehaviour
 
             if (!hasGun)
             {
-                Gun gunClone = Instantiate(theGun);
+                Weapon gunClone = Instantiate(theGun);
                 gunClone.transform.parent = PlayerController.Ins.theHand;
                 gunClone.transform.position = PlayerController.Ins.theHand.position;
                 gunClone.transform.localRotation = Quaternion.Euler(Vector3.zero);

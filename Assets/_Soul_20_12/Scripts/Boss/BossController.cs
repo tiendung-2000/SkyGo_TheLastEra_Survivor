@@ -59,6 +59,25 @@ public class BossController : MonoBehaviour
         levelExit.SetActive(true);
         Destroy(gameObject);
     }
+
+    bool shouldDropItem;
+    public GameObject[] itemsToDrop;
+    public float itemDropPercent;
+
+    public void DropItem()
+    {
+        if (shouldDropItem)
+        {
+            float dropChance = Random.Range(0f, 100f);
+
+            if (dropChance < itemDropPercent)
+            {
+                int randomItem = Random.Range(0, itemsToDrop.Length);
+
+                SmartPool.Ins.Spawn(itemsToDrop[randomItem], transform.position, transform.rotation);
+            }
+        }
+    }
 }
 
 public class BossAnimKeys

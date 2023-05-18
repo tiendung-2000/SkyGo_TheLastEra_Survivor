@@ -140,7 +140,7 @@ public class RoomCenter : MonoBehaviour
     public void SpawnChest()
     {
         Debug.Log("SpawmChest");
-        if (isEnemyCenter && spawnChest == true)
+        if (isEnemyCenter || isBossCenter && spawnChest == true)
         {
             GetTarget();
             GameObject chestSpawn = Instantiate(LevelManager.Ins.chestSpawn, checkPoint.position, Quaternion.identity);

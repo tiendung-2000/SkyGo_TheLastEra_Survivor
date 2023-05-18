@@ -44,9 +44,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3240367412509989274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd917225d0d173146b6b0f08ecef5a13, type: 3}
+  m_Script: {fileID: 11500000, guid: 98b7c5e65bb327e43848e848995e6b0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
   ske: {fileID: 433493895774285017}
   bulletToFire: {fileID: 4189913780510908286, guid: 0b5b284f6a83223418f5e234790d6b86,
     type: 3}
@@ -65,7 +66,7 @@ MonoBehaviour:
   timeBetweenShots: 0.18
   shotCounter: 0
   weaponName: AKM
-  itemCost: 25
+  itemCost: 0
   gunSprite: {fileID: 21300000, guid: 07be24edb067e7046afd468357d94061, type: 3}
   gunSwitchSprite: {fileID: 21300000, guid: 7d7b4dcd7f2040d4db5a077dba4bc182, type: 3}
   currentClip: 0

@@ -107,7 +107,7 @@ public class PlayerSkillManager : MonoBehaviour
 
                         break;
                     case 3:
-                        Gun.Ins.canExplode = false;
+                        Weapon.Ins.canExplode = false;
                         player.canMove = true;
                         ButtonControllerUI.Ins.CoolDown();
 
@@ -180,7 +180,7 @@ public class PlayerSkillManager : MonoBehaviour
             //    gun.canExplode = true;
             //}         
 
-            Gun.Ins.canExplode = true;
+            Weapon.Ins.canExplode = true;
 
             player.canMove = false;
             PlayerController.Ins.SetCharacterState("Skill");

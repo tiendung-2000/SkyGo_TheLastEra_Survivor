@@ -4,13 +4,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
 
-public class Gun : MonoBehaviour
+public enum WeaponType
 {
-    public static Gun Ins;
+    Gun,
+    Staff,
+    Sword,
+
+}
+
+public class Weapon : MonoBehaviour
+{
+    public static Weapon Ins;
+    public WeaponType type;
 
     public SkeletonAnimation ske;
-
-    //public CinemachineShake shake;
 
     public GameObject bulletToFire;
 
@@ -33,7 +40,6 @@ public class Gun : MonoBehaviour
     public float shotCounter;
 
     public string weaponName;
-    //public Sprite gunUI;
 
     public int itemCost;
     public Sprite gunSprite;
@@ -58,20 +64,21 @@ public class Gun : MonoBehaviour
 
     void Start()
     {
-        canFire = true;
-        canExplode = false;
-        //shake = GetComponent<CinemachineShake>();
-        currentClip = maxClipSize;
-        CooldownUI.instance.fill.fillAmount = (reloadTimeCounter) / reloadTime;
-        shotCounter = timeBetweenShots;
+        if (type == WeaponType.Gun)
+        {
+            canFire = true;
+            canExplode = false;
+            currentClip = maxClipSize;
+            CooldownUI.instance.fill.fillAmount = (reloadTimeCounter) / reloadTime;
+            shotCounter = timeBetweenShots;
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
         shotCounter -= Time.deltaTime;
 
-        if (currentClip <= 0 && !isFullAmmo)
+        if (currentClip <= 0 && !isFullAmmo && type == WeaponType.Gun)
         {
             CooldownUI.instance.DoShow();
             reloadTimeCounter += Time.deltaTime;
@@ -92,13 +99,16 @@ public class Gun : MonoBehaviour
 
     public void OnDisable()
     {
-        currentClip = maxClipSize;
-        CooldownUI.instance.DoFade();
+        if (type == WeaponType.Gun)
+        {
+            currentClip = maxClipSize;
+            CooldownUI.instance.DoFade();
+        }
     }
 
     public void OnEnable()
     {
-        if (!isDupliGun)
+        if (!isDupliGun && type == WeaponType.Gun)
         {
             CooldownUI.instance.DoFade();
             currentClip = maxClipSize;
@@ -128,12 +138,11 @@ public class Gun : MonoBehaviour
 
     public void GunFire()
     {
-        if (canFire == true && currentClip > 0 && isRocketGun == false)
+        if (canFire == true && currentClip > 0 && isRocketGun == false && type == WeaponType.Gun)
         {
             if (shotCounter < 0)
             {
                 ske.AnimationState.SetAnimation(0, "fire", false);
-                //AudioManager.instance.PlaySFX(12);
 
                 if (canExplode)
                 {
@@ -143,7 +152,6 @@ public class Gun : MonoBehaviour
                         newBullet.transform.Rotate(0f, 0f, Random.Range(-xAngle, yAngle));
                         shotCounter = timeBetweenShots;
                         currentClip--;
-                        //CinemachineShake.Instance.ShakeCamera(3f, .1f);
                     }
                 }
                 else
@@ -154,7 +162,6 @@ public class Gun : MonoBehaviour
                         newBullet.transform.Rotate(0f, 0f, Random.Range(-xAngle, yAngle));
                         shotCounter = timeBetweenShots;
                         currentClip--;
-                        //CinemachineShake.Instance.ShakeCamera(1f, .1f);
                     }
                 }
                 if (currentClip <= 0)
@@ -172,19 +179,16 @@ public class Gun : MonoBehaviour
 
     void RocketFire()
     {
-        if (shotCounter < 0)
+        if (shotCounter < 0 && type == WeaponType.Gun)
         {
-
             for (int i = 0; i < firePoint.Count; i++)
             {
                 GameObject newProjectile = SmartPool.Ins.Spawn(bulletToFire, firePoint[i].position, firePoint[i].rotation) as GameObject;
                 shotCounter = timeBetweenShots;
                 currentClip--;
-                //CinemachineShake.Instance.ShakeCamera(3f, .1f);
 
                 if (newProjectile.GetComponent<Rigidbody2D>())
                     newProjectile.GetComponent<Rigidbody2D>().AddForce(transform.right * m_launchIntensity, ForceMode2D.Impulse);
-                //Debug.Log(newProjectile.GetComponent<Rigidbody2D>().velocity);
             }
         }
     }

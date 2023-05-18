@@ -5,7 +5,7 @@ public class CooldownUI : MonoBehaviour
 {
     public static CooldownUI instance;
 
-    private Gun gun;
+    private Weapon gun;
 
     public CanvasGroup canvasGR;
 

@@ -44,9 +44,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1640628663029948653}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd917225d0d173146b6b0f08ecef5a13, type: 3}
+  m_Script: {fileID: 11500000, guid: 98b7c5e65bb327e43848e848995e6b0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
   ske: {fileID: 7113016119780149112}
   bulletToFire: {fileID: 4189913780510908286, guid: 2ada15f24422da3438d3120616f3aa3f,
     type: 3}
@@ -65,7 +66,7 @@ MonoBehaviour:
   timeBetweenShots: 0.15
   shotCounter: 0
   weaponName: Gatling
-  itemCost: 45
+  itemCost: 0
   gunSprite: {fileID: 21300000, guid: ad6ac0318b7748a4ab37905957113eee, type: 3}
   gunSwitchSprite: {fileID: 21300000, guid: 10e54e7c6bbcbe848905c39358e8c295, type: 3}
   currentClip: 0

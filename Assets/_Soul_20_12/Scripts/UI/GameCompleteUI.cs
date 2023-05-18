@@ -85,13 +85,21 @@ public class GameCompleteUI : BaseUIMenu
         OnHome();
         //LevelGate.Ins.isComplete = false;
 
-        DynamicDataManager.Ins.CurNumCoin += coinTotal;
+        //DynamicDataManager.Ins.CurNumCoin += coinTotal;
     }
 
 
     public void OnClickWatchAdsButton()
     {
         OnClaimX2();
+    }
+
+    void OnClaimX2()
+    {
+        coinTotal = coinTotal * 2;
+        coinTotalText.text = coinTotal.ToString();
+        watchAdsButton.gameObject.SetActive(false);
+        PlayChangeGoldEffect(coinTotalText);
     }
 
     void OnHome()
@@ -101,44 +109,6 @@ public class GameCompleteUI : BaseUIMenu
         CanvasManager.Ins.OpenUI(UIName.SelectLevelUI, null);
         GamePlayController.Ins.ResetGamePlay();
         Close();
-    }
-
-    //public void OnClickReplayButton()
-    //{
-    //    OnReplay();
-    //    LevelGate.Ins.isComplete = false;
-    //}
-
-    //public void OnClickNextButton()
-    //{
-    //    OnNext();
-    //    LevelGate.Ins.isComplete = false;
-    //}
-    //void OnReplay()
-    //{
-    //    CanvasManager.Ins.OpenUI(UIName.LoadingUI, null);
-    //    CanvasManager.Ins.OpenUI(UIName.GameplayUI, null);
-    //    Close();
-
-    //    GamePlayController.Ins.Replay();
-    //}
-
-    //void OnNext()
-    //{
-    //    CanvasManager.Ins.OpenUI(UIName.LoadingUI, null);
-    //    CanvasManager.Ins.OpenUI(UIName.GameplayUI, null);
-    //    Close();
-
-    //    GamePlayController.Ins.NextLevel();
-    //}
-
-    void OnClaimX2()
-    {
-        coinTotal = coinTotal * 2;
-        coinTotalText.text = coinTotal.ToString();
-        watchAdsButton.gameObject.SetActive(false);
-        PlayChangeGoldEffect(coinTotalText);
-        
     }
 
     IEnumerator IEDelayBackHomeScene()
