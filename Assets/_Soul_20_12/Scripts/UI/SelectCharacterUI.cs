@@ -357,6 +357,7 @@ public class SelectCharacterUI : BaseUIMenu
         ResourceSystem.Ins.players[DynamicDataManager.Ins.CurPlayer].gameObject.SetActive(true);
         CharacterSelectManager.Ins.activePlayer = ResourceSystem.Ins.players[DynamicDataManager.Ins.CurPlayer];
         GamePlayController.Ins.ResetPlayerStats();
+
     }
 
     IEnumerator IESpawnLevel()
@@ -364,12 +365,13 @@ public class SelectCharacterUI : BaseUIMenu
         yield return new WaitForSeconds(.1f);
 
         ResourceSystem.Ins.SpawnLevel(2);
+        Close();
+
     }
 
     IEnumerator IEPlaySound()
     {
         yield return new WaitForSeconds(3f);
-        Close();
         SoundManager.Ins.ChangeBGM(2);
     }
 

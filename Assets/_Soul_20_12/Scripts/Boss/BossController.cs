@@ -19,6 +19,10 @@ public class BossController : MonoBehaviour
 
     public bool playerOnZone = false;
 
+    public bool shouldDropItem;
+    public GameObject[] itemsToDrop;
+    public GameObject cointToDrop;
+    public float itemDropPercent;
     private void Awake()
     {
         if (Ins == null)
@@ -45,9 +49,11 @@ public class BossController : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            DropItem();
             ske.AnimationState.SetAnimation(0, BossAnimKeys.DIE, false);
             StartCoroutine(IEBossDead());
             col.enabled = false;
+
         }
         bossHubUI.bossHealthBar.value = currentHealth;
     }
@@ -60,14 +66,12 @@ public class BossController : MonoBehaviour
         Destroy(gameObject);
     }
 
-    bool shouldDropItem;
-    public GameObject[] itemsToDrop;
-    public float itemDropPercent;
 
     public void DropItem()
     {
         if (shouldDropItem)
         {
+            Debug.Log("Drop Item");
             float dropChance = Random.Range(0f, 100f);
 
             if (dropChance < itemDropPercent)
@@ -76,6 +80,8 @@ public class BossController : MonoBehaviour
 
                 SmartPool.Ins.Spawn(itemsToDrop[randomItem], transform.position, transform.rotation);
             }
+
+            SmartPool.Ins.Spawn(cointToDrop, transform.position, transform.rotation);
         }
     }
 }

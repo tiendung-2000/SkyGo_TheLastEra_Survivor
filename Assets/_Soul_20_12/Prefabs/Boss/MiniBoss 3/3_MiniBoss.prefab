@@ -125,6 +125,18 @@ MonoBehaviour:
   levelExit: {fileID: 0}
   timeToDead: 1.867
   playerOnZone: 0
+  shouldDropItem: 1
+  itemsToDrop:
+  - {fileID: 5345533770886781994, guid: 3ad31bcb26782bb439d6e42edca66d06, type: 3}
+  - {fileID: 5345533770886781994, guid: 4a980e95d4b858e43859448b4da81a21, type: 3}
+  - {fileID: 5345533770886781994, guid: b66395c2186a1b64c8b1f23ceed2d87e, type: 3}
+  - {fileID: 5345533770886781994, guid: a2f3ff6fbf8cf1442bcd53155dad0d65, type: 3}
+  - {fileID: 5345533770886781994, guid: a5b7a2cc5199bd74bb03fb763f735c38, type: 3}
+  - {fileID: 5345533770886781994, guid: dcca14021ae7cb74b92189298c1c9029, type: 3}
+  - {fileID: 5345533770886781994, guid: f71f266846ae7ed42a8aa176bda27794, type: 3}
+  cointToDrop: {fileID: 3749952766380604448, guid: 92d9b081c7091cf419783ca8ca7f8cd0,
+    type: 3}
+  itemDropPercent: 100
 --- !u!114 &1295974688720971824
 MonoBehaviour:
   m_ObjectHideFlags: 0
