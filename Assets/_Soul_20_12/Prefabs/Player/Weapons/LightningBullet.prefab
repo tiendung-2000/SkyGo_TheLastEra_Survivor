@@ -217,11 +217,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c50181b3c34dfed43a536315b6b93cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 5
   theRB: {fileID: 8949156293457057549}
   impactEffect: {fileID: 527154294331547227, guid: db71af9a5c78faa47a17a62a046a55a6,
     type: 3}
-  damageToGive: 10
+  damageToGive: 1
   trail: {fileID: 8949156293457057550}
   line: {fileID: 5994202462036460025, guid: 7a8ae2ba507e8e146aac872a7ad21a4f, type: 3}
   nearestEnemies: []

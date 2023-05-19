@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -47,30 +48,77 @@ public class LR_Controller : MonoBehaviour
 
     private void Update()
     {
-        if (startPoint != null)
-        {
-            lr.SetPosition(0, startPoint.position);
 
-            for (int i = 1; i < ePos.Length; i++)
-            {
-                if (ePos[i] != null)
-                {
-                    lr.SetPosition(i, ePos[i].transform.position);
-                }
-            }
-
-        }
-        else
-        {
-            for (int i = 0; i < ePos.Length; i++)
-            {
-                if (ePos[i] != null)
-                {
-                    lr.SetPosition(i, ePos[i].transform.position);
-                }
-            }
-        }
+        LightConnect();
         LightRender();
+    }
+
+
+    void LightConnect()
+    {
+        //if (startPoint != null)
+        //{
+        //    lr.SetPosition(0, startPoint.position);
+
+        //    for (int i = 1; i < ePos.Length; i++)
+        //    {
+        //        if (ePos[i] != null)
+        //        {
+        //            lr.SetPosition(i, ePos[i].transform.position);
+        //        }
+        //    }
+
+        //}
+        //else
+        //{
+        //    for (int i = 0; i < ePos.Length; i++)
+        //    {
+        //        if (ePos[i] != null)
+        //        {
+        //            lr.SetPosition(i, ePos[i].transform.position);
+        //        }
+        //    }
+
+        //    //for (int i = 0; i < ePos.Length - 1; i++)
+        //    //{
+        //    //    if (ePos[i] != null)
+        //    //    {
+        //    //        lr.SetPosition(0, ePos[i].transform.position);
+        //    //        lr.SetPosition(1, ePos[i + 1].transform.position);
+        //    //    }
+        //    //}
+        //}
+
+        
+
+        GenLine(0);
+
+        void GenLine(int index)
+        {
+            lr.positionCount++;
+
+            if (lr.positionCount == 1)
+            {
+                lr.SetPosition(0, ePos[index].transform.position);
+                GenLine(1);
+                return;
+            }
+
+            var lastIndex = lr.positionCount - 1;
+            var curPos = lr.GetPosition(lastIndex - 1);
+            lr.SetPosition(lastIndex, curPos);
+
+            DOVirtual.Vector3(curPos, ePos[index].transform.position, 0.5f, (value) =>
+            {
+                lr.SetPosition(lastIndex, value);
+            }).OnComplete(() =>
+            {
+                if (index + 1 < ePos.Length)
+                {
+                    GenLine(index + 1);
+                }
+            });
+        }
     }
 
     private void LightRender()
