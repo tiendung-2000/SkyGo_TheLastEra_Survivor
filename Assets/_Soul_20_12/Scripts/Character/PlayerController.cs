@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 
     public int currentHealth;
     public int curPlayerMaxHP;
-    public int playerBaseDamage = 0;
+    public int playerBaseDamage;
     public float moveSpeed;
     public bool canMove = true;
     public bool isMove = true;

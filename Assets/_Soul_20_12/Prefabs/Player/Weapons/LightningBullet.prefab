@@ -221,7 +221,7 @@ MonoBehaviour:
   theRB: {fileID: 8949156293457057549}
   impactEffect: {fileID: 527154294331547227, guid: db71af9a5c78faa47a17a62a046a55a6,
     type: 3}
-  damageToGive: 1
+  damageToGive: 20
   trail: {fileID: 8949156293457057550}
   line: {fileID: 5994202462036460025, guid: 7a8ae2ba507e8e146aac872a7ad21a4f, type: 3}
   nearestEnemies: []

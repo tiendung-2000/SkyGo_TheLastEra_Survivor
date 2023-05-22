@@ -21,7 +21,7 @@ public class LR_Controller : MonoBehaviour
 
     private void Awake()
     {
-        Destroy(this.gameObject, 0.5f);
+        Destroy(this.gameObject, 5f);
     }
 
     public void GiveDamageToE(int damage)
@@ -35,7 +35,7 @@ public class LR_Controller : MonoBehaviour
     public void SetUpLine(EnemyController[] position)
     {
         this.ePos = position;
-        lr.positionCount = position.Length;
+        LightConnect();
     }
 
     public void AssignTarget(Vector3 startPosition, Transform newTarget)
@@ -48,48 +48,19 @@ public class LR_Controller : MonoBehaviour
 
     private void Update()
     {
-
-        LightConnect();
         LightRender();
     }
 
 
     void LightConnect()
     {
-        //if (startPoint != null)
-        //{
-        //    lr.SetPosition(0, startPoint.position);
+        lr.positionCount = 0;
 
-        //    for (int i = 1; i < ePos.Length; i++)
-        //    {
-        //        if (ePos[i] != null)
-        //        {
-        //            lr.SetPosition(i, ePos[i].transform.position);
-        //        }
-        //    }
-
-        //}
-        //else
-        //{
-        //    for (int i = 0; i < ePos.Length; i++)
-        //    {
-        //        if (ePos[i] != null)
-        //        {
-        //            lr.SetPosition(i, ePos[i].transform.position);
-        //        }
-        //    }
-
-        //    //for (int i = 0; i < ePos.Length - 1; i++)
-        //    //{
-        //    //    if (ePos[i] != null)
-        //    //    {
-        //    //        lr.SetPosition(0, ePos[i].transform.position);
-        //    //        lr.SetPosition(1, ePos[i + 1].transform.position);
-        //    //    }
-        //    //}
-        //}
-
-        
+        List<EnemyController> enemy = new List<EnemyController>();
+        foreach (EnemyController e in ePos)
+        {
+            enemy.Add(e);
+        }
 
         GenLine(0);
 
@@ -99,7 +70,7 @@ public class LR_Controller : MonoBehaviour
 
             if (lr.positionCount == 1)
             {
-                lr.SetPosition(0, ePos[index].transform.position);
+                lr.SetPosition(0, enemy[index].transform.position);
                 GenLine(1);
                 return;
             }
@@ -108,14 +79,18 @@ public class LR_Controller : MonoBehaviour
             var curPos = lr.GetPosition(lastIndex - 1);
             lr.SetPosition(lastIndex, curPos);
 
-            DOVirtual.Vector3(curPos, ePos[index].transform.position, 0.5f, (value) =>
+            DOVirtual.Vector3(curPos, enemy[index].transform.position, 0.1f, (value) =>
             {
                 lr.SetPosition(lastIndex, value);
             }).OnComplete(() =>
             {
-                if (index + 1 < ePos.Length)
+                if (index + 1 < enemy.Count)
                 {
                     GenLine(index + 1);
+                }
+                else
+                {
+                    Destroy(this.gameObject);
                 }
             });
         }
