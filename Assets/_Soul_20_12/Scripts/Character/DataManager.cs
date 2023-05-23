@@ -1,4 +1,5 @@
 ﻿using API.UI;
+using Spine.Unity;
 using System.Collections;
 using UnityEngine;
 
@@ -29,6 +30,7 @@ public class DataManager : Singleton<DataManager>
     {
         if (immortalCount <= 0)
         {
+            PlayerController.Ins.TakeDamageEffect();
             PlayerController.Ins.currentHealth--;
             DynamicDataManager.Ins.OnHealthChange?.Invoke(PlayerController.Ins.currentHealth);
 
@@ -43,6 +45,9 @@ public class DataManager : Singleton<DataManager>
             }
         }
     }
+
+    
+
     IEnumerator DelayDead()
     {
         yield return new WaitForSeconds(1f);

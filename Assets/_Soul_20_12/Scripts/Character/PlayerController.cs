@@ -1,4 +1,5 @@
 ﻿using Spine.Unity;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public bool canMove = true;
     public bool isMove = true;
 
+    public Material material;
     public Vector2 moveInput;
     public Collider2D col;
     public Rigidbody2D theRB;
@@ -49,6 +51,8 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
+        material.SetFloat("_FillPhase", 0f);
+
         playerBaseDamage = 0;
         canMove = true;
         isMove = true;
@@ -204,4 +208,17 @@ public class PlayerController : MonoBehaviour
         int numSpeed = ResourceSystem.Ins.CharactersDatabase.Characters[DynamicDataManager.Ins.CurPlayer].Data.Speed[level];
         moveSpeed = numSpeed;
     }
+
+    public void TakeDamageEffect()
+    {
+        StartCoroutine(IETakeDamageEffect());
+    }
+
+    IEnumerator IETakeDamageEffect()
+    {
+        material.SetFloat("_FillPhase", 1f);
+        yield return new WaitForSeconds(0.2f);
+        material.SetFloat("_FillPhase", 0f);
+    }
+
 }

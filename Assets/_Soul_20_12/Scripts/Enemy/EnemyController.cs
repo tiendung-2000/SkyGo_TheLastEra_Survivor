@@ -15,6 +15,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] Collider2D col;
 
     [Header("Variables")]
+    public Material material;
     public Rigidbody2D theRB;
     public float moveSpeed;
 
@@ -115,7 +116,7 @@ public class EnemyController : MonoBehaviour
     public void DamageEnemy(int damage)
     {
         health -= damage;
-
+        StartCoroutine(IETakeDamageEffect());
         //AudioManager.instance.PlaySFX(2);
 
         SmartPool.Ins.Spawn(hitEffect, transform.position, transform.rotation);
@@ -142,6 +143,12 @@ public class EnemyController : MonoBehaviour
             }
             StartCoroutine(IEDestroy());
         }
+    }
+    IEnumerator IETakeDamageEffect()
+    {
+        material.SetFloat("_FillPhase", 1f);
+        yield return new WaitForSeconds(0.2f);
+        material.SetFloat("_FillPhase", 0f);
     }
 
     IEnumerator IEDestroy()

@@ -16,7 +16,7 @@ public class BossController : MonoBehaviour
     public BossHubUI bossHubUI;
     public GameObject levelExit;
     public float timeToDead;
-
+    public Material material;
     public bool playerOnZone = false;
 
     public bool shouldDropItem;
@@ -46,7 +46,7 @@ public class BossController : MonoBehaviour
     public void TakeDamage(int damageAmount)
     {
         currentHealth -= damageAmount;
-
+        StartCoroutine(IETakeDamageEffect());
         if (currentHealth <= 0)
         {
             DropItem();
@@ -56,6 +56,13 @@ public class BossController : MonoBehaviour
 
         }
         bossHubUI.bossHealthBar.value = currentHealth;
+    }
+
+    IEnumerator IETakeDamageEffect()
+    {
+        material.SetFloat("_FillPhase", 1f);
+        yield return new WaitForSeconds(0.2f);
+        material.SetFloat("_FillPhase", 0f);
     }
 
     IEnumerator IEBossDead()

@@ -124,6 +124,7 @@ MonoBehaviour:
   bossHubUI: {fileID: 0}
   levelExit: {fileID: 0}
   timeToDead: 1.2
+  material: {fileID: 2100000, guid: a60a3989515bff44da4dbd66ef771dea, type: 2}
   playerOnZone: 0
   shouldDropItem: 1
   itemsToDrop:

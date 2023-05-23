@@ -697,6 +697,7 @@ MonoBehaviour:
   moveSpeed: 7
   canMove: 1
   isMove: 1
+  material: {fileID: 2100000, guid: 80c9138d1c1c3394799788ccef32b3a4, type: 2}
   moveInput: {x: 0, y: 0}
   col: {fileID: 1430206444206930951}
   theRB: {fileID: 4657866952632965686}
