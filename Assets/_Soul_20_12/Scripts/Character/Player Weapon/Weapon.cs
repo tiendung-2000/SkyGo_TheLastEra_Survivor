@@ -3,13 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
+using DG.Tweening;
 
 public enum WeaponType
 {
     Gun,
     Staff,
     Sword,
-
 }
 
 public class Weapon : MonoBehaviour
@@ -124,7 +124,15 @@ public class Weapon : MonoBehaviour
         reloadAmount = (currentAmmo - reloadAmount) >= 0 ? reloadAmount : currentAmmo;
         currentClip += reloadAmount;
         if (PlayerController.Ins.currentGun != 0)
+        {
             currentAmmo -= reloadAmount;
+        }
+
+        ButtonControllerUI.Ins.bulletCircle.DOValue(maxClipSize, reloadTime)
+            .OnComplete(() =>
+            {
+                ButtonControllerUI.Ins.SetupGunStats();
+            });
     }
 
     public void PickupAmmo(int ammoAmount)
@@ -152,6 +160,9 @@ public class Weapon : MonoBehaviour
                         newBullet.transform.Rotate(0f, 0f, Random.Range(-xAngle, yAngle));
                         shotCounter = timeBetweenShots;
                         currentClip--;
+
+                        ButtonControllerUI.Ins.bulletText.text = currentClip.ToString();
+                        ButtonControllerUI.Ins.bulletCircle.value--;
                     }
                 }
                 else
@@ -162,6 +173,9 @@ public class Weapon : MonoBehaviour
                         newBullet.transform.Rotate(0f, 0f, Random.Range(-xAngle, yAngle));
                         shotCounter = timeBetweenShots;
                         currentClip--;
+
+                        ButtonControllerUI.Ins.bulletText.text = currentClip.ToString();
+                        ButtonControllerUI.Ins.bulletCircle.value--;
                     }
                 }
                 if (currentClip <= 0)
@@ -189,6 +203,9 @@ public class Weapon : MonoBehaviour
 
                 if (newProjectile.GetComponent<Rigidbody2D>())
                     newProjectile.GetComponent<Rigidbody2D>().AddForce(transform.right * m_launchIntensity, ForceMode2D.Impulse);
+
+                ButtonControllerUI.Ins.bulletText.text = currentClip.ToString();
+                ButtonControllerUI.Ins.bulletCircle.value--;
             }
         }
     }

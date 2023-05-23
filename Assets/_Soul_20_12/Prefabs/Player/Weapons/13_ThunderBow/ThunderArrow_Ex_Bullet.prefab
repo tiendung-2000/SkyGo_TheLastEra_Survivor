@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 4189913780510908281}
   - component: {fileID: 7730912607216328607}
   m_Layer: 9
-  m_Name: AK_Ex_Bullet 1
+  m_Name: ThunderArrow_Ex_Bullet
   m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,5 +1,6 @@
-using API.UI;
+﻿using API.UI;
 using DG.Tweening;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,12 +9,16 @@ public class ButtonControllerUI : BaseUIMenu
     public static ButtonControllerUI Ins;
 
     public bool pointerDown;
+    public bool buy = false;
+    public UltimateJoystick joystick;
 
     [SerializeField] Button shootButton, buyButton, skillButton, switchButton;
 
-    public bool buy = false;
-    public UltimateJoystick joystick;
+    [Header("ShotButton")]
+    public Text bulletText;
     public Image gunImage;
+    public Slider bulletCircle;
+
     [Header("SkillButton")]
     public Image skillCDImage;
 
@@ -47,20 +52,44 @@ public class ButtonControllerUI : BaseUIMenu
     {
         Time.timeScale = 1f;
 
-        //gunImage.sprite = PlayerController.Ins.availableGuns[PlayerController.Ins.currentGun].gunSwitchSprite;
+        StartCoroutine(IESetupGunStatsUI());
+
+    }
+
+    IEnumerator IESetupGunStatsUI()
+    {
+        yield return new WaitForSeconds(1f);
+
+        SetupGunStats();
+
+    }
+
+    public void SetupGunStats()
+    {
+        var currentGun = PlayerController.Ins.availableGuns[PlayerController.Ins.currentGun];
+
+        bulletText.text = currentGun.currentClip.ToString();
+        gunImage.sprite = currentGun.gunSwitchSprite;
+
+        //float bulletPercent = currentGun.currentClip / currentGun.maxClipSize;
+
+        bulletCircle.maxValue = currentGun.maxClipSize;
+        bulletCircle.value = currentGun.currentClip;
     }
 
 
-//#if UNITY_EDITOR
-//    private void FixedUpdate()
-//    {
-//        if (Input.GetKeyUp(KeyCode.Space))
-//        {
-//            OnSkill();
-//        }
-//    }
 
-//#endif
+
+    //#if UNITY_EDITOR
+    //    private void FixedUpdate()
+    //    {
+    //        if (Input.GetKeyUp(KeyCode.Space))
+    //        {
+    //            OnSkill();
+    //        }
+    //    }
+
+    //#endif
 
     public void OnPointerDown()
     {
@@ -92,7 +121,6 @@ public class ButtonControllerUI : BaseUIMenu
             }
 
             PlayerController.Ins.SwitchGun();
-            gunImage.sprite = PlayerController.Ins.availableGuns[PlayerController.Ins.currentGun].gunSwitchSprite;
         }
         else
         {
@@ -102,11 +130,11 @@ public class ButtonControllerUI : BaseUIMenu
 
     public void OnShoot()
     {
-        if(PlayerController.Ins.availableGuns[PlayerController.Ins.currentGun].canFire == true)
+        if (PlayerController.Ins.availableGuns[PlayerController.Ins.currentGun].canFire == true)
         {
-        PlayerController.Ins.availableGuns[PlayerController.Ins.currentGun].GunFire();
-        if (PlayerSkillManager.instance.dualChecker == true)
-            PlayerController.Ins.availableDupliGuns[PlayerController.Ins.currentGun].GunFire();
+            PlayerController.Ins.availableGuns[PlayerController.Ins.currentGun].GunFire();
+            if (PlayerSkillManager.instance.dualChecker == true)
+                PlayerController.Ins.availableDupliGuns[PlayerController.Ins.currentGun].GunFire();
 
         }
         else

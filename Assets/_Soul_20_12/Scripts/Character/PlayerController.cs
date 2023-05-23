@@ -165,6 +165,7 @@ public class PlayerController : MonoBehaviour
         }
 
         availableGuns[currentGun].gameObject.SetActive(true);
+        ButtonControllerUI.Ins.SetupGunStats();
     }
 
     public void DetectEnemy()

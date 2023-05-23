@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4189913780510908281}
   - component: {fileID: 3923759171092850419}
   m_Layer: 9
-  m_Name: AK Bullet 1
+  m_Name: SuperShotGun_Bullet
   m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
