@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class GamePlayController : Singleton<GamePlayController>
 {
-    
+    public bool isMusic;
+    public bool isSound;
 
     [SerializeField] float startTimeScale = 1;
 

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -46,8 +47,16 @@ public class LevelGenerator : MonoBehaviour
         Ins = this;
     }
 
+    IEnumerator IEPlaySound()
+    {
+        AudioManager.Instance.FadeStopMusic();
+        yield return new WaitForSeconds(3f);
+        AudioManager.Instance.PlayIngameBGM(0);
+    }
+
     void OnEnable()
     {
+       StartCoroutine(IEPlaySound());
         if (createCount == 1)
         {
             GameObject layoutStart = Instantiate(layoutRoom, generatorPoint.position, generatorPoint.rotation);

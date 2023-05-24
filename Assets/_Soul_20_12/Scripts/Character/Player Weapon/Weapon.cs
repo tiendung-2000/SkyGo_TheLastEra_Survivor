@@ -177,6 +177,7 @@ public class Weapon : MonoBehaviour
                         ButtonControllerUI.Ins.bulletText.text = currentClip.ToString();
                         ButtonControllerUI.Ins.bulletCircle.value--;
                     }
+                    AudioManager.Instance.PlayGunSound(0);
                 }
                 if (currentClip <= 0)
                 {

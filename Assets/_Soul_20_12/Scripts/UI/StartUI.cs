@@ -1,4 +1,3 @@
-using API.Sound;
 using API.UI;
 using System.Collections;
 using System.Collections.Generic;
@@ -17,22 +16,12 @@ public class StartUI : BaseUIMenu
 
     public void OnStart()
     {
-        //if (DynamicDataManager.IsLevelUnlocked(DynamicDataManager.Ins.CurLevel) == true)
-        //{
-            UITransition.Ins.ShowTransition(() =>
-            {
-                start.gameObject.SetActive(false);
-                SoundManager.Ins.ChangeBGM(1);
+        UITransition.Ins.ShowTransition(() =>
+        {
+            start.gameObject.SetActive(false);
 
-                CanvasManager.Ins.OpenUI(UIName.SelectLevelUI, null);
-            });
-
-
-        //}
-        //else
-        //{
-        //    Debug.Log("Level doesn't Unlocked");
-        //}
-
+            CanvasManager.Ins.OpenUI(UIName.SelectLevelUI, null);
+            AudioManager.Instance.PlayStageBGM();
+        });
     }
 }

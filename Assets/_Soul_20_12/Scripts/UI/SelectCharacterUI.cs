@@ -1,4 +1,3 @@
-using API.Sound;
 using API.UI;
 using MagneticScrollView;
 using Spine.Unity;
@@ -340,12 +339,10 @@ public class SelectCharacterUI : BaseUIMenu
 
     public void OnStart()
     {
-        SoundManager.Ins.PlaySFX(1);
-        SoundManager.Ins.TurnOnOffMusic();
         CanvasManager.Ins.OpenUI(UIName.LoadingUI, null);
         CanvasManager.Ins.CloseUI(UIName.CoinBar);
         StartCoroutine(IESpawnLevel());
-        StartCoroutine(IEPlaySound());
+        //StartCoroutine(IEPlaySound());
 
         int openPopup = 5;
         if (Random.Range(1, 10) < openPopup)
@@ -369,11 +366,7 @@ public class SelectCharacterUI : BaseUIMenu
 
     }
 
-    IEnumerator IEPlaySound()
-    {
-        yield return new WaitForSeconds(3f);
-        SoundManager.Ins.ChangeBGM(2);
-    }
+    
 
     public void PlayerAnimation()
     {

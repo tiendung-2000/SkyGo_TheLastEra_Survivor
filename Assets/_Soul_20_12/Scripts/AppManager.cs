@@ -1,4 +1,3 @@
-using API.Sound;
 using API.UI;
 using System;
 using UnityEngine;
@@ -12,7 +11,7 @@ public class AppManager : Singleton<AppManager>
         Action onLoaded = () =>
         {
             CanvasManager.Ins.OpenUI(UIName.StartUI, null);
-            SoundManager.Ins.ChangeBGM(0);
+            AudioManager.Instance.PlayMainMenuBGM();
         };
         CanvasManager.Ins.OpenUI(UIName.LoadingUI, new object[] { onLoaded });
     }
