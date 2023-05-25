@@ -1,6 +1,4 @@
 using API.UI;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,12 +14,26 @@ public class StartUI : BaseUIMenu
 
     public void OnStart()
     {
-        UITransition.Ins.ShowTransition(() =>
+        if (DynamicDataManager.Ins.CurTutorialStep == 0)
         {
-            start.gameObject.SetActive(false);
+            ResourceSystem.Ins.SpawnLevel(3);
+            CanvasManager.Ins.OpenUI(UIName.LoadingUI, null);
+            CanvasManager.Ins.OpenUI(UIName.GameplayUI, null);
 
-            CanvasManager.Ins.OpenUI(UIName.SelectLevelUI, null);
-            AudioManager.Instance.PlayStageBGM();
-        });
+            ResourceSystem.Ins.players[DynamicDataManager.Ins.CurPlayer].gameObject.SetActive(true);
+            CharacterSelectManager.Ins.activePlayer = ResourceSystem.Ins.players[DynamicDataManager.Ins.CurPlayer];
+            GamePlayController.Ins.ResetPlayerStats();
+            start.gameObject.SetActive(false);
+        }
+        else
+        {
+            UITransition.Ins.ShowTransition(() =>
+            {
+                start.gameObject.SetActive(false);
+
+                CanvasManager.Ins.OpenUI(UIName.SelectLevelUI, null);
+                AudioManager.Ins.PlayStageBGM();
+            });
+        }
     }
 }

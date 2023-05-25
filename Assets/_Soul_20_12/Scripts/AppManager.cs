@@ -11,8 +11,9 @@ public class AppManager : Singleton<AppManager>
         Action onLoaded = () =>
         {
             CanvasManager.Ins.OpenUI(UIName.StartUI, null);
-            AudioManager.Instance.PlayMainMenuBGM();
+            AudioManager.Ins.PlayMainMenuBGM();
         };
+
         CanvasManager.Ins.OpenUI(UIName.LoadingUI, new object[] { onLoaded });
     }
 }

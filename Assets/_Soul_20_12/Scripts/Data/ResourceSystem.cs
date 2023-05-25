@@ -14,6 +14,8 @@ public class ResourceSystem : StaticInstance<ResourceSystem>
 
     public List<LevelSO> levels;
 
+    public GameObject tutorialLevel;
+
     public GameObject CurLevelGameObj;
 
     public bool IsDataLoaded;
@@ -40,6 +42,10 @@ public class ResourceSystem : StaticInstance<ResourceSystem>
 
         switch (spawnLevel)
         {
+            case 3:
+                CurLevelGameObj = SmartPool.Ins.Spawn(tutorialLevel, transform.position, transform.rotation);
+                break;
+
             case 2: //Play
                 CurLevelGameObj = SmartPool.Ins.Spawn(levels[curLevel].levelPrefab, new UnityEngine.Vector3(0, 0, 0), new UnityEngine.Quaternion());
 

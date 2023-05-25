@@ -104,6 +104,11 @@ public class GameCompleteUI : BaseUIMenu
 
     void OnHome()
     {
+        if (DynamicDataManager.Ins.CurTutorialStep == 0)
+        {
+            DynamicDataManager.Ins.CurTutorialStep += 1;
+        }
+
         DynamicDataManager.Ins.CurNumCoin += coinTotal;
         CanvasManager.Ins.OpenUI(UIName.LoadingUI, null);
         CanvasManager.Ins.OpenUI(UIName.SelectLevelUI, null);

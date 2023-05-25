@@ -4,7 +4,7 @@ using DG.Tweening;
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager Instance;
+    public static AudioManager Ins;
     GamePlayController gameManager;
     public AudioClip MainMenuBGM, SelectBGM;
     [Space(20)]
@@ -24,14 +24,9 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
-        if (Instance == null)
+        if(Ins == null)
         {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        if (Instance != this)
-        {
-            DestroyImmediate(gameObject);
+            Ins = this;
         }
     }
 
@@ -197,7 +192,7 @@ public class AudioManager : MonoBehaviour
         sound.PlayOneShot(soundUI[id]);
     }
 
-    public void FadeStopSound()
+    public void SoundOff()
     {
         sound.DOFade(0, 0f);
         //music.DOFade(0, 1f);
@@ -205,24 +200,21 @@ public class AudioManager : MonoBehaviour
 
     }
 
-    public void FadePlaySound()
+    public void SoundOn()
     {
         sound.DOFade(1f, 0f);
         //music.DOFade(0, 1f);
         StartCoroutine(PlaySound());
     }
 
-    public void FadeStopMusic()
+    public void MusicOff()
     {
-        music.DOFade(0, 1f);
-        //music.DOFade(0, 1f);
-        //StartCoroutine(StopMusic());
-
+        music.volume = 0f;
     }
 
-    public void FadePlayMusic()
+    public void MusicOn()
     {
-        music.DOFade(1f, 0);
+        music.volume = 1f;
     }
 
     public void PauseMusic()

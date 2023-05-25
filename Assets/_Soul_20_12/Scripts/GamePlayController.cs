@@ -36,12 +36,12 @@ public class GamePlayController : Singleton<GamePlayController>
 
     public void LoseGame()
     {
-        
+
     }
 
     public void WinGame()
     {
-        
+
     }
 
     public void OnRecoverGame()
@@ -53,7 +53,14 @@ public class GamePlayController : Singleton<GamePlayController>
 
     public void ResetGamePlay()
     {
-        SmartPool.Ins.Despawn(ResourceSystem.Ins.CurLevelGameObj);
+        //if (ResourceSystem.Ins.CurLevelGameObj != null)
+        //{
+            SmartPool.Ins.Despawn(ResourceSystem.Ins.CurLevelGameObj);
+        //}
+        //else
+        //{
+        //    SmartPool.Ins.Despawn(ResourceSystem.Ins.tutorialLevel.gameObject);
+        //}
         PlayerController.Ins.currentHealth = PlayerController.Ins.curPlayerMaxHP;
         DynamicDataManager.Ins.OnHealthChange?.Invoke(PlayerController.Ins.curPlayerMaxHP);
         ResourceSystem.Ins.players[DynamicDataManager.Ins.CurPlayer].gameObject.SetActive(false);

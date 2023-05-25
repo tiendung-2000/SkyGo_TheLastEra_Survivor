@@ -54,14 +54,14 @@ public class GamePauseUI : BaseUIMenu
             soundSprite[0].SetActive(false);
             soundSprite[1].SetActive(true);
             isSound = false;
-            AudioManager.Instance.FadeStopMusic();
+            AudioManager.Ins.SoundOff();
         }
         else
         {
             soundSprite[0].SetActive(true);
             soundSprite[1].SetActive(false);
             isSound = true;
-            AudioManager.Instance.FadePlayMusic();
+            AudioManager.Ins.SoundOn();
         }
     }
 
@@ -72,14 +72,14 @@ public class GamePauseUI : BaseUIMenu
             musicSprites[0].SetActive(false);
             musicSprites[1].SetActive(true);
             isMusic = false;
-            AudioManager.Instance.FadeStopSound();
+            AudioManager.Ins.MusicOff();
         }
         else
         {
             musicSprites[0].SetActive(true);
             musicSprites[1].SetActive(false);
             isMusic = true;
-            AudioManager.Instance.FadePlaySound();
+            AudioManager.Ins.MusicOn();
         }
     }
 

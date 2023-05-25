@@ -1,39 +1,36 @@
-﻿using UnityEngine ;
-using UnityEngine.UI ;
+﻿using System;
+using UnityEngine;
+using UnityEngine.UI;
 
-public class SettingsMenuItem : MonoBehaviour {
-   [HideInInspector] public Image img ;
-   [HideInInspector] public RectTransform rectTrans ;
+public class SettingsMenuItem : MonoBehaviour
+{
+    [HideInInspector] public Image img;
+    [HideInInspector] public RectTransform rectTrans;
 
-   //SettingsMenu reference
-   SettingsMenu settingsMenu ;
+    //SettingsMenu reference
+    SettingsMenu settingsMenu;
 
-   //item button
-   Button button ;
+    //item button
 
-   //index of the item in the hierarchy
-   int index ;
+    //Button button;
 
-   void Awake () {
-      img = GetComponent<Image> () ;
-      rectTrans = GetComponent<RectTransform> () ;
+    //index of the item in the hierarchy
+    int index;
 
-      settingsMenu = rectTrans.parent.GetComponent <SettingsMenu> () ;
+    void Awake()
+    {
+        img = GetComponent<Image>();
+        rectTrans = GetComponent<RectTransform>();
 
-      //-1 to ignore the main button
-      index = rectTrans.GetSiblingIndex () - 1 ;
+        settingsMenu = rectTrans.parent.GetComponent<SettingsMenu>();
 
-      //add click listener
-      button = GetComponent<Button> () ;
-      button.onClick.AddListener (OnItemClick) ;
-   }
+        //-1 to ignore the main button
+        index = rectTrans.GetSiblingIndex() - 1;
 
-   void OnItemClick () {
-      settingsMenu.OnItemClick (index) ;
-   }
+        //add click listener
+        //button = GetComponent<Button>();
+        //button.onClick.AddListener(OnItemClick);
+    }
 
-   void OnDestroy () {
-      //remove click listener to avoid memory leaks
-      button.onClick.RemoveListener (OnItemClick) ;
-   }
+    
 }

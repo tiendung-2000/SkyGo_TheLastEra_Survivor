@@ -144,6 +144,7 @@ public class RoomCenter : MonoBehaviour
         {
             GetTarget();
             GameObject chestSpawn = Instantiate(LevelManager.Ins.chestSpawn, checkPoint.position, Quaternion.identity);
+            chestSpawn.transform.parent = checkPoint.transform;
             spawnChest = false;
         }
     }

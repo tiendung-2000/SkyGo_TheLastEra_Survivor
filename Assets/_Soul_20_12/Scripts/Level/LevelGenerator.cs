@@ -49,9 +49,9 @@ public class LevelGenerator : MonoBehaviour
 
     IEnumerator IEPlaySound()
     {
-        AudioManager.Instance.FadeStopMusic();
+        AudioManager.Ins.MusicOff();
         yield return new WaitForSeconds(3f);
-        AudioManager.Instance.PlayIngameBGM(0);
+        AudioManager.Ins.PlayIngameBGM(0);
     }
 
     void OnEnable()
