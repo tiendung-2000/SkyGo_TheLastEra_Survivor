@@ -2,8 +2,18 @@
 using API.UI;
 using System.Collections.Generic;
 
+public enum GameState
+{
+    Tutorial,
+    Menu,
+    Gameplay,
+    Complete
+}
+
 public class LevelManager : Singleton<LevelManager>
 {
+    [SerializeField] private GameState state;
+
     public GameObject bossShowUI;
 
     public int reviveCount = 0;
@@ -209,6 +219,24 @@ public class LevelManager : Singleton<LevelManager>
             Time.timeScale = 1f;
         }
     }
+
+    #region GameState
+
+    private void Start()
+    {
+        ChangeState(GameState.Menu);
+    }
+
+    public void ChangeState(GameState gameState)
+    {
+        this.state = gameState;
+    }
+
+    public bool IsState(GameState gameState)
+    {
+        return this.state == gameState;
+    }
+    #endregion
 
     #region Deleted
     //    public static LevelManager instance;   
