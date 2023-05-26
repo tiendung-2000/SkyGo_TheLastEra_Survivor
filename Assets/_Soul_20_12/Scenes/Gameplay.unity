@@ -690,6 +690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   needDontDestroy: 0
+  state: 0
   bossShowUI: {fileID: 229021274}
   reviveCount: 0
   isPaused: 0
