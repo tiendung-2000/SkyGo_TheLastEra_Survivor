@@ -32,7 +32,7 @@ public class StartUI : BaseUIMenu
                 start.gameObject.SetActive(false);
 
                 CanvasManager.Ins.OpenUI(UIName.SelectLevelUI, null);
-                AudioManager.Ins.PlayStageBGM();
+                AudioManager.Ins.PlaySelectBGM();
             });
         }
     }

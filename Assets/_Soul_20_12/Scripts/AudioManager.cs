@@ -6,7 +6,7 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Ins;
     GamePlayController gameManager;
-    public AudioClip MainMenuBGM, SelectBGM;
+    public AudioClip MainMenuBGM, SelectBGM, bossFight;
     [Space(20)]
     public AudioClip[] soundEffects;
     public AudioClip[] soundUI;
@@ -82,24 +82,24 @@ public class AudioManager : MonoBehaviour
         music.clip = MainMenuBGM;
         music.volume = 0f;
         music.Play();
-        music.DOFade(1f, 0.5f);
+        music.DOFade(.6f, 0.5f);
     }
 
-    public void PlayStageBGM()
+    public void PlaySelectBGM()
     {
         music.clip = SelectBGM;
         music.volume = 0f;
         music.Play();
-        music.DOFade(0.8f, 0.5f);
+        music.DOFade(0.6f, 0.5f);
     }
 
     public void PlayIngameBGM(int id)
     {
         //int m = UnityEngine.Random.Range(0, ingameBGM.Length);
         music.clip = ingameBGM[id];
-        music.volume = 1f;
+        music.volume = 0;
         music.Play();
-        music.DOFade(1f, 0f);
+        music.DOFade(.6f, 0f);
     }
 
     public void PlayWinLoseSound(int id)
@@ -214,7 +214,7 @@ public class AudioManager : MonoBehaviour
 
     public void MusicOn()
     {
-        music.volume = 1f;
+        music.volume = .6f;
     }
 
     public void PauseMusic()

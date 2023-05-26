@@ -1485,8 +1485,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 129f7f0449d15c0409d5c97dd1b33998, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainMenuBGM: {fileID: 8300000, guid: 7846b540704fe73499bd2c9b3f2a66a4, type: 3}
-  SelectBGM: {fileID: 8300000, guid: 728a9ec24fa0dde489954031c8586fdd, type: 3}
+  MainMenuBGM: {fileID: 8300000, guid: 27cc30be3ccad0842a2822acfe318d07, type: 3}
+  SelectBGM: {fileID: 8300000, guid: 36bc98cbbe929ea4591195b38cc4d96c, type: 3}
+  bossFight: {fileID: 8300000, guid: 6b01c9a6759c88a4abd49f888a17c1e5, type: 3}
   soundEffects:
   - {fileID: 8300000, guid: b55a46b0f1aaede4abd19f102d94180e, type: 3}
   soundUI:
@@ -1496,7 +1497,16 @@ MonoBehaviour:
   coinsSound:
   - {fileID: 8300000, guid: ffa2732c22f60664189faa8ef1f92073, type: 3}
   ingameBGM:
-  - {fileID: 8300000, guid: 89779a7b345c53c489b74de198be9331, type: 3}
+  - {fileID: 8300000, guid: 9df24f2e4db35b24bb335d0cafb390fb, type: 3}
+  - {fileID: 8300000, guid: ce0a3066e3af77e4884906e16ada6e7f, type: 3}
+  - {fileID: 8300000, guid: ca380ca8a96681740a60d21d45bd8833, type: 3}
+  - {fileID: 8300000, guid: 66c6db4ff510bd0478901ca491061431, type: 3}
+  - {fileID: 8300000, guid: 36cd0e72acdf7ac4b808b0550a752401, type: 3}
+  - {fileID: 8300000, guid: 2bb4f0cb958ba6445a5006fd98e2f48c, type: 3}
+  - {fileID: 8300000, guid: 84283addc2a49d14880e092892ea0119, type: 3}
+  - {fileID: 8300000, guid: 913e44de6b2d3674db012c2091aac4ad, type: 3}
+  - {fileID: 8300000, guid: 9bdfb649d82a11348bbc33d05f7ae798, type: 3}
+  - {fileID: 8300000, guid: f4bccbb4c35a61a43a951ff7f0cb0922, type: 3}
   winLoseSound: []
   gunSound:
   - {fileID: 8300000, guid: 695d136f3f36fd9428b6958261051166, type: 3}

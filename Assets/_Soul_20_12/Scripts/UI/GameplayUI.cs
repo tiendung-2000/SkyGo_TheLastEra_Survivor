@@ -13,7 +13,6 @@ public class GameplayUI : BaseUIMenu
         if (DynamicDataManager.Ins.CurTutorialStep == 0)
         {
             settingButton.gameObject.SetActive(false);
-            StartCoroutine(IEShowTutorial());
         }
         else
         {
@@ -30,6 +29,11 @@ public class GameplayUI : BaseUIMenu
     private void Start()
     {
         settingButton.onClick.AddListener(OnClickSettingUI);
+
+        if (DynamicDataManager.Ins.CurTutorialStep == 0)
+        {
+            StartCoroutine(IEShowTutorial());
+        }
     }
 
     public void OnClickSettingUI()
