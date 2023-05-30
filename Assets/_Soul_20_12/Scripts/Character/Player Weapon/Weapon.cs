@@ -5,12 +5,26 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using DG.Tweening;
 
+#region WeaponType
 public enum WeaponType
 {
-    Gun,
-    Staff,
-    Sword,
+    Pistol,
+    Machine,
+    Shotgun,
+    Akm,
+    Galting,
+    Bazoka,
+    Rocket,
+    Shuriken,
+    Halo,
+    SuperShotgun,
+    Heaven,
+    Crossbow,
+    ThunderBow,
+    FireStaff,
+    ToxicStaff,
 }
+#endregion
 
 public class Weapon : MonoBehaviour
 {
@@ -64,22 +78,18 @@ public class Weapon : MonoBehaviour
 
     void Start()
     {
-        if (type == WeaponType.Gun)
-        {
             canFire = true;
             canExplode = false;
             currentClip = maxClipSize;
             CooldownUI.instance.fill.fillAmount = (reloadTimeCounter) / reloadTime;
             shotCounter = timeBetweenShots;
-        }
-
     }
 
     void Update()
     {
         shotCounter -= Time.deltaTime;
 
-        if (currentClip <= 0 && !isFullAmmo && type == WeaponType.Gun)
+        if (currentClip <= 0 && !isFullAmmo)
         {
             CooldownUI.instance.DoShow();
             reloadTimeCounter += Time.deltaTime;
@@ -100,18 +110,15 @@ public class Weapon : MonoBehaviour
 
     public void OnDisable()
     {
-        if (type == WeaponType.Gun)
-        {
             currentClip = maxClipSize;
             CooldownUI.instance.DoFade();
-        }
     }
 
     public void OnEnable()
     {
         ske.AnimationState.SetAnimation(0, "neutral", true);
 
-        if (!isDupliGun && type == WeaponType.Gun)
+        if (!isDupliGun)
         {
             CooldownUI.instance.DoFade();
             currentClip = maxClipSize;
@@ -149,7 +156,7 @@ public class Weapon : MonoBehaviour
 
     public void GunFire()
     {
-        if (canFire == true && currentClip > 0 && isRocketGun == false && type == WeaponType.Gun)
+        if (canFire == true && currentClip > 0 && isRocketGun == false)
         {
             if (shotCounter < 0)
             {
@@ -197,7 +204,7 @@ public class Weapon : MonoBehaviour
 
     void RocketFire()
     {
-        if (shotCounter < 0 && type == WeaponType.Gun)
+        if (shotCounter < 0)
         {
             for (int i = 0; i < firePoint.Count; i++)
             {

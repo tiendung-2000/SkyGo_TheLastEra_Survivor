@@ -1490,10 +1490,23 @@ MonoBehaviour:
   bossFight: {fileID: 8300000, guid: 6b01c9a6759c88a4abd49f888a17c1e5, type: 3}
   soundEffects:
   - {fileID: 8300000, guid: b55a46b0f1aaede4abd19f102d94180e, type: 3}
+  - {fileID: 8300000, guid: f70e11d20834c5341b5da70557b43c16, type: 3}
+  - {fileID: 8300000, guid: aecf071663ce5844eb0eb0ce9f5d92f7, type: 3}
+  - {fileID: 8300000, guid: 470ed0c5f1e0d0443bfde66ee965bfbf, type: 3}
+  - {fileID: 8300000, guid: 25808a0021f10e042846072280529b27, type: 3}
+  - {fileID: 8300000, guid: d9b6d29f81d5d644a96a1abd240ad6a4, type: 3}
+  - {fileID: 8300000, guid: 2c94cf280754d15449497802c1294a07, type: 3}
+  - {fileID: 8300000, guid: 41ea7339f7decb642ab5f4886197ce81, type: 3}
+  - {fileID: 8300000, guid: 33c45448a7ee108439fcc134745abcd5, type: 3}
+  - {fileID: 8300000, guid: 035cdb5b0efe9d5429398002a666d588, type: 3}
   soundUI:
   - {fileID: 8300000, guid: 7e34d1e5dd3c049408f1fc8efd0a72bb, type: 3}
   - {fileID: 8300000, guid: 5bfff61041dded043b7ababad0135eae, type: 3}
   - {fileID: 8300000, guid: d633e4a4c24c38246a69f4ac7e5c3bc9, type: 3}
+  - {fileID: 8300000, guid: ac6d64f8442aa574ca10f887f73a02a4, type: 3}
+  - {fileID: 8300000, guid: e4f26218ec5d7814d859df45e8560ae5, type: 3}
+  - {fileID: 8300000, guid: 6021ebcf2601cfe4b9f7da861831123a, type: 3}
+  - {fileID: 8300000, guid: bf2b218d9d5c6b14289ba4e2cef18dba, type: 3}
   coinsSound:
   - {fileID: 8300000, guid: ffa2732c22f60664189faa8ef1f92073, type: 3}
   ingameBGM:
@@ -1507,7 +1520,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 913e44de6b2d3674db012c2091aac4ad, type: 3}
   - {fileID: 8300000, guid: 9bdfb649d82a11348bbc33d05f7ae798, type: 3}
   - {fileID: 8300000, guid: f4bccbb4c35a61a43a951ff7f0cb0922, type: 3}
-  winLoseSound: []
+  winLoseSound:
+  - {fileID: 8300000, guid: df03293d6398fad4d88c7353cc3b7013, type: 3}
   gunSound:
   - {fileID: 8300000, guid: ec6ffe2399e291f49955f50cd3eaadd4, type: 3}
   - {fileID: 8300000, guid: b36d35ca6c534504c967eaa2aa96e48c, type: 3}
