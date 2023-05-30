@@ -1,0 +1,13 @@
+
+kiem.png
+size: 31,66
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+kiem
+  rotate: false
+  xy: 2, 2
+  size: 27, 62
+  orig: 27, 62
+  offset: 0, 0
+  index: -1

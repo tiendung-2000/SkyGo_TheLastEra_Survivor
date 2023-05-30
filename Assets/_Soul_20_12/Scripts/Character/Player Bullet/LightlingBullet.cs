@@ -11,7 +11,7 @@ public class LightlingBullet : MonoBehaviour
     public GameObject impactEffect;
     public int damageToGive = 50;
 
-    public TrailRenderer trail;
+    //public TrailRenderer trail;
 
     [SerializeField]
     private LR_Controller line;
@@ -29,10 +29,10 @@ public class LightlingBullet : MonoBehaviour
         }
     }
 
-    private void OnDisable()
-    {
-        trail.Clear();
-    }
+    //private void OnDisable()
+    //{
+    //    trail.Clear();
+    //}
 
     private void OnEnable()
     {

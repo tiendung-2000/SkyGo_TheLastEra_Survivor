@@ -48,28 +48,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  ske: {fileID: 0}
-  bulletToFire: {fileID: 0}
+  ske: {fileID: 433493895774285017}
+  bulletToFire: {fileID: 4189913780510908286, guid: 516cfe542ca3ae44dabaead8d4978221,
+    type: 3}
   canFire: 0
   canExplode: 0
-  explodeBullet: {fileID: 0}
-  firePoint: []
-  xAngle: 0
-  yAngle: 0
-  reloadTime: 0
+  explodeBullet: {fileID: 4189913780510908286, guid: a250daa6833c76f46affe97cc2129100,
+    type: 3}
+  firePoint:
+  - {fileID: 7590131402553731953}
+  xAngle: 5
+  yAngle: 5
+  reloadTime: 1
   reloadTimeCounter: 0
   reload: 0
   isFullAmmo: 0
-  timeBetweenShots: 0
+  timeBetweenShots: 0.5
   shotCounter: 0
-  weaponName: 
+  weaponName: Shuriken
   itemCost: 0
-  gunSprite: {fileID: 0}
-  gunSwitchSprite: {fileID: 0}
+  gunSprite: {fileID: 21300000, guid: 438e9e3aba4ed154480e90f333e6ad18, type: 3}
+  gunSwitchSprite: {fileID: 21300000, guid: f969df19bf8eeaa4ebabde368bc94c8c, type: 3}
   currentClip: 0
-  maxClipSize: 10
-  currentAmmo: 0
-  maxAmmoSize: 100
+  maxClipSize: 50
   isDupliGun: 0
   isRocketGun: 0
   m_launchIntensity: 0
@@ -100,7 +101,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 86fb97cbb22bcce4ba11c374f334666e, type: 2}
+  - {fileID: 2100000, guid: 6f6457f8fe6216c43a5f80f6a1c67a71, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -134,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: 159f8c51e8dcc184ca10e5e1f43e8544, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: c6df96aa27d9a7347bc8e5ef2bfd4d0b, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
@@ -183,7 +184,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5352409381370367888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.712, y: 0.088, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 695117407724449772}

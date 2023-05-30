@@ -1,0 +1,58 @@
+{
+"skeleton": {
+	"hash": "tncdJKtRgz/wkWYksbVoAsuDNfE",
+	"spine": "3.8.99",
+	"x": -23,
+	"y": -11,
+	"width": 47,
+	"height": 23,
+	"images": "D:/PTS/Game Soul/File_PNG/8vk_moi/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root" }
+],
+"slots": [
+	{ "name": "sung_cau_dien", "bone": "bone", "attachment": "sung_ban_cau_dien/sung_ban_ra_3_qua_cau_dien_5" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"sung_cau_dien": {
+				"sung_ban_cau_dien/sung_ban_ra_3_qua_cau_dien_1": { "x": 0.5, "y": 0.5, "width": 47, "height": 23 },
+				"sung_ban_cau_dien/sung_ban_ra_3_qua_cau_dien_2": { "x": 0.5, "y": 0.5, "width": 47, "height": 23 },
+				"sung_ban_cau_dien/sung_ban_ra_3_qua_cau_dien_3": { "x": 0.5, "y": 0.5, "width": 47, "height": 23 },
+				"sung_ban_cau_dien/sung_ban_ra_3_qua_cau_dien_4": { "x": 0.5, "y": 0.5, "width": 47, "height": 23 },
+				"sung_ban_cau_dien/sung_ban_ra_3_qua_cau_dien_5": { "x": 0.5, "y": 0.5, "width": 47, "height": 23 }
+			}
+		}
+	}
+],
+"animations": {
+	"fire": {
+		"slots": {
+			"sung_cau_dien": {
+				"attachment": [
+					{ "name": "sung_ban_cau_dien/sung_ban_ra_3_qua_cau_dien_1" },
+					{ "time": 0.0667, "name": "sung_ban_cau_dien/sung_ban_ra_3_qua_cau_dien_2" },
+					{ "time": 0.1333, "name": "sung_ban_cau_dien/sung_ban_ra_3_qua_cau_dien_3" },
+					{ "time": 0.2, "name": "sung_ban_cau_dien/sung_ban_ra_3_qua_cau_dien_4" },
+					{ "time": 0.2667, "name": "sung_ban_cau_dien/sung_ban_ra_3_qua_cau_dien_5" }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"translate": [
+					{},
+					{ "time": 0.0667, "x": -2.46 },
+					{ "time": 0.1333 }
+				]
+			}
+		}
+	},
+	"neutral": {}
+}
+}

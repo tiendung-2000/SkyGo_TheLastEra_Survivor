@@ -1,0 +1,56 @@
+{
+"skeleton": {
+	"hash": "oaalBDeg+dDaMi3pGw1vxLpZ+h8",
+	"spine": "3.8.99",
+	"x": -7.49,
+	"y": -36,
+	"width": 18,
+	"height": 73,
+	"images": "D:/PTS/Game Soul/File_PNG/8vk_moi/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "cung" },
+	{ "name": "fire", "parent": "cung" }
+],
+"slots": [
+	{ "name": "fire", "bone": "fire", "attachment": "cung/6" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"fire": {
+				"cung/1": { "x": 14.62, "y": 0.5, "width": 45, "height": 73 },
+				"cung/2": { "x": 10.35, "y": 0.5, "width": 45, "height": 65 },
+				"cung/3": { "x": -4.25, "y": 0.5, "width": 45, "height": 53 },
+				"cung/4": { "x": 0.94, "y": 0.5, "width": 31, "height": 73 },
+				"cung/5": { "x": 10.57, "y": 0.5, "width": 36, "height": 73 },
+				"cung/6": { "x": 1.51, "y": 0.5, "width": 18, "height": 73 }
+			}
+		}
+	}
+],
+"events": {
+	"end_animation": {}
+},
+"animations": {
+	"fire": {
+		"slots": {
+			"fire": {
+				"attachment": [
+					{ "name": "cung/1" },
+					{ "time": 0.0333, "name": "cung/3" },
+					{ "time": 0.1, "name": "cung/4" },
+					{ "time": 0.1667, "name": "cung/5" },
+					{ "time": 0.2667, "name": "cung/6" }
+				]
+			}
+		},
+		"events": [
+			{ "time": 1.6667, "name": "end_animation" }
+		]
+	},
+	"neutral": {}
+}
+}

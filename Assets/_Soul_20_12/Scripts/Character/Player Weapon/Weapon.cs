@@ -45,7 +45,7 @@ public class Weapon : MonoBehaviour
     public Sprite gunSprite;
     public Sprite gunSwitchSprite;
 
-    public int currentClip, maxClipSize = 10, currentAmmo, maxAmmoSize = 100;
+    public int currentClip, maxClipSize = 10/*, currentAmmo, maxAmmoSize = 100*/;
 
     public bool isDupliGun;
 
@@ -72,6 +72,7 @@ public class Weapon : MonoBehaviour
             CooldownUI.instance.fill.fillAmount = (reloadTimeCounter) / reloadTime;
             shotCounter = timeBetweenShots;
         }
+
     }
 
     void Update()
@@ -108,6 +109,8 @@ public class Weapon : MonoBehaviour
 
     public void OnEnable()
     {
+        ske.AnimationState.SetAnimation(0, "neutral", true);
+
         if (!isDupliGun && type == WeaponType.Gun)
         {
             CooldownUI.instance.DoFade();
@@ -120,14 +123,14 @@ public class Weapon : MonoBehaviour
 
     public void Reload()
     {
-        int reloadAmount = maxClipSize - currentClip; //how many bullets to refill clip
-        reloadAmount = (currentAmmo - reloadAmount) >= 0 ? reloadAmount : currentAmmo;
-        currentClip += reloadAmount;
-        if (PlayerController.Ins.currentGun != 0)
-        {
-            currentAmmo -= reloadAmount;
-        }
+        //int reloadAmount = maxClipSize - currentClip;
+        //reloadAmount = (currentAmmo - reloadAmount) >= 0 ? reloadAmount : currentAmmo;
+        //if (PlayerController.Ins.currentGun != 0)
+        //{
+        //    currentAmmo -= reloadAmount;
+        //}
 
+        currentClip += maxClipSize;
         ButtonControllerUI.Ins.bulletCircle.DOValue(maxClipSize, reloadTime)
             .OnComplete(() =>
             {
@@ -135,14 +138,14 @@ public class Weapon : MonoBehaviour
             });
     }
 
-    public void PickupAmmo(int ammoAmount)
-    {
-        PlayerController.Ins.availableGuns[PlayerController.Ins.currentGun].currentAmmo += ammoAmount;
-        if (PlayerController.Ins.availableGuns[PlayerController.Ins.currentGun].currentAmmo > maxAmmoSize)
-        {
-            PlayerController.Ins.availableGuns[PlayerController.Ins.currentGun].currentAmmo = maxAmmoSize;
-        }
-    }
+    //public void PickupAmmo(int ammoAmount)
+    //{
+    //    //PlayerController.Ins.availableGuns[PlayerController.Ins.currentGun].currentAmmo += ammoAmount;
+    //    //if (PlayerController.Ins.availableGuns[PlayerController.Ins.currentGun].currentAmmo > maxAmmoSize)
+    //    //{
+    //    //    PlayerController.Ins.availableGuns[PlayerController.Ins.currentGun].currentAmmo = maxAmmoSize;
+    //    //}
+    //}
 
     public void GunFire()
     {

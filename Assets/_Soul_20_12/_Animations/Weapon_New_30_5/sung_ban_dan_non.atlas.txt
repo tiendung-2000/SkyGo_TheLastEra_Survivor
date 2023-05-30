@@ -1,0 +1,48 @@
+
+sung_ban_dan_non.png
+size: 281,37
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sung_ban_dan_hinh_non/ban_ra_5_dan_hinh_non_1
+  rotate: false
+  xy: 51, 2
+  size: 44, 33
+  orig: 44, 33
+  offset: 0, 0
+  index: -1
+sung_ban_dan_hinh_non/ban_ra_5_dan_hinh_non_2
+  rotate: false
+  xy: 97, 2
+  size: 44, 33
+  orig: 44, 33
+  offset: 0, 0
+  index: -1
+sung_ban_dan_hinh_non/ban_ra_5_dan_hinh_non_3
+  rotate: false
+  xy: 143, 2
+  size: 44, 33
+  orig: 44, 33
+  offset: 0, 0
+  index: -1
+sung_ban_dan_hinh_non/ban_ra_5_dan_hinh_non_4
+  rotate: false
+  xy: 189, 2
+  size: 44, 33
+  orig: 44, 33
+  offset: 0, 0
+  index: -1
+sung_ban_dan_hinh_non/ban_ra_5_dan_hinh_non_5
+  rotate: false
+  xy: 235, 2
+  size: 44, 33
+  orig: 44, 33
+  offset: 0, 0
+  index: -1
+sung_ban_dan_hinh_non/ban_ra_5_dan_hinh_non_6
+  rotate: false
+  xy: 2, 2
+  size: 47, 33
+  orig: 47, 33
+  offset: 0, 0
+  index: -1

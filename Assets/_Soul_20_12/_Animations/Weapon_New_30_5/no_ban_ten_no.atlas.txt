@@ -1,0 +1,27 @@
+
+no_ban_ten_no.png
+size: 135,48
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+no_ban_ten_no1
+  rotate: false
+  xy: 92, 2
+  size: 41, 44
+  orig: 41, 44
+  offset: 0, 0
+  index: -1
+no_ban_ten_no2
+  rotate: false
+  xy: 47, 2
+  size: 43, 44
+  orig: 43, 44
+  offset: 0, 0
+  index: -1
+no_ban_ten_no3
+  rotate: false
+  xy: 2, 2
+  size: 43, 44
+  orig: 43, 44
+  offset: 0, 0
+  index: -1

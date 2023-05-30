@@ -1,0 +1,81 @@
+{
+"skeleton": {
+	"hash": "y1r4mGIjO4WM5JeNATUgMzJL50g",
+	"spine": "3.8.99",
+	"x": -23,
+	"y": -16,
+	"width": 47,
+	"height": 33,
+	"images": "D:/PTS/Game Soul/File_PNG/8vk_moi/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root" }
+],
+"slots": [
+	{ "name": "fire", "bone": "bone", "attachment": "sung_ban_dan_hinh_non/ban_ra_5_dan_hinh_non_6" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"fire": {
+				"sung_ban_dan_hinh_non/ban_ra_5_dan_hinh_non_1": { "y": 0.5, "width": 44, "height": 33 },
+				"sung_ban_dan_hinh_non/ban_ra_5_dan_hinh_non_2": { "y": 0.5, "width": 44, "height": 33 },
+				"sung_ban_dan_hinh_non/ban_ra_5_dan_hinh_non_3": { "y": 0.5, "width": 44, "height": 33 },
+				"sung_ban_dan_hinh_non/ban_ra_5_dan_hinh_non_4": { "y": 0.5, "width": 44, "height": 33 },
+				"sung_ban_dan_hinh_non/ban_ra_5_dan_hinh_non_5": { "y": 0.5, "width": 44, "height": 33 },
+				"sung_ban_dan_hinh_non/ban_ra_5_dan_hinh_non_6": { "x": 0.5, "y": 0.5, "width": 47, "height": 33 }
+			}
+		}
+	}
+],
+"animations": {
+	"fire": {
+		"slots": {
+			"fire": {
+				"attachment": [
+					{ "name": "sung_ban_dan_hinh_non/ban_ra_5_dan_hinh_non_1" },
+					{ "time": 0.0667, "name": "sung_ban_dan_hinh_non/ban_ra_5_dan_hinh_non_2" },
+					{ "time": 0.2667, "name": "sung_ban_dan_hinh_non/ban_ra_5_dan_hinh_non_3" },
+					{ "time": 0.3333, "name": "sung_ban_dan_hinh_non/ban_ra_5_dan_hinh_non_4" },
+					{ "time": 0.4, "name": "sung_ban_dan_hinh_non/ban_ra_5_dan_hinh_non_5" },
+					{ "time": 0.4667, "name": "sung_ban_dan_hinh_non/ban_ra_5_dan_hinh_non_6" }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667, "angle": 2.19, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.4, "angle": -1.14 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667, "x": -3.13 }
+				]
+			}
+		}
+	},
+	"neutral": {
+		"slots": {
+			"fire": {
+				"attachment": [
+					{ "name": "sung_ban_dan_hinh_non/ban_ra_5_dan_hinh_non_1" }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1333, "angle": -4.05, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3 }
+				]
+			}
+		}
+	}
+}
+}

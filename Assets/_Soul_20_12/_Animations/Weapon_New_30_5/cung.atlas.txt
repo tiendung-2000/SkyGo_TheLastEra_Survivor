@@ -1,0 +1,48 @@
+
+cung.png
+size: 234,77
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cung/1
+  rotate: false
+  xy: 2, 2
+  size: 45, 73
+  orig: 45, 73
+  offset: 0, 0
+  index: -1
+cung/2
+  rotate: false
+  xy: 140, 10
+  size: 45, 65
+  orig: 45, 65
+  offset: 0, 0
+  index: -1
+cung/3
+  rotate: false
+  xy: 187, 22
+  size: 45, 53
+  orig: 45, 53
+  offset: 0, 0
+  index: -1
+cung/4
+  rotate: false
+  xy: 87, 2
+  size: 31, 73
+  orig: 31, 73
+  offset: 0, 0
+  index: -1
+cung/5
+  rotate: false
+  xy: 49, 2
+  size: 36, 73
+  orig: 36, 73
+  offset: 0, 0
+  index: -1
+cung/6
+  rotate: false
+  xy: 120, 2
+  size: 18, 73
+  orig: 18, 73
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,104 @@
+{
+"skeleton": { "hash": "kRShn6oSmCQCvp5fQYvJX3DI2KQ", "spine": "3.8.99", "images": "D:/PTS/Game Soul/File_PNG/8vk_moi/gay_ban_doc/shoot/", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root" }
+],
+"slots": [
+	{ "name": "fire", "bone": "bone" },
+	{ "name": "fire2", "bone": "bone", "blend": "additive" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"fire": {
+				"gay_phep_doc1_shoot": { "x": 0.5, "y": 0.5, "width": 47, "height": 27 },
+				"gay_phep_doc2_shoot": { "x": 0.5, "y": 0.25, "width": 47, "height": 22 },
+				"gay_phep_doc3_shoot": { "x": 0.5, "width": 49, "height": 17 },
+				"gay_phep_doc4_shoot": { "x": 4.78, "y": -0.26, "width": 55, "height": 27 },
+				"gay_phep_doc5_shoot": { "x": 0.5, "y": 0.5, "width": 47, "height": 22 },
+				"gay_phep_doc6_shoot": { "x": 0.5, "y": 0.5, "width": 47, "height": 9 },
+				"gay_phep_doc7_shoot": { "x": 0.5, "y": 0.5, "width": 47, "height": 27 }
+			},
+			"fire2": {
+				"gay_phep_doc1_shoot": { "x": 0.5, "y": 0.5, "width": 47, "height": 27 },
+				"gay_phep_doc2_shoot": { "x": 0.5, "y": 0.25, "width": 47, "height": 22 },
+				"gay_phep_doc3_shoot": { "x": 0.5, "width": 49, "height": 17 },
+				"gay_phep_doc4_shoot": { "x": 4.78, "y": -0.26, "width": 55, "height": 27 },
+				"gay_phep_doc5_shoot": { "x": 0.5, "y": 0.5, "width": 47, "height": 22 },
+				"gay_phep_doc6_shoot": { "x": 0.5, "y": 0.5, "width": 47, "height": 9 },
+				"gay_phep_doc7_shoot": { "x": 0.5, "y": 0.5, "width": 47, "height": 27 }
+			}
+		}
+	}
+],
+"events": {
+	"end": {}
+},
+"animations": {
+	"fire": {
+		"slots": {
+			"fire": {
+				"attachment": [
+					{ "name": "gay_phep_doc1_shoot" },
+					{ "time": 0.1, "name": "gay_phep_doc4_shoot" }
+				]
+			},
+			"fire2": {
+				"attachment": [
+					{ "time": 0.1, "name": "gay_phep_doc4_shoot" },
+					{ "time": 0.1667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"translate": [
+					{ "curve": 0.183, "c2": 1, "c3": 0.75 },
+					{ "time": 0.1, "x": -19.15, "curve": 0.25, "c3": 0.785, "c4": 0.35 },
+					{ "time": 0.3333 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.8333, "name": "end" }
+		]
+	},
+	"neutral": {
+		"slots": {
+			"fire": {
+				"attachment": [
+					{ "name": "gay_phep_doc1_shoot" },
+					{ "time": 0.1333, "name": "gay_phep_doc2_shoot" },
+					{ "time": 0.2667, "name": "gay_phep_doc6_shoot" },
+					{ "time": 0.4333, "name": "gay_phep_doc1_shoot" },
+					{ "time": 0.5667, "name": "gay_phep_doc2_shoot" },
+					{ "time": 0.7, "name": "gay_phep_doc6_shoot" },
+					{ "time": 0.8333, "name": "gay_phep_doc1_shoot" }
+				]
+			},
+			"fire2": {
+				"attachment": [
+					{ "name": "gay_phep_doc1_shoot" },
+					{ "time": 0.1333, "name": "gay_phep_doc2_shoot" },
+					{ "time": 0.2667, "name": "gay_phep_doc6_shoot" },
+					{ "time": 0.4333, "name": "gay_phep_doc1_shoot" },
+					{ "time": 0.5667, "name": "gay_phep_doc2_shoot" },
+					{ "time": 0.7, "name": "gay_phep_doc6_shoot" },
+					{ "time": 0.8333, "name": "gay_phep_doc1_shoot" }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.4333, "x": 2.27, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333 }
+				]
+			}
+		}
+	}
+}
+}

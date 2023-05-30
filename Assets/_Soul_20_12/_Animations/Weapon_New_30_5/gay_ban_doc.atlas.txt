@@ -1,0 +1,55 @@
+
+gay_ban_doc.png
+size: 102,77
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gay_phep_doc1_shoot
+  rotate: true
+  xy: 31, 28
+  size: 47, 27
+  orig: 47, 27
+  offset: 0, 0
+  index: -1
+gay_phep_doc2_shoot
+  rotate: false
+  xy: 53, 4
+  size: 47, 22
+  orig: 47, 22
+  offset: 0, 0
+  index: -1
+gay_phep_doc5_shoot
+  rotate: false
+  xy: 53, 4
+  size: 47, 22
+  orig: 47, 22
+  offset: 0, 0
+  index: -1
+gay_phep_doc3_shoot
+  rotate: false
+  xy: 2, 2
+  size: 49, 17
+  orig: 49, 17
+  offset: 0, 0
+  index: -1
+gay_phep_doc4_shoot
+  rotate: true
+  xy: 2, 21
+  size: 54, 27
+  orig: 55, 27
+  offset: 0, 0
+  index: -1
+gay_phep_doc6_shoot
+  rotate: true
+  xy: 89, 28
+  size: 47, 9
+  orig: 47, 9
+  offset: 0, 0
+  index: -1
+gay_phep_doc7_shoot
+  rotate: true
+  xy: 60, 28
+  size: 47, 27
+  orig: 47, 27
+  offset: 0, 0
+  index: -1

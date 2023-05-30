@@ -1,0 +1,72 @@
+{
+"skeleton": { "hash": "89elAm3MSXJGitV79rnpfa9Nn0c", "spine": "3.8.99", "images": "D:/PTS/Game Soul/File_PNG/8vk_moi/gay_ban_lua/", "audio": "" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "neutral", "bone": "root" },
+	{ "name": "fire", "bone": "root" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"fire": {
+				"shoot/lua1": { "x": 0.5, "y": 11.2, "width": 11, "height": 22 },
+				"shoot/lua2": { "y": 12.55, "width": 12, "height": 25 },
+				"shoot/lua3": { "y": 12.09, "width": 12, "height": 24 },
+				"shoot/lua4": { "y": 12.51, "width": 12, "height": 25 },
+				"shoot/lua5": { "x": 0.5, "y": 11.05, "width": 11, "height": 22 },
+				"shoot/lua6": { "y": 12.68, "width": 12, "height": 25 },
+				"shoot/lua7": { "y": 12.09, "width": 12, "height": 24 },
+				"shoot/lua8": { "y": 12.59, "width": 12, "height": 25 },
+				"shoot/lua9": { "x": 0.5, "y": 11.05, "width": 11, "height": 22 }
+			},
+			"neutral": {
+				"idel/gay_phep_lua_idel": { "y": 0.5, "width": 46, "height": 19 },
+				"idel/lua1": { "y": 1.2, "width": 18, "height": 14 },
+				"idel/lua2": { "y": 7.5, "width": 20, "height": 27 },
+				"idel/lua3": { "y": 8.5, "width": 20, "height": 29 }
+			}
+		}
+	}
+],
+"animations": {
+	"fire": {
+		"slots": {
+			"fire": {
+				"attachment": [
+					{ "name": "shoot/lua1" },
+					{ "time": 0.0667, "name": "shoot/lua2" },
+					{ "time": 0.1333, "name": "shoot/lua3" },
+					{ "time": 0.2, "name": "shoot/lua4" },
+					{ "time": 0.2667, "name": "shoot/lua5" },
+					{ "time": 0.3333, "name": "shoot/lua6" },
+					{ "time": 0.4, "name": "shoot/lua7" },
+					{ "time": 0.4667, "name": "shoot/lua8" },
+					{ "time": 0.5333, "name": "shoot/lua9" },
+					{ "time": 0.6, "name": "shoot/lua1" }
+				]
+			}
+		}
+	},
+	"neutral": {
+		"slots": {
+			"fire": {
+				"attachment": [
+					{ "name": "shoot/lua1" },
+					{ "time": 0.0667, "name": "shoot/lua2" },
+					{ "time": 0.1333, "name": "shoot/lua3" },
+					{ "time": 0.2, "name": "shoot/lua4" },
+					{ "time": 0.2667, "name": "shoot/lua5" },
+					{ "time": 0.3333, "name": "shoot/lua6" },
+					{ "time": 0.4, "name": "shoot/lua7" },
+					{ "time": 0.4667, "name": "shoot/lua8" },
+					{ "time": 0.5333, "name": "shoot/lua9" },
+					{ "time": 0.6, "name": "shoot/lua1" }
+				]
+			}
+		}
+	}
+}
+}

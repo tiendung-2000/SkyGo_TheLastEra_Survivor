@@ -1,0 +1,53 @@
+{
+"skeleton": {
+	"hash": "WDalQuCMfG9m2RlKjGxo3ouRQ6M",
+	"spine": "3.8.99",
+	"x": -18,
+	"y": -18,
+	"width": 37,
+	"height": 37,
+	"images": "D:/PTS/Game Soul/File_PNG/8vk_moi/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root" }
+],
+"slots": [
+	{ "name": "idel", "bone": "bone", "attachment": "shuriken/suriken1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"idel": {
+				"shuriken/suriken1": { "x": 0.5, "y": 0.5, "width": 37, "height": 37 },
+				"shuriken/suriken2": { "y": 0.5, "width": 28, "height": 29 },
+				"shuriken/suriken3": { "x": 0.5, "y": 0.5, "width": 37, "height": 37 },
+				"shuriken/suriken4": { "y": 0.5, "width": 34, "height": 35 }
+			}
+		}
+	}
+],
+"animations": {
+	"fire": {
+		"slots": {
+			"idel": {
+				"color": [
+					{ "color": "ffffffb4" }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"rotate": [
+					{ "curve": "stepped" },
+					{ "time": 0.0667, "angle": -45, "curve": "stepped" },
+					{ "time": 0.1333, "angle": -90 }
+				]
+			}
+		}
+	},
+	"neutral": {}
+}
+}

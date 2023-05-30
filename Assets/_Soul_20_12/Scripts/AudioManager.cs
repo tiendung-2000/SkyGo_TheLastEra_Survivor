@@ -82,7 +82,7 @@ public class AudioManager : MonoBehaviour
         music.clip = MainMenuBGM;
         music.volume = 0f;
         music.Play();
-        music.DOFade(.6f, 0.5f);
+        music.DOFade(.3f, 0.5f);
     }
 
     public void PlaySelectBGM()
@@ -90,7 +90,7 @@ public class AudioManager : MonoBehaviour
         music.clip = SelectBGM;
         music.volume = 0f;
         music.Play();
-        music.DOFade(0.6f, 0.5f);
+        music.DOFade(0.3f, 0.5f);
     }
 
     public void PlayIngameBGM(int id)
@@ -99,7 +99,7 @@ public class AudioManager : MonoBehaviour
         music.clip = ingameBGM[id];
         music.volume = 0;
         music.Play();
-        music.DOFade(.6f, 0f);
+        music.DOFade(.3f, 0f);
     }
 
     public void PlayWinLoseSound(int id)
@@ -214,7 +214,7 @@ public class AudioManager : MonoBehaviour
 
     public void MusicOn()
     {
-        music.volume = .6f;
+        music.volume = .3f;
     }
 
     public void PauseMusic()

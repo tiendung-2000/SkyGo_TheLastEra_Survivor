@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3240367412509989274}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7590131402553731953}
   m_Father: {fileID: 0}
@@ -48,28 +48,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  ske: {fileID: 0}
-  bulletToFire: {fileID: 0}
+  ske: {fileID: 433493895774285017}
+  bulletToFire: {fileID: 4189913780510908286, guid: b9ff05e12b19a7749bdab107d9f98a8b,
+    type: 3}
   canFire: 0
   canExplode: 0
-  explodeBullet: {fileID: 0}
-  firePoint: []
-  xAngle: 0
-  yAngle: 0
-  reloadTime: 0
+  explodeBullet: {fileID: 4189913780510908286, guid: f618affbc52a0a24ca332a8fe8aa9c68,
+    type: 3}
+  firePoint:
+  - {fileID: 7590131402553731953}
+  xAngle: 5
+  yAngle: 5
+  reloadTime: 1
   reloadTimeCounter: 0
   reload: 0
   isFullAmmo: 0
-  timeBetweenShots: 0
+  timeBetweenShots: 0.6
   shotCounter: 0
-  weaponName: 
+  weaponName: Heaven
   itemCost: 0
-  gunSprite: {fileID: 0}
-  gunSwitchSprite: {fileID: 0}
+  gunSprite: {fileID: 21300000, guid: c7c69eb380671c444b881c1ee6495578, type: 3}
+  gunSwitchSprite: {fileID: 21300000, guid: 9d56e83ffa2d63b4dbf65086f04da511, type: 3}
   currentClip: 0
-  maxClipSize: 10
-  currentAmmo: 0
-  maxAmmoSize: 100
+  maxClipSize: 50
   isDupliGun: 0
   isRocketGun: 0
   m_launchIntensity: 0
@@ -100,7 +101,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 86fb97cbb22bcce4ba11c374f334666e, type: 2}
+  - {fileID: 2100000, guid: dd86508b74327d54abe4a64c981ffed8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -134,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: 159f8c51e8dcc184ca10e5e1f43e8544, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: ef3a6cf9c7b123040987966c9f24c165, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
@@ -183,7 +184,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5352409381370367888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.712, y: 0.088, z: 0}
+  m_LocalPosition: {x: 0.438, y: -0.031, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 695117407724449772}

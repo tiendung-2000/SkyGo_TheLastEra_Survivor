@@ -1,0 +1,41 @@
+
+sung_ban_cau_dien.png
+size: 247,27
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sung_ban_cau_dien/sung_ban_ra_3_qua_cau_dien_1
+  rotate: false
+  xy: 51, 2
+  size: 47, 23
+  orig: 47, 23
+  offset: 0, 0
+  index: -1
+sung_ban_cau_dien/sung_ban_ra_3_qua_cau_dien_2
+  rotate: false
+  xy: 100, 2
+  size: 47, 23
+  orig: 47, 23
+  offset: 0, 0
+  index: -1
+sung_ban_cau_dien/sung_ban_ra_3_qua_cau_dien_3
+  rotate: false
+  xy: 149, 2
+  size: 47, 23
+  orig: 47, 23
+  offset: 0, 0
+  index: -1
+sung_ban_cau_dien/sung_ban_ra_3_qua_cau_dien_4
+  rotate: false
+  xy: 198, 2
+  size: 47, 23
+  orig: 47, 23
+  offset: 0, 0
+  index: -1
+sung_ban_cau_dien/sung_ban_ra_3_qua_cau_dien_5
+  rotate: false
+  xy: 2, 2
+  size: 47, 23
+  orig: 47, 23
+  offset: 0, 0
+  index: -1

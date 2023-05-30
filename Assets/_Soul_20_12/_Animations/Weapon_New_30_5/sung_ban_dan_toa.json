@@ -1,0 +1,83 @@
+{
+"skeleton": {
+	"hash": "bDMyD6qhxp75S/VX1qbtISTvsCY",
+	"spine": "3.8.99",
+	"x": -19,
+	"y": -11,
+	"width": 39,
+	"height": 23,
+	"images": "D:/PTS/Game Soul/File_PNG/8vk_moi/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root" }
+],
+"slots": [
+	{ "name": "fire", "bone": "bone", "attachment": "sung_ban_dan_toa/shoot/sung_ban_dan_toa4" },
+	{ "name": "neutral", "bone": "bone", "attachment": "sung_ban_dan_toa/idel/sung_ban_dan_toa1idel" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"fire": {
+				"sung_ban_dan_toa/shoot/sung_ban_dan_toa1": { "x": 0.5, "y": 0.5, "width": 39, "height": 23 },
+				"sung_ban_dan_toa/shoot/sung_ban_dan_toa2": { "x": 0.5, "y": 0.5, "width": 41, "height": 23 },
+				"sung_ban_dan_toa/shoot/sung_ban_dan_toa3": { "x": 0.5, "y": 0.5, "width": 41, "height": 23 },
+				"sung_ban_dan_toa/shoot/sung_ban_dan_toa4": { "x": 0.5, "y": 0.67, "width": 39, "height": 23 }
+			},
+			"neutral": {
+				"sung_ban_dan_toa/idel/sung_ban_dan_toa1idel": { "x": 0.5, "y": 0.5, "width": 39, "height": 23 },
+				"sung_ban_dan_toa/idel/sung_ban_dan_toa2idel": { "x": 0.5, "y": 0.5, "width": 39, "height": 23 },
+				"sung_ban_dan_toa/idel/sung_ban_dan_toa3idel": { "x": 0.5, "y": 0.5, "width": 39, "height": 23 },
+				"sung_ban_dan_toa/idel/sung_ban_dan_toa4idel": { "x": 0.5, "y": 0.5, "width": 39, "height": 23 }
+			}
+		}
+	}
+],
+"animations": {
+	"fire": {
+		"slots": {
+			"fire": {
+				"attachment": [
+					{ "name": "sung_ban_dan_toa/shoot/sung_ban_dan_toa1" },
+					{ "time": 0.1, "name": "sung_ban_dan_toa/shoot/sung_ban_dan_toa2" },
+					{ "time": 0.1667, "name": "sung_ban_dan_toa/shoot/sung_ban_dan_toa3" },
+					{ "time": 0.2667, "name": "sung_ban_dan_toa/shoot/sung_ban_dan_toa4" },
+					{ "time": 0.3667, "name": "sung_ban_dan_toa/shoot/sung_ban_dan_toa1" }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"translate": [
+					{ "curve": 0.638, "c2": 0.11, "c3": 0.433 },
+					{ "time": 0.1667, "x": -7.37 }
+				]
+			}
+		}
+	},
+	"neutral": {
+		"slots": {
+			"neutral": {
+				"attachment": [
+					{ "time": 0.0667, "name": "sung_ban_dan_toa/idel/sung_ban_dan_toa2idel" },
+					{ "time": 0.1333, "name": "sung_ban_dan_toa/idel/sung_ban_dan_toa3idel" },
+					{ "time": 0.2, "name": "sung_ban_dan_toa/idel/sung_ban_dan_toa4idel" },
+					{ "time": 0.2667, "name": "sung_ban_dan_toa/idel/sung_ban_dan_toa1idel" }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1333, "x": -1.34, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667 }
+				]
+			}
+		}
+	}
+}
+}

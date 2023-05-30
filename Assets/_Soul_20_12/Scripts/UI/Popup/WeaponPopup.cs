@@ -42,7 +42,7 @@ public class WeaponPopup : BaseUIMenu
             if (theGun.weaponName == gunToCheck.weaponName)
             {
                 hasGun = true;
-                theGun.PickupAmmo(30);
+                //theGun.PickupAmmo(30);
             }
         }
 

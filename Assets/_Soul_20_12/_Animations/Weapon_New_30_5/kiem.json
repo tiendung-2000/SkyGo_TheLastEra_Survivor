@@ -1,0 +1,59 @@
+{
+"skeleton": {
+	"hash": "YAqvHQsomIxWAp+A17MHTQWDH8k",
+	"spine": "3.8.99",
+	"x": -1.41,
+	"y": -13.8,
+	"width": 62.26,
+	"height": 27.6,
+	"images": "D:/PTS/Game Soul/File_PNG/8vk_moi/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root" }
+],
+"slots": [
+	{ "name": "fire", "bone": "bone", "attachment": "kiem" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"fire": {
+				"kiem": { "x": 29.72, "rotation": -90.55, "width": 27, "height": 62 }
+			}
+		}
+	}
+],
+"animations": {
+	"fire": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0.1, "angle": 113.45 }
+				]
+			},
+			"bone": {
+				"rotate": [
+					{ "curve": 0.158, "c2": 0.7, "c3": 0.75 },
+					{ "time": 0.2333, "angle": -45.33, "curve": 0.741, "c2": 0.03, "c3": 0.75 },
+					{ "time": 0.3, "angle": -123.95 }
+				]
+			}
+		}
+	},
+	"neutral": {
+		"bones": {
+			"bone": {
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2, "y": 1.94, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.4, "y": -3.39, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.6 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,62 @@
+
+sung_ban_dan_toa.png
+size: 334,27
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sung_ban_dan_toa/idel/sung_ban_dan_toa1idel
+  rotate: false
+  xy: 129, 2
+  size: 39, 23
+  orig: 39, 23
+  offset: 0, 0
+  index: -1
+sung_ban_dan_toa/idel/sung_ban_dan_toa2idel
+  rotate: false
+  xy: 170, 2
+  size: 39, 23
+  orig: 39, 23
+  offset: 0, 0
+  index: -1
+sung_ban_dan_toa/idel/sung_ban_dan_toa3idel
+  rotate: false
+  xy: 211, 2
+  size: 39, 23
+  orig: 39, 23
+  offset: 0, 0
+  index: -1
+sung_ban_dan_toa/idel/sung_ban_dan_toa4idel
+  rotate: false
+  xy: 88, 2
+  size: 39, 23
+  orig: 39, 23
+  offset: 0, 0
+  index: -1
+sung_ban_dan_toa/shoot/sung_ban_dan_toa1
+  rotate: false
+  xy: 252, 2
+  size: 39, 23
+  orig: 39, 23
+  offset: 0, 0
+  index: -1
+sung_ban_dan_toa/shoot/sung_ban_dan_toa2
+  rotate: false
+  xy: 2, 2
+  size: 41, 23
+  orig: 41, 23
+  offset: 0, 0
+  index: -1
+sung_ban_dan_toa/shoot/sung_ban_dan_toa3
+  rotate: false
+  xy: 45, 2
+  size: 41, 23
+  orig: 41, 23
+  offset: 0, 0
+  index: -1
+sung_ban_dan_toa/shoot/sung_ban_dan_toa4
+  rotate: false
+  xy: 293, 2
+  size: 39, 23
+  orig: 39, 23
+  offset: 0, 0
+  index: -1
