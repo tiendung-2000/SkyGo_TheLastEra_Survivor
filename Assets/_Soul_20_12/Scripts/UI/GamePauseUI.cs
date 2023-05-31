@@ -15,13 +15,8 @@ public class GamePauseUI : BaseUIMenu
     [SerializeField] List<GameObject> soundSprite;
     [SerializeField] List<GameObject> musicSprites;
 
-    [SerializeField] bool isSound;
-    [SerializeField] bool isMusic;
-
     private void Start()
     {
-        isSound = true; isMusic = true;
-
         homeButton.onClick.AddListener(OnClickHomeButton);
         replayButton.onClick.AddListener(OnClickReplayButton);
         closeButton.onClick.AddListener(OnClickCloseButton);
@@ -35,6 +30,8 @@ public class GamePauseUI : BaseUIMenu
     private void OnEnable()
     {
         PlayerController.Ins.isMove = false;
+
+        SetupButton();
     }
 
     private void OnDisable()
@@ -49,39 +46,66 @@ public class GamePauseUI : BaseUIMenu
 
     }
 
-    public void OnClickSound()
+    void SetupButton()
     {
-        if (isSound)
+        if (PlayerPrefs.GetInt("music") == 1) //if is on
         {
-            soundSprite[0].SetActive(false);
-            soundSprite[1].SetActive(true);
-            isSound = false;
-            AudioManager.Ins.SoundOff();
+            musicSprites[0].SetActive(true);
+            musicSprites[1].SetActive(false);
         }
-        else
+        else // if is off
+        {
+            musicSprites[0].SetActive(false);
+            musicSprites[1].SetActive(true);
+        }
+
+        if (PlayerPrefs.GetInt("sound") == 1) //if is on
         {
             soundSprite[0].SetActive(true);
             soundSprite[1].SetActive(false);
-            isSound = true;
+        }
+        else //if is off
+        {
+            soundSprite[0].SetActive(false);
+            soundSprite[1].SetActive(true);
+        }
+    }
+
+    public void OnClickSound()
+    {
+        if (PlayerPrefs.GetInt("sound") == 1)
+        {
+            AudioManager.Ins.SoundOff();
+            soundSprite[0].SetActive(false);
+            soundSprite[1].SetActive(true);
+            PlayerPrefs.SetInt("sound", 0);
+
+        }
+        else
+        {
             AudioManager.Ins.SoundOn();
+            soundSprite[0].SetActive(true);
+            soundSprite[1].SetActive(false);
+            PlayerPrefs.SetInt("sound", 1);
+
         }
     }
 
     public void OnClickMusic()
     {
-        if (isMusic)
+        if (PlayerPrefs.GetInt("music") == 1)
         {
+            AudioManager.Ins.MusicOff();
             musicSprites[0].SetActive(false);
             musicSprites[1].SetActive(true);
-            isMusic = false;
-            AudioManager.Ins.MusicOff();
+            PlayerPrefs.SetInt("music", 0);
         }
         else
         {
+            AudioManager.Ins.MusicOn();
             musicSprites[0].SetActive(true);
             musicSprites[1].SetActive(false);
-            isMusic = true;
-            AudioManager.Ins.MusicOn();
+            PlayerPrefs.SetInt("music", 1);
         }
     }
 

@@ -89,9 +89,12 @@ public class LightlingBullet : MonoBehaviour
     private EnemyController[] enemies;
     private void ShockEnemiesAround()
     {
-        LR_Controller lineSpawn = Instantiate(line);
-        lineSpawn.SetUpLine(nearestEnemies.ToArray());
-        lineSpawn.GiveDamageToE(damageToGive);
+        if (enemies.Length >= 2)
+        {
+            LR_Controller lineSpawn = Instantiate(line);
+            lineSpawn.SetUpLine(nearestEnemies.ToArray());
+            lineSpawn.GiveDamageToE(damageToGive);
+        }
     }
 
     void FindThreeNearestEnemies()

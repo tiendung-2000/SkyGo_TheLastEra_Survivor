@@ -36,12 +36,9 @@ public class SettingsMenu : MonoBehaviour
 
     [SerializeField] Button musicButton;
     [SerializeField] Button soundButton;
-    [SerializeField] bool isSound;
-    [SerializeField] bool isMusic;
 
     void Start()
     {
-        isSound = true; isMusic = true;
         musicButton.onClick.AddListener(OnOffMusic);
         soundButton.onClick.AddListener(OnOffSound);
 
@@ -86,6 +83,8 @@ public class SettingsMenu : MonoBehaviour
                 //Fade to alpha=1 starting from alpha=0 immediately
                 menuItems[i].img.DOFade(1f, expandFadeDuration).From(0f);
             }
+
+            SetupButton();
         }
         else
         {
@@ -108,35 +107,58 @@ public class SettingsMenu : MonoBehaviour
     [SerializeField] List<Sprite> soundSprite;
     [SerializeField] List<Sprite> musicSprites;
 
-    private void OnOffSound()
+    void SetupButton()
     {
-        if (isSound)
+        if (PlayerPrefs.GetInt("music") == 1) //if is on
+        {
+            musicButton.image.sprite = musicSprites[0];
+        }
+        else // if is off
+        {
+            musicButton.image.sprite = musicSprites[1];
+        }
+
+        if (PlayerPrefs.GetInt("sound") == 1) //if is on
+        {
+            soundButton.image.sprite = soundSprite[0];
+        }
+        else //if is off
         {
             soundButton.image.sprite = soundSprite[1];
-            isSound = false;
+        }
+    }
+
+    private void OnOffSound()
+    {
+        if (PlayerPrefs.GetInt("sound") == 1)
+        {
+            soundButton.image.sprite = soundSprite[1];
             AudioManager.Ins.SoundOff();
+            PlayerPrefs.SetInt("sound", 0);
         }
         else
         {
             soundButton.image.sprite = soundSprite[0];
-            isSound = true;
             AudioManager.Ins.SoundOn();
+            //AudioManager.Ins.PlaySelectBGM();
+
+            PlayerPrefs.SetInt("sound", 1);
         }
     }
 
     private void OnOffMusic()
     {
-        if (isMusic)
+        if (PlayerPrefs.GetInt("music") == 1)
         {
             musicButton.image.sprite = musicSprites[1];
-            isMusic = false;
             AudioManager.Ins.MusicOff();
+            PlayerPrefs.SetInt("music", 0);
         }
         else
         {
             musicButton.image.sprite = musicSprites[0];
-            isMusic = true;
             AudioManager.Ins.MusicOn();
+            PlayerPrefs.SetInt("music", 1);
         }
     }
 }

@@ -5,7 +5,7 @@ using DG.Tweening;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Ins;
-    GamePlayController gameManager;
+    [SerializeField] GamePlayController gameManager;
     public AudioClip MainMenuBGM, SelectBGM, bossFight;
     [Space(20)]
     public AudioClip[] soundEffects;
@@ -34,13 +34,8 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        //gameManager = GameManager.Instance;
         Register();
-        //isVbration = (PlayerPrefs.GetInt("Vibration") == 1) ? true : false;
-        //#if !UNITY_EDITOR
-        //        Vibration.Init();
-        //#endif
-        //StartCoroutine(SetUpSound());
+        StartCoroutine(SetUpSound());
     }
     public void Register()
     {
@@ -53,60 +48,76 @@ public class AudioManager : MonoBehaviour
         if (PlayerPrefs.GetInt("music") == 1)
         {
             gameManager.isMusic = true;
-            music.mute = false;
+            music.volume = .3f;
+            //music.mute = false;
+            //PlayerPrefs.SetInt("music", 0);
         }
         else
         {
             gameManager.isMusic = false;
-            music.mute = true;
+            music.volume = 0f;
         }
         if (PlayerPrefs.GetInt("sound") == 1)
         {
             gameManager.isSound = true;
-            sound.mute = false;
+            sound.volume = 1f;
+            //sound.mute = false;
+            //PlayerPrefs.GetInt("sound", 0);
         }
         else
         {
             gameManager.isSound = false;
-            sound.mute = true;
+            sound.volume = 0;
+            //sound.mute = true;
         }
     }
 
     public void PlayGamePlayMusic()
     {
-        music.volume = 0f;
+        //music.volume = 0f;
         music.Play();
-        music.DOFade(1f, 0.3f);
+        //music.DOFade(1f, 0.3f);
     }
 
     public void PlayMainMenuBGM()
     {
         music.clip = MainMenuBGM;
-        music.volume = 0f;
+        //music.volume = 0f;
         music.Play();
-        music.DOFade(.3f, 0.5f);
+        //music.DOFade(.3f, 0.5f);
     }
 
     public void PlaySelectBGM()
     {
+
         music.clip = SelectBGM;
-        music.volume = 0f;
+        //music.volume = 0f;
         music.Play();
-        music.DOFade(0.3f, 0.5f);
+        //music.DOFade(0.3f, 0.5f);
+
+    }
+
+    public void PlayBossFightBGM()
+    {
+        music.clip = bossFight;
+        //music.volume = 0f;
+        music.Play();
+        //music.DOFade(0.3f, 0.5f);
     }
 
     public void PlayIngameBGM(int id)
     {
         //int m = UnityEngine.Random.Range(0, ingameBGM.Length);
         music.clip = ingameBGM[id];
-        music.volume = 0;
+        //music.volume = 0;
         music.Play();
-        music.DOFade(.3f, 0f);
+        //music.DOFade(.3f, 0f);
     }
 
     public void PlayWinLoseSound(int id)
     {
         sound.PlayOneShot(winLoseSound[id]);
+
         music.Stop();
     }
 
@@ -124,10 +135,6 @@ public class AudioManager : MonoBehaviour
 
     public void Play(int id, float time)
     {
-        //curSong = songInfos[id];
-        //if (curSong == null)
-        //    return;
-        //song.clip = curSong.audioClip;
         music.clip = soundEffects[id];
         music.volume = 0f;
         music.Play();
@@ -217,6 +224,7 @@ public class AudioManager : MonoBehaviour
     public void MusicOn()
     {
         music.volume = .3f;
+        music.mute = false;
     }
 
     public void PauseMusic()

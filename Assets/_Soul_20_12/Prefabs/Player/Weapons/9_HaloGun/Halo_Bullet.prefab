@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4189913780510908277}
   - component: {fileID: 4189913780510908282}
-  - component: {fileID: 4189913780510908283}
   - component: {fileID: 4189913780510908280}
   - component: {fileID: 4189913780510908281}
   - component: {fileID: 3923759171092850419}
+  - component: {fileID: -322941802392536990}
   m_Layer: 9
   m_Name: Halo_Bullet
   m_TagString: PlayerBullet
@@ -87,24 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4189913780510908283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4189913780510908286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ec48653b0040e24bb854f817b20aff6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  theRB: {fileID: 4189913780510908281}
-  impactEffect: {fileID: 5177790846866898987, guid: cd4a5a231dd3dad40a5e929a5efc2231,
-    type: 3}
-  damageToGive: 25
-  trail: {fileID: 5200552930185885919}
 --- !u!61 &4189913780510908280
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -164,6 +146,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe11a6a7570d26d49a2b5f487c7501ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-322941802392536990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4189913780510908286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c50181b3c34dfed43a536315b6b93cfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15
+  theRB: {fileID: 4189913780510908281}
+  impactEffect: {fileID: 5177790846866898987, guid: 8d854b3caeb4dde409ebe59ba0989270,
+    type: 3}
+  damageToGive: 30
+  line: {fileID: 5994202462036460025, guid: 7a8ae2ba507e8e146aac872a7ad21a4f, type: 3}
+  nearestEnemies: []
+  enemies: []
 --- !u!1 &5200552930185885917
 GameObject:
   m_ObjectHideFlags: 0

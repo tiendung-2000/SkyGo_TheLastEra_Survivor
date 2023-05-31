@@ -1485,6 +1485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 129f7f0449d15c0409d5c97dd1b33998, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 259184855}
   MainMenuBGM: {fileID: 8300000, guid: 46ce90442d3ed8f4486a3fda39138b97, type: 3}
   SelectBGM: {fileID: 8300000, guid: 6374d45761c137d408994212f7254b82, type: 3}
   bossFight: {fileID: 8300000, guid: e9352ec6c5b0a474bb791a7d0b6baab2, type: 3}

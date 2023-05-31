@@ -24,6 +24,10 @@ public class StartUI : BaseUIMenu
             CharacterSelectManager.Ins.activePlayer = ResourceSystem.Ins.players[DynamicDataManager.Ins.CurPlayer];
             GamePlayController.Ins.ResetPlayerStats();
             start.gameObject.SetActive(false);
+
+            AudioManager.Ins.MusicOff();
+
+            AudioManager.Ins.PlayIngameBGM(0);
         }
         else
         {

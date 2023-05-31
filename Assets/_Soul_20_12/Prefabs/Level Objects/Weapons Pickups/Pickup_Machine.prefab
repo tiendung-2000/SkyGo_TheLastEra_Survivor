@@ -9755,7 +9755,7 @@ Transform:
   m_GameObject: {fileID: 5345533770886781994}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 3, y: 3, z: 0}
   m_Children:
   - {fileID: 3924473778071153418}
   m_Father: {fileID: 0}
@@ -9825,7 +9825,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theGun: {fileID: 423024207151644964, guid: 6d6ea59fb95190f44bd65e136f2048e0, type: 3}
-  ammo: 100
   damageToAdd: 5
   waitToBeCollected: 1.5
 --- !u!114 &3269175602445908679

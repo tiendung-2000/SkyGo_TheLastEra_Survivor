@@ -35,7 +35,10 @@ public class LR_Controller : MonoBehaviour
     public void SetUpLine(EnemyController[] position)
     {
         this.ePos = position;
-        LightConnect();
+        if (ePos.Length >= 2)
+        {
+            LightConnect();
+        }
     }
 
     public void AssignTarget(Vector3 startPosition, Transform newTarget)
