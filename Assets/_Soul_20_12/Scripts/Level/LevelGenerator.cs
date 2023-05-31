@@ -51,7 +51,7 @@ public class LevelGenerator : MonoBehaviour
     {
         AudioManager.Ins.MusicOff();
         yield return new WaitForSeconds(3f);
-        AudioManager.Ins.PlayIngameBGM(0);
+        AudioManager.Ins.GamePlayBGM();
     }
 
     void OnEnable()

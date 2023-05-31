@@ -12,6 +12,8 @@ public class SwordSlash : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
+            AudioManager.Ins.PlayGunSound(11);
+
             other.GetComponent<EnemyController>().DamageEnemy(damageToGive + PlayerController.Ins.playerBaseDamage);
 
             Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();

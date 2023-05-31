@@ -58,11 +58,13 @@ public class WrathFlameSkul : MonoBehaviour
             case AnimationKeys.MN2_MOVE:
                 shouldMove = false;
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.MN2_SKILL_1, false);
+                AudioManager.Ins.SoundEffect(7);
                 shootFirst = true;
                 break;
             case AnimationKeys.MN2_SKILL_1:
                 shootFirst = false;
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.MN2_SKILL_2, false);
+                AudioManager.Ins.SoundEffect(7);
                 shootSecond = true;
                 break;
             case AnimationKeys.MN2_SKILL_2:
@@ -72,6 +74,7 @@ public class WrathFlameSkul : MonoBehaviour
             case AnimationKeys.MN2_SKILL_3_READY:
                 Dash();
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.MN2_SKILL_3_ATTACK, false);
+                AudioManager.Ins.SoundEffect(7);
                 break;
             case AnimationKeys.MN2_SKILL_3_ATTACK:
                 shouldMove = true;

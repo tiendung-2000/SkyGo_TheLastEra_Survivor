@@ -10,6 +10,7 @@ public class Sword : MonoBehaviour
     public void SwordAttack()
     {
         sword.SetActive(true);
+
         StartCoroutine(IESword());
     }
 

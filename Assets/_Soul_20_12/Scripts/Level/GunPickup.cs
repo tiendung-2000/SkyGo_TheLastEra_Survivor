@@ -19,8 +19,11 @@ public class GunPickup : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+
         if (other.tag == "Player" && waitToBeCollected <= 0)
         {
+            AudioManager.Ins.SoundEffect(4);
+
             bool hasGun = false;
             foreach (Weapon gunToCheck in PlayerController.Ins.availableGuns)
             {

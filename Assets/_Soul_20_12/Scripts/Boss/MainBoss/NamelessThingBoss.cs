@@ -73,6 +73,7 @@ public class NamelessThingBoss : MonoBehaviour
         {
             case AnimationKeys.B3_IDLE:
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.B3_SKILL_1_ATTACK, false);
+                AudioManager.Ins.SoundEffect(7);
                 phaseFirst = true;
                 break;
 
@@ -90,6 +91,7 @@ public class NamelessThingBoss : MonoBehaviour
                 if (dashCount == 3)
                 {
                     bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.B3_SKILL_3_ATTACK, false);
+                AudioManager.Ins.SoundEffect(7);
                     phaseThird = true;
                 }
                 else
@@ -102,6 +104,7 @@ public class NamelessThingBoss : MonoBehaviour
                 dashCount = 0;
                 phaseThird = false;
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.B3_SKILL_4_ATTACK, false);
+                AudioManager.Ins.SoundEffect(7);
                 phaseFour = true;
                 break;
 

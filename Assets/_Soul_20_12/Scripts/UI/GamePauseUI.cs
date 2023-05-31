@@ -93,11 +93,14 @@ public class GamePauseUI : BaseUIMenu
     private void OnClickHomeButton()
     {
         OnHome();
+
         CinemachineShake.Instance.ResetShakeCamera();
     }
 
     void OnHome()
     {
+        CanvasManager.Ins.CloseUI(UIName.GameplayUI);
+
         CanvasManager.Ins.OpenUI(UIName.LoadingUI, null);
 
         GamePlayController.Ins.ResetGamePlay();

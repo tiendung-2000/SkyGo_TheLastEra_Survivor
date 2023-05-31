@@ -25,7 +25,7 @@ public class Room : MonoBehaviour
 
             closeWhenEntered = false;
         }
-
+        AudioManager.Ins.SoundEffect(2);
         CanvasManager.Ins.OpenUI(UIName.ClearRoomPopup, null);
     }
 
@@ -41,6 +41,8 @@ public class Room : MonoBehaviour
                 {
                     door.SetActive(true);
                 }
+
+                AudioManager.Ins.SoundEffect(2);
             }
             roomActive = true;
 

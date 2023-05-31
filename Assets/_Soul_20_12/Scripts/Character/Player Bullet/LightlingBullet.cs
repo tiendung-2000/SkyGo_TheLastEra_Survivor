@@ -56,6 +56,8 @@ public class LightlingBullet : MonoBehaviour
         enemies = FindObjectsOfType<EnemyController>();
         FindThreeNearestEnemies();
 
+        AudioManager.Ins.SoundEffect(6);
+
         // Check the tag of the collided object
         switch (other.tag)
         {

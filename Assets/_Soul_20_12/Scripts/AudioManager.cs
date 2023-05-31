@@ -26,7 +26,7 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
-        if(Ins == null)
+        if (Ins == null)
         {
             Ins = this;
         }
@@ -261,7 +261,8 @@ public class AudioManager : MonoBehaviour
         //            Vibration.VibratePop();
         //#endif
         //        }
-    }public void PlaySkillSound(int id)
+    }
+    public void PlaySkillSound(int id)
     {
         sound.PlayOneShot(skillSound[id]);
     }
@@ -309,5 +310,43 @@ public class AudioManager : MonoBehaviour
         //            Vibration.VibratePop();
         //#endif
         //        }
+    }
+
+
+    public void GamePlayBGM()
+    {
+        switch (DynamicDataManager.Ins.CurLevel)
+        {
+            case 0:
+                PlayIngameBGM(0);
+                break;
+            case 1:
+                PlayIngameBGM(1);
+                break;
+            case 2:
+                PlayIngameBGM(2);
+                break;
+            case 3:
+                PlayIngameBGM(3);
+                break;
+            case 4:
+                PlayIngameBGM(4);
+                break;
+            case 5:
+                PlayIngameBGM(5);
+                break;
+            case 6:
+                PlayIngameBGM(6);
+                break;
+            case 7:
+                PlayIngameBGM(7);
+                break;
+            case 8:
+                PlayIngameBGM(8);
+                break;
+            case 9:
+                PlayIngameBGM(9);
+                break;
+        }
     }
 }

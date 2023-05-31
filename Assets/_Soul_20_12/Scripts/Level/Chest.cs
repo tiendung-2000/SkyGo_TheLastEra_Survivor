@@ -30,6 +30,7 @@ public class Chest : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             ChestAnim.SetActive(true);
+            AudioManager.Ins.SoundEffect(5);
             StartCoroutine(IEChestFX());
         }
     }

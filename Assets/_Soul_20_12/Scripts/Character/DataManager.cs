@@ -34,6 +34,8 @@ public class DataManager : Singleton<DataManager>
             PlayerController.Ins.currentHealth--;
             DynamicDataManager.Ins.OnHealthChange?.Invoke(PlayerController.Ins.currentHealth);
 
+            AudioManager.Ins.SoundEffect(11);
+
             immortalCount = damageInvincLength;
 
             if (PlayerController.Ins.currentHealth <= 0)

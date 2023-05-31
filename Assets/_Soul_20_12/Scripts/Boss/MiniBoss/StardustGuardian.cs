@@ -54,11 +54,13 @@ public class StardustGuardian : MonoBehaviour
         {
             case AnimationKeys.MN5_IDLE:
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.MN5_SKILL_1, false);
+                AudioManager.Ins.SoundEffect(7);
                 shootFirst = true;
                 break;
             case AnimationKeys.MN5_SKILL_1:
                 shootFirst = false;
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.MN5_SKILL_2, false);
+                AudioManager.Ins.SoundEffect(7);
                 shootSecond = true;
                 break;
             case AnimationKeys.MN5_SKILL_2:

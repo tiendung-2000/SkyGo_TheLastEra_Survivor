@@ -38,6 +38,7 @@ public class ExplosionBullet : MonoBehaviour
         //{
         //    SmartPool.Ins.Spawn(explodeEffect, tempPos, tempRot);
         //});
+        AudioManager.Ins.SoundEffect(8);
 
         if (other.tag == "Block")
         {

@@ -73,12 +73,14 @@ public class EliminatedBishopBoss : MonoBehaviour
             case AnimationKeys.B2_MOVE:
                 shouldMove = false;
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.B2_ATTACK_1, false);
+                AudioManager.Ins.SoundEffect(7);
                 phaseFirst = true;
                 break;
 
             case AnimationKeys.B2_ATTACK_1:
                 phaseFirst = false;
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.B2_ATTACK_2, false);
+                AudioManager.Ins.SoundEffect(7);
                 phaseSecond = true;
                 break;
 
@@ -95,11 +97,13 @@ public class EliminatedBishopBoss : MonoBehaviour
             case AnimationKeys.B2_ATTACK_3_MOVE:
                 phaseFour = true;
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.B2_ATTACK_4, false);
+                AudioManager.Ins.SoundEffect(7);
                 break;
 
             case AnimationKeys.B2_ATTACK_4:
                 phaseFour = false;
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.B2_ATTACK_5, false);
+                AudioManager.Ins.SoundEffect(7);
                 phaseFive = true;
                 break;
 

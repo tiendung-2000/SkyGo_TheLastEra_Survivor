@@ -57,11 +57,13 @@ public class SteamPunkRhinoceros : MonoBehaviour
             case AnimationKeys.MN1_MOVE:
                 shouldMove = false;
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.MN1_SKILL_1, false);
+                AudioManager.Ins.SoundEffect(7);
                 shoot = true;
                 break;
             case AnimationKeys.MN1_SKILL_1:
                 shoot = false;
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.MN1_SKILL_2, false);
+                AudioManager.Ins.SoundEffect(7);
                 shootRadia = true;
                 break;
             case AnimationKeys.MN1_SKILL_2:
@@ -71,6 +73,7 @@ public class SteamPunkRhinoceros : MonoBehaviour
             case AnimationKeys.MN1_SKILL_3_READY:
                 Dash();
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.MN1_SKILL_3_ATTACK, false);
+                AudioManager.Ins.SoundEffect(7);
                 break;
             case AnimationKeys.MN1_SKILL_3_ATTACK:
                 shouldMove = true;

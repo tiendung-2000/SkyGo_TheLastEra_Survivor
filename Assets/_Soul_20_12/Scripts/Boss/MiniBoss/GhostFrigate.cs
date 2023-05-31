@@ -59,6 +59,7 @@ public class GhostFrigate : MonoBehaviour
             case AnimationKeys.MN3_SKILL_1_READY:
                 shootFirst = true;
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.MN3_SKILL_1_ATTACK, false);
+                AudioManager.Ins.SoundEffect(7);
                 break;
             case AnimationKeys.MN3_SKILL_1_ATTACK:
                 shootFirst = false;
@@ -67,6 +68,7 @@ public class GhostFrigate : MonoBehaviour
             case AnimationKeys.MN3_SKILL_2_READY:
                 shootSecond = true;
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.MN3_SKILL_2_ATTACK, false);
+                AudioManager.Ins.SoundEffect(7);
                 break;
             case AnimationKeys.MN3_SKILL_2_ATTACK:
                 shootSecond = false;
@@ -75,6 +77,7 @@ public class GhostFrigate : MonoBehaviour
             case AnimationKeys.MN3_SKILL_3_READY:
                 shootThird = true;
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.MN3_SKILL_3_ATTACK, false);
+                AudioManager.Ins.SoundEffect(7);
                 break;
             case AnimationKeys.MN3_SKILL_3_ATTACK:
                 shootThird = false;

@@ -11,6 +11,7 @@ public class BossBulletExplode : MonoBehaviour
         });
 
         //AudioManager.instance.PlaySFX(4);
+        AudioManager.Ins.SoundEffect(8);
 
         if (other.tag == "Player")
         {

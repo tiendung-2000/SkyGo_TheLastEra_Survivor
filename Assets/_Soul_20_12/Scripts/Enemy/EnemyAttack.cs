@@ -147,7 +147,8 @@ public class EnemyAttack : MonoBehaviour
                 newBullet.transform.Rotate(0f, 0f, Random.Range(-xAngle, yAngle));
             }
 
-            //AudioManager.instance.PlaySFX(13);
+        AudioManager.Ins.PlayGunSound(2);
+
         }
         //else
         //{
@@ -187,6 +188,7 @@ public class EnemyAttack : MonoBehaviour
     {
         fireDone = false;
         enemyController.Ske.AnimationState.SetAnimation(0, Constant.ANIM_ATTACK, false);
+        AudioManager.Ins.PlayGunSound(2);
 
         for (int i = 0; i < amountOfBullet; i++)
         {

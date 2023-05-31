@@ -16,10 +16,13 @@ public class RocketBullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Instantiate(explodeEffect, transform.position, transform.rotation);
+        AudioManager.Ins.SoundEffect(8);
+
         switch (other.tag)
         {
             case "Block":
-                Debug.Log("Rocket");
+                //Debug.Log("Rocket");
+
                 SmartPool.Ins.Despawn(gameObject);
                 break;
             case "Enemy":

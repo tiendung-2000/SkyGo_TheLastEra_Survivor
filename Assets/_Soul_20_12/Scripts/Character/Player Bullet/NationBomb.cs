@@ -11,9 +11,14 @@ public class NationBomb : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        AudioManager.Ins.SoundEffect(8);
+
         switch (other.tag)
         {
+
             case "Enemy":
+                AudioManager.Ins.SoundEffect(8);
+
                 EnemyController enemy = other.GetComponent<EnemyController>();
                 if (enemy != null)
                 {
@@ -21,6 +26,8 @@ public class NationBomb : MonoBehaviour
                 }
                 break;
             case "Boss":
+                AudioManager.Ins.SoundEffect(8);
+
                 BossController boss = other.GetComponent<BossController>();
                 if (boss != null)
                 {

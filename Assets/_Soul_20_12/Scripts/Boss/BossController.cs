@@ -87,7 +87,7 @@ public class BossController : MonoBehaviour
 
                 SmartPool.Ins.Spawn(itemsToDrop[randomItem], transform.position, transform.rotation);
             }
-
+            AudioManager.Ins.SoundEffect(3);
             SmartPool.Ins.Spawn(cointToDrop, transform.position, transform.rotation);
         }
     }

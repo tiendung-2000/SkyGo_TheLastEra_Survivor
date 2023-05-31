@@ -39,6 +39,8 @@ public class MB_BulletExplode : MonoBehaviour
         //{
         //    SmartPool.Ins.Spawn(explodeEffect, transform.position, transform.rotation);
         //});
+        AudioManager.Ins.SoundEffect(8);
+
         SmartPool.Ins.Despawn(gameObject);
 
         //AudioManager.instance.PlaySFX(4);

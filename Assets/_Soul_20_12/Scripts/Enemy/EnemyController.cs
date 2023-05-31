@@ -124,7 +124,7 @@ public class EnemyController : MonoBehaviour
         if (health <= 0)
         {
             col.enabled = false;
-
+            AudioManager.Ins.SoundEffect(10);
             Ske.AnimationState.SetAnimation(0, Constant.ANIM_DIE, false);
 
 
@@ -146,9 +146,9 @@ public class EnemyController : MonoBehaviour
     }
     IEnumerator IETakeDamageEffect()
     {
-        material.SetFloat("_FillPhase", 1f);
+        this.material.SetFloat("_FillPhase", 1f);
         yield return new WaitForSeconds(0.2f);
-        material.SetFloat("_FillPhase", 0f);
+        this.material.SetFloat("_FillPhase", 0f);
     }
 
     IEnumerator IEDestroy()

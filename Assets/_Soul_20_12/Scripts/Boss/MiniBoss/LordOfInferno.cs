@@ -54,6 +54,7 @@ public class LordOfInferno : MonoBehaviour
             case AnimationKeys.MN4_SKILL_1_READY:
                 shootFirst = true;
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.MN4_SKILL_1_ATTACK, false);
+                AudioManager.Ins.SoundEffect(7);
                 break;
             case AnimationKeys.MN4_SKILL_1_ATTACK:
                 shootFirst = false;
@@ -62,6 +63,7 @@ public class LordOfInferno : MonoBehaviour
             case AnimationKeys.MN4_SKILL_2_READY:
                 shootSecond = true;
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.MN4_SKILL_2_ATTACK, false);
+                AudioManager.Ins.SoundEffect(7);
                 break;
             case AnimationKeys.MN4_SKILL_2_ATTACK:
                 shootSecond = false;

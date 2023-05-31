@@ -103,6 +103,7 @@ public class TheDestroyerBoss : MonoBehaviour
             //ban 10 vien dan
             case AnimationKeys.B1_SKILL_1_READY:
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.B1_SKILL_1_ATTACK, false);
+                AudioManager.Ins.SoundEffect(7);
                 phaseFirst = true;
                 break;
 
@@ -120,6 +121,7 @@ public class TheDestroyerBoss : MonoBehaviour
             case AnimationKeys.B1_SKILL_3_READY:
                 Dash();
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.B1_SKILL_3_ATTACK, false);
+                AudioManager.Ins.SoundEffect(7);
                 break;
 
             case AnimationKeys.B1_SKILL_3_ATTACK:
@@ -128,6 +130,7 @@ public class TheDestroyerBoss : MonoBehaviour
 
             case AnimationKeys.B1_SKILL_4_READY:
                 bossController.ske.AnimationState.SetAnimation(0, AnimationKeys.B1_SKILL_4_ATTACK, false);
+                AudioManager.Ins.SoundEffect(7);
                 phaseFour = true;
                 break;
 
