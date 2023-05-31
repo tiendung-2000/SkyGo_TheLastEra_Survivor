@@ -112,6 +112,8 @@ public class ButtonControllerUI : BaseUIMenu
 
     public void OnSwitch()
     {
+        AudioManager.Ins.SoundUIPlay(6);
+
         if (PlayerController.Ins.availableGuns.Count > 0)
         {
             PlayerController.Ins.currentGun++;
@@ -149,18 +151,23 @@ public class ButtonControllerUI : BaseUIMenu
         {
             case 0:
                 PlayerSkillManager.instance.Dash();
+                AudioManager.Ins.PlaySkillSound(1);
                 break;
             case 1:
                 PlayerSkillManager.instance.DualGun();
+                AudioManager.Ins.PlaySkillSound(0);
                 break;
             case 2:
                 PlayerSkillManager.instance.HolyShield();
+                AudioManager.Ins.PlaySkillSound(2);
                 break;
             case 3:
                 PlayerSkillManager.instance.BulletGrenade();
+                AudioManager.Ins.PlaySkillSound(0);
                 break;
             case 4:
                 PlayerSkillManager.instance.Speed();
+                AudioManager.Ins.PlaySkillSound(1);
                 break;
             default:
                 print("NIg");

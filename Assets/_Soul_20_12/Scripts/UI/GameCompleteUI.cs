@@ -49,7 +49,8 @@ public class GameCompleteUI : BaseUIMenu
     IEnumerator IEShowComplete()
     {
         yield return new WaitForSeconds(1.5f);
-
+        AudioManager.Ins.MusicOff();
+        AudioManager.Ins.PlayWinLoseSound(0);
         Sequence getCoin = DOTween.Sequence();
 
         getCoin.AppendCallback(() =>
@@ -92,6 +93,8 @@ public class GameCompleteUI : BaseUIMenu
     public void OnClickWatchAdsButton()
     {
         OnClaimX2();
+        AudioManager.Ins.SoundUIPlay(2);
+
     }
 
     void OnClaimX2()
@@ -108,6 +111,7 @@ public class GameCompleteUI : BaseUIMenu
         {
             DynamicDataManager.Ins.CurTutorialStep += 1;
         }
+        AudioManager.Ins.SoundUIPlay(2);
 
         DynamicDataManager.Ins.CurNumCoin += coinTotal;
         CanvasManager.Ins.OpenUI(UIName.LoadingUI, null);
@@ -127,6 +131,8 @@ public class GameCompleteUI : BaseUIMenu
     {
         IEnumerator IPlayChangeGoldEffect()
         {
+            AudioManager.Ins.SoundUIPlay(4);
+
             var goldAfter = coinTotal;
             var goldBefore = coinDefault;
             bool increase = goldAfter > goldBefore;

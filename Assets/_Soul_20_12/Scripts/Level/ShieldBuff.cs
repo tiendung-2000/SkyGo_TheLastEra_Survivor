@@ -23,6 +23,7 @@ public class ShieldBuff : MonoBehaviour
         if (other.gameObject.layer == 11)
         {
             //Debug.Log(PlayerController.Ins.shieldBuffFX.isPlaying);
+            AudioManager.Ins.SoundEffect(0);
             PlayerController.Ins.shieldBuffFX.gameObject.SetActive(false);
             PlayerController.Ins.shiedBreakFX.gameObject.SetActive(true);
             

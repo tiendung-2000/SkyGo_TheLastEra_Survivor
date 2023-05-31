@@ -27,6 +27,11 @@ public class RevivePopup : BaseUIMenu
         noThanksButton.onClick.AddListener(OnClickNoThanksButton);
     }
 
+    private void OnEnable()
+    {
+        AudioManager.Ins.PlayWinLoseSound(1);
+    }
+
     public override void Init(object[] initParams)
     {
         base.Init(initParams);

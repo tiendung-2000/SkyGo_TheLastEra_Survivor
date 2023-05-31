@@ -35,6 +35,8 @@ public class CoinBar : BaseUIMenu
 
     public void OnAddCoin()
     {
+        AudioManager.Ins.SoundUIPlay(2);
+
         CanvasManager.Ins.OpenUI(UIName.ShopUI, null);
     }
 

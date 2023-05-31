@@ -59,6 +59,7 @@ public class RewardUI : BaseUIMenu
     public void OnClickBackButton()
     {
         OnBack();
+        AudioManager.Ins.SoundUIPlay(2);
     }
 
     public void OnBack()

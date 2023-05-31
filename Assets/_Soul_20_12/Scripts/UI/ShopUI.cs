@@ -68,6 +68,7 @@ public class ShopUI : BaseUIMenu
     }
     private IEnumerator FadeOutAndScaleDown()
     {
+        AudioManager.Ins.SoundUIPlay(2);
         yield return null; // Wait for one frame to allow all objects to be properly initialized
 
         if (bg != null) bg.DOFade(0f, .5f);

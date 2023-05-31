@@ -38,6 +38,7 @@ public class GameplayUI : BaseUIMenu
 
     public void OnClickSettingUI()
     {
+        AudioManager.Ins.SoundUIPlay(2);
         OnSetting();
     }
 

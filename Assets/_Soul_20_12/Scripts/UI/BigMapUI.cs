@@ -13,6 +13,8 @@ public class BigMapUI : BaseUIMenu
     {
         miniMap.SetActive(true);
         //CameraMovement.Ins.canDrag = false;
+        AudioManager.Ins.SoundUIPlay(2);
+
         Close();
     }
 

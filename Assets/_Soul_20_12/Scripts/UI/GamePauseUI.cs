@@ -45,6 +45,8 @@ public class GamePauseUI : BaseUIMenu
     private void OnClickCloseButton()
     {
         OnClose();
+        AudioManager.Ins.SoundUIPlay(2);
+
     }
 
     public void OnClickSound()

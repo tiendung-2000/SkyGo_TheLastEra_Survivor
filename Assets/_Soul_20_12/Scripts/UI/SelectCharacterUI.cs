@@ -96,6 +96,8 @@ public class SelectCharacterUI : BaseUIMenu
         int priceToUnlock = ResourceSystem.Ins.CharactersDatabase.Characters[DynamicDataManager.Ins.CurPlayer].Data.priceToUnlock;
         if (DynamicDataManager.Ins.CurNumCoin >= priceToUnlock)
         {
+            AudioManager.Ins.SoundUIPlay(3);
+
             DynamicDataManager.Ins.CurNumCoin -= priceToUnlock;
             DynamicDataManager.AddNewCharacterUnlocked(DynamicDataManager.Ins.CurPlayer);
             startButton.gameObject.SetActive(true);
@@ -167,6 +169,8 @@ public class SelectCharacterUI : BaseUIMenu
 
     public void OnBack()
     {
+        AudioManager.Ins.SoundUIPlay(2);
+
         UITransition.Ins.ShowTransition(() =>
         {
             CanvasManager.Ins.OpenUI(UIName.SelectLevelUI, null);
@@ -216,7 +220,7 @@ public class SelectCharacterUI : BaseUIMenu
 
         //SwitchPlayer();
 
-        if(DynamicDataManager.IsCharacterUnlocked(DynamicDataManager.Ins.CurPlayer) == true)
+        if (DynamicDataManager.IsCharacterUnlocked(DynamicDataManager.Ins.CurPlayer) == true)
         {
             upgradePlayerButton.gameObject.SetActive(true);
             upgradeSkillButton.gameObject.SetActive(true);
@@ -241,6 +245,8 @@ public class SelectCharacterUI : BaseUIMenu
 
         if (DynamicDataManager.Ins.CurPlayerHPUpgrade < maxHpLevel && DynamicDataManager.Ins.CurNumCoin >= upgradeHPPrice)
         {
+            AudioManager.Ins.SoundUIPlay(5);
+
             DynamicDataManager.Ins.CurNumCoin -= upgradeHPPrice;
             DynamicDataManager.Ins.CurPlayerHPUpgrade++;
             DynamicDataManager.Ins.CurPlayerSpeedUpgrade++;
@@ -253,6 +259,8 @@ public class SelectCharacterUI : BaseUIMenu
         }
         else
         {
+            AudioManager.Ins.SoundUIPlay(2);
+
             CanvasManager.Ins.OpenUI(UIName.ShopUI, null);
         }
 
@@ -281,6 +289,8 @@ public class SelectCharacterUI : BaseUIMenu
 
         if (DynamicDataManager.Ins.CurPlayerCooldownUpgrade < maxCooldownLevel && DynamicDataManager.Ins.CurNumCoin >= upgradePriceCD)
         {
+            AudioManager.Ins.SoundUIPlay(5);
+
             DynamicDataManager.Ins.CurNumCoin -= upgradePriceCD;
             DynamicDataManager.Ins.CurPlayerCooldownUpgrade++;
             OnCooldownChange(ResourceSystem.Ins.CharactersDatabase.Characters[DynamicDataManager.Ins.CurPlayer].Data.CoolDown[DynamicDataManager.Ins.CurPlayerCooldownUpgrade]);
@@ -291,6 +301,8 @@ public class SelectCharacterUI : BaseUIMenu
         }
         else
         {
+            AudioManager.Ins.SoundUIPlay(2);
+
             CanvasManager.Ins.OpenUI(UIName.ShopUI, null);
         }
 
@@ -339,6 +351,8 @@ public class SelectCharacterUI : BaseUIMenu
 
     public void OnStart()
     {
+        AudioManager.Ins.SoundUIPlay(1);
+
         CanvasManager.Ins.OpenUI(UIName.LoadingUI, null);
         CanvasManager.Ins.CloseUI(UIName.CoinBar);
         StartCoroutine(IESpawnLevel());
@@ -366,7 +380,7 @@ public class SelectCharacterUI : BaseUIMenu
 
     }
 
-    
+
 
     public void PlayerAnimation()
     {

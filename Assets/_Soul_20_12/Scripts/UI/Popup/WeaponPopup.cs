@@ -33,6 +33,8 @@ public class WeaponPopup : BaseUIMenu
 
     void OnAds()
     {
+        AudioManager.Ins.SoundUIPlay(2);
+
         bool hasGun = false;
         foreach (Weapon gunToCheck in PlayerController.Ins.availableGuns)
         {
@@ -69,6 +71,8 @@ public class WeaponPopup : BaseUIMenu
 
     void OnNo()
     {
+        AudioManager.Ins.SoundUIPlay(2);
+
         CanvasManager.Ins.CloseUI(UIName.WeaponPopup);
     }
 }

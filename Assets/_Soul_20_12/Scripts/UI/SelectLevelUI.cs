@@ -53,6 +53,7 @@ public class SelectLevelUI : BaseUIMenu
 
     private void OnEnable()
     {
+        AudioManager.Ins.PlaySelectBGM();
 
         CanvasManager.Ins.OpenUI(UIName.CoinBar, null);
 
@@ -110,9 +111,13 @@ public class SelectLevelUI : BaseUIMenu
 
     public void OnUnlockLevel()
     {
+        AudioManager.Ins.SoundUIPlay(2);
+
         int priceToUnLock = ResourceSystem.Ins.levels[DynamicDataManager.Ins.CurLevel].priceToUnlock;
         if (DynamicDataManager.Ins.CurNumCoin >= priceToUnLock)
         {
+            AudioManager.Ins.SoundUIPlay(3);
+
             DynamicDataManager.Ins.CurNumCoin -= priceToUnLock;
             DynamicDataManager.AddNewLevelUnlocked(DynamicDataManager.Ins.CurLevel);
             selectLevelButton.gameObject.SetActive(true);
@@ -128,6 +133,8 @@ public class SelectLevelUI : BaseUIMenu
 
     void OnWatchAdsLevel()
     {
+        AudioManager.Ins.SoundUIPlay(2);
+
         LevelManager.Ins.isTestLevel = true;
         DynamicDataManager.Ins.CurLevel = scroll.GetComponent<MagneticScrollRect>().m_currentSelected;
 
@@ -143,22 +150,16 @@ public class SelectLevelUI : BaseUIMenu
 
     public void OnClickSelectLevelButton()
     {
-        //SFX Here
-
         OnSelectLevel();
     }
 
     public void OnClickSettingButton()
     {
-        //SFX Here
-
         OnSetting();
     }
 
     public void OnClickRewardButton()
     {
-        //SFX Here
-
         OnReward();
     }
 
@@ -169,6 +170,8 @@ public class SelectLevelUI : BaseUIMenu
 
     public void OnSelectLevel()
     {
+        AudioManager.Ins.SoundUIPlay(1);
+
         DynamicDataManager.Ins.CurLevel = scroll.GetComponent<MagneticScrollRect>().m_currentSelected;
 
         UITransition.Ins.ShowTransition(() =>
@@ -183,6 +186,8 @@ public class SelectLevelUI : BaseUIMenu
 
     public void OnSetting()
     {
+        AudioManager.Ins.SoundUIPlay(2);
+
         if (isOpenSettingPopup)
         {
             //settingPopup.SetActive(true);
@@ -209,6 +214,8 @@ public class SelectLevelUI : BaseUIMenu
 
     public void OnReward()
     {
+        AudioManager.Ins.SoundUIPlay(2);
+
         CanvasManager.Ins.OpenUI(UIName.RewardsUI, null);
         CanvasManager.Ins.OpenUI(UIName.CoinBar, null);
         Close();
@@ -216,6 +223,8 @@ public class SelectLevelUI : BaseUIMenu
 
     public void OnShop()
     {
+        AudioManager.Ins.SoundUIPlay(2);
+
         CanvasManager.Ins.OpenUI(UIName.ShopUI, null);
     }
 }

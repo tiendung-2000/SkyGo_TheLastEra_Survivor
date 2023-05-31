@@ -48,6 +48,7 @@ public class ShopTabs : MonoBehaviour
     void OnClickBuyButton()
     {
         OnBuy();
+        AudioManager.Ins.SoundUIPlay(4);
     }
 
     void OnBuy()

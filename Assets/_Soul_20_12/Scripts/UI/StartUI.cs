@@ -27,12 +27,12 @@ public class StartUI : BaseUIMenu
         }
         else
         {
+            AudioManager.Ins.SoundUIPlay(0);
             UITransition.Ins.ShowTransition(() =>
             {
                 start.gameObject.SetActive(false);
 
                 CanvasManager.Ins.OpenUI(UIName.SelectLevelUI, null);
-                AudioManager.Ins.PlaySelectBGM();
             });
         }
     }

@@ -34,6 +34,8 @@ public class ItemPickup : MonoBehaviour
     {
         if (other.CompareTag("Player") && waitToBeCollected <= 0)
         {
+            AudioManager.Ins.PlayCollectsSound(0);
+
             switch (itemType)
             {
                 case ItemType.Coin:
@@ -78,6 +80,8 @@ public class ItemPickup : MonoBehaviour
     IEnumerator IEBreakShield()
     {
         yield return new WaitForSeconds(time);
+        AudioManager.Ins.SoundEffect(0);
+
         PlayerController.Ins.shieldBuffFX.gameObject.SetActive(false);
         PlayerController.Ins.shiedBreakFX.gameObject.SetActive(true);
         PlayerController.Ins.shiedBreakFX.Play(true);

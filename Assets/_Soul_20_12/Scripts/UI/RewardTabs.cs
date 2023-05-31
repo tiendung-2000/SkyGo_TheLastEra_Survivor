@@ -37,6 +37,7 @@ public class RewardTabs : MonoBehaviour
 
     void OnClaim()
     {
+        AudioManager.Ins.SoundUIPlay(4);
         DynamicDataManager.Ins.CurNumCoin += ResourceSystem.Ins.RewardsLevel.RewardsData[index].RewardValue;
 
         claimButton.gameObject.SetActive(false);

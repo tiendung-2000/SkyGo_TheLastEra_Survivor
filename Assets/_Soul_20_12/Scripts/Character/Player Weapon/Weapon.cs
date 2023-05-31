@@ -78,11 +78,11 @@ public class Weapon : MonoBehaviour
 
     void Start()
     {
-            canFire = true;
-            canExplode = false;
-            currentClip = maxClipSize;
-            CooldownUI.instance.fill.fillAmount = (reloadTimeCounter) / reloadTime;
-            shotCounter = timeBetweenShots;
+        canFire = true;
+        canExplode = false;
+        currentClip = maxClipSize;
+        CooldownUI.instance.fill.fillAmount = (reloadTimeCounter) / reloadTime;
+        shotCounter = timeBetweenShots;
     }
 
     void Update()
@@ -110,8 +110,8 @@ public class Weapon : MonoBehaviour
 
     public void OnDisable()
     {
-            currentClip = maxClipSize;
-            CooldownUI.instance.DoFade();
+        currentClip = maxClipSize;
+        CooldownUI.instance.DoFade();
     }
 
     public void OnEnable()
@@ -174,6 +174,7 @@ public class Weapon : MonoBehaviour
                         ButtonControllerUI.Ins.bulletText.text = currentClip.ToString();
                         ButtonControllerUI.Ins.bulletCircle.value--;
                     }
+                    GunSound();
                 }
                 else
                 {
@@ -187,7 +188,7 @@ public class Weapon : MonoBehaviour
                         ButtonControllerUI.Ins.bulletText.text = currentClip.ToString();
                         ButtonControllerUI.Ins.bulletCircle.value--;
                     }
-                    AudioManager.Ins.PlayGunSound(0);
+                    GunSound();
                 }
                 if (currentClip <= 0)
                 {
@@ -218,13 +219,66 @@ public class Weapon : MonoBehaviour
                 ButtonControllerUI.Ins.bulletText.text = currentClip.ToString();
                 ButtonControllerUI.Ins.bulletCircle.value--;
             }
+            GunSound();
         }
     }
 
     IEnumerator IEReload()
     {
         yield return new WaitForSeconds(reloadTime);
-
+        AudioManager.Ins.PlayGunDrawSound();
         Reload();
+    }
+
+    public void GunSound()
+    {
+        switch (type)
+        {
+            case WeaponType.Pistol:
+                AudioManager.Ins.PlayGunSound(0);
+                break;
+            case WeaponType.Machine:
+                AudioManager.Ins.PlayGunSound(1);
+                break;
+            case WeaponType.Shotgun:
+                AudioManager.Ins.PlayGunSound(2);
+                break;
+            case WeaponType.Akm:
+                AudioManager.Ins.PlayGunSound(3);
+                break;
+            case WeaponType.Galting:
+                AudioManager.Ins.PlayGunSound(4);
+                break;
+            case WeaponType.Bazoka:
+                AudioManager.Ins.PlayGunSound(5);
+                break;
+            case WeaponType.Rocket:
+                AudioManager.Ins.PlayGunSound(6);
+                break;
+            case WeaponType.Shuriken:
+                AudioManager.Ins.PlayGunSound(7);
+                break;
+            case WeaponType.Halo:
+                AudioManager.Ins.PlayGunSound(8);
+                break;
+            case WeaponType.SuperShotgun:
+                AudioManager.Ins.PlayGunSound(2);
+                break;
+            case WeaponType.Heaven:
+                AudioManager.Ins.PlayGunSound(8);
+                break;
+            case WeaponType.Crossbow:
+                AudioManager.Ins.PlayGunSound(9);
+                break;
+            case WeaponType.ThunderBow:
+                AudioManager.Ins.PlayGunSound(9);
+                break;
+            case WeaponType.FireStaff:
+                AudioManager.Ins.PlayGunSound(10);
+                break;
+            case WeaponType.ToxicStaff:
+                AudioManager.Ins.PlayGunSound(10);
+                break;
+        }
     }
 }

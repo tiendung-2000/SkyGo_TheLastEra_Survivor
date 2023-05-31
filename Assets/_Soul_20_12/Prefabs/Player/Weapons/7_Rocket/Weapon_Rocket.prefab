@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b7c5e65bb327e43848e848995e6b0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  type: 6
   ske: {fileID: 266230464603983061}
   bulletToFire: {fileID: 2694096419384989725, guid: 14cf9fb471dad3d488328f2598503193,
     type: 3}
@@ -71,8 +71,6 @@ MonoBehaviour:
   gunSwitchSprite: {fileID: 21300000, guid: 2c7eeffc816aafe419fc77b6f445bac4, type: 3}
   currentClip: 0
   maxClipSize: 10
-  currentAmmo: 99999999
-  maxAmmoSize: 99999999
   isDupliGun: 0
   isRocketGun: 0
   m_launchIntensity: 0

@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b7c5e65bb327e43848e848995e6b0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  type: 14
   ske: {fileID: 433493895774285017}
   bulletToFire: {fileID: 4189913780510908286, guid: 435597440f921d24d950e2f17e340715,
     type: 3}

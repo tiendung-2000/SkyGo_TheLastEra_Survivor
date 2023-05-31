@@ -10,10 +10,12 @@ public class AudioManager : MonoBehaviour
     [Space(20)]
     public AudioClip[] soundEffects;
     public AudioClip[] soundUI;
-    public AudioClip[] coinsSound;
+    public AudioClip[] collectsSound;
     public AudioClip[] ingameBGM;
     public AudioClip[] winLoseSound;
     public AudioClip[] gunSound;
+    public AudioClip[] skillSound;
+    public AudioClip gunDrawSound;
     public AudioClip[] footSteps;
     public AudioSource music;
     public AudioSource sound;
@@ -114,10 +116,10 @@ public class AudioManager : MonoBehaviour
         sound.PlayOneShot(footSteps[m]);
     }
 
-    public void PlayCoinsSound()
+    public void PlayCollectsSound(int id)
     {
-        int m = UnityEngine.Random.Range(0, coinsSound.Length);
-        sound.PlayOneShot(coinsSound[m]);
+        //int m = UnityEngine.Random.Range(0, collectsSound.Length);
+        sound.PlayOneShot(collectsSound[id]);
     }
 
     public void Play(int id, float time)
@@ -182,7 +184,7 @@ public class AudioManager : MonoBehaviour
             StopCoroutine(demo);
         }
     }
-    public void SoundPlayOneShot(int id)
+    public void SoundEffect(int id)
     {
         sound.PlayOneShot(soundEffects[id]);
     }
@@ -259,6 +261,9 @@ public class AudioManager : MonoBehaviour
         //            Vibration.VibratePop();
         //#endif
         //        }
+    }public void PlaySkillSound(int id)
+    {
+        sound.PlayOneShot(skillSound[id]);
     }
 
     public void VibrateStart()
@@ -271,9 +276,9 @@ public class AudioManager : MonoBehaviour
         //        }
     }
 
-    public void PlayGunDrawSound(int id)
+    public void PlayGunDrawSound()
     {
-        //sound.PlayOneShot(gunDrawSound[id]);
+        sound.PlayOneShot(gunDrawSound);
     }
     public void PlayTest(AudioClip audio)
     {

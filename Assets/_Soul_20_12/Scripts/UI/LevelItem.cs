@@ -15,6 +15,8 @@ public class LevelItem : MonoBehaviour
 
     public void Select()
     {
+        AudioManager.Ins.SoundUIPlay(2);
+
         MagneticScrollRect scrollRect = scroll.GetComponent<MagneticScrollRect>();
 
         if (scroll.transform.childCount != 0)
