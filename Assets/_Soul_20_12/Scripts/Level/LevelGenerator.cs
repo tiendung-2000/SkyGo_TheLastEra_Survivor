@@ -57,6 +57,9 @@ public class LevelGenerator : MonoBehaviour
     void OnEnable()
     {
        StartCoroutine(IEPlaySound());
+
+        PlayerController.Ins.ResetPlayer();
+
         if (createCount == 1)
         {
             GameObject layoutStart = Instantiate(layoutRoom, generatorPoint.position, generatorPoint.rotation);

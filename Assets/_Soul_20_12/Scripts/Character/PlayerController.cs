@@ -54,7 +54,6 @@ public class PlayerController : MonoBehaviour
     {
         material.SetFloat("_FillPhase", 0f);
 
-        playerBaseDamage = 0;
         canMove = true;
         isMove = true;
 
@@ -156,6 +155,21 @@ public class PlayerController : MonoBehaviour
             currentState = "Die";
             SetAnimation(die, false, 1f);
         }
+    }
+
+    public void ResetPlayer()
+    {
+        for (int i = theHand.childCount - 1; i >= 3; i--)
+        {
+            Destroy(theHand.GetChild(i).gameObject);
+        }
+
+        for (int i = availableGuns.Count - 1; i > 0; i--)
+        {
+            availableGuns.RemoveAt(i);
+        }
+
+        playerBaseDamage = 0;
     }
 
     public void SwitchGun()
