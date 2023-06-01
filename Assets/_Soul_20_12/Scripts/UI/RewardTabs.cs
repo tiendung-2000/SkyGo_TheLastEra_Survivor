@@ -24,6 +24,11 @@ public class RewardTabs : MonoBehaviour
         claimButton.onClick.AddListener(OnClickClaimButton);
     }
 
+    private void OnEnable()
+    {
+
+    }
+
     public void SetUp(string name, string value)
     {
         rewardName.text = name;
@@ -45,10 +50,10 @@ public class RewardTabs : MonoBehaviour
         ResourceSystem.Ins.RewardsLevel.RewardsData[index].isClamed = true; //claimed
     }
 
-    public void SetUpClaim()
-    {
-        Debug.Log("setup");
-        claimButton.gameObject.SetActive(false);
-        collected.gameObject.SetActive(true);
-    }
+    //public void SetUpClaim()
+    //{
+    //    Debug.Log("setup");
+    //    claimButton.gameObject.SetActive(false);
+    //    collected.gameObject.SetActive(true);
+    //}
 }

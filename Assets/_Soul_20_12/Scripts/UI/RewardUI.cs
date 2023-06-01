@@ -14,6 +14,10 @@ public class RewardUI : BaseUIMenu
     {
         backButton.onClick.AddListener(OnClickBackButton);
 
+    }
+
+    private void OnEnable()
+    {
         SetUpReward();
     }
 

@@ -59,6 +59,7 @@ public class SelectCharacterUI : BaseUIMenu
 
         CheckPlayerUnlocked();
         OnSwitchPlayer();
+
     }
 
     public void SetUpPlayer()
@@ -232,6 +233,22 @@ public class SelectCharacterUI : BaseUIMenu
         }
 
 
+        if (DynamicDataManager.Ins.CurPlayerHPUpgrade == ResourceSystem.Ins.CharactersDatabase.Characters[DynamicDataManager.Ins.CurPlayer].Data.HP.Count - 1)
+        {
+            upgradePlayerButton.gameObject.SetActive(false);
+            Debug.Log("heheh");
+        }
+        else
+        {
+            upgradePlayerButton.gameObject.SetActive(true);
+        }
+
+        if (DynamicDataManager.Ins.CurPlayerCooldownUpgrade == ResourceSystem.Ins.CharactersDatabase.Characters[DynamicDataManager.Ins.CurPlayer].Data.CoolDown.Count - 1)
+        {
+            upgradeSkillButton.gameObject.SetActive(false);
+        }
+
+
         UpgradeLevel();
         PlayerAnimation();
     }
@@ -267,6 +284,7 @@ public class SelectCharacterUI : BaseUIMenu
         if (DynamicDataManager.Ins.CurPlayerHPUpgrade == maxHpLevel)
         {
             upgradePlayerButton.gameObject.SetActive(false);
+            Debug.Log("heheh");
         }
 
         for (int i = 1; i <= maxHpLevel; i++)
@@ -367,8 +385,8 @@ public class SelectCharacterUI : BaseUIMenu
         CanvasManager.Ins.OpenUI(UIName.GameplayUI, null);
         ResourceSystem.Ins.players[DynamicDataManager.Ins.CurPlayer].gameObject.SetActive(true);
         CharacterSelectManager.Ins.activePlayer = ResourceSystem.Ins.players[DynamicDataManager.Ins.CurPlayer];
-        GamePlayController.Ins.ResetPlayerStats();
 
+        GamePlayController.Ins.ResetPlayerStats();
     }
 
     IEnumerator IESpawnLevel()
