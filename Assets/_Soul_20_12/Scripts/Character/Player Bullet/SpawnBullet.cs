@@ -6,6 +6,7 @@ public class SpawnBullet : MonoBehaviour
 {
     public float speed = 15f;
     public Rigidbody2D theRB;
+    public BoxCollider2D col;
 
     public GameObject impactEffect;
     public int damageToGive = 50;
@@ -15,10 +16,19 @@ public class SpawnBullet : MonoBehaviour
     public Transform[] point;
     public GameObject bullet;
     public bool isSpawn;
+    public bool isDisableCol;
 
     private void OnDisable()
     {
         trail.Clear();
+    }
+
+    private void OnEnable()
+    {
+        if(isDisableCol== true) 
+        {
+            StartCoroutine(IEReActiveCol());  
+        }
     }
 
     void Update()
@@ -36,6 +46,13 @@ public class SpawnBullet : MonoBehaviour
             }
             SmartPool.Ins.Despawn(this.gameObject);
         }
+    }
+
+    IEnumerator IEReActiveCol()
+    {
+        col.enabled = false;
+        yield return new WaitForSeconds(.3f);
+        col.enabled = true;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

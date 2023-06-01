@@ -159,6 +159,36 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &270717020955496880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9004966776571742649}
+  m_Layer: 8
+  m_Name: SwordPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9004966776571742649
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270717020955496880}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.63, y: -0.272, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4657866952445553543}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2201733695949623644
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +474,7 @@ Transform:
   m_Children:
   - {fileID: 7019432371861633067}
   - {fileID: 7285345584442747669}
+  - {fileID: 9004966776571742649}
   m_Father: {fileID: 4657866952632965641}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -523,6 +554,7 @@ MonoBehaviour:
   die: {fileID: 11400000, guid: 8118be53aa72c164384ba92ebd9ecca5, type: 2}
   currentState: 
   currentAnimation: 
+  swordPoint: {fileID: 9004966776571742649}
   swordWeapon: {fileID: 7285345584442747670}
   detectRange: 2
   whatIsEnemy:
@@ -963,6 +995,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a38049c7b670dce4282bffa8479ff839, type: 3}
+--- !u!4 &7285345584442747669 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4848228607138314822, guid: a38049c7b670dce4282bffa8479ff839,
+    type: 3}
+  m_PrefabInstance: {fileID: 2761516974008045907}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7285345584442747670 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4848228607138314821, guid: a38049c7b670dce4282bffa8479ff839,
@@ -975,12 +1013,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed6c25f58d710464fb24a9bbda499b4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &7285345584442747669 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4848228607138314822, guid: a38049c7b670dce4282bffa8479ff839,
-    type: 3}
-  m_PrefabInstance: {fileID: 2761516974008045907}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4565869225646907510
 PrefabInstance:
   m_ObjectHideFlags: 0

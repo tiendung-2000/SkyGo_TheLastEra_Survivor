@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     public string currentState;
     public string currentAnimation;
 
+    public Transform swordPoint;
     public Sword swordWeapon;
     public float detectRange;
     public LayerMask whatIsEnemy;

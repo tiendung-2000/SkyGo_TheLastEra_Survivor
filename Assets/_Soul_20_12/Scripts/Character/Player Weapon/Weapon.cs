@@ -23,6 +23,7 @@ public enum WeaponType
     ThunderBow,
     FireStaff,
     ToxicStaff,
+    ArcadeSword,
 }
 #endregion
 
@@ -63,10 +64,20 @@ public class Weapon : MonoBehaviour
 
     public bool isDupliGun;
 
+    [Header("Rocket")]
     public bool isRocketGun;
-
     [SerializeField, Range(0, 100)]
     float m_launchIntensity;
+
+    [Header("Sword")]
+    [SerializeField] Vector2 weaponOffset;  // Recommended: (1, 0, 0)
+    [SerializeField] float weaponRot;                                  // Recommended: 135
+    [SerializeField] float swingSpeed;                                          // Recommended: 10
+    int swing = 1;
+    GameObject anchor;
+    Vector3 target;
+    float swingAngle;
+    bool swinging;
 
     private void Awake()
     {
@@ -83,6 +94,9 @@ public class Weapon : MonoBehaviour
         currentClip = maxClipSize;
         CooldownUI.instance.fill.fillAmount = (reloadTimeCounter) / reloadTime;
         shotCounter = timeBetweenShots;
+
+        anchor = transform.parent.gameObject;
+
     }
 
     void Update()
@@ -106,6 +120,23 @@ public class Weapon : MonoBehaviour
                 isFullAmmo = true;
             }
         }
+
+
+        if (type == WeaponType.ArcadeSword)
+        {
+            //Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            //float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
+            Vector3 rot = anchor.transform.eulerAngles;
+            swingAngle = Mathf.Lerp(swingAngle, swing * 90, Time.deltaTime * swingSpeed);
+            //rot.z = angle + swingAngle;
+            anchor.transform.eulerAngles = rot;
+
+            // Weapon rotation
+            float t = swing == 1 ? 0 : 180;
+            target.z = Mathf.Lerp(target.z, t, Time.deltaTime * swingSpeed);
+            if (Mathf.Abs(t - target.z) < 5) swinging = false;
+            transform.localRotation = Quaternion.Euler(target);
+        }
     }
 
     public void OnDisable()
@@ -116,7 +147,12 @@ public class Weapon : MonoBehaviour
 
     public void OnEnable()
     {
-        ske.AnimationState.SetAnimation(0, "neutral", true);
+        //ske.AnimationState.SetAnimation(0, "neutral", true);
+
+        if (type == WeaponType.ArcadeSword)
+        {
+            firePoint[0] = PlayerController.Ins.swordPoint;
+        }
 
         if (!isDupliGun)
         {
@@ -156,50 +192,84 @@ public class Weapon : MonoBehaviour
 
     public void GunFire()
     {
-        if (canFire == true && currentClip > 0 && isRocketGun == false)
+        if (type != WeaponType.ArcadeSword)
         {
-            if (shotCounter < 0)
+            if (canFire == true && currentClip > 0 && isRocketGun == false)
             {
-                ske.AnimationState.SetAnimation(0, "fire", false);
-
-                if (canExplode)
+                if (shotCounter < 0)
                 {
-                    for (int i = 0; i < firePoint.Count; i++)
+                    ske.AnimationState.SetAnimation(0, "fire", false);
+
+                    if (canExplode)
                     {
-                        var newBullet = SmartPool.Ins.Spawn(explodeBullet, firePoint[i].position, firePoint[i].rotation);
-                        newBullet.transform.Rotate(0f, 0f, Random.Range(-xAngle, yAngle));
-                        shotCounter = timeBetweenShots;
-                        currentClip--;
+                        for (int i = 0; i < firePoint.Count; i++)
+                        {
+                            var newBullet = SmartPool.Ins.Spawn(explodeBullet, firePoint[i].position, firePoint[i].rotation);
+                            newBullet.transform.Rotate(0f, 0f, Random.Range(-xAngle, yAngle));
+                            shotCounter = timeBetweenShots;
+                            currentClip--;
 
-                        ButtonControllerUI.Ins.bulletText.text = currentClip.ToString();
-                        ButtonControllerUI.Ins.bulletCircle.value--;
+                            ButtonControllerUI.Ins.bulletText.text = currentClip.ToString();
+                            ButtonControllerUI.Ins.bulletCircle.value--;
+                        }
+
+                        //GunSound();
                     }
-                    GunSound();
-                }
-                else
-                {
-                    for (int i = 0; i < firePoint.Count; i++)
+                    else
                     {
-                        var newBullet = SmartPool.Ins.Spawn(bulletToFire, firePoint[i].position, firePoint[i].rotation);
-                        newBullet.transform.Rotate(0f, 0f, Random.Range(-xAngle, yAngle));
-                        shotCounter = timeBetweenShots;
-                        currentClip--;
+                        for (int i = 0; i < firePoint.Count; i++)
+                        {
+                            var newBullet = SmartPool.Ins.Spawn(bulletToFire, firePoint[i].position, firePoint[i].rotation);
+                            newBullet.transform.Rotate(0f, 0f, Random.Range(-xAngle, yAngle));
+                            shotCounter = timeBetweenShots;
+                            currentClip--;
 
-                        ButtonControllerUI.Ins.bulletText.text = currentClip.ToString();
-                        ButtonControllerUI.Ins.bulletCircle.value--;
+                            ButtonControllerUI.Ins.bulletText.text = currentClip.ToString();
+                            ButtonControllerUI.Ins.bulletCircle.value--;
+                        }
+
+                        //GunSound();
                     }
-                    GunSound();
-                }
-                if (currentClip <= 0)
-                {
-                    isFullAmmo = false;
-                    StartCoroutine(IEReload());
+                    if (currentClip <= 0)
+                    {
+                        isFullAmmo = false;
+                        StartCoroutine(IEReload());
+                    }
                 }
             }
+            else if (isRocketGun == true)
+            {
+                RocketFire();
+            }
         }
-        else if (isRocketGun == true)
+        else
         {
-            RocketFire();
+            if (canFire == true && currentClip > 0 && isRocketGun == false)
+            {
+                if (shotCounter < 0)
+                {
+                    if (swinging) return;
+                    // Attack
+                    var newBullet = SmartPool.Ins.Spawn(bulletToFire, firePoint[0].position, firePoint[0].rotation);
+                    newBullet.transform.Rotate(0f, 0f, Random.Range(-xAngle, yAngle));
+
+                    swing *= -1;
+                    swinging = true;
+
+                    shotCounter = timeBetweenShots;
+                    currentClip--;
+
+                    ButtonControllerUI.Ins.bulletText.text = currentClip.ToString();
+                    ButtonControllerUI.Ins.bulletCircle.value--;
+                    //GunSound();
+
+                    if (currentClip <= 0)
+                    {
+                        isFullAmmo = false;
+                        StartCoroutine(IEReload());
+                    }
+                }
+            }
         }
     }
 
@@ -219,7 +289,7 @@ public class Weapon : MonoBehaviour
                 ButtonControllerUI.Ins.bulletText.text = currentClip.ToString();
                 ButtonControllerUI.Ins.bulletCircle.value--;
             }
-            GunSound();
+            //GunSound();
         }
     }
 
@@ -278,6 +348,9 @@ public class Weapon : MonoBehaviour
                 break;
             case WeaponType.ToxicStaff:
                 AudioManager.Ins.PlayGunSound(10);
+                break;
+            case WeaponType.ArcadeSword:
+                AudioManager.Ins.PlayGunSound(11);
                 break;
         }
     }

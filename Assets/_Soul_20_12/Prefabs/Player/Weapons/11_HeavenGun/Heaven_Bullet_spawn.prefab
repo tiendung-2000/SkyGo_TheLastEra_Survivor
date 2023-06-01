@@ -286,6 +286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   theRB: {fileID: 4189913780510908281}
+  col: {fileID: 4189913780510908280}
   impactEffect: {fileID: 5177790846866898987, guid: e194bb88190f1ca42ae1427a94f404fe,
     type: 3}
   damageToGive: 25
@@ -298,6 +299,8 @@ MonoBehaviour:
   - {fileID: 6064330414604960835}
   - {fileID: 6251300984542252854}
   bullet: {fileID: 4189913780510908286}
+  isSpawn: 0
+  isDisableCol: 1
 --- !u!1 &5146883987929437742
 GameObject:
   m_ObjectHideFlags: 0

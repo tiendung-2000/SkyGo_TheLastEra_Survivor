@@ -74,6 +74,9 @@ MonoBehaviour:
   isDupliGun: 0
   isRocketGun: 0
   m_launchIntensity: 0
+  weaponOffset: {x: 0, y: 0}
+  weaponRot: 0
+  swingSpeed: 0
 --- !u!33 &3964801696823741539
 MeshFilter:
   m_ObjectHideFlags: 0

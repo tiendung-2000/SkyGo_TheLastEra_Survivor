@@ -10,14 +10,14 @@ public class GameplayUI : BaseUIMenu
 
     private void OnEnable()
     {
-        if (DynamicDataManager.Ins.CurTutorialStep == 0)
-        {
-            settingButton.gameObject.SetActive(false);
-        }
-        else
-        {
-            settingButton.gameObject.SetActive(true);
-        }
+        //if (DynamicDataManager.Ins.CurTutorialStep == 0)
+        //{
+        //    settingButton.gameObject.SetActive(false);
+        //}
+        //else
+        //{
+        //    settingButton.gameObject.SetActive(true);
+        //}
     }
 
     IEnumerator IEShowTutorial()

@@ -79,13 +79,14 @@ public abstract class SmartMissile<RgbdType, VecType> : SmartMissile
 		}
 		else if (m_target = findNewTarget())
 		{
+			theRB.velocity = transform.right * speed;
 
 			m_onNewTargetFound.Invoke();
 		}
 		else
 		{
-            theRB.velocity = transform.right * speed;
-        }
+			theRB.velocity = transform.right * speed;
+		}
 	}
 
 	/// <summary>
