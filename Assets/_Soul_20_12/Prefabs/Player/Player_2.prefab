@@ -637,7 +637,7 @@ MonoBehaviour:
   currentAnimation: 
   swordPoint: {fileID: 9167545704611236196}
   swordWeapon: {fileID: 3122394533106556372}
-  detectRange: 1.3
+  detectRange: 2
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 1024
