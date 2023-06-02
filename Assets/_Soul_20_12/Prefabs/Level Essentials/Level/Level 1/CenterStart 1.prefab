@@ -171,8 +171,8 @@ MonoBehaviour:
   wanderDirection: {x: 0, y: 0, z: 0}
   shouldSpawnObject: 0
   moveDirection: {x: 0, y: 0, z: 0}
-  isMoving: 0
-  isChasePlayer: 0
+  isMoving: 1
+  isChasePlayer: 1
   isWander: 0
 --- !u!114 &4450842157265399893
 MonoBehaviour:
@@ -269,7 +269,7 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: Move
+  _animationName: 
   loop: 1
   timeScale: 1
 --- !u!1 &1044318093464363899

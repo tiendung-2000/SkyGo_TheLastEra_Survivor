@@ -387,6 +387,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1119904645}
     m_Modifications:
+    - target: {fileID: 4657866952632965640, guid: 0238fa9ac9a27274fb2a5b673df5f730,
+        type: 3}
+      propertyPath: detectRange
+      value: 1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4657866952632965641, guid: 0238fa9ac9a27274fb2a5b673df5f730,
         type: 3}
       propertyPath: m_RootOrder
@@ -446,6 +451,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5535445357543811461, guid: 0238fa9ac9a27274fb2a5b673df5f730,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0238fa9ac9a27274fb2a5b673df5f730, type: 3}
@@ -808,6 +818,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1119904645}
     m_Modifications:
+    - target: {fileID: 1407274910484467617, guid: 86ec250e46700c34da6099d53e1c755c,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4657866952632965640, guid: 86ec250e46700c34da6099d53e1c755c,
+        type: 3}
+      propertyPath: detectRange
+      value: 1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4657866952632965641, guid: 86ec250e46700c34da6099d53e1c755c,
         type: 3}
       propertyPath: m_RootOrder
@@ -1212,6 +1232,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1119904645}
     m_Modifications:
+    - target: {fileID: 3305349834443024603, guid: 4302043c3221f944baf9a8e48a1bda14,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4657866952632965640, guid: 4302043c3221f944baf9a8e48a1bda14,
+        type: 3}
+      propertyPath: detectRange
+      value: 1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4657866952632965641, guid: 4302043c3221f944baf9a8e48a1bda14,
         type: 3}
       propertyPath: m_RootOrder
@@ -1926,6 +1956,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1119904645}
     m_Modifications:
+    - target: {fileID: 4657866952632965640, guid: a45720b6227f8cc4f8861513e3526c9d,
+        type: 3}
+      propertyPath: detectRange
+      value: 1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4657866952632965641, guid: a45720b6227f8cc4f8861513e3526c9d,
         type: 3}
       propertyPath: m_RootOrder
@@ -1985,6 +2020,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177865077568463953, guid: a45720b6227f8cc4f8861513e3526c9d,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a45720b6227f8cc4f8861513e3526c9d, type: 3}
@@ -2499,6 +2539,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1119904645}
     m_Modifications:
+    - target: {fileID: 4657866952632965640, guid: eec30a34986bd804ba2a60e1d9142521,
+        type: 3}
+      propertyPath: detectRange
+      value: 1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4657866952632965640, guid: eec30a34986bd804ba2a60e1d9142521,
         type: 3}
       propertyPath: availableGuns.Array.size
