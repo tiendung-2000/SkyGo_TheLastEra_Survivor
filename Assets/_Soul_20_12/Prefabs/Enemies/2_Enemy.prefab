@@ -346,7 +346,9 @@ MonoBehaviour:
   Ske: {fileID: 2483864863890017468}
   animationDuration: 0.933
   col: {fileID: 7101684774212757952}
-  material: {fileID: 2100000, guid: c3b0bc50f82e5234c88fc11f92a93046, type: 2}
+  defaultMaterial: {fileID: 0}
+  damageMaterial: {fileID: 0}
+  render: {fileID: 0}
   theRB: {fileID: 7101684774212757953}
   moveSpeed: 1
   health: 50

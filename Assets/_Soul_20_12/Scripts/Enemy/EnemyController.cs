@@ -1,4 +1,5 @@
-﻿using Spine.Unity;
+﻿using Spine;
+using Spine.Unity;
 using System.Collections;
 using UnityEngine;
 
@@ -14,8 +15,12 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] Collider2D col;
 
+    [Header("material")]
+    public Material defaultMaterial;
+    public Material damageMaterial;
+    public Renderer render;
+
     [Header("Variables")]
-    public Material material;
     public Rigidbody2D theRB;
     public float moveSpeed;
 
@@ -104,7 +109,26 @@ public class EnemyController : MonoBehaviour
 
     private void OnEnable()
     {
+        //ChangeMaterial();
         StartCoroutine(IEActive());
+    }
+
+    public void ChangeMaterial()
+    {
+        MeshRenderer meshRenderer = Ske.GetComponent<MeshRenderer>();
+
+        Material instantiatedMaterial = Instantiate(damageMaterial);
+
+        meshRenderer.material = instantiatedMaterial;
+    }
+
+    public void RollbackMaterial()
+    {
+        MeshRenderer meshRenderer = Ske.GetComponent<MeshRenderer>();
+
+        Material instantiatedMaterial = Instantiate(defaultMaterial);
+
+        meshRenderer.material = instantiatedMaterial;
     }
 
     IEnumerator IEActive()
@@ -116,7 +140,8 @@ public class EnemyController : MonoBehaviour
     public void DamageEnemy(int damage)
     {
         health -= damage;
-        StartCoroutine(IETakeDamageEffect());
+
+        //StartCoroutine(IETakeDamageEffect());
         //AudioManager.instance.PlaySFX(2);
 
         SmartPool.Ins.Spawn(hitEffect, transform.position, transform.rotation);
@@ -146,9 +171,11 @@ public class EnemyController : MonoBehaviour
     }
     IEnumerator IETakeDamageEffect()
     {
-        this.material.SetFloat("_FillPhase", 1f);
-        yield return new WaitForSeconds(0.2f);
-        this.material.SetFloat("_FillPhase", 0f);
+        //this.render.materials[0] = damageMaterial;
+        this.render.material = damageMaterial;
+        yield return new WaitForSeconds(999999f);
+        //this.render.materials[0] = defaultMaterial;
+        //this.render.material = defaultMaterial;
     }
 
     IEnumerator IEDestroy()
