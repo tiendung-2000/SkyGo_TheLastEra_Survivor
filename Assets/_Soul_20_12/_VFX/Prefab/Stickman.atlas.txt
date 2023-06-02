@@ -1,0 +1,944 @@
+
+Stickman.png
+size: 512,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/ORC_cong_thanh/ORC_cong_thanh/can_gat
+  rotate: true
+  xy: 265, 1056
+  size: 96, 41
+  orig: 96, 41
+  offset: 0, 0
+  index: -1
+Image/ORC_cong_thanh/ORC_cong_thanh/can_gat_sat
+  rotate: false
+  xy: 204, 864
+  size: 68, 114
+  orig: 68, 114
+  offset: 0, 0
+  index: -1
+Image/ORC_cong_thanh/ORC_cong_thanh/de_sat
+  rotate: true
+  xy: 250, 1587
+  size: 105, 46
+  orig: 105, 46
+  offset: 0, 0
+  index: -1
+Image/ORC_cong_thanh/ORC_cong_thanh/que
+  rotate: false
+  xy: 189, 459
+  size: 74, 111
+  orig: 74, 111
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/STICK_GOC/chan1
+  rotate: false
+  xy: 321, 1193
+  size: 21, 88
+  orig: 21, 88
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/STICK_GOC/chan2
+  rotate: false
+  xy: 334, 850
+  size: 21, 88
+  orig: 21, 88
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/STICK_GOC/chan3
+  rotate: false
+  xy: 328, 992
+  size: 42, 17
+  orig: 42, 17
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/STICK_GOC/co
+  rotate: false
+  xy: 353, 127
+  size: 13, 29
+  orig: 13, 29
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/STICK_GOC/dau
+  rotate: false
+  xy: 281, 1778
+  size: 55, 55
+  orig: 55, 55
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/STICK_GOC/tay1
+  rotate: false
+  xy: 120, 1599
+  size: 17, 60
+  orig: 17, 60
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/STICK_GOC/tay1 copy
+  rotate: false
+  xy: 120, 1599
+  size: 17, 60
+  orig: 17, 60
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/STICK_GOC/than1
+  rotate: false
+  xy: 288, 595
+  size: 46, 61
+  orig: 46, 61
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/STICK_GOC/than2
+  rotate: true
+  xy: 293, 664
+  size: 46, 54
+  orig: 46, 54
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/STICK_GOC/than3
+  rotate: false
+  xy: 273, 1182
+  size: 46, 71
+  orig: 46, 71
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_Spatar/giao
+  rotate: false
+  xy: 196, 1593
+  size: 52, 448
+  orig: 52, 448
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_Spatar/giap
+  rotate: true
+  xy: 250, 1699
+  size: 55, 61
+  orig: 55, 61
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_Spatar/giap_chan
+  rotate: false
+  xy: 314, 1283
+  size: 36, 62
+  orig: 36, 62
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_Spatar/giap_tay
+  rotate: false
+  xy: 332, 1553
+  size: 41, 42
+  orig: 41, 42
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_Spatar/giap_vai
+  rotate: false
+  xy: 265, 486
+  size: 48, 84
+  orig: 48, 84
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_Spatar/giay
+  rotate: true
+  xy: 352, 1129
+  size: 53, 25
+  orig: 53, 25
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_Spatar/khien
+  rotate: false
+  xy: 2, 1165
+  size: 112, 108
+  orig: 112, 108
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_Spatar/mu
+  rotate: false
+  xy: 175, 1022
+  size: 88, 130
+  orig: 88, 130
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_Spatar/quan
+  rotate: false
+  xy: 220, 572
+  size: 66, 84
+  orig: 66, 84
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cam_co/co (1)
+  rotate: false
+  xy: 2, 426
+  size: 70, 121
+  orig: 70, 121
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cam_co/dai_quan
+  rotate: true
+  xy: 87, 324
+  size: 58, 101
+  orig: 58, 101
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cam_co/dau
+  rotate: false
+  xy: 72, 48
+  size: 70, 68
+  orig: 70, 68
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cam_co/giap_ao_choang
+  rotate: false
+  xy: 84, 1048
+  size: 125, 225
+  orig: 125, 225
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cam_co/giap_chan
+  rotate: false
+  xy: 313, 124
+  size: 38, 61
+  orig: 38, 61
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cam_co/tay
+  rotate: false
+  xy: 344, 1184
+  size: 35, 45
+  orig: 35, 45
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cam_co/than_co
+  rotate: false
+  xy: 2, 1647
+  size: 116, 394
+  orig: 116, 394
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cau_da/Mu
+  rotate: false
+  xy: 90, 481
+  size: 97, 89
+  orig: 97, 89
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cau_da/giap_chan
+  rotate: false
+  xy: 352, 1309
+  size: 34, 37
+  orig: 34, 37
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cau_da/giap_tay
+  rotate: false
+  xy: 351, 575
+  size: 37, 39
+  orig: 37, 39
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cau_da_doi/giap_chan
+  rotate: true
+  xy: 46, 1607
+  size: 38, 29
+  orig: 38, 29
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cau_da_doi/giap_tay
+  rotate: true
+  xy: 345, 1510
+  size: 41, 37
+  orig: 41, 37
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cau_da_doi/mu
+  rotate: false
+  xy: 168, 384
+  size: 93, 73
+  orig: 93, 73
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cau_da_lua/Mu
+  rotate: true
+  xy: 114, 572
+  size: 93, 104
+  orig: 93, 104
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cau_da_lua/giap_chan
+  rotate: false
+  xy: 310, 258
+  size: 39, 63
+  orig: 39, 63
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cau_da_lua/giap_tay
+  rotate: false
+  xy: 318, 1993
+  size: 43, 48
+  orig: 43, 48
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cau_da_lua/giap_vai
+  rotate: true
+  xy: 287, 3
+  size: 54, 49
+  orig: 54, 49
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cung/cung
+  rotate: false
+  xy: 250, 1756
+  size: 29, 139
+  orig: 29, 139
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cung/giap_chan
+  rotate: false
+  xy: 338, 28
+  size: 33, 49
+  orig: 33, 49
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cung/giap_tay
+  rotate: false
+  xy: 352, 1090
+  size: 35, 37
+  orig: 35, 37
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_cung/mu
+  rotate: true
+  xy: 211, 1154
+  size: 109, 60
+  orig: 109, 60
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_dai_bac/giap_chan
+  rotate: false
+  xy: 120, 1661
+  size: 35, 58
+  orig: 35, 58
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_dai_bac/giap_tay
+  rotate: false
+  xy: 348, 1670
+  size: 37, 41
+  orig: 37, 41
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_dai_bac/mu
+  rotate: false
+  xy: 237, 122
+  size: 74, 59
+  orig: 74, 59
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_khien/dai_quan
+  rotate: true
+  xy: 250, 1973
+  size: 68, 66
+  orig: 68, 66
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_khien/giap_chan1
+  rotate: true
+  xy: 2, 55
+  size: 44, 62
+  orig: 44, 62
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_khien/giap_chan2
+  rotate: false
+  xy: 254, 233
+  size: 54, 76
+  orig: 54, 76
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_khien/giap_chan3
+  rotate: false
+  xy: 278, 1493
+  size: 65, 29
+  orig: 65, 29
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_khien/giap_tay
+  rotate: false
+  xy: 344, 1231
+  size: 32, 50
+  orig: 32, 50
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_khien/giap_than
+  rotate: true
+  xy: 167, 240
+  size: 69, 82
+  orig: 69, 82
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_khien/giap_vai
+  rotate: false
+  xy: 281, 1835
+  size: 52, 60
+  orig: 52, 60
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_khien/khien
+  rotate: false
+  xy: 120, 1721
+  size: 74, 320
+  orig: 74, 320
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_khien/mu
+  rotate: false
+  xy: 87, 248
+  size: 78, 74
+  orig: 78, 74
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_khien_om_bom/boom
+  rotate: true
+  xy: 2, 662
+  size: 96, 110
+  orig: 96, 110
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_khien_om_bom/giap
+  rotate: true
+  xy: 75, 118
+  size: 60, 81
+  orig: 60, 81
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_khien_om_bom/giap_chan
+  rotate: false
+  xy: 274, 323
+  size: 42, 76
+  orig: 42, 76
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_khien_om_bom/giap_tay
+  rotate: false
+  xy: 157, 1694
+  size: 36, 25
+  orig: 36, 25
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_khien_om_bom/giap_vai
+  rotate: true
+  xy: 319, 940
+  size: 50, 38
+  orig: 50, 38
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_khien_om_bom/giay
+  rotate: true
+  xy: 352, 1618
+  size: 50, 27
+  orig: 50, 27
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_khien_om_bom/khien
+  rotate: true
+  xy: 2, 1275
+  size: 56, 266
+  orig: 56, 266
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_khien_om_bom/mu
+  rotate: true
+  xy: 2, 101
+  size: 71, 68
+  orig: 71, 68
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_khien_om_bom/quan
+  rotate: false
+  xy: 268, 1424
+  size: 58, 61
+  orig: 58, 61
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_laser/dai_lung
+  rotate: false
+  xy: 211, 1487
+  size: 65, 98
+  orig: 65, 98
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_laser/giap
+  rotate: true
+  xy: 81, 180
+  size: 66, 78
+  orig: 66, 78
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_laser/giap_chan
+  rotate: false
+  xy: 274, 915
+  size: 43, 75
+  orig: 43, 75
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_laser/giap_tay
+  rotate: false
+  xy: 318, 373
+  size: 43, 45
+  orig: 43, 45
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_laser/giap_vai
+  rotate: false
+  xy: 338, 79
+  size: 39, 43
+  orig: 39, 43
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_laser/giay
+  rotate: true
+  xy: 349, 672
+  size: 50, 29
+  orig: 50, 29
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_laser/mu
+  rotate: true
+  xy: 2, 246
+  size: 74, 77
+  orig: 74, 77
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_linh_bo_nem_bom/giap
+  rotate: false
+  xy: 265, 992
+  size: 61, 62
+  orig: 61, 62
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_linh_bo_nem_bom/giap_chan
+  rotate: false
+  xy: 315, 200
+  size: 37, 56
+  orig: 37, 56
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_linh_bo_nem_bom/giap_dui
+  rotate: false
+  xy: 351, 531
+  size: 33, 42
+  orig: 33, 42
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_linh_bo_nem_bom/giap_tay
+  rotate: false
+  xy: 353, 158
+  size: 31, 40
+  orig: 31, 40
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_linh_bo_nem_bom/giap_vai
+  rotate: false
+  xy: 298, 1642
+  size: 48, 55
+  orig: 48, 55
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_linh_bo_nem_bom/giay
+  rotate: false
+  xy: 317, 1348
+  size: 53, 26
+  orig: 53, 26
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_linh_bo_nem_bom/mu
+  rotate: false
+  xy: 2, 322
+  size: 83, 72
+  orig: 83, 72
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_linh_bo_nem_bom/quan
+  rotate: true
+  xy: 2, 174
+  size: 70, 71
+  orig: 70, 71
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_may_khoan/dai_lung
+  rotate: true
+  xy: 74, 396
+  size: 83, 92
+  orig: 83, 92
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_may_khoan/giap
+  rotate: false
+  xy: 250, 1897
+  size: 59, 74
+  orig: 59, 74
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_may_khoan/giap_chan
+  rotate: false
+  xy: 268, 1347
+  size: 47, 75
+  orig: 47, 75
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_may_khoan/giap_dui
+  rotate: false
+  xy: 315, 528
+  size: 34, 65
+  orig: 34, 65
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_may_khoan/giap_tay
+  rotate: true
+  xy: 318, 324
+  size: 47, 40
+  orig: 47, 40
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_may_khoan/giap_vai
+  rotate: false
+  xy: 2, 1596
+  size: 42, 49
+  orig: 42, 49
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_may_khoan/giay
+  rotate: true
+  xy: 338, 1802
+  size: 60, 28
+  orig: 60, 28
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_may_khoan/mu
+  rotate: true
+  xy: 216, 760
+  size: 98, 62
+  orig: 98, 62
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_may_phong_ten_lua/Mu
+  rotate: false
+  xy: 161, 115
+  size: 74, 66
+  orig: 74, 66
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_may_phong_ten_lua/dai_lung
+  rotate: true
+  xy: 287, 59
+  size: 61, 49
+  orig: 61, 49
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_may_phong_ten_lua/giap
+  rotate: false
+  xy: 224, 658
+  size: 67, 81
+  orig: 67, 81
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_may_phong_ten_lua/giap_chan
+  rotate: false
+  xy: 273, 1255
+  size: 39, 90
+  orig: 39, 90
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_may_phong_ten_lua/giap_tay
+  rotate: false
+  xy: 298, 1597
+  size: 52, 43
+  orig: 52, 43
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_may_phong_ten_lua/giap_vai
+  rotate: true
+  xy: 254, 187
+  size: 44, 59
+  orig: 44, 59
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_may_phong_ten_lua/giay
+  rotate: true
+  xy: 352, 1748
+  size: 52, 26
+  orig: 52, 26
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_may_phong_ten_lua/quan
+  rotate: false
+  xy: 293, 712
+  size: 39, 71
+  orig: 39, 71
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_ninja_samurai/dai_lung
+  rotate: true
+  xy: 311, 1912
+  size: 59, 41
+  orig: 59, 41
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_ninja_samurai/dau
+  rotate: true
+  xy: 114, 667
+  size: 91, 108
+  orig: 91, 108
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_ninja_samurai/giap_Tay
+  rotate: false
+  xy: 328, 1435
+  size: 33, 56
+  orig: 33, 56
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_ninja_samurai/giap_chan1
+  rotate: true
+  xy: 190, 311
+  size: 71, 82
+  orig: 71, 82
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_ninja_samurai/giap_chan2
+  rotate: false
+  xy: 265, 401
+  size: 48, 83
+  orig: 48, 83
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_ninja_samurai/giap_vai
+  rotate: false
+  xy: 351, 284
+  size: 36, 38
+  orig: 36, 38
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_ninja_samurai/giay
+  rotate: false
+  xy: 338, 5
+  size: 48, 21
+  orig: 48, 21
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_ninja_samurai/kiem
+  rotate: false
+  xy: 2, 1487
+  size: 207, 104
+  orig: 207, 104
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_no_da/Giap_tay
+  rotate: false
+  xy: 352, 1716
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_no_da/Mu
+  rotate: false
+  xy: 161, 183
+  size: 91, 55
+  orig: 91, 55
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_no_da/giap_chan
+  rotate: false
+  xy: 354, 1954
+  size: 32, 37
+  orig: 32, 37
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_phap_su_bang/Mu
+  rotate: false
+  xy: 2, 1375
+  size: 152, 110
+  orig: 152, 110
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_phap_su_bang/Phap_khi_Bang
+  rotate: true
+  xy: 2, 773
+  size: 102, 105
+  orig: 102, 105
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_phap_su_bang/dai_lung
+  rotate: true
+  xy: 278, 1524
+  size: 61, 52
+  orig: 61, 52
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_phap_su_bang/giap
+  rotate: 270
+  xy: 2, 935
+  size: 124, 200
+  orig: 124, 200
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_phap_su_bang/giap_chan1
+  rotate: false
+  xy: 308, 1119
+  size: 42, 61
+  orig: 42, 61
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_phap_su_bang/giap_tay
+  rotate: false
+  xy: 315, 474
+  size: 41, 52
+  orig: 41, 52
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_phap_su_bang/giap_vai
+  rotate: true
+  xy: 335, 1864
+  size: 46, 37
+  orig: 46, 37
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_phap_su_bang/giay
+  rotate: false
+  xy: 351, 260
+  size: 33, 22
+  orig: 33, 22
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_phap_su_lua/giay
+  rotate: false
+  xy: 351, 260
+  size: 33, 22
+  orig: 33, 22
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_phap_su_lua/Mu
+  rotate: true
+  xy: 156, 1333
+  size: 152, 110
+  orig: 152, 110
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_phap_su_lua/Phap_khi_Lua
+  rotate: true
+  xy: 109, 760
+  size: 102, 105
+  orig: 102, 105
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_phap_su_lua/dai_lung
+  rotate: true
+  xy: 280, 852
+  size: 61, 52
+  orig: 61, 52
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_phap_su_lua/giap
+  rotate: true
+  xy: 2, 864
+  size: 124, 200
+  orig: 124, 200
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_phap_su_lua/giap_chan1
+  rotate: false
+  xy: 308, 1056
+  size: 42, 61
+  orig: 42, 61
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_phap_su_lua/giap_tay
+  rotate: false
+  xy: 315, 420
+  size: 41, 52
+  orig: 41, 52
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_phap_su_lua/giap_vai
+  rotate: true
+  xy: 336, 616
+  size: 46, 37
+  orig: 46, 37
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_quoc/Mu
+  rotate: true
+  xy: 280, 785
+  size: 65, 48
+  orig: 65, 48
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_quoc/giap_chan
+  rotate: false
+  xy: 139, 1628
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_quoc/giap_tay
+  rotate: false
+  xy: 352, 1061
+  size: 27, 27
+  orig: 27, 27
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_quoc/quoc
+  rotate: true
+  xy: 2, 549
+  size: 111, 86
+  orig: 111, 86
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_xe_tang/dai_lung
+  rotate: true
+  xy: 330, 791
+  size: 57, 31
+  orig: 57, 31
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_xe_tang/giap
+  rotate: true
+  xy: 215, 46
+  size: 67, 70
+  orig: 67, 70
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_xe_tang/giap_chan
+  rotate: false
+  xy: 313, 1713
+  size: 37, 63
+  orig: 37, 63
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_xe_tang/giap_tay
+  rotate: false
+  xy: 317, 1376
+  size: 45, 46
+  orig: 45, 46
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_xe_tang/giap_vai
+  rotate: false
+  xy: 328, 1011
+  size: 43, 43
+  orig: 43, 43
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_xe_tang/giay
+  rotate: true
+  xy: 334, 724
+  size: 65, 26
+  orig: 65, 26
+  offset: 0, 0
+  index: -1
+Image/Quan_ao_Stick/Quan_ao_Stick/Stick_xe_tang/mu
+  rotate: true
+  xy: 144, 45
+  size: 68, 69
+  orig: 68, 69
+  offset: 0, 0
+  index: -1
