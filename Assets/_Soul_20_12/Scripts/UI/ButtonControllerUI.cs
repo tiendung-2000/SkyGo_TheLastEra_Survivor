@@ -94,10 +94,12 @@ public class ButtonControllerUI : BaseUIMenu
     public void OnPointerDown()
     {
         pointerDown = true;
+        shootButton.transform.DOScale(.8f, .1f);
     }
 
     public void OnPointerUp()
     {
+        shootButton.transform.DOScale(1f, .1f);
         pointerDown = false;
     }
 
@@ -182,20 +184,4 @@ public class ButtonControllerUI : BaseUIMenu
         OnEnableTween?.Kill();
         OnEnableTween = skillCDImage.DOFillAmount(1f, PlayerSkillManager.instance.coolCounter);
     }
-    //public void OnBuy()
-    //{
-    //    Debug.Log("isBuy");
-    //    if (RoomCenter.Ins.typeItem == 1)
-    //    {
-    //        buy = true;
-    //    }
-    //    else if (RoomCenter.Ins.typeItem == 2)
-    //    {
-    //        buy = true;
-    //    }
-    //    else if (RoomCenter.Ins.typeItem == 3)
-    //    {
-    //        buy = true;
-    //    }
-    //}
 }

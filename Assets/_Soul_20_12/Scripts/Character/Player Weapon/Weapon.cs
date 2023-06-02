@@ -190,6 +190,8 @@ public class Weapon : MonoBehaviour
     //    //}
     //}
 
+    bool isSound;
+
     public void GunFire()
     {
         if (type != WeaponType.ArcadeSword)
@@ -198,6 +200,8 @@ public class Weapon : MonoBehaviour
             {
                 if (shotCounter < 0)
                 {
+                    isSound = true;
+
                     ske.AnimationState.SetAnimation(0, "fire", false);
 
                     if (canExplode)
@@ -213,10 +217,14 @@ public class Weapon : MonoBehaviour
                             ButtonControllerUI.Ins.bulletCircle.value--;
                         }
 
-                        //GunSound();
+                        if(isSound == true)
+                        {
+                            GunSound();
+                        }
                     }
                     else
                     {
+                        isSound = true;
                         for (int i = 0; i < firePoint.Count; i++)
                         {
                             var newBullet = SmartPool.Ins.Spawn(bulletToFire, firePoint[i].position, firePoint[i].rotation);
@@ -228,7 +236,10 @@ public class Weapon : MonoBehaviour
                             ButtonControllerUI.Ins.bulletCircle.value--;
                         }
 
-                        //GunSound();
+                        if (isSound == true)
+                        {
+                            GunSound();
+                        }
                     }
                     if (currentClip <= 0)
                     {
@@ -244,10 +255,12 @@ public class Weapon : MonoBehaviour
         }
         else
         {
-            if (canFire == true && currentClip > 0 && isRocketGun == false)
+            if (canFire == true && currentClip > 0)
             {
                 if (shotCounter < 0)
                 {
+                    isSound = true;
+
                     if (swinging) return;
                     // Attack
                     var newBullet = SmartPool.Ins.Spawn(bulletToFire, firePoint[0].position, firePoint[0].rotation);
@@ -261,7 +274,11 @@ public class Weapon : MonoBehaviour
 
                     ButtonControllerUI.Ins.bulletText.text = currentClip.ToString();
                     ButtonControllerUI.Ins.bulletCircle.value--;
-                    //GunSound();
+
+                    if (isSound == true)
+                    {
+                        GunSound();
+                    }
 
                     if (currentClip <= 0)
                     {
@@ -302,6 +319,8 @@ public class Weapon : MonoBehaviour
 
     public void GunSound()
     {
+        isSound = false;
+        Debug.Log("PlaySound");
         switch (type)
         {
             case WeaponType.Pistol:

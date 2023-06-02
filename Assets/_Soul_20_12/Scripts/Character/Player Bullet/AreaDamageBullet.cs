@@ -8,6 +8,7 @@ public class AreaDamageBullet : MonoBehaviour
     public Rigidbody2D theRB;
 
     public GameObject areaDamage;
+    public GameObject impactEffect;
     public int damageToGive = 50;
 
     public TrailRenderer trail;
@@ -25,6 +26,7 @@ public class AreaDamageBullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Spawn impact effect
+        Instantiate(impactEffect, transform.position, transform.rotation);
         Instantiate(areaDamage, transform.position, transform.rotation);
 
         // Check the tag of the collided object

@@ -236,7 +236,7 @@ public class SelectCharacterUI : BaseUIMenu
         if (DynamicDataManager.Ins.CurPlayerHPUpgrade == ResourceSystem.Ins.CharactersDatabase.Characters[DynamicDataManager.Ins.CurPlayer].Data.HP.Count - 1)
         {
             upgradePlayerButton.gameObject.SetActive(false);
-            Debug.Log("heheh");
+            //Debug.Log("heheh");
         }
         else
         {
