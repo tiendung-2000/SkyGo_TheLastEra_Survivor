@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4189913780510908280}
   - component: {fileID: 4189913780510908281}
   - component: {fileID: 7730912607216328607}
+  - component: {fileID: 966152686246185469}
   m_Layer: 9
   m_Name: ArcadeSword_Ex_Bullet
   m_TagString: PlayerBullet
@@ -153,6 +154,21 @@ MonoBehaviour:
     type: 3}
   damageToGive: 50
   trail: {fileID: 1554922478778203722}
+  triggerPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &966152686246185469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4189913780510908286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb0158c4fc19b54a949e5b33ca611d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trail:
+  - {fileID: 1554922479191271253}
 --- !u!1001 &1173277215462369958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -231,6 +247,12 @@ Transform:
 --- !u!96 &1554922478778203722 stripped
 TrailRenderer:
   m_CorrespondingSourceObject: {fileID: 422318743266890988, guid: 3e43970a106b7ba4093143c6fa058304,
+    type: 3}
+  m_PrefabInstance: {fileID: 1173277215462369958}
+  m_PrefabAsset: {fileID: 0}
+--- !u!96 &1554922479191271253 stripped
+TrailRenderer:
+  m_CorrespondingSourceObject: {fileID: 422318743692414451, guid: 3e43970a106b7ba4093143c6fa058304,
     type: 3}
   m_PrefabInstance: {fileID: 1173277215462369958}
   m_PrefabAsset: {fileID: 0}
