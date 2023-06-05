@@ -1,5 +1,6 @@
 using UnityEngine;
 using API.UI;
+using System.Collections;
 
 public class LevelGate : MonoBehaviour
 {
@@ -34,6 +35,15 @@ public class LevelGate : MonoBehaviour
         }
     }
 
+    IEnumerator IEOutGateFX()
+    {
+        Instantiate(GamePlayController.Ins.outGateFX, (PlayerController.Ins.transform.position + new Vector3(0f,2.5f)), Quaternion.identity);
+
+        yield return new WaitForSeconds(1f);
+        ResourceSystem.Ins.players[DynamicDataManager.Ins.CurPlayer].gameObject.SetActive(false);
+
+    }
+
     public void UnlockReward()
     {
         ResourceSystem.Ins.RewardsLevel.RewardsData[DynamicDataManager.Ins.CurLevel].isUnlock = true;
@@ -41,6 +51,8 @@ public class LevelGate : MonoBehaviour
 
     void EndLevel()
     {
+
+        StartCoroutine(IEOutGateFX());
         Invoke(nameof(ShowComplete), timeDelayShowComplete);
     }
 

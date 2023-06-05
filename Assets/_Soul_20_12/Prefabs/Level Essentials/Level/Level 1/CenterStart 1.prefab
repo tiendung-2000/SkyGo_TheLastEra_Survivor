@@ -104,6 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ske: {fileID: 9098978376109739515}
   animationDuration: 0.433
+  materialRender: {fileID: 656384160709208717}
   col: {fileID: 614433804574986052}
   material: {fileID: 2100000, guid: 0cdd88b45a2aaba4b812dda05b119c5e, type: 2}
   theRB: {fileID: 614433804574986060}
@@ -212,8 +213,7 @@ MeshRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 0cdd88b45a2aaba4b812dda05b119c5e, type: 2}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

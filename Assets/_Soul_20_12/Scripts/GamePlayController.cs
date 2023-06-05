@@ -10,6 +10,8 @@ public class GamePlayController : Singleton<GamePlayController>
     [SerializeField] float startTimeScale = 1;
     public List<Weapon> weapons;
 
+    public ParticleSystem outGateFX;
+
     #region GameLoop
 
     public void GunSetUp()

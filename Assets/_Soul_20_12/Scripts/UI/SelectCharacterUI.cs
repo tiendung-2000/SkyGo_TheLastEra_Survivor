@@ -181,7 +181,7 @@ public class SelectCharacterUI : BaseUIMenu
 
     public void OnSwitchPlayer()
     {
-        DynamicDataManager.Ins.CurPlayer = scroll.GetComponent<MagneticScrollRect>().m_currentSelected;
+        scroll.GetComponent<MagneticScrollRect>().m_currentSelected = DynamicDataManager.Ins.CurPlayer;
 
         int curLevelHP = ResourceSystem.Ins.CharactersDatabase.Characters[DynamicDataManager.Ins.CurPlayer].Data.HP.Count;
         int curLevelCD = ResourceSystem.Ins.CharactersDatabase.Characters[DynamicDataManager.Ins.CurPlayer].Data.CoolDown.Count;

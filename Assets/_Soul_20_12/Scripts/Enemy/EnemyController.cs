@@ -1,7 +1,5 @@
-﻿using Spine;
-using Spine.Unity;
+﻿using Spine.Unity;
 using System.Collections;
-using System.Net.Mail;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
@@ -13,11 +11,12 @@ public class EnemyController : MonoBehaviour
 
     public SkeletonAnimation Ske;
     [SerializeField] float animationDuration;
+    //public Renderer materialRender;
 
     [SerializeField] Collider2D col;
 
     [Header("Variables")]
-    public Material material;
+    //public Material material;
     public Rigidbody2D theRB;
     public float moveSpeed;
 
@@ -106,6 +105,8 @@ public class EnemyController : MonoBehaviour
 
     private void OnEnable()
     {
+        //this.materialRender.material.SetColor("_Color", Color.black);
+
         StartCoroutine(IEActive());
     }
 
@@ -148,9 +149,9 @@ public class EnemyController : MonoBehaviour
     }
     IEnumerator IETakeDamageEffect()
     {
-        this.material.SetFloat("_FillPhase", 1f);
+        //this.material.SetFloat("_FillPhase", 1f);
         yield return new WaitForSeconds(0.2f);
-        this.material.SetFloat("_FillPhase", 0f);
+        //this.material.SetFloat("_FillPhase", 0f);
     }
 
     IEnumerator IEDestroy()
