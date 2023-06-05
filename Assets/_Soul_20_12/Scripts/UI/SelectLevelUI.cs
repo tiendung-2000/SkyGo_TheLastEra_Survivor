@@ -136,7 +136,7 @@ public class SelectLevelUI : BaseUIMenu
         AudioManager.Ins.SoundUIPlay(2);
 
         LevelManager.Ins.isTestLevel = true;
-        DynamicDataManager.Ins.CurLevel = scroll.GetComponent<MagneticScrollRect>().m_currentSelected;
+        scroll.GetComponent<MagneticScrollRect>().m_currentSelected = DynamicDataManager.Ins.CurLevel;
 
         UITransition.Ins.ShowTransition(() =>
         {
@@ -172,7 +172,7 @@ public class SelectLevelUI : BaseUIMenu
     {
         AudioManager.Ins.SoundUIPlay(1);
 
-        DynamicDataManager.Ins.CurLevel = scroll.GetComponent<MagneticScrollRect>().m_currentSelected;
+        scroll.GetComponent<MagneticScrollRect>().m_currentSelected = DynamicDataManager.Ins.CurLevel;
 
         UITransition.Ins.ShowTransition(() =>
         {
