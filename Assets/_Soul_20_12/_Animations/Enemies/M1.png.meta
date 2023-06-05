@@ -1,7 +1,73 @@
 fileFormatVersion: 2
 guid: a06d5f3d2cf409448b1ece48543e0c54
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6256422217912950055
+    second: Die/Monsd1
+  - first:
+      213: -3880945643605803686
+    second: Die/Monsd2
+  - first:
+      213: -7939349959267839621
+    second: Die/Monsd3
+  - first:
+      213: 7257348879718780266
+    second: Die/Monsd4
+  - first:
+      213: 3631239763167570434
+    second: Die/Monsd5
+  - first:
+      213: 5484842967054768595
+    second: Die/Monsd6
+  - first:
+      213: 1573447012759674814
+    second: Move/Mons1
+  - first:
+      213: 5896039303958285768
+    second: Move/Mons10
+  - first:
+      213: -1138176120213882498
+    second: Move/Mons11
+  - first:
+      213: 5545144575298071130
+    second: Move/Mons2
+  - first:
+      213: 7669369083518171451
+    second: Move/Mons4
+  - first:
+      213: 4154195993363521478
+    second: Move/Mons5
+  - first:
+      213: 3716282066568914734
+    second: Move/Mons7
+  - first:
+      213: -7926572933020126417
+    second: Move/Mons8
+  - first:
+      213: -7211663809951383827
+    second: Move/Mons12
+  - first:
+      213: 8819095358471633103
+    second: Move/Mons13
+  - first:
+      213: -6926284162725122845
+    second: Move/Mons15
+  - first:
+      213: -3139927468929201787
+    second: Move/Mons16
+  - first:
+      213: -8861779783687924140
+    second: Move/Mons3
+  - first:
+      213: -4363573142996147655
+    second: Move/Mons6
+  - first:
+      213: -6639726312520324231
+    second: Move/Mons9
+  - first:
+      213: 7036478551268869055
+    second: Move/Mons14
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -41,7 +107,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -126,7 +192,469 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Die/Monsd1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 114
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72d1097fbd643d650800000000000000
+      internalID: 6256422217912950055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Die/Monsd2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 111
+        width: 47
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5db640df7c142ac0800000000000000
+      internalID: -3880945643605803686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Die/Monsd3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 149
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b71145ac643c1d190800000000000000
+      internalID: -7939349959267839621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Die/Monsd4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 38
+        width: 54
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d87b2ea5847b460800000000000000
+      internalID: 7257348879718780266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Die/Monsd5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 58
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20a60e15351c46230800000000000000
+      internalID: 3631239763167570434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Die/Monsd6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 75
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d9591c5e931e1c40800000000000000
+      internalID: 5484842967054768595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move/Mons1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 147
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf907cb8b106d510800000000000000
+      internalID: 1573447012759674814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move/Mons10
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 147
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cdcc262280f2d150800000000000000
+      internalID: 5896039303958285768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move/Mons11
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 147
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e79b1d659d26430f0800000000000000
+      internalID: -1138176120213882498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move/Mons2
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 147
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a63de9c9f44fc40800000000000000
+      internalID: 5545144575298071130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move/Mons4
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 147
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b39b6722c821f6a60800000000000000
+      internalID: 7669369083518171451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move/Mons5
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 147
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf98cffe3ba6a930800000000000000
+      internalID: 4154195993363521478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move/Mons7
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 147
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e27aefe89d2e29330800000000000000
+      internalID: 3716282066568914734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move/Mons8
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 147
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f23fb190ae72ff190800000000000000
+      internalID: -7926572933020126417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move/Mons12
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 165
+        width: 28
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deebe4059f50beb90800000000000000
+      internalID: -7211663809951383827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move/Mons13
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 165
+        width: 28
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc87ff1c088b36a70800000000000000
+      internalID: 8819095358471633103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move/Mons15
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 50
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ecea534045e0ef90800000000000000
+      internalID: -6926284162725122845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move/Mons16
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 95
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 589cbf16a9cbc64d0800000000000000
+      internalID: -3139927468929201787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move/Mons3
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 2
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4561b8b0d32a40580800000000000000
+      internalID: -8861779783687924140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move/Mons6
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 76
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 932a74c78597173c0800000000000000
+      internalID: -4363573142996147655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move/Mons9
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 27
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97b6968f814fad3a0800000000000000
+      internalID: -6639726312520324231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move/Mons14
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 27
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb3490626f796a160800000000000000
+      internalID: 7036478551268869055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

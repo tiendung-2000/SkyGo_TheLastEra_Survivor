@@ -320,7 +320,7 @@ public class Weapon : MonoBehaviour
     public void GunSound()
     {
         isSound = false;
-        Debug.Log("PlaySound");
+        //Debug.Log("PlaySound");
         switch (type)
         {
             case WeaponType.Pistol:

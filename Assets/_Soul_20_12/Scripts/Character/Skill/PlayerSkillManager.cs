@@ -15,7 +15,7 @@ public class PlayerSkillManager : MonoBehaviour
     public float activeMoveSpeed;
 
     [Header("DashSkill")]
-    public float dashSpeed = 16f;
+    public float dashSpeed = 0f;
     public float dashDuration = .5f;
     public float dashCooldown = 5f;
     //public float dashInvincibility = .5f;
@@ -52,27 +52,27 @@ public class PlayerSkillManager : MonoBehaviour
 
     private void Start()
     {
-        activeMoveSpeed = CharacterSelectManager.Ins.activePlayer.moveSpeed;
+        activeMoveSpeed = ResourceSystem.Ins.CharactersDatabase.Characters[DynamicDataManager.Ins.CurPlayer].Data.Speed[DynamicDataManager.Ins.CurPlayerSpeedUpgrade];
 
         SetDurationCoolDown();
     }
 
-    private void SetDurationCoolDown()
+    public void SetDurationCoolDown()
     {
-        dashDuration = currentDuration[0];
-        dashCooldown = currentCoolDown[0];
+        currentDuration[0] = dashDuration;
+        currentCoolDown[0] = dashCooldown;
 
-        dualDuration = currentDuration[1];
-        dualCooldown = currentCoolDown[1];
+        currentDuration[1] = dualDuration;
+        currentCoolDown[1] = dualCooldown;
 
-        holyShieldDuration = currentDuration[2];
-        holyShieldCooldown = currentCoolDown[2];
+        currentDuration[2] = holyShieldDuration;
+        currentCoolDown[2] = holyShieldCooldown;
 
-        bulletNadeDuration = currentDuration[3];
-        bulletNadeCooldown = currentCoolDown[3];
+        currentDuration[3] = bulletNadeDuration;
+        currentCoolDown[3] = bulletNadeCooldown;
 
-        speedDuration = currentDuration[4];
-        speedCooldown = currentCoolDown[4];
+        currentDuration[4] = speedDuration;
+        currentCoolDown[4] = speedCooldown;
     }
 
 
@@ -122,7 +122,7 @@ public class PlayerSkillManager : MonoBehaviour
 
                 activeMoveSpeed = player.moveSpeed;
             }
-                coolCounter = currentCoolDown[playerID];
+            coolCounter = currentCoolDown[playerID];
         }
 
         if (coolCounter > 0)
@@ -228,5 +228,7 @@ public class PlayerSkillManager : MonoBehaviour
                 print("Incorrect intelligence level.");
                 break;
         }
+
+        SetDurationCoolDown();
     }
 }

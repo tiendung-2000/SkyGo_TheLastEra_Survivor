@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GamePlayController : Singleton<GamePlayController>
@@ -6,8 +8,37 @@ public class GamePlayController : Singleton<GamePlayController>
     public bool isSound;
 
     [SerializeField] float startTimeScale = 1;
+    public List<Weapon> weapons;
 
     #region GameLoop
+
+    public void GunSetUp()
+    {
+        if (DynamicDataManager.Ins.CurPlayer == 1)
+        {
+            //ResourceSystem.Ins.players[DynamicDataManager.Ins.CurPlayer].availableDupliGuns = weapons;
+
+            StartCoroutine(IEWeaponSetUp());
+        }
+        else
+        {
+            return;
+        }
+    }
+
+    IEnumerator IEWeaponSetUp()
+    {
+        yield return new WaitForSeconds(2.5f);
+        foreach (Weapon weap in weapons)
+        {
+            Weapon weapClone = Instantiate(weap);
+            weapClone.transform.parent = PlayerController.Ins.theHand;
+            weapClone.transform.position = new Vector2(PlayerController.Ins.theHand.position.x - 0.2f, PlayerController.Ins.theHand.position.y + 0.2f);
+            weapClone.transform.localRotation = Quaternion.Euler(Vector3.zero);
+            weapClone.transform.localScale = Vector3.one;
+            PlayerController.Ins.availableDupliGuns.Add(weapClone);
+        }
+    }
 
     public void Replay()
     {
@@ -55,7 +86,7 @@ public class GamePlayController : Singleton<GamePlayController>
     {
         //if (ResourceSystem.Ins.CurLevelGameObj != null)
         //{
-            SmartPool.Ins.Despawn(ResourceSystem.Ins.CurLevelGameObj);
+        SmartPool.Ins.Despawn(ResourceSystem.Ins.CurLevelGameObj);
         //}
         //else
         //{

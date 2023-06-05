@@ -105,17 +105,21 @@ public class BounceBullet : MonoBehaviour
     //        }
     //    }
     //}
+    public Vector3 triggerPosition;
 
-    private void OnCollisionEnter2D(Collision2D other)
+  
+        private void OnCollisionEnter2D(Collision2D other)
     {
+        triggerPosition = this.transform.position;
         if (currentBounceCount == bounceCount)
         {
-            Instantiate(impactEffect, transform.position, transform.rotation);
+            Instantiate(impactEffect, triggerPosition, Quaternion.identity);
             SmartPool.Ins.Despawn(gameObject);
         }
 
         if (other.gameObject.CompareTag("Block"))
         {
+            Instantiate(impactEffect, triggerPosition, Quaternion.identity);
             var directionValue = Vector2.Reflect(lastVelocity.normalized, other.contacts[0].normal);
             transform.right = directionValue;
             lastVelocity = directionValue * Mathf.Max(speed, 0f);

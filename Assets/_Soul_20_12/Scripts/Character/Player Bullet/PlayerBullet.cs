@@ -22,10 +22,13 @@ public class PlayerBullet : MonoBehaviour
         theRB.velocity = transform.right * speed;
     }
 
+    public Vector3 triggerPosition;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
+        triggerPosition = this.transform.position;
         // Spawn impact effect
-        Instantiate(impactEffect, transform.position, transform.rotation);
+        Instantiate(impactEffect, triggerPosition, Quaternion.identity);
 
         // Check the tag of the collided object
         switch (other.tag)

@@ -80,16 +80,16 @@ public class ButtonControllerUI : BaseUIMenu
 
 
 
-    //#if UNITY_EDITOR
-    //    private void FixedUpdate()
-    //    {
-    //        if (Input.GetKeyUp(KeyCode.Space))
-    //        {
-    //            OnSkill();
-    //        }
-    //    }
+#if UNITY_EDITOR
+    private void FixedUpdate()
+    {
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            OnSkill();
+        }
+    }
 
-    //#endif
+#endif
 
     public void OnPointerDown()
     {

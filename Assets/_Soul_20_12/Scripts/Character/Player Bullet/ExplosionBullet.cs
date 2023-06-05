@@ -29,9 +29,11 @@ public class ExplosionBullet : MonoBehaviour
     {
         theRB.velocity = transform.right * speed;
     }
+    public Vector3 triggerPosition;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        triggerPosition = this.transform.position;
         //var tempPos = transform.position;
         //var tempRot = transform.rotation;
         //DOVirtual.DelayedCall(0.5f, () =>

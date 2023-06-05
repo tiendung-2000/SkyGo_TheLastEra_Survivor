@@ -219,8 +219,6 @@ public class SelectCharacterUI : BaseUIMenu
         skillImg.sprite = ResourceSystem.Ins.CharactersDatabase.Characters[DynamicDataManager.Ins.CurPlayer].Data.skillImg;
         skillDetail.text = ResourceSystem.Ins.CharactersDatabase.Characters[DynamicDataManager.Ins.CurPlayer].Data.skillDetail;
 
-        //SwitchPlayer();
-
         if (DynamicDataManager.IsCharacterUnlocked(DynamicDataManager.Ins.CurPlayer) == true)
         {
             upgradePlayerButton.gameObject.SetActive(true);
@@ -236,7 +234,6 @@ public class SelectCharacterUI : BaseUIMenu
         if (DynamicDataManager.Ins.CurPlayerHPUpgrade == ResourceSystem.Ins.CharactersDatabase.Characters[DynamicDataManager.Ins.CurPlayer].Data.HP.Count - 1)
         {
             upgradePlayerButton.gameObject.SetActive(false);
-            //Debug.Log("heheh");
         }
         else
         {
@@ -247,7 +244,6 @@ public class SelectCharacterUI : BaseUIMenu
         {
             upgradeSkillButton.gameObject.SetActive(false);
         }
-
 
         UpgradeLevel();
         PlayerAnimation();
@@ -284,7 +280,6 @@ public class SelectCharacterUI : BaseUIMenu
         if (DynamicDataManager.Ins.CurPlayerHPUpgrade == maxHpLevel)
         {
             upgradePlayerButton.gameObject.SetActive(false);
-            Debug.Log("heheh");
         }
 
         for (int i = 1; i <= maxHpLevel; i++)
@@ -387,6 +382,7 @@ public class SelectCharacterUI : BaseUIMenu
         CharacterSelectManager.Ins.activePlayer = ResourceSystem.Ins.players[DynamicDataManager.Ins.CurPlayer];
 
         GamePlayController.Ins.ResetPlayerStats();
+        GamePlayController.Ins.GunSetUp();
     }
 
     IEnumerator IESpawnLevel()

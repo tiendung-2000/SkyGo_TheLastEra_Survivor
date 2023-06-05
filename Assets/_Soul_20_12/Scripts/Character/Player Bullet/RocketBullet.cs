@@ -12,10 +12,13 @@ public class RocketBullet : MonoBehaviour
     {
         trail.Clear();
     }
+    public Vector3 triggerPosition;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Instantiate(explodeEffect, transform.position, transform.rotation);
+        triggerPosition = this.transform.position;
+
+        Instantiate(explodeEffect, triggerPosition, Quaternion.identity);
         AudioManager.Ins.SoundEffect(8);
 
         switch (other.tag)

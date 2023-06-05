@@ -54,11 +54,13 @@ public class SpawnBullet : MonoBehaviour
         yield return new WaitForSeconds(.3f);
         col.enabled = true;
     }
+    public Vector3 triggerPosition;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        triggerPosition = this.transform.position;
         // Spawn impact effect
-        Instantiate(impactEffect, transform.position, transform.rotation);
+        Instantiate(impactEffect, triggerPosition, Quaternion.identity);
         Spawn();
         // Check the tag of the collided object
         switch (other.tag)

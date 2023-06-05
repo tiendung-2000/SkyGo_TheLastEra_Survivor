@@ -24,10 +24,12 @@ public class ShotgunBullet : MonoBehaviour
     {
         theRB.velocity = transform.right * speed;
     }
+    public Vector3 triggerPosition;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Instantiate(impactEffect, transform.position, transform.rotation);
+        triggerPosition = this.transform.position;
+        Instantiate(impactEffect, triggerPosition, Quaternion.identity);
 
         SmartPool.Ins.Despawn(gameObject);
 
