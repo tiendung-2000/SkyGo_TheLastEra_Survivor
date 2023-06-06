@@ -107,6 +107,9 @@ public class GameCompleteUI : BaseUIMenu
 
     void OnHome()
     {
+        //inter
+
+
         if (DynamicDataManager.Ins.CurTutorialStep == 0)
         {
             DynamicDataManager.Ins.CurTutorialStep += 1;

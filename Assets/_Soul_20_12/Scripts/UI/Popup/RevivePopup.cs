@@ -65,7 +65,8 @@ public class RevivePopup : BaseUIMenu
 
     public void OnClickWatchVideo()
     {
-        //Ads
+        //reward
+
         OnReviveGame();
     }
 

@@ -33,6 +33,7 @@ public class WeaponPopup : BaseUIMenu
 
     void OnAds()
     {
+        //reward
         AudioManager.Ins.SoundUIPlay(2);
 
         bool hasGun = false;

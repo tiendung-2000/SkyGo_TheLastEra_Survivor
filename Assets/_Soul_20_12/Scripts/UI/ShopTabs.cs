@@ -55,11 +55,13 @@ public class ShopTabs : MonoBehaviour
     {
         if(index == 0)
         {
+            //reward
             Debug.Log("Watch Ads");
             DynamicDataManager.Ins.CurNumCoin += ResourceSystem.Ins.ShopData.shopData[index].value;
         }
         else
         {
+            //purchase
             DynamicDataManager.Ins.CurNumCoin += ResourceSystem.Ins.ShopData.shopData[index].value;
         }
     }

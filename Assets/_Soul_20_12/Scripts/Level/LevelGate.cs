@@ -58,6 +58,8 @@ public class LevelGate : MonoBehaviour
 
     void ShowComplete()
     {
+        //inter
+
         CanvasManager.Ins.OpenUI(UIName.CompleteUI, null);
 
         if (LevelManager.Ins.isTestLevel == false && DynamicDataManager.Ins.CurTutorialStep > 0)

@@ -123,6 +123,9 @@ public class GamePauseUI : BaseUIMenu
 
     void OnHome()
     {
+        //inter
+
+
         CanvasManager.Ins.CloseUI(UIName.GameplayUI);
 
         CanvasManager.Ins.OpenUI(UIName.LoadingUI, null);
