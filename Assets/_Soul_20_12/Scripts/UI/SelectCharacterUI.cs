@@ -10,6 +10,8 @@ public class SelectCharacterUI : BaseUIMenu
 {
     public static SelectCharacterUI Ins;
 
+    public ParticleSystem upgradeStats, upgradeSkill;
+
     public Button startButton;
     public Button buyCharacterButton;
     public Text characterPriceText;
@@ -251,6 +253,8 @@ public class SelectCharacterUI : BaseUIMenu
 
     public void OnUpgradeHPPlayer()
     {
+        upgradeStats.Play();
+
         int maxHpLevel = ResourceSystem.Ins.CharactersDatabase.Characters[DynamicDataManager.Ins.CurPlayer].Data.HP.Count - 1;
         int upgradeHPPrice = ResourceSystem.Ins.CharactersDatabase.Characters[DynamicDataManager.Ins.CurPlayer].UpgradeData.HPUpgradePrice[DynamicDataManager.Ins.CurPlayerHPUpgrade];
 
@@ -297,6 +301,8 @@ public class SelectCharacterUI : BaseUIMenu
 
     public void OnUpgradeCooldownPlayer()
     {
+        upgradeSkill.Play();
+
         int maxCooldownLevel = ResourceSystem.Ins.CharactersDatabase.Characters[DynamicDataManager.Ins.CurPlayer].Data.CoolDown.Count - 1;
         int upgradePriceCD = ResourceSystem.Ins.CharactersDatabase.Characters[DynamicDataManager.Ins.CurPlayer].UpgradeData.CoolDownUpgradePrice[DynamicDataManager.Ins.CurPlayerCooldownUpgrade];
 

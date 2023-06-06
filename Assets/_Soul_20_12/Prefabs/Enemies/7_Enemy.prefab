@@ -223,7 +223,6 @@ MonoBehaviour:
   Ske: {fileID: 7030188971394919201}
   animationDuration: 1.2
   col: {fileID: 5125553527162049360}
-  material: {fileID: 2100000, guid: 1a73f48c886205f44822d83b5ac384f5, type: 2}
   theRB: {fileID: 5125553527162049361}
   moveSpeed: 2
   health: 60
@@ -626,7 +625,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 1a4bb1a92eb4739429fb02c4c7cf2170, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.49019608}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

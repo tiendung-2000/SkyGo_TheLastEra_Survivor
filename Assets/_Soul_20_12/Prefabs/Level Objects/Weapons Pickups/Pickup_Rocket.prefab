@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theGun: {fileID: 4703582029966002283, guid: e6e272b67a0eced4d9bb02df3311bfc2, type: 3}
   damageToAdd: 5
-  waitToBeCollected: 1.5
+  waitToBeCollected: 0
 --- !u!114 &-253404484140811207
 MonoBehaviour:
   m_ObjectHideFlags: 0
