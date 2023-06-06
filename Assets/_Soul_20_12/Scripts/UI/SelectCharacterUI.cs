@@ -237,10 +237,10 @@ public class SelectCharacterUI : BaseUIMenu
         {
             upgradePlayerButton.gameObject.SetActive(false);
         }
-        else
-        {
-            upgradePlayerButton.gameObject.SetActive(true);
-        }
+        //else
+        //{
+        //    upgradePlayerButton.gameObject.SetActive(true);
+        //}
 
         if (DynamicDataManager.Ins.CurPlayerCooldownUpgrade == ResourceSystem.Ins.CharactersDatabase.Characters[DynamicDataManager.Ins.CurPlayer].Data.CoolDown.Count - 1)
         {
@@ -399,8 +399,6 @@ public class SelectCharacterUI : BaseUIMenu
         Close();
 
     }
-
-
 
     public void PlayerAnimation()
     {
