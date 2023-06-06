@@ -14,7 +14,7 @@ public class BossShow : BaseUIMenu
 
     private void OnEnable()
     {
-        AudioManager.Ins.MusicOff();
+        //AudioManager.Ins.MusicOff();
         AudioManager.Ins.PlayBossFightBGM();
 
         switch (DynamicDataManager.Ins.CurLevel)

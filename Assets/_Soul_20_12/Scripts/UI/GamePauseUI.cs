@@ -48,7 +48,7 @@ public class GamePauseUI : BaseUIMenu
 
     void SetupButton()
     {
-        if (PlayerPrefs.GetInt("music") == 1) //if is on
+        if (PlayerPrefs.GetInt("music") == 0) //if is on
         {
             musicSprites[0].SetActive(true);
             musicSprites[1].SetActive(false);
@@ -59,7 +59,7 @@ public class GamePauseUI : BaseUIMenu
             musicSprites[1].SetActive(true);
         }
 
-        if (PlayerPrefs.GetInt("sound") == 1) //if is on
+        if (PlayerPrefs.GetInt("sound") == 0) //if is on
         {
             soundSprite[0].SetActive(true);
             soundSprite[1].SetActive(false);
@@ -73,12 +73,12 @@ public class GamePauseUI : BaseUIMenu
 
     public void OnClickSound()
     {
-        if (PlayerPrefs.GetInt("sound") == 1)
+        if (PlayerPrefs.GetInt("sound") == 0)
         {
             AudioManager.Ins.SoundOff();
             soundSprite[0].SetActive(false);
             soundSprite[1].SetActive(true);
-            PlayerPrefs.SetInt("sound", 0);
+            PlayerPrefs.SetInt("sound", 1);
 
         }
         else
@@ -86,26 +86,26 @@ public class GamePauseUI : BaseUIMenu
             AudioManager.Ins.SoundOn();
             soundSprite[0].SetActive(true);
             soundSprite[1].SetActive(false);
-            PlayerPrefs.SetInt("sound", 1);
+            PlayerPrefs.SetInt("sound", 0);
 
         }
     }
 
     public void OnClickMusic()
     {
-        if (PlayerPrefs.GetInt("music") == 1)
+        if (PlayerPrefs.GetInt("music") == 0)
         {
             AudioManager.Ins.MusicOff();
             musicSprites[0].SetActive(false);
             musicSprites[1].SetActive(true);
-            PlayerPrefs.SetInt("music", 0);
+            PlayerPrefs.SetInt("music", 1);
         }
         else
         {
             AudioManager.Ins.MusicOn();
             musicSprites[0].SetActive(true);
             musicSprites[1].SetActive(false);
-            PlayerPrefs.SetInt("music", 1);
+            PlayerPrefs.SetInt("music", 0);
         }
     }
 
@@ -129,6 +129,14 @@ public class GamePauseUI : BaseUIMenu
         CanvasManager.Ins.CloseUI(UIName.GameplayUI);
 
         CanvasManager.Ins.OpenUI(UIName.LoadingUI, null);
+
+        //if (BossHubUI.Ins.gameObject.activeSelf == true || BossHubUI.Ins.gameObject != null)
+        //{
+        //    Debug.Log("vao day");
+        //    CanvasManager.Ins.CloseUI(UIName.BossHubUI);
+        //}
+
+        LevelManager.Ins.bossHubUI.SetActive(false);
 
         GamePlayController.Ins.ResetGamePlay();
         //GamePlayController.Ins.ResetPlayerStats();

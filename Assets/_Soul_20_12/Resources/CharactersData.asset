@@ -17,7 +17,7 @@ MonoBehaviour:
       priceToUnlock: 0
       HP: 06000000090000000c0000000f00000012000000
       CoolDown: 0500000004000000030000000200000001000000
-      Speed: 060000000700000008000000090000000a000000
+      Speed: 0600000006000000070000000700000008000000
       skillImg: {fileID: 21300000, guid: 0e8542f33961e8f40ad1369c910d3618, type: 3}
       skillDetail: Dash forward and destroy obstacles along the way.
     UpgradeData:
@@ -27,7 +27,7 @@ MonoBehaviour:
       priceToUnlock: 5000
       HP: 06000000090000000c0000000f00000012000000
       CoolDown: 0500000004000000030000000200000001000000
-      Speed: 060000000700000008000000090000000a000000
+      Speed: 0600000006000000070000000700000008000000
       skillImg: {fileID: 21300000, guid: ad7a9a143c1fcb54099d03ac9b3c0f8a, type: 3}
       skillDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         at.  '
@@ -38,7 +38,7 @@ MonoBehaviour:
       priceToUnlock: 6500
       HP: 06000000090000000c0000000f00000012000000
       CoolDown: 0500000004000000030000000200000001000000
-      Speed: 060000000700000008000000090000000a000000
+      Speed: 0600000006000000070000000700000008000000
       skillImg: {fileID: 21300000, guid: 64846bc0b017a02439483aca5bb395aa, type: 3}
       skillDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         at.  '
@@ -49,7 +49,7 @@ MonoBehaviour:
       priceToUnlock: 9000
       HP: 06000000090000000c0000000f00000012000000
       CoolDown: 0500000004000000030000000200000001000000
-      Speed: 060000000700000008000000090000000a000000
+      Speed: 0600000006000000070000000700000008000000
       skillImg: {fileID: 21300000, guid: ed6e839d70192c146a14cc6535207d0b, type: 3}
       skillDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         at.  '
@@ -60,7 +60,7 @@ MonoBehaviour:
       priceToUnlock: 4500
       HP: 06000000090000000c0000000f00000012000000
       CoolDown: 0500000004000000030000000200000001000000
-      Speed: 060000000700000008000000090000000a000000
+      Speed: 0600000006000000070000000700000008000000
       skillImg: {fileID: 21300000, guid: 4b418d19de60a9b4f8e07f4a6483c587, type: 3}
       skillDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         at.  '

@@ -109,7 +109,7 @@ public class SettingsMenu : MonoBehaviour
 
     void SetupButton()
     {
-        if (PlayerPrefs.GetInt("music") == 1) //if is on
+        if (PlayerPrefs.GetInt("music") == 0) //if is on
         {
             musicButton.image.sprite = musicSprites[0];
         }
@@ -118,7 +118,7 @@ public class SettingsMenu : MonoBehaviour
             musicButton.image.sprite = musicSprites[1];
         }
 
-        if (PlayerPrefs.GetInt("sound") == 1) //if is on
+        if (PlayerPrefs.GetInt("sound") == 0) //if is on
         {
             soundButton.image.sprite = soundSprite[0];
         }
@@ -130,11 +130,11 @@ public class SettingsMenu : MonoBehaviour
 
     private void OnOffSound()
     {
-        if (PlayerPrefs.GetInt("sound") == 1)
+        if (PlayerPrefs.GetInt("sound") == 0)
         {
             soundButton.image.sprite = soundSprite[1];
             AudioManager.Ins.SoundOff();
-            PlayerPrefs.SetInt("sound", 0);
+            PlayerPrefs.SetInt("sound", 1);
         }
         else
         {
@@ -142,23 +142,23 @@ public class SettingsMenu : MonoBehaviour
             AudioManager.Ins.SoundOn();
             //AudioManager.Ins.PlaySelectBGM();
 
-            PlayerPrefs.SetInt("sound", 1);
+            PlayerPrefs.SetInt("sound", 0);
         }
     }
 
     private void OnOffMusic()
     {
-        if (PlayerPrefs.GetInt("music") == 1)
+        if (PlayerPrefs.GetInt("music") == 0)
         {
             musicButton.image.sprite = musicSprites[1];
             AudioManager.Ins.MusicOff();
-            PlayerPrefs.SetInt("music", 0);
+            PlayerPrefs.SetInt("music", 1);
         }
         else
         {
             musicButton.image.sprite = musicSprites[0];
             AudioManager.Ins.MusicOn();
-            PlayerPrefs.SetInt("music", 1);
+            PlayerPrefs.SetInt("music", 0);
         }
     }
 }

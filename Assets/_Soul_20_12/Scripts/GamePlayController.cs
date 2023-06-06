@@ -101,6 +101,7 @@ public class GamePlayController : Singleton<GamePlayController>
     }
     public void ResetPlayerStats()
     {
+
         PlayerController.Ins.currentHealth = PlayerController.Ins.curPlayerMaxHP;
         DynamicDataManager.Ins.OnHealthChange?.Invoke(PlayerController.Ins.curPlayerMaxHP);
     }

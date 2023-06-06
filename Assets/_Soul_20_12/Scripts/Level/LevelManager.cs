@@ -15,6 +15,7 @@ public class LevelManager : Singleton<LevelManager>
     [SerializeField] private GameState state;
 
     public GameObject bossShowUI;
+    public GameObject bossHubUI;
 
     public int reviveCount = 0;
     public bool isPaused;

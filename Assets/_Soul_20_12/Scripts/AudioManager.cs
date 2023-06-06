@@ -45,7 +45,7 @@ public class AudioManager : MonoBehaviour
     IEnumerator SetUpSound()
     {
         yield return new WaitForSeconds(0.01f);
-        if (PlayerPrefs.GetInt("music") == 1)
+        if (PlayerPrefs.GetInt("music") == 0)
         {
             gameManager.isMusic = true;
             music.volume = .3f;
@@ -57,7 +57,7 @@ public class AudioManager : MonoBehaviour
             gameManager.isMusic = false;
             music.volume = 0f;
         }
-        if (PlayerPrefs.GetInt("sound") == 1)
+        if (PlayerPrefs.GetInt("sound") == 0)
         {
             gameManager.isSound = true;
             sound.volume = 1f;
@@ -99,26 +99,38 @@ public class AudioManager : MonoBehaviour
 
     public void PlayBossFightBGM()
     {
+        if (PlayerPrefs.GetInt("sound") == 0)
+        {
         music.clip = bossFight;
-        //music.volume = 0f;
+
         music.Play();
+        }
+        //music.volume = 0f;
         //music.DOFade(0.3f, 0.5f);
     }
 
     public void PlayIngameBGM(int id)
     {
-        //int m = UnityEngine.Random.Range(0, ingameBGM.Length);
+        if (PlayerPrefs.GetInt("music") == 0)
+        {
         music.clip = ingameBGM[id];
-        //music.volume = 0;
         music.Play();
+
+        }
+        //int m = UnityEngine.Random.Range(0, ingameBGM.Length);
+        //music.volume = 0;
         //music.DOFade(.3f, 0f);
     }
 
     public void PlayWinLoseSound(int id)
     {
+        if (PlayerPrefs.GetInt("sound") == 0)
+        {
         sound.PlayOneShot(winLoseSound[id]);
 
         music.Stop();
+        }
+
     }
 
     public void PlayFootStepSound()
@@ -193,12 +205,20 @@ public class AudioManager : MonoBehaviour
     }
     public void SoundEffect(int id)
     {
-        sound.PlayOneShot(soundEffects[id]);
+        if (PlayerPrefs.GetInt("sound") == 0)
+        {
+            sound.PlayOneShot(soundEffects[id]);
+
+        }
     }
 
     public void SoundUIPlay(int id)
     {
-        sound.PlayOneShot(soundUI[id]);
+        if (PlayerPrefs.GetInt("sound") == 0)
+        {
+            sound.PlayOneShot(soundUI[id]);
+
+        }
     }
 
     public void SoundOff()
@@ -262,7 +282,10 @@ public class AudioManager : MonoBehaviour
 
     public void PlayGunSound(int id)
     {
-        sound.PlayOneShot(gunSound[id]);
+        if (PlayerPrefs.GetInt("sound") == 0)
+        {
+            sound.PlayOneShot(gunSound[id]);
+        }
         //        if (isVbration)
         //        {
         //#if !UNITY_EDITOR
@@ -271,8 +294,13 @@ public class AudioManager : MonoBehaviour
         //        }
     }
     public void PlaySkillSound(int id)
+
     {
-        sound.PlayOneShot(skillSound[id]);
+        if (PlayerPrefs.GetInt("sound") == 0)
+        {
+            sound.PlayOneShot(skillSound[id]);
+
+        }
     }
 
     public void VibrateStart()
@@ -287,7 +315,11 @@ public class AudioManager : MonoBehaviour
 
     public void PlayGunDrawSound()
     {
-        sound.PlayOneShot(gunDrawSound);
+        if (PlayerPrefs.GetInt("sound") == 0)
+        {
+            sound.PlayOneShot(gunDrawSound);
+
+        }
     }
     public void PlayTest(AudioClip audio)
     {
@@ -323,38 +355,42 @@ public class AudioManager : MonoBehaviour
 
     public void GamePlayBGM()
     {
-        switch (DynamicDataManager.Ins.CurLevel)
+        if (PlayerPrefs.GetInt("music") == 0)
         {
-            case 0:
-                PlayIngameBGM(0);
-                break;
-            case 1:
-                PlayIngameBGM(1);
-                break;
-            case 2:
-                PlayIngameBGM(2);
-                break;
-            case 3:
-                PlayIngameBGM(3);
-                break;
-            case 4:
-                PlayIngameBGM(4);
-                break;
-            case 5:
-                PlayIngameBGM(5);
-                break;
-            case 6:
-                PlayIngameBGM(6);
-                break;
-            case 7:
-                PlayIngameBGM(7);
-                break;
-            case 8:
-                PlayIngameBGM(8);
-                break;
-            case 9:
-                PlayIngameBGM(9);
-                break;
+
+            switch (DynamicDataManager.Ins.CurLevel)
+            {
+                case 0:
+                    PlayIngameBGM(0);
+                    break;
+                case 1:
+                    PlayIngameBGM(1);
+                    break;
+                case 2:
+                    PlayIngameBGM(2);
+                    break;
+                case 3:
+                    PlayIngameBGM(3);
+                    break;
+                case 4:
+                    PlayIngameBGM(4);
+                    break;
+                case 5:
+                    PlayIngameBGM(5);
+                    break;
+                case 6:
+                    PlayIngameBGM(6);
+                    break;
+                case 7:
+                    PlayIngameBGM(7);
+                    break;
+                case 8:
+                    PlayIngameBGM(8);
+                    break;
+                case 9:
+                    PlayIngameBGM(9);
+                    break;
+            }
         }
     }
 }

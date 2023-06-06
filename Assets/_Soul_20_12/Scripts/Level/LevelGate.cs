@@ -28,7 +28,6 @@ public class LevelGate : MonoBehaviour
             else
             {
                 isComplete = true;
-                PlayerController.Ins.isMove = false;
                 EndLevel();
                 UnlockReward();
             }
@@ -51,7 +50,8 @@ public class LevelGate : MonoBehaviour
 
     void EndLevel()
     {
-
+        PlayerController.Ins.isMove = false;
+        PlayerController.Ins.PlayerStopMove();
         StartCoroutine(IEOutGateFX());
         Invoke(nameof(ShowComplete), timeDelayShowComplete);
     }

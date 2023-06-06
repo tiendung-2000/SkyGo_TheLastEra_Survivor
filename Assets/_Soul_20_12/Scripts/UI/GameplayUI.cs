@@ -18,12 +18,21 @@ public class GameplayUI : BaseUIMenu
         //{
         //    settingButton.gameObject.SetActive(true);
         //}
+        StartCoroutine(IESetupGunStats());
+    }
+
+    IEnumerator IESetupGunStats()
+    {
+        yield return new WaitForSeconds(2f);
+        ButtonControllerUI.Ins.SetupGunStats();
+
     }
 
     IEnumerator IEShowTutorial()
     {
         yield return new WaitForSeconds(5f);
         tutorial.SetActive(true);
+
     }
 
     private void Start()

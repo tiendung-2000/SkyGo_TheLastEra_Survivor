@@ -1,4 +1,5 @@
 using API.UI;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,8 +26,8 @@ public class StartUI : BaseUIMenu
             GamePlayController.Ins.ResetPlayerStats();
             start.gameObject.SetActive(false);
 
-            AudioManager.Ins.MusicOff();
-
+            //AudioManager.Ins.MusicOff();
+            //StartCoroutine(IEPlayMusic());
             AudioManager.Ins.PlayIngameBGM(0);
         }
         else
@@ -40,4 +41,11 @@ public class StartUI : BaseUIMenu
             });
         }
     }
+
+    //IEnumerator IEPlayMusic()
+    //{
+    //    yield return new WaitForSeconds(3f);
+    //    AudioManager.Ins.PlayIngameBGM(0);
+
+    //}
 }

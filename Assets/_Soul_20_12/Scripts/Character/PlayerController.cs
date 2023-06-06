@@ -52,6 +52,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
+
         material.SetFloat("_FillPhase", 0f);
 
         canMove = true;
@@ -62,6 +63,14 @@ public class PlayerController : MonoBehaviour
         {
             col.enabled = true;
         }
+
+        ResetWeapon();
+    }
+
+    private void ResetWeapon()
+    {
+        availableGuns[0].gameObject.SetActive(true);
+        currentGun = 0;
     }
 
     void Update()
@@ -84,7 +93,7 @@ public class PlayerController : MonoBehaviour
 
         if (canMove || !canMove)
         {
-
+            #region Mobile
             Vector2 dir = new Vector2(UltimateJoystick.GetHorizontalAxis("Player Movement JoyStick"), UltimateJoystick.GetVerticalAxis("Player Movement JoyStick"));
 
             moveInput.x = dir.x;
@@ -96,6 +105,8 @@ public class PlayerController : MonoBehaviour
                 transform.position += movementDir.normalized * moveSpeed * Time.deltaTime;
                 moveInput.Normalize();
             }
+            #endregion
+
         }
         else
         {

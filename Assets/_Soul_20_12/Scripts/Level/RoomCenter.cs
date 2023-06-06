@@ -194,7 +194,8 @@ public class RoomCenter : MonoBehaviour
         CanvasManager.Ins.OpenUI(UIName.GameplayUI, null);
         ButtonControllerUI.Ins.OnEnableJoyStick();
         theBoss.SetActive(true);
-        CanvasManager.Ins.OpenUI(UIName.BossHubUI, null);
+        //CanvasManager.Ins.OpenUI(UIName.BossHubUI, null);
+        LevelManager.Ins.bossHubUI.SetActive(true);
         PlayerController.Ins.isMove = true;
         LevelManager.Ins.bossShowUI.SetActive(false);
     }

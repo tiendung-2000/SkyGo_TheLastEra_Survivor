@@ -68,7 +68,9 @@ public class BossController : MonoBehaviour
     IEnumerator IEBossDead()
     {
         yield return new WaitForSeconds(timeToDead);
-        CanvasManager.Ins.CloseUI(UIName.BossHubUI);
+        //CanvasManager.Ins.CloseUI(UIName.BossHubUI);
+        LevelManager.Ins.bossHubUI.SetActive(false);
+
         levelExit.SetActive(true);
         Destroy(gameObject);
     }
