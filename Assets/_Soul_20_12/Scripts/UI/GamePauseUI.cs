@@ -27,6 +27,15 @@ public class GamePauseUI : BaseUIMenu
         //CanvasManager.Ins.CloseUI(UIName.GameplayUI);
     }
 
+    void OnGUI()
+    {
+        //Delete all of the PlayerPrefs settings by pressing this button.
+        if (GUI.Button(new Rect(100, 200, 200, 60), "Delete"))
+        {
+            PlayerPrefs.DeleteAll();
+        }
+    }
+
     private void OnEnable()
     {
         PlayerController.Ins.isMove = false;

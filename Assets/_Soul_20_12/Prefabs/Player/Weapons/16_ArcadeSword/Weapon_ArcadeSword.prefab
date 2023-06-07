@@ -61,7 +61,7 @@ MonoBehaviour:
   reloadTimeCounter: 0
   reload: 0
   isFullAmmo: 0
-  timeBetweenShots: 0.8
+  timeBetweenShots: 0.4
   shotCounter: 0
   weaponName: ArcadeSword
   itemCost: 0

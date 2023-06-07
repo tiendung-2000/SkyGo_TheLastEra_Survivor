@@ -38,7 +38,7 @@ public class LevelGate : MonoBehaviour
     {
         Instantiate(GamePlayController.Ins.outGateFX, (PlayerController.Ins.transform.position + new Vector3(0f,2.5f)), Quaternion.identity);
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.3f);
         ResourceSystem.Ins.players[DynamicDataManager.Ins.CurPlayer].gameObject.SetActive(false);
 
     }

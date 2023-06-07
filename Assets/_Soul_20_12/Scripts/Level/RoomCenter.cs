@@ -23,7 +23,8 @@ public class RoomCenter : MonoBehaviour
 
     public Room theRoom;
 
-    public SpriteRenderer roomIcon;
+    public SpriteRenderer roomLayout;
+    public Sprite[] roomIcon;
 
     [SerializeField] bool isEnemyCenter;
     public int numberOfEnemiesToSpawn = 10;
@@ -46,9 +47,10 @@ public class RoomCenter : MonoBehaviour
     {
         Ins = this;
 
-        if (roomIcon != null)
+        if (roomLayout != null)
         {
-            roomIcon.enabled = false;
+            roomLayout.sprite = roomIcon[0];
+
         }
     }
     void Start()
@@ -139,6 +141,7 @@ public class RoomCenter : MonoBehaviour
 
     public void SpawnChest()
     {
+        roomLayout.sprite = roomIcon[2];
         Debug.Log("SpawmChest");
         if (isEnemyCenter || isBossCenter && spawnChest == true)
         {
@@ -175,17 +178,22 @@ public class RoomCenter : MonoBehaviour
                         StartCoroutine(IEBossShowDisable());
                         isFirstTime = false;
                     }
-                    roomIcon.enabled = true;
+                    roomLayout.sprite = roomIcon[1];
                     //colCheckPlayer.enabled = false;
                 }
             }
             if (isEnemyCenter)
             {
-                roomIcon.enabled = true;
+                roomLayout.sprite = roomIcon[1];
 
                 GetRandomEnemies();
             }
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        
     }
 
     IEnumerator IEBossShowDisable()

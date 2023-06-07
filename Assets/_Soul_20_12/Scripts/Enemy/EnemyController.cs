@@ -118,12 +118,12 @@ public class EnemyController : MonoBehaviour
 
     public void DamageEnemy(int damage)
     {
-        health -= damage;
+        health -= Mathf.RoundToInt(damage / 2f);
         StartCoroutine(IETakeDamageEffect());
         //AudioManager.instance.PlaySFX(2);
 
         SmartPool.Ins.Spawn(hitEffect, transform.position, transform.rotation);
-        
+
         if (health <= 0)
         {
             col.enabled = false;

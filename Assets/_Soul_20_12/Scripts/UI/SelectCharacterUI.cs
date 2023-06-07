@@ -377,7 +377,7 @@ public class SelectCharacterUI : BaseUIMenu
         StartCoroutine(IESpawnLevel());
         //StartCoroutine(IEPlaySound());
 
-        int openPopup = 5;
+        int openPopup = 8;
         if (Random.Range(1, 10) < openPopup)
         {
             CanvasManager.Ins.OpenUI(UIName.WeaponPopup, null);

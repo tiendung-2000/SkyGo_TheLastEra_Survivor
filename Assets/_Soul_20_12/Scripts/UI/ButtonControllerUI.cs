@@ -40,12 +40,12 @@ public class ButtonControllerUI : BaseUIMenu
 
     public void OnDisableJoystick()
     {
-        joystick.DisableJoystick();
+        //joystick.DisableJoystick();
     }
 
     public void OnEnableJoyStick()
     {
-        joystick.EnableJoystick();
+        //joystick.EnableJoystick();
     }
 
     private void OnEnable()
