@@ -69,8 +69,8 @@ TrailRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -312610013
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Time: 0.15
   m_Parameters:
@@ -152,6 +152,7 @@ GameObject:
   - component: {fileID: 4189913780510908281}
   - component: {fileID: 3923759171092850419}
   - component: {fileID: 7933455926176780761}
+  - component: {fileID: 1566005320096846867}
   m_Layer: 9
   m_Name: ToxicStaff_Bullet
   m_TagString: PlayerBullet
@@ -167,7 +168,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4189913780510908286}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.13, y: 0.59, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3625600343181233979}
@@ -304,6 +305,22 @@ MonoBehaviour:
     type: 3}
   damageToGive: 25
   trail: {fileID: 1517356935560052}
+  triggerPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &1566005320096846867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4189913780510908286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb0158c4fc19b54a949e5b33ca611d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trail:
+  - {fileID: 7523816564299320498}
+  - {fileID: 1517356935560052}
 --- !u!1 &8340522518903893820
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,8 +391,8 @@ TrailRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -312610013
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Time: 0.15
   m_Parameters:

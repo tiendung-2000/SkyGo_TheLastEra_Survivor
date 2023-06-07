@@ -51,7 +51,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5daff2c27d1059f4894222639bb6f8c0, type: 2}
+  - {fileID: 2100000, guid: 8e80c73dfe1877549a8643dbd0418bad, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -147,9 +147,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   textures:
-  - {fileID: 2800000, guid: 599dca7ba57ea1743a69b5e478b464f9, type: 3}
-  - {fileID: 2800000, guid: caf3798e322a0e447bd95a6ab24ed52e, type: 3}
-  - {fileID: 2800000, guid: 76347558e2eb9d04b9f6d3da117a850b, type: 3}
-  - {fileID: 2800000, guid: d0e89309b9897944a908bee8f1fe93a2, type: 3}
+  - {fileID: 2800000, guid: 3ed1d0cb7294cb244af5d002d978fa5e, type: 3}
+  - {fileID: 2800000, guid: a1892e40a8e818c499a69e73c6a50d41, type: 3}
+  - {fileID: 2800000, guid: 341dabfa1c53a334bb21e5a07cf8fc69, type: 3}
+  - {fileID: 2800000, guid: 62d70bfaf93ae424fa9c69ac9c420284, type: 3}
   startPoint: {fileID: 0}
-  pointContainer: {fileID: 0}

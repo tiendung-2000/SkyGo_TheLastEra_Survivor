@@ -176,6 +176,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4189913780510908277}
     m_Modifications:
+    - target: {fileID: 422318743266890988, guid: 3e43970a106b7ba4093143c6fa058304,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 422318743266890989, guid: 3e43970a106b7ba4093143c6fa058304,
         type: 3}
       propertyPath: m_RootOrder
@@ -235,6 +240,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Trail_Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 422318743342541150, guid: 3e43970a106b7ba4093143c6fa058304,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 422318743692414451, guid: 3e43970a106b7ba4093143c6fa058304,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5781282542741300080, guid: 3e43970a106b7ba4093143c6fa058304,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e43970a106b7ba4093143c6fa058304, type: 3}

@@ -101,10 +101,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   theRB: {fileID: 4189913780510908281}
-  impactEffect: {fileID: 5177790846866898987, guid: cd4a5a231dd3dad40a5e929a5efc2231,
+  impactEffect: {fileID: 5177790846866898987, guid: c7c1448bcd7915b49940cec7ffb9c630,
     type: 3}
   damageToGive: 25
   trail: {fileID: 5200552930185885919}
+  triggerPosition: {x: 0, y: 0, z: 0}
 --- !u!61 &4189913780510908280
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -235,7 +236,7 @@ TrailRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -312610013
   m_SortingLayer: 5
-  m_SortingOrder: 1
+  m_SortingOrder: -1
   m_Time: 0.13
   m_Parameters:
     serializedVersion: 3
@@ -267,7 +268,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 0, g: 0.89384246, b: 1, a: 1}
+      key1: {r: 1, g: 0.7019608, b: 0, a: 1}
       key2: {r: 1, g: 1, b: 1, a: 1}
       key3: {r: 1, g: 1, b: 1, a: 1}
       key4: {r: 0.28235295, g: 0, b: 1, a: 0}

@@ -101,11 +101,11 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.084325865, y: -0.00086413324}
+  m_Offset: {x: 0.87, y: -0.00086413324}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.8125, y: 0.3125}
+    oldSize: {x: 2.25, y: 0.3125}
     newSize: {x: 1.4166666, y: 0.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -165,6 +165,7 @@ MonoBehaviour:
     type: 3}
   damageToGive: 35
   line: {fileID: 5994202462036460025, guid: 7a8ae2ba507e8e146aac872a7ad21a4f, type: 3}
+  triggerPosition: {x: 0, y: 0, z: 0}
   nearestEnemies: []
   enemies: []
 --- !u!114 &-942695172257133654
@@ -192,7 +193,7 @@ GameObject:
   - component: {fileID: 5200552930185885918}
   - component: {fileID: 5200552930185885919}
   m_Layer: 0
-  m_Name: akm_trail
+  m_Name: _trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -206,7 +207,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5200552930185885917}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.046, y: 0, z: 0}
+  m_LocalPosition: {x: -1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4189913780510908277}
@@ -252,7 +253,7 @@ TrailRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -312610013
   m_SortingLayer: 5
-  m_SortingOrder: 1
+  m_SortingOrder: -1
   m_Time: 0.13
   m_Parameters:
     serializedVersion: 3

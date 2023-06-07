@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1196752259330788498}
   - component: {fileID: 1207513040486642254}
   m_Layer: 0
-  m_Name: akm_trail
+  m_Name: _trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +71,7 @@ TrailRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -312610013
   m_SortingLayer: 5
-  m_SortingOrder: 1
+  m_SortingOrder: -1
   m_Time: 0.13
   m_Parameters:
     serializedVersion: 3
@@ -103,7 +103,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 0, g: 0.89384246, b: 1, a: 1}
+      key1: {r: 1, g: 0.7019608, b: 0, a: 1}
       key2: {r: 1, g: 1, b: 1, a: 1}
       key3: {r: 1, g: 1, b: 1, a: 1}
       key4: {r: 0.28235295, g: 0, b: 1, a: 0}
@@ -285,9 +285,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   theRB: {fileID: 4189913780510908281}
-  impactEffect: {fileID: 527154294331547227, guid: db71af9a5c78faa47a17a62a046a55a6,
+  impactEffect: {fileID: 5177790846866898987, guid: c7c1448bcd7915b49940cec7ffb9c630,
     type: 3}
   explodeEffect: {fileID: 4721464587731737145, guid: ab2ceab7bd176754f818b8412ea5d070,
     type: 3}
   damageToGive: 50
   trail: {fileID: 1207513040486642254}
+  triggerPosition: {x: 0, y: 0, z: 0}

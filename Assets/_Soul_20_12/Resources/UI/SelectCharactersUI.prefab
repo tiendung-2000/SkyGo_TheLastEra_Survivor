@@ -8961,16 +8961,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7014563042855629675}
     m_Modifications:
-    - target: {fileID: 2228772502184505053, guid: c16f72685802d3c4ba96ae64d6196ac6,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.a
-      value: 0.23529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 2228772502184505054, guid: c16f72685802d3c4ba96ae64d6196ac6,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2228772502456197268, guid: c16f72685802d3c4ba96ae64d6196ac6,
         type: 3}
       propertyPath: m_RootOrder
@@ -9030,21 +9020,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UI_character
-      objectReference: {fileID: 0}
-    - target: {fileID: 2228772502456197275, guid: c16f72685802d3c4ba96ae64d6196ac6,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2228772502558610902, guid: c16f72685802d3c4ba96ae64d6196ac6,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2228772502558610903, guid: c16f72685802d3c4ba96ae64d6196ac6,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c16f72685802d3c4ba96ae64d6196ac6, type: 3}
