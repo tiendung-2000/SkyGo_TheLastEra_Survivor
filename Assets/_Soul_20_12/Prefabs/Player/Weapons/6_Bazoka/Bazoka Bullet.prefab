@@ -9900,8 +9900,9 @@ MonoBehaviour:
     type: 3}
   explodeEffect: {fileID: 4721464587731737145, guid: ab2ceab7bd176754f818b8412ea5d070,
     type: 3}
-  damageToGive: 50
+  damageToGive: 40
   trail: {fileID: 5200552931608711226}
+  triggerPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &4426961666027694297
 MonoBehaviour:
   m_ObjectHideFlags: 0

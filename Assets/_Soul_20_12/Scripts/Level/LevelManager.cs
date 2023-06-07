@@ -118,10 +118,10 @@ public class LevelManager : Singleton<LevelManager>
         switch (DynamicDataManager.Ins.CurLevel)
         {
             case 0:
-                health += 0;
+                health += 20;
                 break;
             case 1:
-                health += 10;
+                health += 20;
                 break;
             case 2:
                 health += 20;

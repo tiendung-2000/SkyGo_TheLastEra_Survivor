@@ -214,7 +214,7 @@ MonoBehaviour:
   theRB: {fileID: 4189913780510908281}
   impactEffect: {fileID: 5177790846866898987, guid: 57091fb28fed1f042a0d3609fabdcc58,
     type: 3}
-  damageToGive: 25
+  damageToGive: 20
   line: {fileID: 5994202462036460025, guid: 7a8ae2ba507e8e146aac872a7ad21a4f, type: 3}
   triggerPosition: {x: 0, y: 0, z: 0}
   nearestEnemies: []

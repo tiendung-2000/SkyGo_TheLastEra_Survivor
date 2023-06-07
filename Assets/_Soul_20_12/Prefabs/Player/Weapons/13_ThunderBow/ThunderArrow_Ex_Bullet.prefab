@@ -289,6 +289,6 @@ MonoBehaviour:
     type: 3}
   explodeEffect: {fileID: 4721464587731737145, guid: ab2ceab7bd176754f818b8412ea5d070,
     type: 3}
-  damageToGive: 70
+  damageToGive: 25
   trail: {fileID: 1207513040486642254}
   triggerPosition: {x: 0, y: 0, z: 0}

@@ -304,7 +304,7 @@ MonoBehaviour:
     type: 3}
   impactEffect: {fileID: 3343961044485247689, guid: d2ba1ca81060a8141911b3d02e9e6ec4,
     type: 3}
-  damageToGive: 25
+  damageToGive: 15
   trail: {fileID: 2471000237620602412}
   triggerPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &7893786123284243691

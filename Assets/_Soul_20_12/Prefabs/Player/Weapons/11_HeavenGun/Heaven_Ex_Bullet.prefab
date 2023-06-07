@@ -324,7 +324,7 @@ MonoBehaviour:
   col: {fileID: 4189913780510908280}
   impactEffect: {fileID: 5177790846866898987, guid: e194bb88190f1ca42ae1427a94f404fe,
     type: 3}
-  damageToGive: 25
+  damageToGive: 20
   trail: {fileID: 7758438989009214924}
   point:
   - {fileID: 2192783880414490498}
