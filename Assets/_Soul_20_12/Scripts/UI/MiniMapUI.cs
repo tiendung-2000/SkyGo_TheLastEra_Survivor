@@ -15,4 +15,12 @@ public class MiniMapUI : BaseUIMenu
         //CameraMovement.Ins.canDrag = true;
         Close();
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            OpenMap();
+        }
+    }
 }

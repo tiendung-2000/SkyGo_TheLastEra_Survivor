@@ -137,6 +137,7 @@ public class Weapon : MonoBehaviour
             if (Mathf.Abs(t - target.z) < 5) swinging = false;
             transform.localRotation = Quaternion.Euler(target);
         }
+
     }
 
     public void OnDisable()

@@ -28,6 +28,24 @@ public class GameplayUI : BaseUIMenu
 
     }
 
+    bool settingOn;
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            settingOn = !settingOn;
+            if(settingOn)
+            {
+                CanvasManager.Ins.OpenUI(UIName.PauseSettingUI, null);
+            }
+            else
+            {
+                CanvasManager.Ins.CloseUI(UIName.PauseSettingUI);
+            }
+        }
+    }
+
     IEnumerator IEShowTutorial()
     {
         yield return new WaitForSeconds(5f);

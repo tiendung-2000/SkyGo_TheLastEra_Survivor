@@ -80,16 +80,21 @@ public class ButtonControllerUI : BaseUIMenu
 
 
 
-#if UNITY_EDITOR
+
     private void FixedUpdate()
     {
         if (Input.GetKeyUp(KeyCode.Space))
         {
             OnSkill();
         }
+
+        if(Input.GetKeyUp(KeyCode.Tab))
+        {
+            OnSwitch();
+        }
     }
 
-#endif
+
 
     public void OnPointerDown()
     {
@@ -109,6 +114,15 @@ public class ButtonControllerUI : BaseUIMenu
         if (pointerDown)
         {
             OnShoot();
+        }
+
+        if (Input.GetKey(KeyCode.Mouse0))
+        {
+            pointerDown = true;
+        }
+        else
+        {
+            pointerDown = false;
         }
     }
 

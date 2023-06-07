@@ -25,4 +25,12 @@ public class BigMapUI : BaseUIMenu
                                             CharacterSelectManager.Ins.activePlayer.gameObject.transform.position.y,
                                             -10);
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            OnClickCloseButton();
+        }
+    }
 }
