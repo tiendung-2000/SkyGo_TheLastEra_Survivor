@@ -27,6 +27,7 @@ public class GamePauseUI : BaseUIMenu
         //CanvasManager.Ins.CloseUI(UIName.GameplayUI);
     }
 
+    #region Desktop
     void OnGUI()
     {
         //Delete all of the PlayerPrefs settings by pressing this button.
@@ -35,6 +36,7 @@ public class GamePauseUI : BaseUIMenu
             PlayerPrefs.DeleteAll();
         }
     }
+    #endregion
 
     private void OnEnable()
     {

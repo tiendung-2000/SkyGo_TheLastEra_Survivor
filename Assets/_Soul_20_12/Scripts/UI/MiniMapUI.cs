@@ -15,7 +15,7 @@ public class MiniMapUI : BaseUIMenu
         //CameraMovement.Ins.canDrag = true;
         Close();
     }
-
+    #region Desktop
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.M))
@@ -23,4 +23,5 @@ public class MiniMapUI : BaseUIMenu
             OpenMap();
         }
     }
+    #endregion
 }

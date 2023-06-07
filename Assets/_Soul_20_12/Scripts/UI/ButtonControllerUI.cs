@@ -37,7 +37,7 @@ public class ButtonControllerUI : BaseUIMenu
         skillButton.onClick.AddListener(OnSkill);
         switchButton.onClick.AddListener(OnSwitch);
     }
-
+    #region Mobile
     public void OnDisableJoystick()
     {
         //joystick.DisableJoystick();
@@ -47,6 +47,7 @@ public class ButtonControllerUI : BaseUIMenu
     {
         //joystick.EnableJoystick();
     }
+    #endregion
 
     private void OnEnable()
     {
@@ -77,10 +78,7 @@ public class ButtonControllerUI : BaseUIMenu
         bulletCircle.value = currentGun.currentClip;
     }
 
-
-
-
-
+    #region Desktop
     private void FixedUpdate()
     {
         if (Input.GetKeyUp(KeyCode.Space))
@@ -93,6 +91,7 @@ public class ButtonControllerUI : BaseUIMenu
             OnSwitch();
         }
     }
+    #endregion
 
 
 
@@ -115,7 +114,7 @@ public class ButtonControllerUI : BaseUIMenu
         {
             OnShoot();
         }
-
+        #region Desktop
         if (Input.GetKey(KeyCode.Mouse0))
         {
             pointerDown = true;
@@ -124,6 +123,7 @@ public class ButtonControllerUI : BaseUIMenu
         {
             pointerDown = false;
         }
+        #endregion
     }
 
     public void OnSwitch()

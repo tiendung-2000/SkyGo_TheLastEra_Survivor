@@ -27,7 +27,7 @@ public class GameplayUI : BaseUIMenu
         ButtonControllerUI.Ins.SetupGunStats();
 
     }
-
+    #region Desktop
     bool settingOn;
 
     private void Update()
@@ -45,6 +45,7 @@ public class GameplayUI : BaseUIMenu
             }
         }
     }
+    #endregion
 
     IEnumerator IEShowTutorial()
     {
