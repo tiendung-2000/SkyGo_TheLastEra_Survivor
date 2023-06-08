@@ -28,14 +28,14 @@ public class GamePauseUI : BaseUIMenu
     }
 
     #region Desktop
-    void OnGUI()
-    {
-        //Delete all of the PlayerPrefs settings by pressing this button.
-        if (GUI.Button(new Rect(100, 200, 200, 60), "Delete"))
-        {
-            PlayerPrefs.DeleteAll();
-        }
-    }
+    //void OnGUI()
+    //{
+    //    //Delete all of the PlayerPrefs settings by pressing this button.
+    //    if (GUI.Button(new Rect(100, 200, 200, 60), "Delete"))
+    //    {
+    //        PlayerPrefs.DeleteAll();
+    //    }
+    //}
     #endregion
 
     private void OnEnable()
@@ -136,7 +136,10 @@ public class GamePauseUI : BaseUIMenu
     {
         //inter
 
-
+        if (DynamicDataManager.Ins.CurTutorialStep == 0)
+        {
+            DynamicDataManager.Ins.CurTutorialStep = 1;
+        }
         CanvasManager.Ins.CloseUI(UIName.GameplayUI);
 
         CanvasManager.Ins.OpenUI(UIName.LoadingUI, null);

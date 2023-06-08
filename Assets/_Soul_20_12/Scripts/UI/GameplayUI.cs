@@ -27,24 +27,25 @@ public class GameplayUI : BaseUIMenu
         ButtonControllerUI.Ins.SetupGunStats();
 
     }
-    #region Desktop
-    bool settingOn;
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            settingOn = !settingOn;
-            if(settingOn)
-            {
-                CanvasManager.Ins.OpenUI(UIName.PauseSettingUI, null);
-            }
-            else
-            {
-                CanvasManager.Ins.CloseUI(UIName.PauseSettingUI);
-            }
-        }
-    }
+    #region Desktop
+    //bool settingOn;
+
+    //private void Update()
+    //{
+    //    if(Input.GetKeyDown(KeyCode.Escape))
+    //    {
+    //        settingOn = !settingOn;
+    //        if(settingOn)
+    //        {
+    //            CanvasManager.Ins.OpenUI(UIName.PauseSettingUI, null);
+    //        }
+    //        else
+    //        {
+    //            CanvasManager.Ins.CloseUI(UIName.PauseSettingUI);
+    //        }
+    //    }
+    //}
     #endregion
 
     IEnumerator IEShowTutorial()
