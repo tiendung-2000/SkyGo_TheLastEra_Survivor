@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 4565922193606021052}
   - component: {fileID: 7222439053788494989}
   - component: {fileID: 176746610511454791}
+  - component: {fileID: 5728297113666713568}
   m_Layer: 10
   m_Name: NamelessThing
   m_TagString: Boss
@@ -192,7 +193,7 @@ MonoBehaviour:
   bossHubUI: {fileID: 0}
   levelExit: {fileID: 0}
   timeToDead: 1.367
-  material: {fileID: 2100000, guid: e263bfddfb410d84d8666df533e4be04, type: 2}
+  customMaterial: {fileID: 5728297113666713568}
   playerOnZone: 0
   shouldDropItem: 1
   itemsToDrop:
@@ -360,6 +361,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.2499995, y: 6.799999}
   m_EdgeRadius: 0
+--- !u!114 &5728297113666713568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970297344547256810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26947ae098a8447408d80c0c86e35b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skeletonRenderer: {fileID: 7222439053788494989}
+  customSlotMaterials: []
+  customMaterialOverrides:
+  - overrideDisabled: 1
+    originalMaterial: {fileID: 2100000, guid: e263bfddfb410d84d8666df533e4be04, type: 2}
+    replacementMaterial: {fileID: 2100000, guid: 2e092fc74e86cc4409bc50a19ea4d07e,
+      type: 2}
 --- !u!1 &3769887789623777889
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,6 +1073,26 @@ PrefabInstance:
     - target: {fileID: 1698912026433280246, guid: 9abc188133e8f764c8748af1dcadfd8a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1698912026433280247, guid: 9abc188133e8f764c8748af1dcadfd8a,
+        type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1698912026726410793, guid: 9abc188133e8f764c8748af1dcadfd8a,
+        type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1698912026975011031, guid: 9abc188133e8f764c8748af1dcadfd8a,
+        type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1698912027079745518, guid: 9abc188133e8f764c8748af1dcadfd8a,
+        type: 3}
+      propertyPath: looping
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -11,6 +11,9 @@ public class EnemyController : MonoBehaviour
 
     public SkeletonAnimation Ske;
     [SerializeField] float animationDuration;
+
+    [SerializeField] SkeletonRendererCustomMaterials customMaterial;
+
     //public Renderer materialRender;
 
     [SerializeField] Collider2D col;
@@ -41,6 +44,8 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+
         playerOnZone = false;
 
         enemyMovement = GetComponent<EnemyMovement>();
@@ -151,9 +156,9 @@ public class EnemyController : MonoBehaviour
     }
     IEnumerator IETakeDamageEffect()
     {
-        //this.material.SetFloat("_FillPhase", 1f);
+        customMaterial.SetMaterialOverride();
         yield return new WaitForSeconds(0.2f);
-        //this.material.SetFloat("_FillPhase", 0f);
+        customMaterial.SetMaterialDefault();
     }
 
     IEnumerator IEDestroy()

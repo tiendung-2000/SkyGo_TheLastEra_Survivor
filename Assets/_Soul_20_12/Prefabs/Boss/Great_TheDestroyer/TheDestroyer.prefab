@@ -252,7 +252,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 1a4bb1a92eb4739429fb02c4c7cf2170, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -893,6 +893,7 @@ GameObject:
   - component: {fileID: 203076330402793382}
   - component: {fileID: 4317867964157600808}
   - component: {fileID: 5030806951854218695}
+  - component: {fileID: 3208658931398707987}
   m_Layer: 10
   m_Name: TheDestroyer
   m_TagString: Boss
@@ -1010,7 +1011,7 @@ MonoBehaviour:
   bossHubUI: {fileID: 0}
   levelExit: {fileID: 0}
   timeToDead: 1.167
-  material: {fileID: 2100000, guid: 5d6ab82d5c91dd143a97d35a7282d68a, type: 2}
+  customMaterial: {fileID: 3208658931398707987}
   playerOnZone: 0
   shouldDropItem: 1
   itemsToDrop:
@@ -1171,6 +1172,25 @@ MonoBehaviour:
   _animationName: Move
   loop: 0
   timeScale: 1
+--- !u!114 &3208658931398707987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5472462049780677391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26947ae098a8447408d80c0c86e35b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skeletonRenderer: {fileID: 5030806951854218695}
+  customSlotMaterials: []
+  customMaterialOverrides:
+  - overrideDisabled: 1
+    originalMaterial: {fileID: 2100000, guid: 5d6ab82d5c91dd143a97d35a7282d68a, type: 2}
+    replacementMaterial: {fileID: 2100000, guid: a8f3074d1e386324ca3bf90d11eacb71,
+      type: 2}
 --- !u!1 &5472462049972054111
 GameObject:
   m_ObjectHideFlags: 0

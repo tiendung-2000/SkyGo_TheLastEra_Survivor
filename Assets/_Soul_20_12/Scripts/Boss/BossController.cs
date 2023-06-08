@@ -16,7 +16,7 @@ public class BossController : MonoBehaviour
     public BossHubUI bossHubUI;
     public GameObject levelExit;
     public float timeToDead;
-    public Material material;
+    [SerializeField] SkeletonRendererCustomMaterials customMaterial;
     public bool playerOnZone = false;
 
     public bool shouldDropItem;
@@ -60,9 +60,9 @@ public class BossController : MonoBehaviour
 
     IEnumerator IETakeDamageEffect()
     {
-        material.SetFloat("_FillPhase", 1f);
+        customMaterial.SetMaterialOverride();
         yield return new WaitForSeconds(0.2f);
-        material.SetFloat("_FillPhase", 0f);
+        customMaterial.SetMaterialDefault();
     }
 
     IEnumerator IEBossDead()

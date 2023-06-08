@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 3314064223341952243}
   - component: {fileID: 1943038453338670007}
   - component: {fileID: 3015135406357148047}
+  - component: {fileID: 7819097864499632251}
   m_Layer: 11
   m_Name: MainB_2_Bullet_5
   m_TagString: Untagged
@@ -172,6 +173,20 @@ MonoBehaviour:
   impactEffect: {fileID: 527154294331547227, guid: db71af9a5c78faa47a17a62a046a55a6,
     type: 3}
   hasSpawn: 0
+--- !u!114 &7819097864499632251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491183898551324972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb0158c4fc19b54a949e5b33ca611d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trail:
+  - {fileID: 5200552931033873675}
 --- !u!1 &2558361633818522339
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,9 +286,9 @@ TrailRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -312610013
+  m_SortingLayer: 5
+  m_SortingOrder: -1
   m_Time: 0.15
   m_Parameters:
     serializedVersion: 3
@@ -367,7 +382,7 @@ Transform:
   m_GameObject: {fileID: 5200552931053859130}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 5200552931033873674}
   m_Father: {fileID: 1491183898551324979}
@@ -5117,8 +5132,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -312610013
+  m_SortingLayer: 5
   m_SortingOrder: 3
   m_RenderMode: 0
   m_SortMode: 0

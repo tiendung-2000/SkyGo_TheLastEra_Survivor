@@ -1244,6 +1244,7 @@ GameObject:
   - component: {fileID: 2810082709217451197}
   - component: {fileID: 6281734026790201870}
   - component: {fileID: 3386525941384937362}
+  - component: {fileID: 7645653911513964290}
   m_Layer: 10
   m_Name: EliminatedBishop
   m_TagString: Boss
@@ -1335,7 +1336,7 @@ MonoBehaviour:
   bossHubUI: {fileID: 0}
   levelExit: {fileID: 0}
   timeToDead: 1.033
-  material: {fileID: 2100000, guid: 30157f1ed77c6ef46a9419701da1a8e1, type: 2}
+  customMaterial: {fileID: 7645653911513964290}
   playerOnZone: 0
   shouldDropItem: 1
   itemsToDrop:
@@ -1523,6 +1524,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0438309, y: 5.1781363}
   m_EdgeRadius: 0
+--- !u!114 &7645653911513964290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5279466344905361312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26947ae098a8447408d80c0c86e35b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skeletonRenderer: {fileID: 6281734026790201870}
+  customSlotMaterials: []
+  customMaterialOverrides:
+  - overrideDisabled: 1
+    originalMaterial: {fileID: 2100000, guid: 30157f1ed77c6ef46a9419701da1a8e1, type: 2}
+    replacementMaterial: {fileID: 2100000, guid: 48ab74f524a89d1489151b8234d2da53,
+      type: 2}
 --- !u!1 &5590874910784523814
 GameObject:
   m_ObjectHideFlags: 0
@@ -2339,7 +2359,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 1a4bb1a92eb4739429fb02c4c7cf2170, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

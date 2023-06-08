@@ -515,6 +515,7 @@ GameObject:
   - component: {fileID: 6554378542279715652}
   - component: {fileID: 3984093328133045204}
   - component: {fileID: 250600782290048885}
+  - component: {fileID: 8110748679992555710}
   m_Layer: 10
   m_Name: 5_MiniBoss
   m_TagString: Boss
@@ -552,9 +553,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.2108133}
+  m_Offset: {x: 0.16, y: 1.2108133}
   serializedVersion: 2
-  m_Radius: 1.3846734
+  m_Radius: 1.2
 --- !u!50 &7944276779809746419
 Rigidbody2D:
   serializedVersion: 4
@@ -622,7 +623,7 @@ MonoBehaviour:
   bossHubUI: {fileID: 0}
   levelExit: {fileID: 0}
   timeToDead: 0.4
-  material: {fileID: 2100000, guid: f7b1b8fa023aaf04cb216badca8a256a, type: 2}
+  customMaterial: {fileID: 8110748679992555710}
   playerOnZone: 0
   shouldDropItem: 1
   itemsToDrop:
@@ -754,6 +755,25 @@ MonoBehaviour:
   _animationName: 
   loop: 0
   timeScale: 1
+--- !u!114 &8110748679992555710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7944276779809746431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26947ae098a8447408d80c0c86e35b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skeletonRenderer: {fileID: 250600782290048885}
+  customSlotMaterials: []
+  customMaterialOverrides:
+  - overrideDisabled: 1
+    originalMaterial: {fileID: 2100000, guid: f7b1b8fa023aaf04cb216badca8a256a, type: 2}
+    replacementMaterial: {fileID: 2100000, guid: ca035fbe1cac0094f908c52f1815669a,
+      type: 2}
 --- !u!1001 &5390361082812503158
 PrefabInstance:
   m_ObjectHideFlags: 0

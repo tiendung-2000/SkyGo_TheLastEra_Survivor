@@ -71,7 +71,7 @@ TrailRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -312610013
   m_SortingLayer: 5
-  m_SortingOrder: 1
+  m_SortingOrder: -1
   m_Time: 0.1
   m_Parameters:
     serializedVersion: 3
@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: -2051127289001972677}
   - component: {fileID: 6089441116185219967}
   - component: {fileID: 7467791641014903111}
+  - component: {fileID: 5034702785065101594}
   m_Layer: 11
   m_Name: MainB_2_Bullet_4_2
   m_TagString: Untagged
@@ -277,3 +278,17 @@ MonoBehaviour:
   impactEffect: {fileID: 527154294331547227, guid: db71af9a5c78faa47a17a62a046a55a6,
     type: 3}
   hasSpawn: 0
+--- !u!114 &5034702785065101594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6540557728516063716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb0158c4fc19b54a949e5b33ca611d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trail:
+  - {fileID: 5200552931511307025}

@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 4433444287560593998}
   - component: {fileID: 2507973670271307427}
   - component: {fileID: 7030188971394919201}
+  - component: {fileID: 3120408540676753425}
   m_Layer: 10
   m_Name: 7_Enemy
   m_TagString: Enemy
@@ -174,7 +175,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.016294599, y: 0.762077}
+  m_Offset: {x: -0.0029758215, y: 0.610243}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -185,7 +186,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8114617, y: 1.5092328}
+  m_Size: {x: 0.6143439, y: 1.2055649}
   m_EdgeRadius: 0
 --- !u!50 &5125553527162049361
 Rigidbody2D:
@@ -222,6 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ske: {fileID: 7030188971394919201}
   animationDuration: 1.2
+  customMaterial: {fileID: 3120408540676753425}
   col: {fileID: 5125553527162049360}
   theRB: {fileID: 5125553527162049361}
   moveSpeed: 2
@@ -391,6 +393,25 @@ MonoBehaviour:
   _animationName: Move
   loop: 1
   timeScale: 1
+--- !u!114 &3120408540676753425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5125553527162049355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26947ae098a8447408d80c0c86e35b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skeletonRenderer: {fileID: 7030188971394919201}
+  customSlotMaterials: []
+  customMaterialOverrides:
+  - overrideDisabled: 1
+    originalMaterial: {fileID: 2100000, guid: 1a73f48c886205f44822d83b5ac384f5, type: 2}
+    replacementMaterial: {fileID: 2100000, guid: c8412d4ad103c3e4f8a9b09b93d589cc,
+      type: 2}
 --- !u!1 &5125553527438468162
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,7 +20,7 @@ public class AreaDamage : MonoBehaviour
 
     void ApplyDamage()
     {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, transform.localScale.x / 2);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, transform.localScale.x);
 
         foreach (Collider2D collider in colliders)
         {
@@ -44,33 +44,6 @@ public class AreaDamage : MonoBehaviour
     {
         // Display the range of the area damage in the Scene view
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, transform.localScale.x / 2);
+        Gizmos.DrawWireSphere(transform.position, transform.localScale.x);
     }
-
-    //private void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    if (timeCounter < 0)
-    //    {
-    //        switch (other.tag)
-    //        {
-    //            case "Enemy":
-    //                // Apply damage to the enemy
-    //                EnemyController enemy = other.GetComponent<EnemyController>();
-    //                if (enemy != null)
-    //                {
-    //                    enemy.DamageEnemy(damage + Mathf.RoundToInt(PlayerController.Ins.playerBaseDamage / 2));
-    //                }
-    //                break;
-    //            case "Boss":
-    //                // Apply damage to the boss and spawn hit effect
-    //                BossController boss = other.GetComponent<BossController>();
-    //                if (boss != null)
-    //                {
-    //                    boss.TakeDamage(damage + Mathf.RoundToInt(PlayerController.Ins.playerBaseDamage / 2));
-    //                    Instantiate(boss.hitEffect, transform.position, transform.rotation);
-    //                }
-    //                break;
-    //        }
-    //    }
-    //}
 }

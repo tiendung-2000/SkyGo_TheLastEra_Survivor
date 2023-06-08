@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 4547661114056876172}
   - component: {fileID: 7499683138642679717}
   - component: {fileID: 415110470186448689}
+  - component: {fileID: 3854419209614217585}
   m_Layer: 10
   m_Name: 5_Enemy
   m_TagString: Enemy
@@ -205,9 +206,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1}
+  m_Offset: {x: 0, y: 0.57}
   serializedVersion: 2
-  m_Radius: 1.2
+  m_Radius: 0.5
 --- !u!50 &3938998477551320152
 Rigidbody2D:
   serializedVersion: 4
@@ -243,6 +244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ske: {fileID: 415110470186448689}
   animationDuration: 0.667
+  customMaterial: {fileID: 0}
   col: {fileID: 1472962238348478064}
   theRB: {fileID: 3938998477551320152}
   moveSpeed: 7
@@ -411,6 +413,25 @@ MonoBehaviour:
   _animationName: Move
   loop: 1
   timeScale: 1
+--- !u!114 &3854419209614217585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3938998477551320154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26947ae098a8447408d80c0c86e35b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skeletonRenderer: {fileID: 415110470186448689}
+  customSlotMaterials: []
+  customMaterialOverrides:
+  - overrideDisabled: 1
+    originalMaterial: {fileID: 2100000, guid: 7a8e06977fea2fd4883df164935e95e8, type: 2}
+    replacementMaterial: {fileID: 2100000, guid: f85c4dab1e669824993da09f013d295c,
+      type: 2}
 --- !u!1 &3938998477613637282
 GameObject:
   m_ObjectHideFlags: 0

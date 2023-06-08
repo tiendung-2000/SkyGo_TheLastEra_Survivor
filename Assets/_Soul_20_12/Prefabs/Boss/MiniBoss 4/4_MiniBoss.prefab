@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 2031062769447679567}
   - component: {fileID: 4732775149094148889}
   - component: {fileID: 6451025945682190810}
+  - component: {fileID: 37424362445350268}
   m_Layer: 10
   m_Name: 4_MiniBoss
   m_TagString: Boss
@@ -124,7 +125,7 @@ MonoBehaviour:
   bossHubUI: {fileID: 0}
   levelExit: {fileID: 0}
   timeToDead: 1.2
-  material: {fileID: 2100000, guid: a60a3989515bff44da4dbd66ef771dea, type: 2}
+  customMaterial: {fileID: 37424362445350268}
   playerOnZone: 0
   shouldDropItem: 1
   itemsToDrop:
@@ -253,6 +254,25 @@ MonoBehaviour:
   _animationName: Idle
   loop: 0
   timeScale: 1
+--- !u!114 &37424362445350268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400475403370315233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26947ae098a8447408d80c0c86e35b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skeletonRenderer: {fileID: 6451025945682190810}
+  customSlotMaterials: []
+  customMaterialOverrides:
+  - overrideDisabled: 1
+    originalMaterial: {fileID: 2100000, guid: a60a3989515bff44da4dbd66ef771dea, type: 2}
+    replacementMaterial: {fileID: 2100000, guid: a4c4ff2e2e9aff84683b5346e4b3c311,
+      type: 2}
 --- !u!1 &3983805121268316876
 GameObject:
   m_ObjectHideFlags: 0

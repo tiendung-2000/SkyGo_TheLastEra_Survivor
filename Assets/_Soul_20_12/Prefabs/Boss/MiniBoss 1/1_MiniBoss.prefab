@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 1a4bb1a92eb4739429fb02c4c7cf2170, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -411,6 +411,7 @@ GameObject:
   - component: {fileID: 5278938856243520039}
   - component: {fileID: 5278938856243520043}
   - component: {fileID: 5278938856243520036}
+  - component: {fileID: 2950006759025969480}
   m_Layer: 10
   m_Name: 1_MiniBoss
   m_TagString: Boss
@@ -448,7 +449,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.2790147, y: 1.0662501}
+  m_Offset: {x: 0.11047566, y: 1.2181542}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -459,7 +460,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.5609481, y: 2.1085}
+  m_Size: {x: 1.6009514, y: 2.4638085}
   m_EdgeRadius: 0
 --- !u!50 &5278938856243520037
 Rigidbody2D:
@@ -602,7 +603,7 @@ MonoBehaviour:
   bossHubUI: {fileID: 0}
   levelExit: {fileID: 0}
   timeToDead: 1.333
-  material: {fileID: 2100000, guid: 023e7bd53f4a9df4ea3744bee59c3f9a, type: 2}
+  customMaterial: {fileID: 2950006759025969480}
   playerOnZone: 0
   shouldDropItem: 1
   itemsToDrop:
@@ -665,6 +666,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00fadc20864045f4d974265fdea4d844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2950006759025969480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5278938856243520041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26947ae098a8447408d80c0c86e35b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skeletonRenderer: {fileID: 723211345670705385}
+  customSlotMaterials: []
+  customMaterialOverrides:
+  - overrideDisabled: 1
+    originalMaterial: {fileID: 2100000, guid: 023e7bd53f4a9df4ea3744bee59c3f9a, type: 2}
+    replacementMaterial: {fileID: 2100000, guid: 03745b50dfa8cea428a9ed049849eec6,
+      type: 2}
 --- !u!1 &5278938856254556675
 GameObject:
   m_ObjectHideFlags: 0
