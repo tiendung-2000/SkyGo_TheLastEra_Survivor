@@ -49,8 +49,8 @@ public class PickUpAnimation : MonoBehaviour
             trnsBody.position += new Vector3(0, verticalVelocity, 0) * Time.deltaTime;
         }
         trnsObject.position += (Vector3)groundVelocity * Time.deltaTime;
-
     }
+
     void CheckGroundHit()
     {
         if (trnsBody.position.y < firstYPos - randomYDrop && !isGrounded)
