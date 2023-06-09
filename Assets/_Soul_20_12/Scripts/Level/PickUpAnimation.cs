@@ -25,7 +25,7 @@ public class PickUpAnimation : MonoBehaviour
     {
         randomYDrop = 0;
         firstYPos = transform.position.y;
-        Set(Vector3.right * Random.Range(Random.Range(-1, -2), Random.Range(1, 2)) * 3, 5);
+        Set(Vector3.right * Random.Range(Random.Range(-1, -2), Random.Range(1, 2)) * Random.Range(2, 5), Random.Range(2,5));
     }
 
     void Update()

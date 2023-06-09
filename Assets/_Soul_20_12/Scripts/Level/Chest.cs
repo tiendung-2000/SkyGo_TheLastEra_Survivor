@@ -13,6 +13,11 @@ public class Chest : MonoBehaviour
     public Transform spawnPoint;
     public Collider2D col;
 
+    private void OnEnable()
+    {
+        canOpen = true;
+    }
+
     private void Update()
     {
         if (canOpen && !isOpen)
