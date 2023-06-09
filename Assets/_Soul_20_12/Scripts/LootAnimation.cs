@@ -15,6 +15,7 @@ public class LootAnimation : MonoBehaviour
     private bool isGrounded = true;
     private Vector2 groundVelocity;
     private float verticalVelocity, afterVelocity;
+    [SerializeField] ParticleSystem particleEffect;
 
     private Transform t_parent; // Main
     private Transform t_body; // Body
@@ -158,12 +159,19 @@ public class LootAnimation : MonoBehaviour
         t_body.gameObject.name = "Body";
         t_body.localRotation = Quaternion.identity;
         t_body.localPosition = Vector3.zero;
-        t_body.localScale = new Vector3(.5f,.5f,0f);
+        t_body.localScale = new Vector3(.5f, .5f, 0f);
         sprRndCaster = GetComponent<SpriteRenderer>();
         sprRndBody = t_body.gameObject.AddComponent<SpriteRenderer>();
         sprRndBody.sortingLayerName = sprRndCaster.sortingLayerName;
         sprRndBody.sortingOrder = sprRndCaster.sortingOrder;
         sprRndBody.sprite = sprRndCaster.sprite;
+
+        if (particleEffect != null)
+        {
+            particleEffect.transform.parent = t_body.transform;
+            particleEffect.transform.localScale = new Vector3(.7f, .7f, 0f);
+            particleEffect.Play();
+        }
     }
 
     /// <summary>

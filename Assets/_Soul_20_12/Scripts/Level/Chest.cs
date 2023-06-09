@@ -22,6 +22,7 @@ public class Chest : MonoBehaviour
     {
         canOpen = true;
         canSpawn = true;
+        ChestAnim.SetActive(true);
     }
 
     private void Update()
