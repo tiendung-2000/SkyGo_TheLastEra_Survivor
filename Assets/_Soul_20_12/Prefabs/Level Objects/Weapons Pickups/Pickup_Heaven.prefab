@@ -9933,8 +9933,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings:
-    YReducer: 2.5
-    XReducer: 2.5
+    YReducer: 2
+    XReducer: 2
     numberOfBounces: 3
     velocity: 10
     horizontalForce: 4

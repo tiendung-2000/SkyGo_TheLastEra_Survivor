@@ -158,6 +158,7 @@ public class LootAnimation : MonoBehaviour
         t_body.gameObject.name = "Body";
         t_body.localRotation = Quaternion.identity;
         t_body.localPosition = Vector3.zero;
+        t_body.localScale = new Vector3(.5f,.5f,0f);
         sprRndCaster = GetComponent<SpriteRenderer>();
         sprRndBody = t_body.gameObject.AddComponent<SpriteRenderer>();
         sprRndBody.sortingLayerName = sprRndCaster.sortingLayerName;
@@ -176,6 +177,7 @@ public class LootAnimation : MonoBehaviour
         t_shadow.gameObject.name = "Shadow";
         t_shadow.localRotation = Quaternion.identity;
         t_shadow.localPosition = Vector3.zero;
+        t_shadow.localScale = new Vector3(.5f, .5f, 0f);
         sprRndCaster = GetComponent<SpriteRenderer>();
         sprRndShadow = t_shadow.gameObject.AddComponent<SpriteRenderer>();
         sprRndShadow.sortingLayerName = sprRndCaster.sortingLayerName;
