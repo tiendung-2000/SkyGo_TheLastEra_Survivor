@@ -9868,7 +9868,7 @@ MonoBehaviour:
         m_CallState: 2
   trnsObject: {fileID: 5345533770886782006}
   trnsBody: {fileID: 5345533770886782006}
-  gravity: -20
+  gravity: -10
   groundVelocity: {x: 0, y: 0}
   verticalVelocity: 0
   isGrounded: 0

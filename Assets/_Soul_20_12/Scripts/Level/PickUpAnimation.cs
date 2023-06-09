@@ -21,11 +21,11 @@ public class PickUpAnimation : MonoBehaviour
 
 
     }
-    void Start()
+    void OnEnable()
     {
-        randomYDrop = Random.Range(-1f, 1f);
+        randomYDrop = 0;
         firstYPos = transform.position.y;
-        Set(Vector3.right * Random.Range(-1, 2) * Random.Range(1f, 3f), Random.Range(2f, 5f));
+        Set(Vector3.right * Random.Range(Random.Range(-1, -2), Random.Range(1, 2)) * 3, 5);
     }
 
     void Update()
