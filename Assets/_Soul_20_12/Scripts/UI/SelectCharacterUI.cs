@@ -3,6 +3,7 @@ using MagneticScrollView;
 using Spine.Unity;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -28,7 +29,7 @@ public class SelectCharacterUI : BaseUIMenu
     [SerializeField] Text priceUpgradeHealth;
 
     [SerializeField] Image skillImg;
-    [SerializeField] Text skillDetail;
+    [SerializeField] TMP_Text skillDetail;
     [SerializeField] Text cooldownText;
     [SerializeField] Text priceUpgradeSkill;
 

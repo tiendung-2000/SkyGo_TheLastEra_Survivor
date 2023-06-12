@@ -2006,7 +2006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   needDontDestroy: 0
-  passTutorial: 0
+  passTutorial: 1
 --- !u!1 &1645917995
 GameObject:
   m_ObjectHideFlags: 0
