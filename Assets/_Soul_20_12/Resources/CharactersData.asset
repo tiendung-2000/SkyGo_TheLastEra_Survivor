@@ -29,8 +29,7 @@ MonoBehaviour:
       CoolDown: 0500000004000000030000000200000001000000
       Speed: 0600000006000000070000000700000008000000
       skillImg: {fileID: 21300000, guid: ad7a9a143c1fcb54099d03ac9b3c0f8a, type: 3}
-      skillDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-        at.  '
+      skillDetail: x2 all bullets fired in 3s.
     UpgradeData:
       HPUpgradePrice: d0070000b80b0000a00f000088130000
       CoolDownUpgradePrice: 881300004c1d000010270000d4300000
@@ -40,8 +39,7 @@ MonoBehaviour:
       CoolDown: 0500000004000000030000000200000001000000
       Speed: 0600000006000000070000000700000008000000
       skillImg: {fileID: 21300000, guid: 64846bc0b017a02439483aca5bb395aa, type: 3}
-      skillDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-        at.  '
+      skillDetail: When using skill can be immortal for 3s.
     UpgradeData:
       HPUpgradePrice: d0070000b80b0000a00f000088130000
       CoolDownUpgradePrice: 881300004c1d000010270000d4300000
@@ -51,8 +49,8 @@ MonoBehaviour:
       CoolDown: 0500000004000000030000000200000001000000
       Speed: 0600000006000000070000000700000008000000
       skillImg: {fileID: 21300000, guid: ed6e839d70192c146a14cc6535207d0b, type: 3}
-      skillDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-        at.  '
+      skillDetail: All bullets fired will explode 1 dealing damage to all enemies
+        in the area, the skill lasts for 3s.
     UpgradeData:
       HPUpgradePrice: d0070000b80b0000a00f000088130000
       CoolDownUpgradePrice: 881300004c1d000010270000d4300000
@@ -62,8 +60,7 @@ MonoBehaviour:
       CoolDown: 0500000004000000030000000200000001000000
       Speed: 0600000006000000070000000700000008000000
       skillImg: {fileID: 21300000, guid: 4b418d19de60a9b4f8e07f4a6483c587, type: 3}
-      skillDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-        at.  '
+      skillDetail: Increases character's movement speed by 50% for 3s
     UpgradeData:
       HPUpgradePrice: d0070000b80b0000a00f000088130000
       CoolDownUpgradePrice: 881300004c1d000010270000d4300000
