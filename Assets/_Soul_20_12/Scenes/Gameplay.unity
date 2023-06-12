@@ -877,8 +877,6 @@ MonoBehaviour:
   reviveCount: 0
   isPaused: 0
   isTestLevel: 0
-  chestSpawn: {fileID: 382518262502533347, guid: f1f8d2960c581a84083dc35c9eece3e0,
-    type: 3}
   enemyPrefabs:
   - {fileID: 2846773098395278062, guid: c1ab01fc68afcf24c9b9f8f98262ce12, type: 3}
   - {fileID: 7101684774212757959, guid: 7a46940a9043d4e4199ebbdb034cb2d1, type: 3}
