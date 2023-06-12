@@ -9736,7 +9736,6 @@ GameObject:
   - component: {fileID: 5345533770886782006}
   - component: {fileID: 5345533770886782007}
   - component: {fileID: 5345533770886781993}
-  - component: {fileID: 3269175602445908679}
   - component: {fileID: 1742123519915981856}
   - component: {fileID: 3716565850511236567}
   - component: {fileID: 3566045527322980164}
@@ -9756,7 +9755,7 @@ Transform:
   m_GameObject: {fileID: 5345533770886781994}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
   - {fileID: 3924473778071153418}
   m_Father: {fileID: 0}
@@ -9828,51 +9827,6 @@ MonoBehaviour:
   theGun: {fileID: 423024207151644964, guid: 6d6ea59fb95190f44bd65e136f2048e0, type: 3}
   damageToAdd: 5
   waitToBeCollected: 1
---- !u!114 &3269175602445908679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5345533770886781994}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac8869e23a8ebe34f92e18478b05d3e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onGroundHitEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3269175602445908679}
-        m_TargetAssemblyTypeName: PickUpAnimation, Assembly-CSharp
-        m_MethodName: Bounce
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 3
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 3269175602445908679}
-        m_TargetAssemblyTypeName: PickUpAnimation, Assembly-CSharp
-        m_MethodName: SlowDownVelocity
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 4
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  trnsObject: {fileID: 5345533770886782006}
-  trnsBody: {fileID: 5345533770886782006}
-  gravity: -10
-  groundVelocity: {x: 0, y: 0}
-  verticalVelocity: 0
-  isGrounded: 0
 --- !u!61 &1742123519915981856
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9933,8 +9887,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings:
-    YReducer: 2
-    XReducer: 2
+    YReducer: 2.5
+    XReducer: 2.5
     numberOfBounces: 3
     velocity: 10
     horizontalForce: 4
@@ -9943,3 +9897,5 @@ MonoBehaviour:
     pickUpType: 2
     shadow: 0
     destroyTime: 0
+    itemTypeScale: 1
+  particleEffect: {fileID: 3924473778071153416}

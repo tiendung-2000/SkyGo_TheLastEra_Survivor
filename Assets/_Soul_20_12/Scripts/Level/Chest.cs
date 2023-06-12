@@ -53,11 +53,20 @@ public class Chest : MonoBehaviour
 
     void DropItem()
     {
+        calculate:
+
+        int itemDrop = Random.Range(0, itemPickup.Length);
+
         if (canSpawn == true && spawnCount <= spawnTime && timeBetweenSpawn <= 0)
         {
-            Instantiate(itemPickup[0], spawnPoint.position, spawnPoint.rotation);
+            Instantiate(itemPickup[itemDrop], spawnPoint.position, spawnPoint.rotation);
             spawnCount++;
             timeBetweenSpawn = 0.1f;
+            goto calculate;
+        }
+        else
+        {
+            return;
         }
     }
 

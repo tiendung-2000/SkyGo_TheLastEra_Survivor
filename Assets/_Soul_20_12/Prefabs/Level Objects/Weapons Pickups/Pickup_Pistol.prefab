@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 5345533770886781994}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
   - {fileID: 9062477548204294414}
   m_Father: {fileID: 0}
@@ -208,8 +208,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings:
-    YReducer: 2
-    XReducer: 2
+    YReducer: 2.5
+    XReducer: 2.5
     numberOfBounces: 3
     velocity: 10
     horizontalForce: 4
@@ -218,6 +218,8 @@ MonoBehaviour:
     pickUpType: 2
     shadow: 0
     destroyTime: 0
+    itemTypeScale: 1
+  particleEffect: {fileID: 9062477548204294412}
 --- !u!1 &9062477548163750654
 GameObject:
   m_ObjectHideFlags: 0

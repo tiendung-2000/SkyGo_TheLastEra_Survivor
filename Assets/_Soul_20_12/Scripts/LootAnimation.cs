@@ -159,7 +159,16 @@ public class LootAnimation : MonoBehaviour
         t_body.gameObject.name = "Body";
         t_body.localRotation = Quaternion.identity;
         t_body.localPosition = Vector3.zero;
-        t_body.localScale = new Vector3(.5f, .5f, 0f);
+
+        if (settings.itemTypeScale == ItemTypeScale.Weapon)
+        {
+            t_body.localScale = new Vector3(1f, 1f, 1f);
+        }
+        else if (settings.itemTypeScale == ItemTypeScale.Item)
+        {
+            t_body.localScale = new Vector3(.5f, .5f, .5f);
+        }
+
         sprRndCaster = GetComponent<SpriteRenderer>();
         sprRndBody = t_body.gameObject.AddComponent<SpriteRenderer>();
         sprRndBody.sortingLayerName = sprRndCaster.sortingLayerName;
@@ -169,7 +178,15 @@ public class LootAnimation : MonoBehaviour
         if (particleEffect != null)
         {
             particleEffect.transform.parent = t_body.transform;
-            particleEffect.transform.localScale = new Vector3(.7f, .7f, 0f);
+
+            if (settings.itemTypeScale == ItemTypeScale.Weapon)
+            {
+                particleEffect.transform.localScale = new Vector3(2f, 2f, 2f);
+            }
+            else if (settings.itemTypeScale == ItemTypeScale.Item)
+            {
+                particleEffect.transform.localScale = new Vector3(.7f, .7f, .7f);
+            }
             particleEffect.Play();
         }
     }
@@ -185,7 +202,15 @@ public class LootAnimation : MonoBehaviour
         t_shadow.gameObject.name = "Shadow";
         t_shadow.localRotation = Quaternion.identity;
         t_shadow.localPosition = Vector3.zero;
-        t_shadow.localScale = new Vector3(.5f, .5f, 0f);
+        if (settings.itemTypeScale == ItemTypeScale.Weapon)
+        {
+            t_shadow.localScale = new Vector3(1f, 1f, 0f);
+        }
+        else if (settings.itemTypeScale == ItemTypeScale.Item)
+        {
+            t_shadow.localScale = new Vector3(.5f, .5f, 0f);
+        }
+
         sprRndCaster = GetComponent<SpriteRenderer>();
         sprRndShadow = t_shadow.gameObject.AddComponent<SpriteRenderer>();
         sprRndShadow.sortingLayerName = sprRndCaster.sortingLayerName;
@@ -230,6 +255,8 @@ public class LootSettings
 
     public float destroyTime = 0f;
 
+    public ItemTypeScale itemTypeScale;
+
 
 }
 
@@ -238,4 +265,11 @@ public enum PickUpType
     IMMEDIATELY,
     NEVER,
     AFTER
+}
+
+public enum ItemTypeScale
+{
+    Item,
+    Weapon,
+
 }

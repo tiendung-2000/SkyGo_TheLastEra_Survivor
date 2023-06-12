@@ -500,7 +500,7 @@ MonoBehaviour:
   shouldDropItem: 1
   itemsToDrop:
   - {fileID: 3749952766380604448, guid: f9ba2ecaeb160464a85e58342e91c269, type: 3}
-  - {fileID: 3749952766380604448, guid: 1f2e8af1b47d3054db47a410b83ca882, type: 3}
+  - {fileID: 6669452705328872733, guid: 5445916f093e4784180baea52a9d97a3, type: 3}
   - {fileID: 3749952766380604448, guid: 057bbb05289b9474d900cdd18a397a64, type: 3}
   - {fileID: 3749952766380604448, guid: 7e4189924c3f7d144809fbe8d1f8b82f, type: 3}
   itemDropPercent: 65
