@@ -28,4 +28,6 @@ public class UIName
     public static string WeaponPopup = "WeaponPopup";
     public static string RevivePopup = "RevivePopup";
     public static string ClearRoomPopup = "ClearRoomPopup";
+
+    public static string TutotialDialog = "TutorialTipUI";
 }
