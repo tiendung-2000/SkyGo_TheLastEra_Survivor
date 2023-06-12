@@ -1038,7 +1038,7 @@ MonoBehaviour:
   enemyGroup: {fileID: 8785971660751851240}
   colCheckPlayer: {fileID: 6621480829786114761}
   theRoom: {fileID: 0}
-  chest: {fileID: 0}
+  chest: {fileID: 410202404279883920}
   roomLayout: {fileID: 6318626272035551707}
   roomIcon:
   - {fileID: 21300000, guid: cd0614c83f72a874782c36710abef3bc, type: 3}
@@ -1178,6 +1178,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 71968244047360116}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &410202404279883920 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 382518262502533348, guid: f1f8d2960c581a84083dc35c9eece3e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 71968244047360116}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc4c1fa506b3fa04caa269d8740bd3b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2346989882284874772
 PrefabInstance:
   m_ObjectHideFlags: 0

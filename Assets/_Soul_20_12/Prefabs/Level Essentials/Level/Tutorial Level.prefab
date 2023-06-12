@@ -3074,6 +3074,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 732718686929898431}
+  - component: {fileID: 6234455540549976887}
   m_Layer: 0
   m_Name: Tutorial Level
   m_TagString: Untagged
@@ -3129,6 +3130,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6234455540549976887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732718686929898416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c117b7a5579a4b14f9816c058ac37b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &744444910352480237
 GameObject:
   m_ObjectHideFlags: 0
@@ -32315,6 +32328,7 @@ MonoBehaviour:
   enemyGroup: {fileID: 8342119444911194087}
   colCheckPlayer: {fileID: 4986610762757197868}
   theRoom: {fileID: 390080729813777804}
+  chest: {fileID: 0}
   roomLayout: {fileID: 0}
   roomIcon:
   - {fileID: 0}
@@ -32428,6 +32442,7 @@ MonoBehaviour:
   enemyGroup: {fileID: 8342119445099824910}
   colCheckPlayer: {fileID: 731959381281233113}
   theRoom: {fileID: 1694885278356088262}
+  chest: {fileID: 0}
   roomLayout: {fileID: 0}
   roomIcon:
   - {fileID: 0}
@@ -32573,6 +32588,7 @@ MonoBehaviour:
   enemyGroup: {fileID: 8342119445498811414}
   colCheckPlayer: {fileID: 29941945143347250}
   theRoom: {fileID: 1694885278029006424}
+  chest: {fileID: 0}
   roomLayout: {fileID: 0}
   roomIcon:
   - {fileID: 0}
@@ -32744,6 +32760,7 @@ MonoBehaviour:
   enemyGroup: {fileID: 8342119445678300750}
   colCheckPlayer: {fileID: 7884980032952803826}
   theRoom: {fileID: 390080728100716967}
+  chest: {fileID: 0}
   roomLayout: {fileID: 0}
   roomIcon:
   - {fileID: 0}
@@ -32856,6 +32873,7 @@ MonoBehaviour:
   enemyGroup: {fileID: 8342119445766665069}
   colCheckPlayer: {fileID: 2656373279530033734}
   theRoom: {fileID: 4502115941059034622}
+  chest: {fileID: 0}
   roomLayout: {fileID: 0}
   roomIcon:
   - {fileID: 0}
@@ -33029,6 +33047,7 @@ MonoBehaviour:
   enemyGroup: {fileID: 8342119444116449853}
   colCheckPlayer: {fileID: 7193282697353257111}
   theRoom: {fileID: 7126656358563121577}
+  chest: {fileID: 0}
   roomLayout: {fileID: 0}
   roomIcon:
   - {fileID: 0}
@@ -33142,6 +33161,7 @@ MonoBehaviour:
   enemyGroup: {fileID: 8342119444412423458}
   colCheckPlayer: {fileID: 7398217305876084784}
   theRoom: {fileID: 390080730176494174}
+  chest: {fileID: 0}
   roomLayout: {fileID: 0}
   roomIcon:
   - {fileID: 0}
@@ -33285,6 +33305,7 @@ MonoBehaviour:
   enemyGroup: {fileID: 8342119444471789566}
   colCheckPlayer: {fileID: 2772087590963493741}
   theRoom: {fileID: 3997333600214224683}
+  chest: {fileID: 0}
   roomLayout: {fileID: 0}
   roomIcon:
   - {fileID: 0}
@@ -38161,6 +38182,7 @@ MonoBehaviour:
   enemyGroup: {fileID: 0}
   colCheckPlayer: {fileID: 0}
   theRoom: {fileID: 7223003430873388963}
+  chest: {fileID: 0}
   roomLayout: {fileID: 0}
   roomIcon:
   - {fileID: 0}
@@ -38280,6 +38302,7 @@ MonoBehaviour:
   enemyGroup: {fileID: 7937389330481967685}
   colCheckPlayer: {fileID: 8969724235525707820}
   theRoom: {fileID: 3337225798588540381}
+  chest: {fileID: 0}
   roomLayout: {fileID: 0}
   roomIcon:
   - {fileID: 0}
@@ -39576,12 +39599,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 760a9891f8b25e3478e95b40ad293984, type: 3}
---- !u!1 &8925530439868015486 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5278938856243520041, guid: 760a9891f8b25e3478e95b40ad293984,
-    type: 3}
-  m_PrefabInstance: {fileID: 3647726921223110999}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &8925530439868015472 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5278938856243520039, guid: 760a9891f8b25e3478e95b40ad293984,
@@ -39597,6 +39614,12 @@ MonoBehaviour:
 --- !u!4 &8925530439868015485 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5278938856243520042, guid: 760a9891f8b25e3478e95b40ad293984,
+    type: 3}
+  m_PrefabInstance: {fileID: 3647726921223110999}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8925530439868015486 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5278938856243520041, guid: 760a9891f8b25e3478e95b40ad293984,
     type: 3}
   m_PrefabInstance: {fileID: 3647726921223110999}
   m_PrefabAsset: {fileID: 0}
@@ -39859,15 +39882,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d834d245f23d374ab33932166b3ab30, type: 3}
---- !u!1 &4489036922221241387 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 474366885464640398, guid: 4d834d245f23d374ab33932166b3ab30,
-    type: 3}
-  m_PrefabInstance: {fileID: 4096315647108591525}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4489036922221241557 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 474366885464640368, guid: 4d834d245f23d374ab33932166b3ab30,
+    type: 3}
+  m_PrefabInstance: {fileID: 4096315647108591525}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4489036922221241387 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 474366885464640398, guid: 4d834d245f23d374ab33932166b3ab30,
     type: 3}
   m_PrefabInstance: {fileID: 4096315647108591525}
   m_PrefabAsset: {fileID: 0}

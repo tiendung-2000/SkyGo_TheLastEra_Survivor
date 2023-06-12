@@ -21,7 +21,6 @@ public class LevelManager : Singleton<LevelManager>
     public bool isPaused;
     public bool isTestLevel = false;
 
-    public GameObject chestSpawn;
     public List<GameObject> enemyPrefabs;
     public List<int> enemySpawnPos;
 
