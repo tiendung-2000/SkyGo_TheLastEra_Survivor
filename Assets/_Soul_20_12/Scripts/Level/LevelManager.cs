@@ -12,7 +12,7 @@ public enum GameState
 
 public class LevelManager : Singleton<LevelManager>
 {
-    [SerializeField] private GameState state;
+    public GameState state;
 
     public GameObject bossShowUI;
     public GameObject bossHubUI;
@@ -220,8 +220,6 @@ public class LevelManager : Singleton<LevelManager>
             Time.timeScale = 1f;
         }
     }
-
-
 
     #region GameState
 

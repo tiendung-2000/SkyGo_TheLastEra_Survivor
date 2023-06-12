@@ -15,11 +15,17 @@ public class GunPickup : MonoBehaviour
         {
             waitToBeCollected -= Time.deltaTime;
         }
+
+        if (LevelManager.Ins.IsState(GameState.Menu))
+        {
+            Destroy(gameObject);
+
+            return;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-
         if (other.tag == "Player" && waitToBeCollected <= 0)
         {
             AudioManager.Ins.SoundEffect(4);

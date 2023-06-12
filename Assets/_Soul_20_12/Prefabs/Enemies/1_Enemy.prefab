@@ -336,7 +336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ske: {fileID: 3336256891439734973}
   animationDuration: 0.433
-  customMaterial: {fileID: 0}
+  customMaterial: {fileID: 6672269496944624784}
   col: {fileID: 2846773098395278057}
   theRB: {fileID: 2846773098395278049}
   moveSpeed: 2

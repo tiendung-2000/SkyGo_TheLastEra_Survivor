@@ -371,6 +371,7 @@ public class SelectCharacterUI : BaseUIMenu
     public void OnStart()
     {
         AudioManager.Ins.SoundUIPlay(1);
+        LevelManager.Ins.ChangeState(GameState.Gameplay);
 
         CanvasManager.Ins.OpenUI(UIName.LoadingUI, null);
         CanvasManager.Ins.CloseUI(UIName.CoinBar);

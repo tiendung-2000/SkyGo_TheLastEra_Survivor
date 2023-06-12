@@ -4,8 +4,10 @@ using UnityEngine;
 public class Chest : MonoBehaviour
 {
     [Header("Chest Animation")]
-    public GameObject chestFX;
-    public GameObject ChestAnim;
+    public GameObject chestSprite;
+    public GameObject chestAnim;
+    public GameObject spawnAnim;
+    public ParticleSystem spawnEffect;
 
     [Header("Chest Properties")]
     private bool canOpen, isOpen, canSpawn;
@@ -20,9 +22,13 @@ public class Chest : MonoBehaviour
 
     private void OnEnable()
     {
-        canOpen = true;
-        canSpawn = true;
-        ChestAnim.SetActive(true);
+        StartCoroutine(ActiveSprite());
+    }
+
+    IEnumerator ActiveSprite()
+    {
+        yield return new WaitForSeconds(.1f);
+        chestSprite.SetActive(true);
     }
 
     private void Update()
@@ -36,19 +42,16 @@ public class Chest : MonoBehaviour
             Instantiate(potentialGuns[gunSelect], spawnPoint.position, spawnPoint.rotation);
             col.enabled = false;
             isOpen = true;
-
+            Debug.Log("Drop Gun");
         }
         DropItem();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void OpenChest()
     {
-        if (other.CompareTag("Player"))
-        {
-            ChestAnim.SetActive(true);
-            AudioManager.Ins.SoundEffect(5);
-            StartCoroutine(IEChestFX());
-        }
+        chestAnim.SetActive(true);
+        AudioManager.Ins.SoundEffect(5);
+        StartCoroutine(IEChestFX());
     }
 
     void DropItem()
@@ -59,9 +62,10 @@ public class Chest : MonoBehaviour
 
         if (canSpawn == true && spawnCount <= spawnTime && timeBetweenSpawn <= 0)
         {
-            Instantiate(itemPickup[itemDrop], spawnPoint.position, spawnPoint.rotation);
+            SmartPool.Ins.Spawn(itemPickup[itemDrop], spawnPoint.position, spawnPoint.rotation);
             spawnCount++;
             timeBetweenSpawn = 0.1f;
+            Debug.Log("Drop item");
             goto calculate;
         }
         else
@@ -73,7 +77,10 @@ public class Chest : MonoBehaviour
     IEnumerator IEChestFX()
     {
         yield return new WaitForSeconds(.1f);
-        chestFX.SetActive(true);
+        col.enabled = false;
+        spawnEffect.gameObject.SetActive(true);
+        spawnEffect.Play();
         canOpen = true;
+        canSpawn = true;
     }
 }

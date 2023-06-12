@@ -53,6 +53,8 @@ public class SelectLevelUI : BaseUIMenu
 
     private void OnEnable()
     {
+        LevelManager.Ins.ChangeState(GameState.Menu);
+
         AudioManager.Ins.PlaySelectBGM();
 
         CanvasManager.Ins.OpenUI(UIName.CoinBar, null);

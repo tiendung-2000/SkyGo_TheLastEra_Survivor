@@ -130,7 +130,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 3, y: 3}
   m_EdgeRadius: 0
 --- !u!114 &4862725716961266222
 MonoBehaviour:
@@ -155,6 +155,7 @@ MonoBehaviour:
     pickUpType: 2
     shadow: 1
     destroyTime: 0
+    itemTypeScale: 0
   particleEffect: {fileID: 952634577768187874}
 --- !u!114 &7435786338094268191
 MonoBehaviour:

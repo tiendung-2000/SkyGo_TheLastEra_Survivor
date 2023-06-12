@@ -9844,14 +9844,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    oldSize: {x: 2.56, y: 2.56}
     newSize: {x: 0.6875, y: 0.234375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
 --- !u!50 &6649820173841685186
 Rigidbody2D:
@@ -9889,7 +9889,7 @@ MonoBehaviour:
   settings:
     YReducer: 2.5
     XReducer: 2.5
-    numberOfBounces: 3
+    numberOfBounces: 1
     velocity: 10
     horizontalForce: 4
     gravity: -10

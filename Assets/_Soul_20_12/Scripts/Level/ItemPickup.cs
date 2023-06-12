@@ -17,6 +17,13 @@ public class ItemPickup : MonoBehaviour
         {
             waitToBeCollected -= Time.deltaTime;
         }
+
+        if(LevelManager.Ins.IsState(GameState.Menu))
+        {
+            SmartPool.Ins.Despawn(gameObject);
+
+            return;
+        }
     }
 
     private void OnEnable()

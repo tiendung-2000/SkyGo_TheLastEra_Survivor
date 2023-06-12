@@ -22,6 +22,7 @@ public class RoomCenter : MonoBehaviour
     [SerializeField] Collider2D colCheckPlayer;
 
     public Room theRoom;
+    public Chest chest;
 
     public SpriteRenderer roomLayout;
     public Sprite[] roomIcon;
@@ -38,9 +39,6 @@ public class RoomCenter : MonoBehaviour
     public int minX;
     public int maxY;
     public int minY;
-
-    // Start is called before the first frame update
-
 
 
     private void Awake()
@@ -115,7 +113,10 @@ public class RoomCenter : MonoBehaviour
             {
                 theRoom.OpenDoors();
                 spawnChest = true;
-                SpawnChest();
+                chest.OpenChest();
+
+                roomLayout.sprite = roomIcon[2];
+                //SpawnChest();
             }
         }
 
@@ -134,23 +135,26 @@ public class RoomCenter : MonoBehaviour
             {
                 theRoom.OpenDoors();
                 spawnChest = true;
-                SpawnChest();
+                chest.OpenChest();
+
+                roomLayout.sprite = roomIcon[2];
+                //SpawnChest();
             }
         }
     }
 
-    public void SpawnChest()
-    {
-        roomLayout.sprite = roomIcon[2];
-        Debug.Log("SpawmChest");
-        if (isEnemyCenter || isBossCenter && spawnChest == true)
-        {
-            GetTarget();
-            GameObject chestSpawn = Instantiate(LevelManager.Ins.chestSpawn, checkPoint.position, Quaternion.identity);
-            chestSpawn.transform.parent = checkPoint.transform;
-            spawnChest = false;
-        }
-    }
+    //public void SpawnChest()
+    //{
+    //    roomLayout.sprite = roomIcon[2];
+    //    //Debug.Log("SpawmChest");
+    //    if (isEnemyCenter || isBossCenter && spawnChest == true)
+    //    {
+    //        GetTarget();
+    //        GameObject chestSpawn = Instantiate(LevelManager.Ins.chestSpawn, checkPoint.position, Quaternion.identity);
+    //        chestSpawn.transform.parent = checkPoint.transform;
+    //        spawnChest = false;
+    //    }
+    //}
 
     public void GetTarget()
     {
@@ -167,6 +171,7 @@ public class RoomCenter : MonoBehaviour
         {
             if (isBossCenter)
             {
+                chest.gameObject.SetActive(true);
                 if (bosses.Count > 0)
                 {
                     if (isFirstTime == true)
@@ -184,16 +189,12 @@ public class RoomCenter : MonoBehaviour
             }
             if (isEnemyCenter)
             {
+                chest.gameObject.SetActive(true);
                 roomLayout.sprite = roomIcon[1];
 
                 GetRandomEnemies();
             }
         }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        
     }
 
     IEnumerator IEBossShowDisable()
