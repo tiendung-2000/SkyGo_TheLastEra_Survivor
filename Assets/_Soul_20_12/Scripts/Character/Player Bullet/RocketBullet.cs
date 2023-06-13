@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class RocketBullet : MonoBehaviour
@@ -14,11 +15,21 @@ public class RocketBullet : MonoBehaviour
     }
     public Vector3 triggerPosition;
 
+    Tween impactTween;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         triggerPosition = this.transform.position;
 
-        Instantiate(explodeEffect, triggerPosition, Quaternion.identity);
+        impactTween?.Kill();
+
+        impactTween = DOVirtual.DelayedCall(0, () =>
+        {
+            Instantiate(explodeEffect, triggerPosition, Quaternion.identity);
+        }).OnComplete(() =>
+        {
+            SmartPool.Ins.Despawn(gameObject);
+        });
         AudioManager.Ins.SoundEffect(8);
 
         switch (other.tag)
@@ -33,7 +44,7 @@ public class RocketBullet : MonoBehaviour
                 if (enemy != null)
                 {
                     enemy.DamageEnemy(damageToGive + PlayerController.Ins.playerBaseDamage);
-                    SmartPool.Ins.Despawn(gameObject);
+                    //SmartPool.Ins.Despawn(gameObject);
                 }
                 break;
             case "Boss":
@@ -42,7 +53,7 @@ public class RocketBullet : MonoBehaviour
                 {
                     boss.TakeDamage(damageToGive + PlayerController.Ins.playerBaseDamage);
                     Instantiate(boss.hitEffect, transform.position, transform.rotation);
-                    SmartPool.Ins.Despawn(gameObject);
+                    //SmartPool.Ins.Despawn(gameObject);
                 }
                 break;
         }

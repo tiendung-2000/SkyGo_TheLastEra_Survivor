@@ -19,7 +19,8 @@ MonoBehaviour:
       CoolDown: 0500000004000000030000000200000001000000
       Speed: 0600000006000000070000000700000008000000
       skillImg: {fileID: 21300000, guid: 0e8542f33961e8f40ad1369c910d3618, type: 3}
-      skillDetail: Dash forward and destroy obstacles along the way.
+      skillDetail: When using the skill, it is possible to glide a short distance
+        in the direction of movement. Cooldown 5s.
     UpgradeData:
       HPUpgradePrice: d0070000b80b0000a00f000088130000
       CoolDownUpgradePrice: 881300004c1d000010270000d4300000
@@ -29,7 +30,8 @@ MonoBehaviour:
       CoolDown: 0500000004000000030000000200000001000000
       Speed: 0600000006000000070000000700000008000000
       skillImg: {fileID: 21300000, guid: ad7a9a143c1fcb54099d03ac9b3c0f8a, type: 3}
-      skillDetail: x2 all bullets fired in 3s.
+      skillDetail: When using the character will enter a state of rage, and double
+        all bullets fired for 3s. Cooldown 8s.
     UpgradeData:
       HPUpgradePrice: d0070000b80b0000a00f000088130000
       CoolDownUpgradePrice: 881300004c1d000010270000d4300000
@@ -39,7 +41,8 @@ MonoBehaviour:
       CoolDown: 0500000004000000030000000200000001000000
       Speed: 0600000006000000070000000700000008000000
       skillImg: {fileID: 21300000, guid: 64846bc0b017a02439483aca5bb395aa, type: 3}
-      skillDetail: When using skill can be immortal for 3s.
+      skillDetail: When using the skill will become immortal, immune to all types
+        of damage for 3s.
     UpgradeData:
       HPUpgradePrice: d0070000b80b0000a00f000088130000
       CoolDownUpgradePrice: 881300004c1d000010270000d4300000
@@ -60,7 +63,8 @@ MonoBehaviour:
       CoolDown: 0500000004000000030000000200000001000000
       Speed: 0600000006000000070000000700000008000000
       skillImg: {fileID: 21300000, guid: 4b418d19de60a9b4f8e07f4a6483c587, type: 3}
-      skillDetail: Increases character's movement speed by 50% for 3s
+      skillDetail: When used, it will increase the character's movement speed by
+        50% for 3s.
     UpgradeData:
       HPUpgradePrice: d0070000b80b0000a00f000088130000
       CoolDownUpgradePrice: 881300004c1d000010270000d4300000

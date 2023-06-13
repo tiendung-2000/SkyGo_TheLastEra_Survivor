@@ -25,13 +25,21 @@ public class ShotgunBullet : MonoBehaviour
         theRB.velocity = transform.right * speed;
     }
     public Vector3 triggerPosition;
-
+    Tween impactTween;
     private void OnTriggerEnter2D(Collider2D other)
     {
         triggerPosition = this.transform.position;
-        Instantiate(impactEffect, triggerPosition, Quaternion.identity);
+        impactTween?.Kill();
 
-        SmartPool.Ins.Despawn(gameObject);
+        impactTween = DOVirtual.DelayedCall(0, () =>
+        {
+            Instantiate(impactEffect, triggerPosition, Quaternion.identity);
+        }).OnComplete(() =>
+        {
+            SmartPool.Ins.Despawn(gameObject);
+        });
+
+        //SmartPool.Ins.Despawn(gameObject);
 
         //if (other.gameObject.CompareTag("Enemy"))
         //{

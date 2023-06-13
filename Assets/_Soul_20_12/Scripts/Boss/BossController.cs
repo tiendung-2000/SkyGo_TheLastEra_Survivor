@@ -45,7 +45,9 @@ public class BossController : MonoBehaviour
 
     public void TakeDamage(int damageAmount)
     {
-        currentHealth -= damageAmount;
+        #region Desktop
+        currentHealth -= Mathf.RoundToInt(damageAmount / 2);
+        #endregion
         StartCoroutine(IETakeDamageEffect());
         if (currentHealth <= 0)
         {

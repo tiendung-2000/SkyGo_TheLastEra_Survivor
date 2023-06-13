@@ -28,14 +28,19 @@ public class GamePauseUI : BaseUIMenu
     }
 
     #region Desktop
-    //void OnGUI()
-    //{
-    //    //Delete all of the PlayerPrefs settings by pressing this button.
-    //    if (GUI.Button(new Rect(100, 200, 200, 60), "Delete"))
-    //    {
-    //        PlayerPrefs.DeleteAll();
-    //    }
-    //}
+    void OnGUI()
+    {
+        //Delete all of the PlayerPrefs settings by pressing this button.
+        if (GUI.Button(new Rect(100, 200, 200, 60), "Delete"))
+        {
+            PlayerPrefs.DeleteAll();
+        }
+
+        if (GUI.Button(new Rect(100, 400, 200, 60), "Add Gun"))
+        {
+            LevelManager.Ins.DropGunPickup();
+        }
+    }
     #endregion
 
     private void OnEnable()

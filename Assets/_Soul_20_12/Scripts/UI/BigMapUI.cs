@@ -25,12 +25,12 @@ public class BigMapUI : BaseUIMenu
     }
 
     #region Desktop
-    //private void Update()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.M))
-    //    {
-    //        OnClickCloseButton();
-    //    }
-    //}
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            OnClickCloseButton();
+        }
+    }
     #endregion
 }

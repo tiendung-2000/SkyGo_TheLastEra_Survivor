@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -45,13 +46,21 @@ public class LightlingBullet : MonoBehaviour
         theRB.velocity = transform.right * speed;
     }
     public Vector3 triggerPosition;
-
+    Tween impactTween;
     private void OnTriggerEnter2D(Collider2D other)
     {
         triggerPosition = this.transform.position;
         // Spawn impact effect
-        Instantiate(impactEffect, triggerPosition, Quaternion.identity);
 
+        impactTween?.Kill();
+
+        impactTween = DOVirtual.DelayedCall(0, () =>
+        {
+            Instantiate(impactEffect, triggerPosition, Quaternion.identity);
+        }).OnComplete(() =>
+        {
+            SmartPool.Ins.Despawn(gameObject);
+        });
         // Despawn the object
 
         //Find all enemy
@@ -82,7 +91,7 @@ public class LightlingBullet : MonoBehaviour
                 }
                 break;
         }
-        SmartPool.Ins.Despawn(gameObject);
+        //SmartPool.Ins.Despawn(gameObject);
 
     }
 

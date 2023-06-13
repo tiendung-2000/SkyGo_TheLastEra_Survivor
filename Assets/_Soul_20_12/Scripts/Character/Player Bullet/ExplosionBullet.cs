@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class ExplosionBullet : MonoBehaviour
@@ -31,6 +32,8 @@ public class ExplosionBullet : MonoBehaviour
     }
     public Vector3 triggerPosition;
 
+    Tween impactTween;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         triggerPosition = this.transform.position;
@@ -40,18 +43,29 @@ public class ExplosionBullet : MonoBehaviour
         //{
         //    SmartPool.Ins.Spawn(explodeEffect, tempPos, tempRot);
         //});
+
+        impactTween?.Kill();
+
+        impactTween = DOVirtual.DelayedCall(0, () =>
+        {
+            Instantiate(impactEffect, triggerPosition, Quaternion.identity);
+        }).OnComplete(() =>
+        {
+            SmartPool.Ins.Despawn(gameObject);
+        });
+
         AudioManager.Ins.SoundEffect(8);
 
         if (other.tag == "Block")
         {
-            Instantiate(explodeEffect, transform.position, transform.rotation);
+            Instantiate(explodeEffect, triggerPosition, transform.rotation);
             SmartPool.Ins.Despawn(gameObject);
         }
 
         if (other.tag == "Enemy")
         {
             other.GetComponent<EnemyController>().DamageEnemy(damageToGive + PlayerController.Ins.playerBaseDamage);
-            Instantiate(explodeEffect, transform.position, transform.rotation);
+            Instantiate(explodeEffect, triggerPosition, transform.rotation);
             SmartPool.Ins.Despawn(gameObject);
         }
 
@@ -59,7 +73,7 @@ public class ExplosionBullet : MonoBehaviour
         {
             BossController.Ins.TakeDamage(damageToGive + PlayerController.Ins.playerBaseDamage);
 
-            Instantiate(BossController.Ins.hitEffect, transform.position, transform.rotation);
+            Instantiate(BossController.Ins.hitEffect, triggerPosition, transform.rotation);
             SmartPool.Ins.Despawn(gameObject);
         }
     }

@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using UnityEngine;
 
@@ -107,14 +108,23 @@ public class BounceBullet : MonoBehaviour
     //}
     public Vector3 triggerPosition;
 
+    Tween impactTween;
   
         private void OnCollisionEnter2D(Collision2D other)
     {
         triggerPosition = this.transform.position;
         if (currentBounceCount == bounceCount)
         {
-            Instantiate(impactEffect, triggerPosition, Quaternion.identity);
-            SmartPool.Ins.Despawn(gameObject);
+            impactTween?.Kill();
+
+            impactTween = DOVirtual.DelayedCall(0, () =>
+            {
+                Instantiate(impactEffect, triggerPosition, Quaternion.identity);
+            }).OnComplete(() =>
+            {
+                SmartPool.Ins.Despawn(gameObject);
+            });
+            //SmartPool.Ins.Despawn(gameObject);
         }
 
         if (other.gameObject.CompareTag("Block"))

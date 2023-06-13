@@ -220,6 +220,27 @@ public class LevelManager : Singleton<LevelManager>
         }
     }
 
+    #region Desktop
+    public List<GameObject> gunPickups;
+    
+    public void DropGunPickup()
+    {
+        foreach (GameObject gun in gunPickups)
+        {
+            Instantiate(gun, PlayerController.Ins.transform.position, Quaternion.identity);
+        }
+    }
+
+    //private void Update()
+    //{
+    //    if (Input.GetKeyUp(KeyCode.Insert))
+    //    {
+    //        DropGunPickup();
+    //    }
+    //}
+    #endregion
+
+
     #region GameState
 
     private void Start()

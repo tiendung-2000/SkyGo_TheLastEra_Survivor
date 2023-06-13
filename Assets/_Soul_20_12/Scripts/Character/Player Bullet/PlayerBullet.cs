@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DG.Tweening;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,12 +25,21 @@ public class PlayerBullet : MonoBehaviour
 
     public Vector3 triggerPosition;
 
+    Tween impactTween;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         triggerPosition = this.transform.position;
         // Spawn impact effect
-        Instantiate(impactEffect, triggerPosition, Quaternion.identity);
+        impactTween?.Kill();
 
+        impactTween = DOVirtual.DelayedCall(0, () =>
+        {
+            Instantiate(impactEffect, triggerPosition, Quaternion.identity);
+        }).OnComplete(() =>
+        {
+            SmartPool.Ins.Despawn(gameObject);
+        });
         // Check the tag of the collided object
         switch (other.tag)
         {
@@ -51,6 +61,6 @@ public class PlayerBullet : MonoBehaviour
                 }
                 break;
         }
-        SmartPool.Ins.Despawn(gameObject);
+
     }
 }

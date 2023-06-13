@@ -29,23 +29,23 @@ public class GameplayUI : BaseUIMenu
     }
 
     #region Desktop
-    //bool settingOn;
+    bool settingOn;
 
-    //private void Update()
-    //{
-    //    if(Input.GetKeyDown(KeyCode.Escape))
-    //    {
-    //        settingOn = !settingOn;
-    //        if(settingOn)
-    //        {
-    //            CanvasManager.Ins.OpenUI(UIName.PauseSettingUI, null);
-    //        }
-    //        else
-    //        {
-    //            CanvasManager.Ins.CloseUI(UIName.PauseSettingUI);
-    //        }
-    //    }
-    //}
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            settingOn = !settingOn;
+            if (settingOn)
+            {
+                CanvasManager.Ins.OpenUI(UIName.PauseSettingUI, null);
+            }
+            else
+            {
+                CanvasManager.Ins.CloseUI(UIName.PauseSettingUI);
+            }
+        }
+    }
     #endregion
 
     IEnumerator IEShowTutorial()

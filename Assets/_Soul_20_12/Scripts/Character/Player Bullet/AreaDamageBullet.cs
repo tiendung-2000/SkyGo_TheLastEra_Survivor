@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,13 +24,21 @@ public class AreaDamageBullet : MonoBehaviour
         theRB.velocity = transform.right * speed;
     }
     public Vector3 triggerPosition;
-
+    Tween impactTween;
     private void OnTriggerEnter2D(Collider2D other)
     {
         triggerPosition = this.transform.position;
         // Spawn impact effect
-        Instantiate(impactEffect, triggerPosition, Quaternion.identity);
-        Instantiate(areaDamage, triggerPosition, Quaternion.identity);
+        impactTween?.Kill();
+
+        impactTween = DOVirtual.DelayedCall(0, () =>
+        {
+            Instantiate(impactEffect, triggerPosition, Quaternion.identity);
+            Instantiate(areaDamage, triggerPosition, Quaternion.identity);
+        }).OnComplete(() =>
+        {
+            SmartPool.Ins.Despawn(gameObject);
+        });
 
         // Check the tag of the collided object
         switch (other.tag)
@@ -52,6 +61,6 @@ public class AreaDamageBullet : MonoBehaviour
                 }
                 break;
         }
-        SmartPool.Ins.Despawn(gameObject);
+        //SmartPool.Ins.Despawn(gameObject);
     }
 }
