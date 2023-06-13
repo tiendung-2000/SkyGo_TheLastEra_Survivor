@@ -58,14 +58,20 @@ public class Chest : MonoBehaviour
     {
         calculate:
 
-        int itemDrop = Random.Range(0, itemPickup.Length);
+        //int itemDrop = Random.Range(0, itemPickup.Length);
 
         if (canSpawn == true && spawnCount <= spawnTime && timeBetweenSpawn <= 0)
         {
-            SmartPool.Ins.Spawn(itemPickup[itemDrop], spawnPoint.position, spawnPoint.rotation);
+            if (spawnCount <= 4)
+            {
+                SmartPool.Ins.Spawn(itemPickup[0], spawnPoint.position, spawnPoint.rotation);
+            }
+            else
+            {
+                SmartPool.Ins.Spawn(itemPickup[1], spawnPoint.position, spawnPoint.rotation);
+            }
             spawnCount++;
             timeBetweenSpawn = 0.1f;
-            Debug.Log("Drop item");
             goto calculate;
         }
         else
@@ -78,6 +84,7 @@ public class Chest : MonoBehaviour
     {
         yield return new WaitForSeconds(.1f);
         col.enabled = false;
+        chestSprite.SetActive(false);
         spawnEffect.gameObject.SetActive(true);
         spawnEffect.Play();
         canOpen = true;

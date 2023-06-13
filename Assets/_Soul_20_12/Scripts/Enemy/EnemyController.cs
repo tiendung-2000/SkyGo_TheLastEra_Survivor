@@ -124,7 +124,10 @@ public class EnemyController : MonoBehaviour
     public void DamageEnemy(int damage)
     {
         #region Desktop
-        health -= Mathf.RoundToInt(damage / 2);
+        //health -= Mathf.RoundToInt(damage / 2);
+        #endregion
+        #region Mobile
+        health -= damage;
         #endregion
         StartCoroutine(IETakeDamageEffect());
         //AudioManager.instance.PlaySFX(2);

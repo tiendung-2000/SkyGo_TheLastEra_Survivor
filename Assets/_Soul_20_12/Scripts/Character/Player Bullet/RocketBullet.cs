@@ -28,7 +28,7 @@ public class RocketBullet : MonoBehaviour
             Instantiate(explodeEffect, triggerPosition, Quaternion.identity);
         }).OnComplete(() =>
         {
-            SmartPool.Ins.Despawn(gameObject);
+            Destroy(gameObject);
         });
         AudioManager.Ins.SoundEffect(8);
 
@@ -37,7 +37,7 @@ public class RocketBullet : MonoBehaviour
             case "Block":
                 //Debug.Log("Rocket");
 
-                SmartPool.Ins.Despawn(gameObject);
+                Destroy(gameObject);
                 break;
             case "Enemy":
                 EnemyController enemy = other.GetComponent<EnemyController>();

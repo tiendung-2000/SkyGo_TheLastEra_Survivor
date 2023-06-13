@@ -40,12 +40,12 @@ public class ButtonControllerUI : BaseUIMenu
     #region Mobile
     public void OnDisableJoystick()
     {
-        //joystick.DisableJoystick();
+        joystick.DisableJoystick();
     }
 
     public void OnEnableJoyStick()
     {
-        //joystick.EnableJoystick();
+        joystick.EnableJoystick();
     }
     #endregion
 
@@ -79,18 +79,18 @@ public class ButtonControllerUI : BaseUIMenu
     }
 
     #region Desktop
-    private void FixedUpdate()
-    {
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            OnSkill();
-        }
+    //private void FixedUpdate()
+    //{
+    //    if (Input.GetKeyUp(KeyCode.Space))
+    //    {
+    //        OnSkill();
+    //    }
 
-        if (Input.GetKeyUp(KeyCode.Tab))
-        {
-            OnSwitch();
-        }
-    }
+    //    if (Input.GetKeyUp(KeyCode.Tab))
+    //    {
+    //        OnSwitch();
+    //    }
+    //}
     #endregion
 
 
@@ -115,14 +115,14 @@ public class ButtonControllerUI : BaseUIMenu
             OnShoot();
         }
         #region Desktop
-        if (Input.GetKey(KeyCode.Mouse0))
-        {
-            pointerDown = true;
-        }
-        else
-        {
-            pointerDown = false;
-        }
+        //if (Input.GetKey(KeyCode.Mouse0))
+        //{
+        //    pointerDown = true;
+        //}
+        //else
+        //{
+        //    pointerDown = false;
+        //}
         #endregion
     }
 

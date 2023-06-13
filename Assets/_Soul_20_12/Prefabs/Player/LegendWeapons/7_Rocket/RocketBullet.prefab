@@ -121,10 +121,10 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0.5}
     oldSize: {x: 2.6666667, y: 1.5833334}
     newSize: {x: 2.6666667, y: 1.5833334}
     adaptiveTilingThreshold: 0.5
@@ -157,7 +157,7 @@ MonoBehaviour:
       m_Calls: []
   m_searchRange: 10
   m_searchAngle: 360
-  m_canLooseTarget: 1
+  m_canLooseTarget: 0
   m_guidanceIntensity: 10
   m_distanceInfluence:
     serializedVersion: 2
@@ -9838,7 +9838,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5200552931255818482}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.29, y: 0, z: 0}
+  m_LocalPosition: {x: 0.078, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 5, z: 1}
   m_Children:
   - {fileID: 5200552931016866577}

@@ -5,7 +5,7 @@ public class ItemPickup : MonoBehaviour
 {
     [SerializeField] ItemType itemType;
     public float waitToBeCollected;
-    public float waitToBeDisappear = 5f;
+    //public float waitToBeDisappear = 5f;
 
     public int coinValue;
     public int healAmount;
@@ -26,16 +26,16 @@ public class ItemPickup : MonoBehaviour
         }
     }
 
-    private void OnEnable()
-    {
-        StartCoroutine(IEDisappear());
-    }
+    //private void OnEnable()
+    //{
+    //    StartCoroutine(IEDisappear());
+    //}
 
-    IEnumerator IEDisappear()
-    {
-        yield return new WaitForSeconds(waitToBeDisappear);
-        SmartPool.Ins.Despawn(gameObject);
-    }
+    //IEnumerator IEDisappear()
+    //{
+    //    yield return new WaitForSeconds(waitToBeDisappear);
+    //    SmartPool.Ins.Despawn(gameObject);
+    //}
 
     private void OnTriggerEnter2D(Collider2D other)
     {

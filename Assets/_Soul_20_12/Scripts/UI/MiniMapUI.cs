@@ -16,12 +16,12 @@ public class MiniMapUI : BaseUIMenu
         Close();
     }
     #region Desktop
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            OpenMap();
-        }
-    }
+    //private void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.M))
+    //    {
+    //        OpenMap();
+    //    }
+    //}
     #endregion
 }

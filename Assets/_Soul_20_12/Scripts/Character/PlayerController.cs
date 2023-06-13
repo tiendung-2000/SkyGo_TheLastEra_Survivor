@@ -1,4 +1,5 @@
-﻿using Spine.Unity;
+﻿using DG.Tweening;
+using Spine.Unity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -30,6 +31,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsEnemy;
 
     private Weapon gun;
+    //public Weapon defaultWeapon;
     public List<Weapon> availableGuns = new List<Weapon>();
     public List<Weapon> availableDupliGuns = new List<Weapon>();
     [HideInInspector]
@@ -50,8 +52,18 @@ public class PlayerController : MonoBehaviour
         OnSpeedUpgrade(DynamicDataManager.Ins.CurPlayerSpeedUpgrade);
     }
 
+    Tween SetupWeapon;
+
     private void OnEnable()
     {
+        //SetupWeapon?.Kill();
+        //SetupWeapon = DOVirtual.DelayedCall(1f, () =>
+        //{
+        //    AddDefaultWeapon();
+        //}).OnComplete(() =>
+        //{
+        //});
+
 
         material.SetFloat("_FillPhase", 0f);
 
@@ -66,6 +78,20 @@ public class PlayerController : MonoBehaviour
 
         ResetWeapon();
     }
+
+    //void AddDefaultWeapon()
+    //{
+    //    if (defaultWeapon != null)
+    //    {
+    //        Instantiate(defaultWeapon, theHand.position, theHand.rotation);
+    //        //defaultWeapon.gameObject.SetActive(true);
+    //        defaultWeapon.transform.parent = theHand;
+    //        defaultWeapon.transform.position = new Vector2(theHand.position.x, theHand.position.y);
+    //        defaultWeapon.transform.localRotation = Quaternion.Euler(Vector3.zero);
+    //        defaultWeapon.transform.localScale = Vector3.one;
+    //        availableGuns.Add(defaultWeapon);
+    //    }
+    //}
 
     private void ResetWeapon()
     {
@@ -94,27 +120,27 @@ public class PlayerController : MonoBehaviour
         if (canMove || !canMove)
         {
             #region Mobile
-            //Vector2 dir = new Vector2(UltimateJoystick.GetHorizontalAxis("Player Movement JoyStick"), UltimateJoystick.GetVerticalAxis("Player Movement JoyStick"));
+            Vector2 dir = new Vector2(UltimateJoystick.GetHorizontalAxis("Player Movement JoyStick"), UltimateJoystick.GetVerticalAxis("Player Movement JoyStick"));
 
-            //moveInput.x = dir.x;
-            //moveInput.y = dir.y;
+            moveInput.x = dir.x;
+            moveInput.y = dir.y;
 
-            //if (dir.magnitude > 0f)
-            //{
-            //    Vector3 movementDir = new Vector3(moveInput.x, moveInput.y, 0f);
-            //    transform.position += movementDir.normalized * moveSpeed * Time.deltaTime;
-            //    moveInput.Normalize();
-            //}
+            if (dir.magnitude > 0f)
+            {
+                Vector3 movementDir = new Vector3(moveInput.x, moveInput.y, 0f);
+                transform.position += movementDir.normalized * moveSpeed * Time.deltaTime;
+                moveInput.Normalize();
+            }
             #endregion
 
             #region Desktop
-            moveInput.x = Input.GetAxisRaw("Horizontal");
-            moveInput.y = Input.GetAxisRaw("Vertical");
+            //moveInput.x = Input.GetAxisRaw("Horizontal");
+            //moveInput.y = Input.GetAxisRaw("Vertical");
 
-            moveInput.Normalize();
+            //moveInput.Normalize();
 
 
-            theRB.velocity = moveInput * PlayerSkillManager.instance.activeMoveSpeed;
+            //theRB.velocity = moveInput * PlayerSkillManager.instance.activeMoveSpeed;
 
 
             #endregion
@@ -141,32 +167,32 @@ public class PlayerController : MonoBehaviour
 
     #region Desktop
 
-    private void FixedUpdate()
-    {
-        FlipPlayer();
-    }
+    //private void FixedUpdate()
+    //{
+    //    FlipPlayer();
+    //}
 
-    void FlipPlayer()
-    {
-        Vector3 mousePos = Input.mousePosition;
-        Vector3 screenPoint = CameraController.Ins.mainCamera.WorldToScreenPoint(transform.localPosition);
+    //void FlipPlayer()
+    //{
+    //    Vector3 mousePos = Input.mousePosition;
+    //    Vector3 screenPoint = CameraController.Ins.mainCamera.WorldToScreenPoint(transform.localPosition);
 
-        if (mousePos.x < screenPoint.x)
-        {
-            transform.localScale = new Vector3(-1f, 1f, 1f);
-            theHand.localScale = new Vector3(-1f, -1f, 1f);
-        }
-        else
-        {
-            transform.localScale = Vector3.one;
-            theHand.localScale = Vector3.one;
-        }
+    //    if (mousePos.x < screenPoint.x)
+    //    {
+    //        transform.localScale = new Vector3(-1f, 1f, 1f);
+    //        theHand.localScale = new Vector3(-1f, -1f, 1f);
+    //    }
+    //    else
+    //    {
+    //        transform.localScale = Vector3.one;
+    //        theHand.localScale = Vector3.one;
+    //    }
 
-        //rotate gun arm
-        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        float angle = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-        theHand.rotation = Quaternion.Euler(0, 0, (angle));
-    }
+    //    //rotate gun arm
+    //    Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+    //    float angle = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+    //    theHand.rotation = Quaternion.Euler(0, 0, (angle));
+    //}
 
     #endregion
 

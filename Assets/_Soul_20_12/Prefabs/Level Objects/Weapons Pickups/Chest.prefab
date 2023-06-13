@@ -383,7 +383,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382518262501967114}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.86, z: 0}
+  m_LocalPosition: {x: 0, y: -0.837, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 382518262502533350}
@@ -457,7 +457,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &382518262502533350
 Transform:
   m_ObjectHideFlags: 0
@@ -467,7 +467,7 @@ Transform:
   m_GameObject: {fileID: 382518262502533347}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 382518262501967115}
   - {fileID: 4351386924283992624}
@@ -520,7 +520,7 @@ MonoBehaviour:
   chestAnim: {fileID: 382518262974448535}
   spawnAnim: {fileID: 2540754930807717338}
   spawnEffect: {fileID: 6255046957208052819}
-  spawnTime: 10
+  spawnTime: 30
   spawnPoint: {fileID: 1019139638}
   col: {fileID: 382518262502533349}
   potentialGuns:
@@ -567,7 +567,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382518262974448535}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 382518261401197077}
@@ -820,7 +820,7 @@ PrefabInstance:
     - target: {fileID: 7171833136170248666, guid: 051fd8b3909c0084798bb8b7bac6b2dd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.55
+      value: -0.21
       objectReference: {fileID: 0}
     - target: {fileID: 7171833136170248666, guid: 051fd8b3909c0084798bb8b7bac6b2dd,
         type: 3}
@@ -866,6 +866,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OpenChestVFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171833136170248669, guid: 051fd8b3909c0084798bb8b7bac6b2dd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 051fd8b3909c0084798bb8b7bac6b2dd, type: 3}

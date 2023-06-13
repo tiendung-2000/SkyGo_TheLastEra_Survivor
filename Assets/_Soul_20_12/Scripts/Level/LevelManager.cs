@@ -24,6 +24,9 @@ public class LevelManager : Singleton<LevelManager>
     public List<GameObject> enemyPrefabs;
     public List<int> enemySpawnPos;
 
+    public List<GameObject> itemToDrop; //index: 0 = coin,
+    public List<GameObject> weaponToDrop;
+
     #region Enemy Scale
 
     #region Enemy Fire Rate
@@ -221,25 +224,39 @@ public class LevelManager : Singleton<LevelManager>
     }
 
     #region Desktop
-    public List<GameObject> gunPickups;
-    
-    public void DropGunPickup()
+    //public List<GameObject> gunPickups;
+
+    //public void DropGunPickup()
+    //{
+    //    foreach (GameObject gun in gunPickups)
+    //    {
+    //        Instantiate(gun, PlayerController.Ins.transform.position, Quaternion.identity);
+    //    }
+    //}
+
+    #endregion
+
+    #region Ads Item Reward
+
+    public void RewardAdsItem() //5s ads
     {
-        foreach (GameObject gun in gunPickups)
+        for (int i = 0; i <= 10; i++) 
         {
-            Instantiate(gun, PlayerController.Ins.transform.position, Quaternion.identity);
+            SmartPool.Ins.Spawn(itemToDrop[0], PlayerController.Ins.transform.position, Quaternion.identity);
         }
     }
 
-    //private void Update()
-    //{
-    //    if (Input.GetKeyUp(KeyCode.Insert))
-    //    {
-    //        DropGunPickup();
-    //    }
-    //}
-    #endregion
+    public void RewardAdsNormalGun() //15s ads
+    {
 
+    }
+
+    public void RewardAdsLegendGun() //30s ads
+    {
+
+    }
+
+    #endregion
 
     #region GameState
 

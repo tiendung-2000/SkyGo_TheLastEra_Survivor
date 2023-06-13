@@ -379,11 +379,11 @@ public class SelectCharacterUI : BaseUIMenu
         StartCoroutine(IESpawnLevel());
         //StartCoroutine(IEPlaySound());
 
-        int openPopup = 8;
-        if (Random.Range(1, 10) < openPopup)
-        {
+        //int openPopup = 8;
+        //if (Random.Range(1, 10) < openPopup)
+        //{
             CanvasManager.Ins.OpenUI(UIName.WeaponPopup, null);
-        }
+        //}
 
         CanvasManager.Ins.OpenUI(UIName.GameplayUI, null);
         ResourceSystem.Ins.players[DynamicDataManager.Ins.CurPlayer].gameObject.SetActive(true);
