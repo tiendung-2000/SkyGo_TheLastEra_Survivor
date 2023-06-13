@@ -2212,6 +2212,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player_3
       objectReference: {fileID: 0}
+    - target: {fileID: 6803519117307433613, guid: a45720b6227f8cc4f8861513e3526c9d,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7446226075622880354, guid: a45720b6227f8cc4f8861513e3526c9d,
         type: 3}
       propertyPath: m_Mesh
