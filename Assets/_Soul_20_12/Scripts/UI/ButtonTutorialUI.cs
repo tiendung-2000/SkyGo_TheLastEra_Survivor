@@ -11,8 +11,16 @@ public class ButtonTutorialUI : BaseUIMenu
 
     [SerializeField] Text tutorialText;
 
+    IEnumerator IEDelay()
+    {
+        yield return new WaitForSeconds(.2f);
+        PlayerController.Ins.isMove = false;
+        PlayerController.Ins.PlayerStopMove();
+    }
+
     private void OnEnable()
     {
+        StartCoroutine(IEDelay());
         buttonSkill.gameObject.SetActive(true);
         tutorialText.gameObject.SetActive(true);
     }
@@ -32,6 +40,8 @@ public class ButtonTutorialUI : BaseUIMenu
 
     void CloseButton()
     {
+        ButtonControllerUI.Ins.OnEnableJoyStick();
+        PlayerController.Ins.isMove = true;
         this.gameObject.SetActive(false);
     }
 }

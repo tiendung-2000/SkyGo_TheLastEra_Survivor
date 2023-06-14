@@ -49,11 +49,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 7
   ske: {fileID: 433493895774285017}
-  bulletToFire: {fileID: 4189913780510908286, guid: 516cfe542ca3ae44dabaead8d4978221,
+  bulletToFire: {fileID: 4189913780510908286, guid: a903b4aba169e144491b6ffd7d91ab57,
     type: 3}
   canFire: 0
   canExplode: 0
-  explodeBullet: {fileID: 4189913780510908286, guid: a250daa6833c76f46affe97cc2129100,
+  explodeBullet: {fileID: 4189913780510908286, guid: ba7a2081db99ce4478e7264893862e38,
     type: 3}
   firePoint:
   - {fileID: 7590131402553731953}
@@ -65,7 +65,7 @@ MonoBehaviour:
   isFullAmmo: 0
   timeBetweenShots: 0.5
   shotCounter: 0
-  weaponName: Shuriken
+  weaponName: Shuriken_Common
   itemCost: 0
   gunSprite: {fileID: 21300000, guid: 438e9e3aba4ed154480e90f333e6ad18, type: 3}
   gunSwitchSprite: {fileID: 21300000, guid: f969df19bf8eeaa4ebabde368bc94c8c, type: 3}
@@ -74,6 +74,9 @@ MonoBehaviour:
   isDupliGun: 0
   isRocketGun: 0
   m_launchIntensity: 0
+  weaponOffset: {x: 0, y: 0}
+  weaponRot: 0
+  swingSpeed: 0
 --- !u!33 &3828216962867755809
 MeshFilter:
   m_ObjectHideFlags: 0

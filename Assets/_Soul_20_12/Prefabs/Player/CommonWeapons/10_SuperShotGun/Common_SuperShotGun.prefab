@@ -1,35 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3001649199171299740
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7805873833781139597}
-  m_Layer: 8
-  m_Name: Fire Point (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7805873833781139597
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3001649199171299740}
-  m_LocalRotation: {x: 0, y: 0, z: -0.3420201, w: 0.9396927}
-  m_LocalPosition: {x: 0.357, y: -0.071, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 695117407724449772}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -40}
 --- !u!1 &3240367412509989274
 GameObject:
   m_ObjectHideFlags: 0
@@ -62,10 +32,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7590131402553731953}
-  - {fileID: 3716126561555348909}
-  - {fileID: 3929132806422801262}
-  - {fileID: 4113071231996538678}
-  - {fileID: 7805873833781139597}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -83,18 +49,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 9
   ske: {fileID: 433493895774285017}
-  bulletToFire: {fileID: 4189913780510908286, guid: 7e0451d199d0ebf459d195702231a5cc,
+  bulletToFire: {fileID: 4189913780510908286, guid: 6d4b185d2e821b548b8e77c1f116cc29,
     type: 3}
   canFire: 0
   canExplode: 0
-  explodeBullet: {fileID: 4189913780510908286, guid: 2d347dc4f20517f4ea2d97bfaa92b62b,
+  explodeBullet: {fileID: 4189913780510908286, guid: 0c261b78d64505e4fa8f915f4f7060c3,
     type: 3}
   firePoint:
   - {fileID: 7590131402553731953}
-  - {fileID: 3716126561555348909}
-  - {fileID: 3929132806422801262}
-  - {fileID: 4113071231996538678}
-  - {fileID: 7805873833781139597}
   xAngle: 5
   yAngle: 5
   reloadTime: 1
@@ -103,7 +65,7 @@ MonoBehaviour:
   isFullAmmo: 0
   timeBetweenShots: 0.9
   shotCounter: 0
-  weaponName: SuperShotgun
+  weaponName: SuperShotgun_Common
   itemCost: 0
   gunSprite: {fileID: 21300000, guid: 12d2e5d76b447a24eb5937d9226dee7b, type: 3}
   gunSwitchSprite: {fileID: 21300000, guid: ffa247e7951cc1249a8ca26a2cd7304a, type: 3}
@@ -231,93 +193,3 @@ Transform:
   m_Father: {fileID: 695117407724449772}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 40}
---- !u!1 &5872433058394502934
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3929132806422801262}
-  m_Layer: 8
-  m_Name: Fire Point (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3929132806422801262
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5872433058394502934}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.357, y: -0.071, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 695117407724449772}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7611213788081962721
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3716126561555348909}
-  m_Layer: 8
-  m_Name: Fire Point (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3716126561555348909
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7611213788081962721}
-  m_LocalRotation: {x: 0, y: 0, z: 0.17364816, w: 0.9848078}
-  m_LocalPosition: {x: 0.357, y: -0.071, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 695117407724449772}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 20}
---- !u!1 &7892106486291429134
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4113071231996538678}
-  m_Layer: 8
-  m_Name: Fire Point (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4113071231996538678
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7892106486291429134}
-  m_LocalRotation: {x: 0, y: 0, z: -0.17364825, w: 0.9848078}
-  m_LocalPosition: {x: 0.357, y: -0.071, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 695117407724449772}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -20}

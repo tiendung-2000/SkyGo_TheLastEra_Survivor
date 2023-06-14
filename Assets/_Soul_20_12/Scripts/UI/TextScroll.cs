@@ -67,7 +67,8 @@ public class TextScroll : MonoBehaviour
 
             if (rectTransform.anchoredPosition.x <= -width)
             {
-                rectTransform.anchoredPosition += new Vector2(width * 1.2f, 0f);
+                //rectTransform.anchoredPosition += new Vector2(width * 1.2f, 0f);
+                rectTransform.anchoredPosition = new Vector2(rectTransform.rect.width, 0f);
             }
 
             yield return null;

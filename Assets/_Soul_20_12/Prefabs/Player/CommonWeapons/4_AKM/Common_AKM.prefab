@@ -49,11 +49,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 3
   ske: {fileID: 433493895774285017}
-  bulletToFire: {fileID: 4189913780510908286, guid: 0b5b284f6a83223418f5e234790d6b86,
+  bulletToFire: {fileID: 4189913780510908286, guid: b8839f62236af9545b4451c2f67443c3,
     type: 3}
   canFire: 0
   canExplode: 0
-  explodeBullet: {fileID: 4189913780510908286, guid: 1347c45966c65da4c94abd5f149a8dba,
+  explodeBullet: {fileID: 4189913780510908286, guid: b43d73f99dd99da4ea99f3749c54c923,
     type: 3}
   firePoint:
   - {fileID: 7590131402553731953}
@@ -65,7 +65,7 @@ MonoBehaviour:
   isFullAmmo: 0
   timeBetweenShots: 0.18
   shotCounter: 0
-  weaponName: AKM
+  weaponName: AKM_Common
   itemCost: 0
   gunSprite: {fileID: 21300000, guid: 07be24edb067e7046afd468357d94061, type: 3}
   gunSwitchSprite: {fileID: 21300000, guid: 7d7b4dcd7f2040d4db5a077dba4bc182, type: 3}
@@ -74,6 +74,9 @@ MonoBehaviour:
   isDupliGun: 0
   isRocketGun: 0
   m_launchIntensity: 0
+  weaponOffset: {x: 0, y: 0}
+  weaponRot: 0
+  swingSpeed: 0
 --- !u!33 &3828216962867755809
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -184,7 +187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5352409381370367888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.52, y: 0.31, z: 0}
+  m_LocalPosition: {x: 1.711, y: 0.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 695117407724449772}

@@ -49,11 +49,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 11
   ske: {fileID: 433493895774285017}
-  bulletToFire: {fileID: 4189913780510908286, guid: 7bb6205f25e86944390ada56d0a4cc88,
+  bulletToFire: {fileID: 4189913780510908286, guid: de3feee13d2fbbe4d988b3291804b8ef,
     type: 3}
   canFire: 0
   canExplode: 0
-  explodeBullet: {fileID: 4189913780510908286, guid: 91780909034b68d4ca1909cb7f85baba,
+  explodeBullet: {fileID: 4189913780510908286, guid: 6a7ef508ef3f7d14d9913f82f208d1a2,
     type: 3}
   firePoint:
   - {fileID: 7590131402553731953}
@@ -65,7 +65,7 @@ MonoBehaviour:
   isFullAmmo: 0
   timeBetweenShots: 0.8
   shotCounter: 0
-  weaponName: Crossbow
+  weaponName: Crossbow_Common
   itemCost: 0
   gunSprite: {fileID: 21300000, guid: 2b4134c87e08b4641bfa8d68d08071d5, type: 3}
   gunSwitchSprite: {fileID: 21300000, guid: 62e2a993cf8b59c47b0261fd8f876629, type: 3}
@@ -74,6 +74,9 @@ MonoBehaviour:
   isDupliGun: 0
   isRocketGun: 0
   m_launchIntensity: 0
+  weaponOffset: {x: 0, y: 0}
+  weaponRot: 0
+  swingSpeed: 0
 --- !u!33 &3828216962867755809
 MeshFilter:
   m_ObjectHideFlags: 0

@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586273908761716487}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7, y: 0.625, z: 0}
+  m_LocalPosition: {x: 0.858, y: 0.625, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6788949198455887965}
@@ -58,7 +58,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2117584213713072572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2, y: 7.35, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4672838368185474484}
@@ -79,11 +79,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   ske: {fileID: 4452703995000415641}
-  bulletToFire: {fileID: 4189913780510908286, guid: aea44e738a6d53d428ed536f7372350f,
+  bulletToFire: {fileID: 4189913780510908286, guid: 324ca3abd00071842895c69b4ee19c12,
     type: 3}
   canFire: 0
   canExplode: 0
-  explodeBullet: {fileID: 9070735391092049552, guid: c6d75310cbbfacc4688a52e209d8168c,
+  explodeBullet: {fileID: 9070735391092049552, guid: 73e423b6fc2bfd5409611c32e2cd5c0f,
     type: 3}
   firePoint:
   - {fileID: 4672838368185474484}
@@ -95,7 +95,7 @@ MonoBehaviour:
   isFullAmmo: 0
   timeBetweenShots: 0.2
   shotCounter: 0
-  weaponName: Pistol
+  weaponName: Pistol_Common
   itemCost: 0
   gunSprite: {fileID: 21300000, guid: ab784a645e8fe6e45868faa51a0ab5a6, type: 3}
   gunSwitchSprite: {fileID: 21300000, guid: 5e7b7ddb283ddaf418ac67bf44be3065, type: 3}

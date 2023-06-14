@@ -49,11 +49,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 10
   ske: {fileID: 433493895774285017}
-  bulletToFire: {fileID: 4189913780510908286, guid: b9ff05e12b19a7749bdab107d9f98a8b,
+  bulletToFire: {fileID: 4189913780510908286, guid: 78eff611816d65b469d164bb7239a4b7,
     type: 3}
   canFire: 0
   canExplode: 0
-  explodeBullet: {fileID: 4189913780510908286, guid: f618affbc52a0a24ca332a8fe8aa9c68,
+  explodeBullet: {fileID: 4189913780510908286, guid: 860aab51c47a68f4e8656c58b3356f85,
     type: 3}
   firePoint:
   - {fileID: 7590131402553731953}
@@ -65,7 +65,7 @@ MonoBehaviour:
   isFullAmmo: 0
   timeBetweenShots: 0.6
   shotCounter: 0
-  weaponName: Heaven
+  weaponName: Heaven_Common
   itemCost: 0
   gunSprite: {fileID: 21300000, guid: c7c69eb380671c444b881c1ee6495578, type: 3}
   gunSwitchSprite: {fileID: 21300000, guid: 9d56e83ffa2d63b4dbf65086f04da511, type: 3}
@@ -74,6 +74,9 @@ MonoBehaviour:
   isDupliGun: 0
   isRocketGun: 0
   m_launchIntensity: 0
+  weaponOffset: {x: 0, y: 0}
+  weaponRot: 0
+  swingSpeed: 0
 --- !u!33 &3828216962867755809
 MeshFilter:
   m_ObjectHideFlags: 0

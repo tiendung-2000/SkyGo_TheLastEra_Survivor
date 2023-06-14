@@ -37,7 +37,7 @@ public class RocketBullet : MonoBehaviour
             case "Block":
                 //Debug.Log("Rocket");
 
-                Destroy(gameObject);
+                //Destroy(gameObject);
                 break;
             case "Enemy":
                 EnemyController enemy = other.GetComponent<EnemyController>();

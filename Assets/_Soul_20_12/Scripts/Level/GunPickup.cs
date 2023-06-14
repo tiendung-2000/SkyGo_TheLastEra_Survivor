@@ -4,6 +4,7 @@ public class GunPickup : MonoBehaviour
 {
     public Weapon theGun;
 
+    public Sprite icon;
     //public int ammo;
     public int damageToAdd;
 

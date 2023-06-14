@@ -30,4 +30,8 @@ public class UIName
     public static string ClearRoomPopup = "ClearRoomPopup";
 
     public static string TutotialDialog = "TutorialTipUI";
+
+    public static string WeaponAds5sPopup = "WeaponAds5sPopup";
+    public static string WeaponAds10sPopup = "WeaponAds10sPopup";
+    public static string WeaponAds30sPopup = "WeaponAds30sPopup";
 }

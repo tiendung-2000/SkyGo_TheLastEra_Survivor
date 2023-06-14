@@ -49,11 +49,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 2
   ske: {fileID: 183363467204549183}
-  bulletToFire: {fileID: 2694096419384989725, guid: 831a915c10c0e70448391fd3737074f4,
+  bulletToFire: {fileID: 2694096419384989725, guid: 9926675048610cf458c6166be3efd28c,
     type: 3}
   canFire: 0
   canExplode: 0
-  explodeBullet: {fileID: 9070735391092049552, guid: 19abfec2b6cee224e8bed8a51db9213d,
+  explodeBullet: {fileID: 9070735391092049552, guid: 03d1c1e6049a8774b9aea847ee2efa55,
     type: 3}
   firePoint:
   - {fileID: 9194414301202768402}
@@ -65,7 +65,7 @@ MonoBehaviour:
   isFullAmmo: 0
   timeBetweenShots: 0.5
   shotCounter: 0
-  weaponName: Shotgun
+  weaponName: Shotgun_Common
   itemCost: 0
   gunSprite: {fileID: 21300000, guid: d77e0a8eac66bfb4db082856b131ef93, type: 3}
   gunSwitchSprite: {fileID: 21300000, guid: 02c491e94b5eff34f822c13d1b1b4f25, type: 3}
@@ -74,6 +74,9 @@ MonoBehaviour:
   isDupliGun: 0
   isRocketGun: 0
   m_launchIntensity: 0
+  weaponOffset: {x: 0, y: 0}
+  weaponRot: 0
+  swingSpeed: 0
 --- !u!33 &7443087186626767794
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -184,7 +187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2973445699141818529}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.666, y: 0.509, z: 0}
+  m_LocalPosition: {x: 1.798, y: 0.509, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7023205257741494267}

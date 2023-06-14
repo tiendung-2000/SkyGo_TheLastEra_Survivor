@@ -25,7 +25,7 @@ public class LevelManager : Singleton<LevelManager>
     public List<int> enemySpawnPos;
 
     public List<GameObject> itemToDrop; //index: 0 = coin,
-    public List<GameObject> weaponToDrop;
+    //public List<GameObject> weaponToDrop;
 
     #region Enemy Scale
 
@@ -240,21 +240,23 @@ public class LevelManager : Singleton<LevelManager>
 
     public void RewardAdsItem() //5s ads
     {
-        for (int i = 0; i <= 10; i++) 
+        for (int i = 0; i <= 10; i++)
         {
             SmartPool.Ins.Spawn(itemToDrop[0], PlayerController.Ins.transform.position, Quaternion.identity);
         }
     }
 
-    public void RewardAdsNormalGun() //15s ads
-    {
+    //public void RewardAdsNormalGun() //15s ads
+    //{
+    //    var random = Random.Range(0, weaponToDrop.Count);
+    //    SmartPool.Ins.Spawn(weaponToDrop[random], PlayerController.Ins.transform.position, Quaternion.identity);
+    //}
 
-    }
-
-    public void RewardAdsLegendGun() //30s ads
-    {
-
-    }
+    //public void RewardAdsLegendGun() //30s ads
+    //{
+    //    var random = Random.Range(0, weaponToDrop.Count);
+    //    SmartPool.Ins.Spawn(weaponToDrop[random], PlayerController.Ins.transform.position, Quaternion.identity);
+    //}
 
     #endregion
 

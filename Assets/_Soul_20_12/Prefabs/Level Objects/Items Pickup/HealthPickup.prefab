@@ -14618,7 +14618,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 1
   waitToBeCollected: 0.5
-  waitToBeDisappear: 120
   coinValue: 10
   healAmount: 1
   time: 5

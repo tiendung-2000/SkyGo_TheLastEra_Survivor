@@ -49,11 +49,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 14
   ske: {fileID: 433493895774285017}
-  bulletToFire: {fileID: 4189913780510908286, guid: 435597440f921d24d950e2f17e340715,
+  bulletToFire: {fileID: 4189913780510908286, guid: cda99a49a26ddca40bfa866b8ecc8034,
     type: 3}
   canFire: 0
   canExplode: 0
-  explodeBullet: {fileID: 4189913780510908286, guid: 9191a89ad3be9224e930bd81bc2d48e3,
+  explodeBullet: {fileID: 4189913780510908286, guid: 3928eb1202f1d1d4d946dfae6a12f7aa,
     type: 3}
   firePoint:
   - {fileID: 7590131402553731953}
@@ -65,7 +65,7 @@ MonoBehaviour:
   isFullAmmo: 0
   timeBetweenShots: 0.8
   shotCounter: 0
-  weaponName: ToxicStaff
+  weaponName: ToxicStaff_Common
   itemCost: 0
   gunSprite: {fileID: 21300000, guid: 02ce203d7ff8d4e439cf6222e5e4c64b, type: 3}
   gunSwitchSprite: {fileID: 21300000, guid: 71fc1db6089c39d4bb2f5b9d56952378, type: 3}
@@ -74,6 +74,9 @@ MonoBehaviour:
   isDupliGun: 0
   isRocketGun: 0
   m_launchIntensity: 0
+  weaponOffset: {x: 0, y: 0}
+  weaponRot: 0
+  swingSpeed: 0
 --- !u!33 &3828216962867755809
 MeshFilter:
   m_ObjectHideFlags: 0

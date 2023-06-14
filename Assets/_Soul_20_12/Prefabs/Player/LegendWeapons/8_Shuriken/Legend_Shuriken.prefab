@@ -32,6 +32,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7590131402553731953}
+  - {fileID: 8059100112102526341}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -65,7 +66,7 @@ MonoBehaviour:
   isFullAmmo: 0
   timeBetweenShots: 0.5
   shotCounter: 0
-  weaponName: Shuriken
+  weaponName: Shuriken_Legend
   itemCost: 0
   gunSprite: {fileID: 21300000, guid: 438e9e3aba4ed154480e90f333e6ad18, type: 3}
   gunSwitchSprite: {fileID: 21300000, guid: f969df19bf8eeaa4ebabde368bc94c8c, type: 3}
@@ -193,3 +194,78 @@ Transform:
   m_Father: {fileID: 695117407724449772}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1226361681479947190
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 695117407724449772}
+    m_Modifications:
+    - target: {fileID: 9138724665209773612, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: m_Name
+      value: Sparks
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.535
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.403
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e0b82c1a1d43624f801273b7767a972, type: 3}
+--- !u!4 &8059100112102526341 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
+    type: 3}
+  m_PrefabInstance: {fileID: 1226361681479947190}
+  m_PrefabAsset: {fileID: 0}

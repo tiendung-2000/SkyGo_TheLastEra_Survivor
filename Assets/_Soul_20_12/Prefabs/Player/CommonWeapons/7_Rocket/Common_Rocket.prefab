@@ -49,11 +49,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 6
   ske: {fileID: 266230464603983061}
-  bulletToFire: {fileID: 2694096419384989725, guid: 14cf9fb471dad3d488328f2598503193,
+  bulletToFire: {fileID: 2694096419384989725, guid: 747bf7029283dcc469e56a3b7aafc89a,
     type: 3}
   canFire: 0
   canExplode: 0
-  explodeBullet: {fileID: 2694096419384989725, guid: 14cf9fb471dad3d488328f2598503193,
+  explodeBullet: {fileID: 2694096419384989725, guid: 747bf7029283dcc469e56a3b7aafc89a,
     type: 3}
   firePoint:
   - {fileID: 8899173214067673555}
@@ -65,7 +65,7 @@ MonoBehaviour:
   isFullAmmo: 0
   timeBetweenShots: 1.5
   shotCounter: 0
-  weaponName: Rocket
+  weaponName: Rocket_Common
   itemCost: 0
   gunSprite: {fileID: 21300000, guid: 988a718a66a04b44a9cc6153928f0a35, type: 3}
   gunSwitchSprite: {fileID: 21300000, guid: 2c7eeffc816aafe419fc77b6f445bac4, type: 3}
@@ -187,7 +187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7728066834354789526}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.64, y: 0.02, z: 0}
+  m_LocalPosition: {x: 0.944, y: 0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6869953729638401281}

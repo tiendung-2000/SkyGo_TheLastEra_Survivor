@@ -10,7 +10,7 @@ public class Chest : MonoBehaviour
     public ParticleSystem spawnEffect;
 
     [Header("Chest Properties")]
-    private bool canOpen, isOpen, canSpawn;
+    private bool canOpen, isOpen, canSpawn, canAdsSpawn;
     public int spawnTime;
     private int spawnCount;
     private float timeBetweenSpawn = 0.1f;
@@ -19,9 +19,13 @@ public class Chest : MonoBehaviour
 
     public GunPickup[] potentialGuns;
     public GameObject[] itemPickup;
+    public GameObject[] adsItemPickup;
 
     private void OnEnable()
     {
+        canOpen = false;
+        canSpawn = false;
+        canAdsSpawn = false;
         StartCoroutine(ActiveSprite());
     }
 
@@ -45,6 +49,7 @@ public class Chest : MonoBehaviour
             Debug.Log("Drop Gun");
         }
         DropItem();
+        DropAds();
     }
 
     public void OpenChest()
@@ -56,7 +61,7 @@ public class Chest : MonoBehaviour
 
     void DropItem()
     {
-        calculate:
+        //calculate:
 
         //int itemDrop = Random.Range(0, itemPickup.Length);
 
@@ -72,12 +77,32 @@ public class Chest : MonoBehaviour
             }
             spawnCount++;
             timeBetweenSpawn = 0.1f;
-            goto calculate;
+            //goto calculate;
+
+            Debug.Log("DropItem");
         }
         else
         {
             return;
         }
+    }
+
+    void DropAds()
+    {
+        if (canAdsSpawn == true && canSpawn == true)
+        {
+            SmartPool.Ins.Spawn(adsItemPickup[0], spawnPoint.position, spawnPoint.rotation);
+
+            int random = Random.Range(1, adsItemPickup.Length);
+
+            SmartPool.Ins.Spawn(adsItemPickup[random], spawnPoint.position, spawnPoint.rotation);
+
+            canAdsSpawn = false;
+            Debug.Log("DropAds");
+
+        }
+        return;
+
     }
 
     IEnumerator IEChestFX()
@@ -89,5 +114,6 @@ public class Chest : MonoBehaviour
         spawnEffect.Play();
         canOpen = true;
         canSpawn = true;
+        canAdsSpawn = true;
     }
 }

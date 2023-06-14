@@ -130,11 +130,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 13
   ske: {fileID: 8999804230577519977}
-  bulletToFire: {fileID: 4189913780510908286, guid: 14d94ae019eced348b2a673cdda61611,
+  bulletToFire: {fileID: 4189913780510908286, guid: c6ac4b35f2b3a4248916004607af3457,
     type: 3}
   canFire: 0
   canExplode: 0
-  explodeBullet: {fileID: 4189913780510908286, guid: eb0b5892ecc43cd46b27c882082aa465,
+  explodeBullet: {fileID: 4189913780510908286, guid: d0e296a031116ba408466e7a6d09f20b,
     type: 3}
   firePoint:
   - {fileID: 7590131402553731953}
@@ -146,7 +146,7 @@ MonoBehaviour:
   isFullAmmo: 0
   timeBetweenShots: 0.8
   shotCounter: 0
-  weaponName: FireStaff
+  weaponName: FireStaff_Common
   itemCost: 0
   gunSprite: {fileID: 21300000, guid: a046a9b174713ed44a56e07f0cc024ac, type: 3}
   gunSwitchSprite: {fileID: 21300000, guid: 0a3b6ab2849b8524f8b59a424ed8f6c4, type: 3}
@@ -155,6 +155,9 @@ MonoBehaviour:
   isDupliGun: 0
   isRocketGun: 0
   m_launchIntensity: 0
+  weaponOffset: {x: 0, y: 0}
+  weaponRot: 0
+  swingSpeed: 0
 --- !u!1 &5352409381370367888
 GameObject:
   m_ObjectHideFlags: 0
