@@ -98,8 +98,8 @@ MonoBehaviour:
   shotCounter: 0
   weaponName: Pistol_Legend
   itemCost: 0
-  gunSprite: {fileID: 21300000, guid: ab784a645e8fe6e45868faa51a0ab5a6, type: 3}
-  gunSwitchSprite: {fileID: 21300000, guid: 5e7b7ddb283ddaf418ac67bf44be3065, type: 3}
+  gunSprite: {fileID: 21300000, guid: 338ffc80c5c845c4f91dd48c27a14c48, type: 3}
+  gunSwitchSprite: {fileID: 21300000, guid: ef2ef516f392fa044b27ecb8872ffde7, type: 3}
   currentClip: 0
   maxClipSize: 50
   isDupliGun: 0
@@ -201,11 +201,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6788949198455887965}
     m_Modifications:
-    - target: {fileID: 7680391003570406855, guid: 4e0b82c1a1d43624f801273b7767a972,
-        type: 3}
-      propertyPath: scalingMode
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773612, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
       propertyPath: m_Name
@@ -213,8 +208,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
-      propertyPath: scalingMode
-      value: 0
+      propertyPath: ShapeModule.arc.value
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.9935299
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
@@ -223,23 +228,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
-        type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.362
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.471
+      value: 0.49
       objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}

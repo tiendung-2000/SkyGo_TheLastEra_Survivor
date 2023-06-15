@@ -68,8 +68,8 @@ MonoBehaviour:
   shotCounter: 0
   weaponName: ToxicStaff_Legend
   itemCost: 0
-  gunSprite: {fileID: 21300000, guid: 02ce203d7ff8d4e439cf6222e5e4c64b, type: 3}
-  gunSwitchSprite: {fileID: 21300000, guid: 71fc1db6089c39d4bb2f5b9d56952378, type: 3}
+  gunSprite: {fileID: 21300000, guid: dc77b0ba287e7ff499065acab9edba90, type: 3}
+  gunSwitchSprite: {fileID: 21300000, guid: 327437836d4f46d4aa1c3ec8b92f3a65, type: 3}
   currentClip: 0
   maxClipSize: 20
   isDupliGun: 0
@@ -207,6 +207,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sparks
       objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: ShapeModule.arc.value
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.45360827
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
       propertyPath: m_RootOrder
@@ -215,12 +235,12 @@ PrefabInstance:
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.535
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.403
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}

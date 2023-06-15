@@ -68,8 +68,8 @@ MonoBehaviour:
   shotCounter: 0
   weaponName: Bazoka_Legend
   itemCost: 0
-  gunSprite: {fileID: 21300000, guid: 5996944e83347614da99cc335ebb666b, type: 3}
-  gunSwitchSprite: {fileID: 21300000, guid: f28e6740ea432794ea9cef9feff4a6ca, type: 3}
+  gunSprite: {fileID: 21300000, guid: e5fdce55a487f214ebe9f03bf284955e, type: 3}
+  gunSwitchSprite: {fileID: 21300000, guid: 483db92518f5fb347a75d06395eaae01, type: 3}
   currentClip: 0
   maxClipSize: 10
   isDupliGun: 0
@@ -206,6 +206,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sparks
       objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: ShapeModule.arc.value
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.0627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.1254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
       propertyPath: m_RootOrder
@@ -214,12 +244,12 @@ PrefabInstance:
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.535
+      value: 0.36
       objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.403
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}

@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1640628663029948653}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.41, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5440002210143145189}
@@ -68,8 +68,8 @@ MonoBehaviour:
   shotCounter: 0
   weaponName: Gatling_Legend
   itemCost: 0
-  gunSprite: {fileID: 21300000, guid: ad6ac0318b7748a4ab37905957113eee, type: 3}
-  gunSwitchSprite: {fileID: 21300000, guid: 10e54e7c6bbcbe848905c39358e8c295, type: 3}
+  gunSprite: {fileID: 21300000, guid: ef4f4f5dcf4cd3a4694c11ef64019d84, type: 3}
+  gunSwitchSprite: {fileID: 21300000, guid: 705286f207f7cab488c5e8496528f7db, type: 3}
   currentClip: 0
   maxClipSize: 145
   isDupliGun: 0
@@ -209,6 +209,26 @@ PrefabInstance:
     - target: {fileID: 9138724665209773612, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: ShapeModule.arc.value
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.2901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,

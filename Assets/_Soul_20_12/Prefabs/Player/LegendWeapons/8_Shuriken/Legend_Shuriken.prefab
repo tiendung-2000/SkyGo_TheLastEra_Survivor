@@ -68,8 +68,8 @@ MonoBehaviour:
   shotCounter: 0
   weaponName: Shuriken_Legend
   itemCost: 0
-  gunSprite: {fileID: 21300000, guid: 438e9e3aba4ed154480e90f333e6ad18, type: 3}
-  gunSwitchSprite: {fileID: 21300000, guid: f969df19bf8eeaa4ebabde368bc94c8c, type: 3}
+  gunSprite: {fileID: 21300000, guid: 703d4c4f3da2ac04c9b27c0f1fb4ce73, type: 3}
+  gunSwitchSprite: {fileID: 21300000, guid: eb7e0f9d8e14413468db5fc111258eb6, type: 3}
   currentClip: 0
   maxClipSize: 50
   isDupliGun: 0
@@ -206,6 +206,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sparks
       objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
       propertyPath: m_RootOrder
@@ -214,12 +229,12 @@ PrefabInstance:
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.535
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.403
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}

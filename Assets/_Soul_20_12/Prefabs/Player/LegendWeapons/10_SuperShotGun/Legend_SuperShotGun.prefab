@@ -106,8 +106,8 @@ MonoBehaviour:
   shotCounter: 0
   weaponName: SuperShotgun_Legend
   itemCost: 0
-  gunSprite: {fileID: 21300000, guid: 12d2e5d76b447a24eb5937d9226dee7b, type: 3}
-  gunSwitchSprite: {fileID: 21300000, guid: ffa247e7951cc1249a8ca26a2cd7304a, type: 3}
+  gunSprite: {fileID: 21300000, guid: fd054ad46b392944dbbbdfdc35b5d144, type: 3}
+  gunSwitchSprite: {fileID: 21300000, guid: ca759423d402e7847979b768903a17a0, type: 3}
   currentClip: 0
   maxClipSize: 15
   isDupliGun: 0
@@ -334,6 +334,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sparks
       objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.14901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
       propertyPath: m_RootOrder
@@ -342,12 +357,12 @@ PrefabInstance:
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.535
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.403
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}

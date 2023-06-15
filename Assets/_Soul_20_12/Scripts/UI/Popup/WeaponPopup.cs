@@ -53,7 +53,7 @@ public class WeaponPopup : BaseUIMenu
             case PopupAdsType.Ads30s:
                 int legend = Random.Range(0, legendWeapon.Length);
                 theWeapon = legendWeapon[legend];
-                gunSpriteUI.sprite = theWeapon.icon;
+                gunSpriteUI.sprite = theWeapon.theGun.gunSprite;
                 titleText.text = "Watch Ads To Get Legend Weapon?";
                 break;
         }
