@@ -2029,7 +2029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   needDontDestroy: 0
-  passTutorial: 0
+  passTutorial: 1
 --- !u!1 &1645917995
 GameObject:
   m_ObjectHideFlags: 0
@@ -2573,7 +2573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   needDontDestroy: 0
   blackPanel: {fileID: 237115157}
-  timeFade: 0.5
+  timeFade: 0.3
 --- !u!1 &1938652328
 GameObject:
   m_ObjectHideFlags: 0

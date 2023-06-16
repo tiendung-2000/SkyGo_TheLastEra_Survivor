@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class TextScroll : MonoBehaviour
 {
+    public static TextScroll Ins;
     private float speed;
     [SerializeField]
     private TextMeshProUGUI textComponent;

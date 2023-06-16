@@ -1,14 +1,21 @@
 using API.UI;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class CoinBar : BaseUIMenu
 {
     public static CoinBar Ins;
-    public Text coinText;
+    public TMP_Text coinText;
     public int currentCoin;
+    public TextScroll textScroll;
     [SerializeField] Button addCoinButton;
+
+    private void Awake()
+    {
+        Ins = this;
+    }
 
     void OnEnable()
     {
@@ -18,7 +25,7 @@ public class CoinBar : BaseUIMenu
         DynamicDataManager.Ins.OnCoinNumChange += OnCoinChange;
         PlayChangeGoldEffect(coinText);
     }
-    void OnCoinChange(int num)//value
+    public void OnCoinChange(int num)//value
     {
         if (this.gameObject.activeSelf)
         {
@@ -40,7 +47,7 @@ public class CoinBar : BaseUIMenu
         CanvasManager.Ins.OpenUI(UIName.ShopUI, null);
     }
 
-    public void PlayChangeGoldEffect(Text txtGold, System.Action callback = null)
+    public void PlayChangeGoldEffect(TMP_Text txtGold, System.Action callback = null)
     {
         IEnumerator IPlayChangeGoldEffect()
         {
@@ -64,5 +71,7 @@ public class CoinBar : BaseUIMenu
             callback?.Invoke();
         }
         StartCoroutine(IPlayChangeGoldEffect());
+
+        textScroll.OnInit();
     }
 }
