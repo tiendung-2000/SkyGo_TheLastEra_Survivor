@@ -39,7 +39,7 @@ public class Chest : MonoBehaviour
     {
         timeBetweenSpawn -= Time.deltaTime;
 
-        if (canOpen && !isOpen)
+        if (canOpen && !isOpen && potentialGuns != null)
         {
             int gunSelect = Random.Range(0, potentialGuns.Length);
 
@@ -65,7 +65,7 @@ public class Chest : MonoBehaviour
 
         //int itemDrop = Random.Range(0, itemPickup.Length);
 
-        if (canSpawn == true && spawnCount <= spawnTime && timeBetweenSpawn <= 0)
+        if (canSpawn == true && spawnCount <= spawnTime && timeBetweenSpawn <= 0 && itemPickup != null)
         {
             if (spawnCount <= 4)
             {
@@ -89,7 +89,7 @@ public class Chest : MonoBehaviour
 
     void DropAds()
     {
-        if (canAdsSpawn == true && canSpawn == true)
+        if (canAdsSpawn == true && canSpawn == true && adsItemPickup != null)
         {
             SmartPool.Ins.Spawn(adsItemPickup[0], spawnPoint.position, spawnPoint.rotation);
 

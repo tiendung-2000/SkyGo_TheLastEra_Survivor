@@ -208,8 +208,49 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
+      propertyPath: ShapeModule.type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: ShapeModule.m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 129001c83f226484cbe6d7a3cac51a0c,
+        type: 3}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
       propertyPath: ShapeModule.arc.value
       value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: ShapeModule.m_Scale.y
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 1.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: ShapeModule.m_Position.y
+      value: 0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: ShapeModule.placementMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773617, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
@@ -234,12 +275,12 @@ PrefabInstance:
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.535
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.403
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9138724665209773619, guid: 4e0b82c1a1d43624f801273b7767a972,
         type: 3}
