@@ -6,12 +6,18 @@ using UnityEngine.UI;
 
 public class BossShow : BaseUIMenu
 {
+    public static BossShow Ins;
+
     [SerializeField] AnimationClip animationClip;
-    [SerializeField] Text bossName;
+    [SerializeField] public Text bossName;
     [SerializeField] Image bossImage;
     [SerializeField] List<string> listBossName;
     [SerializeField] List<Sprite> listBossSprites;
 
+    private void Awake()
+    {
+        Ins = this;
+    }
     private void OnEnable()
     {
         //AudioManager.Ins.MusicOff();

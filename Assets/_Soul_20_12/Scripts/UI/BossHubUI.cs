@@ -7,6 +7,8 @@ public class BossHubUI : BaseUIMenu
 
     public Slider bossHealthBar;
 
+    public Text bossName;
+
     private void Awake()
     {
         Ins = this;
@@ -14,6 +16,7 @@ public class BossHubUI : BaseUIMenu
 
     void OnEnable()
     {
+        bossName.text = BossShow.Ins.bossName.text;
         BossController.Ins.bossHubUI = this;
         bossHealthBar.maxValue = BossController.Ins.currentHealth;
         bossHealthBar.value = BossController.Ins.currentHealth;
