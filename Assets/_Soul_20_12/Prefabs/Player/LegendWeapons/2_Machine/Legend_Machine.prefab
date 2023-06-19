@@ -99,7 +99,7 @@ MonoBehaviour:
   weaponName: Machine_Legend
   itemCost: 0
   gunSprite: {fileID: 21300000, guid: e34ecb9447101fc4b82a73a7186e2446, type: 3}
-  gunSwitchSprite: {fileID: 21300000, guid: 53d3ae92a01f20347878dd1fe12f1421, type: 3}
+  gunSwitchSprite: {fileID: 21300000, guid: 4219f2f39800fef408b0c9a3b52b12be, type: 3}
   currentClip: 0
   maxClipSize: 20
   isDupliGun: 0

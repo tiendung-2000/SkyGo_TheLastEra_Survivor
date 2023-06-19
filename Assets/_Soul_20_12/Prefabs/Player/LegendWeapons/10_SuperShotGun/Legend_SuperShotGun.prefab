@@ -107,7 +107,7 @@ MonoBehaviour:
   weaponName: SuperShotgun_Legend
   itemCost: 0
   gunSprite: {fileID: 21300000, guid: fd054ad46b392944dbbbdfdc35b5d144, type: 3}
-  gunSwitchSprite: {fileID: 21300000, guid: ca759423d402e7847979b768903a17a0, type: 3}
+  gunSwitchSprite: {fileID: 21300000, guid: 31f91f887ba86a749b51ffa32c573ecf, type: 3}
   currentClip: 0
   maxClipSize: 15
   isDupliGun: 0

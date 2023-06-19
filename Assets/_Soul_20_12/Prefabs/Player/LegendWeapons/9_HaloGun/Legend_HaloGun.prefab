@@ -73,7 +73,7 @@ MonoBehaviour:
   weaponName: HaloGun_Legend
   itemCost: 0
   gunSprite: {fileID: 21300000, guid: d6f624c35e73dd24f843ba6294b9e4b2, type: 3}
-  gunSwitchSprite: {fileID: 21300000, guid: ce83f9f0295fd734d963e3eeabd8bf67, type: 3}
+  gunSwitchSprite: {fileID: 21300000, guid: cbd1dd41e11f4a64a8d95d463c3df9c8, type: 3}
   currentClip: 0
   maxClipSize: 50
   isDupliGun: 0

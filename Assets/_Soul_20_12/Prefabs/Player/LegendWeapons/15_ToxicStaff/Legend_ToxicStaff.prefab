@@ -69,7 +69,7 @@ MonoBehaviour:
   weaponName: ToxicStaff_Legend
   itemCost: 0
   gunSprite: {fileID: 21300000, guid: dc77b0ba287e7ff499065acab9edba90, type: 3}
-  gunSwitchSprite: {fileID: 21300000, guid: 327437836d4f46d4aa1c3ec8b92f3a65, type: 3}
+  gunSwitchSprite: {fileID: 21300000, guid: a035c9dbde3dd5743ac63bc9039ea6ab, type: 3}
   currentClip: 0
   maxClipSize: 20
   isDupliGun: 0

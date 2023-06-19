@@ -69,7 +69,7 @@ MonoBehaviour:
   weaponName: Rocket_Legend
   itemCost: 0
   gunSprite: {fileID: 21300000, guid: 67e2a563002298b4690d808aec3c5609, type: 3}
-  gunSwitchSprite: {fileID: 21300000, guid: 8849c3c1c9ae40d41865b3f9785ce922, type: 3}
+  gunSwitchSprite: {fileID: 21300000, guid: 1c8351e3a66676142bcb0a828bb732a9, type: 3}
   currentClip: 0
   maxClipSize: 10
   isDupliGun: 0

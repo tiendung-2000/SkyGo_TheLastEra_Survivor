@@ -286,6 +286,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossDelayShow
       objectReference: {fileID: 0}
+    - target: {fileID: 4788128278962509305, guid: 6978a64db2c2be9478ba222d34c90b1f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4788128278962509310, guid: 6978a64db2c2be9478ba222d34c90b1f,
         type: 3}
       propertyPath: m_Pivot.x

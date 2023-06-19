@@ -67,7 +67,7 @@ MonoBehaviour:
   weaponName: ArcadeSword_Legend
   itemCost: 0
   gunSprite: {fileID: 21300000, guid: e6785a2bcdad3cf479c8a66faf5d3064, type: 3}
-  gunSwitchSprite: {fileID: 21300000, guid: d0f98fce75619354a9c1330e0092ebaf, type: 3}
+  gunSwitchSprite: {fileID: 21300000, guid: db3b8183a3c9f0846b682b43a876720c, type: 3}
   currentClip: 0
   maxClipSize: 20
   isDupliGun: 0

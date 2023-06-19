@@ -69,7 +69,7 @@ MonoBehaviour:
   weaponName: Bazoka_Legend
   itemCost: 0
   gunSprite: {fileID: 21300000, guid: e5fdce55a487f214ebe9f03bf284955e, type: 3}
-  gunSwitchSprite: {fileID: 21300000, guid: 483db92518f5fb347a75d06395eaae01, type: 3}
+  gunSwitchSprite: {fileID: 21300000, guid: f8095043b4ca0f646b0541ba0985302e, type: 3}
   currentClip: 0
   maxClipSize: 10
   isDupliGun: 0

@@ -69,7 +69,7 @@ MonoBehaviour:
   weaponName: ThunderBow_Legend
   itemCost: 0
   gunSprite: {fileID: 21300000, guid: e4be996a55eb4fc4abe12fcd65e6a02e, type: 3}
-  gunSwitchSprite: {fileID: 21300000, guid: ea6dee87d10c3ab4cbf2710e62d187eb, type: 3}
+  gunSwitchSprite: {fileID: 21300000, guid: 776ba5615186cdf46a9bea092aad68c9, type: 3}
   currentClip: 0
   maxClipSize: 10
   isDupliGun: 0
