@@ -295,8 +295,6 @@ MonoBehaviour:
   musicSprites:
   - {fileID: 1854121798376973752}
   - {fileID: 8344375412100330033}
-  isSound: 0
-  isMusic: 0
 --- !u!1 &682577623758834014
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,15 +473,15 @@ RectTransform:
   m_GameObject: {fileID: 2266942103626204188}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 2496032446732197172}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -117.58}
-  m_SizeDelta: {x: 596.1481, y: 173.15}
+  m_AnchoredPosition: {x: 0.00048828, y: -102.08}
+  m_SizeDelta: {x: 2837.9, y: 680.52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4323161922429350682
 CanvasRenderer:
@@ -519,7 +517,7 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 93
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -540,7 +538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
-  m_EffectDistance: {x: 7, y: -7}
+  m_EffectDistance: {x: 15, y: 15}
   m_UseGraphicAlpha: 1
 --- !u!1 &2565940814096439700
 GameObject:
