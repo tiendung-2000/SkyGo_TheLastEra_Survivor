@@ -105,15 +105,19 @@ public class WeaponPopup : BaseUIMenu
         switch (adsType)
         {
             case PopupAdsType.DefaultAds:
+                //reward
                 Instantiate(theWeapon, PlayerController.Ins.transform.position, Quaternion.identity);
                 break;
             case PopupAdsType.Ads5s:
+                //reward
                 LevelManager.Ins.RewardAdsItem();
                 break;
             case PopupAdsType.Ads10s:
+                //reward
                 Instantiate(theWeapon, PlayerController.Ins.transform.position, Quaternion.identity);
                 break;
             case PopupAdsType.Ads30s:
+                //reward
                 Instantiate(theWeapon, PlayerController.Ins.transform.position, Quaternion.identity);
                 break;
         }
